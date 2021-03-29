@@ -6,7 +6,7 @@
 
 # Padrões de Nomenclatura
 
-## `BEM` (Block Element Modifier) 
+## `BEM` (Block Element Modifier) [ver +](https://en.bem.info/methodology/key-concepts/#block)
 
 - `Bloco`
   - é uma entidade independente;
@@ -77,9 +77,13 @@ Exemplo prático:
 - lidar com estados
 - Sass lida nativamente com o padrão BEM
 
+### Estrutura de arquivos BEM [ver +](https://en.bem.info/methodology/filestructure/)
+- `nested` (aninhado)
+- `flat` aparmaento)
+- `flex` 
 
 
-## `OOCSS` (Object Oriented CSS)
+## `OOCSS` (Object Oriented CSS) [ver +](https://medium.com/tableless/arquitetura-css-d344fb01dd18)
 - visa componentizar todo o código
 - separar a **Estrutura** do **Visual** (skin)
 - criar independência do **Container** em relação ao **Conteúdo**
@@ -90,6 +94,10 @@ Exemplo prático:
 
 
 ## `RSCSS`
+
+## DRY CSS 
+
+[+ bem](https://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/)
 
 # Padrões de Estrutura 
 
