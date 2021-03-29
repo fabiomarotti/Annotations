@@ -80,8 +80,10 @@ Exemplo prático:
 
 
 ## `OOCSS` (Object Oriented CSS)
-  - __objeto de CSS__ é um padrão visual que pode se repetir no projeto e é identificado através de uma __classe__
-  - separação das propriedades de estrutura, das skin (identidade visual do projeto)
+- visa componentizar todo o código
+- separar a **Estrutura** do **Visual** (skin)
+- criar independência do **Container** em relação ao **Conteúdo**
+
 
 
 
@@ -90,6 +92,13 @@ Exemplo prático:
 ## `RSCSS`
 
 # Padrões de Estrutura 
+
+- modularizar o css
+  - um css para cada página ou modulo
+  - CSS (geral) usando varios `@import URL(arquio.css)`
+  - CSS_Cor e CSS_Estrutura
+  
+  
 ## `SMACSS`
 ## `ITCSS`
 
@@ -98,3 +107,5 @@ Exemplo prático:
 # Referência
 [Geral sobre Padrões](http://www.andrefelizardo.com.br/blog/padroes-css/)
 [sobre BEM](http://getbem.com/introduction/)
+[sobre OOCSS](http://oocss.org/)
+
