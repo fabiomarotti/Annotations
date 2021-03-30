@@ -1,26 +1,24 @@
 # React
 
 ## Informações
+- [React : site oficial](https://pt-br.reactjs.org/)
+- `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
-- [site React](https://pt-br.reactjs.org/)
-- `JSX` sintaxe hibrida de HTML com JavaScript [ver +](https://pt-br.reactjs.org/docs/introducing-jsx.html)
-
-# Editores online
-
+## Editores online
 - [CodePen](https://codepen.io/pen?&editors=0010)
 - [CodeSandbox](https://codesandbox.io/s/new)
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
 
 # Sintaxe
-> Resumidamente temos um arquivo HTML e um JavaScript. <br>
-> O arquivo JS se comunica com o HTML por meio de funções JS. (exemplo: `document.getElementById('identificador')` )
-> 
-
-
  [helo world](https://pt-br.reactjs.org/docs/hello-world.html)
 
 - HTML e JavaScript (modo tradicional)
 - JSX (modo prático, porem precisa ser incorporado)
+
+> Resumidamente temos um arquivo **HTML** e um **JavaScript**. <br>
+> O arquivo JS se comunica com o HTML por meio de __funções JS__. (exemplo: `document.getElementById('identificador')` )
+
+
 
 ~~~HTML
 
