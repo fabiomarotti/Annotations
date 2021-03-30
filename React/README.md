@@ -68,8 +68,15 @@ add react native tools
    
   </body>
 </html>
-
 ~~~
+
+- passando variavel por parâmetro
+~~~~JavaScript
+const elemento = <h1>Hello, world!</h1>;
+const conteudo = document.getElementById('root');
+ReactDOM.render( elemento , conteudo );
+~~~
+
 
 ~~~
    <!--
