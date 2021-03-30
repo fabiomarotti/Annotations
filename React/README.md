@@ -141,8 +141,10 @@ export function add(a, b) {
 function add(a, b) {
   return a + b;
 }
-~~~
+
 console.log(add(16, 26)); // 42
+~~~
+
 
 # Dicionário
 
