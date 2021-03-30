@@ -121,8 +121,23 @@ ReactDOM.render( elemento , conteudo );
 </script>
 ~~~
 
-- `Bundle`
-  - App:
+### `Bundle` (empacotamento)
+
+- ferramentas de empacotamento: 
+  - [Webpack](https://webpack.js.org/) - funciona com Angular, Vue, NodeJS e Web Assembly 
+    - 
+  - [Rollup](https://rollupjs.org/guide/en/), 
+  - [Browserify](http://browserify.org/) 
+
+
+- Empacotadores:
+  - [Create React App](https://create-react-app.dev/)
+  - [Next.js](https://nextjs.org/)
+  - [Gatsby](https://www.gatsbyjs.com/)
+
+
+<hr>
+- App:
 ~~~
 // app.js
 import { add } from './math.js';
@@ -136,7 +151,8 @@ export function add(a, b) {
   return a + b;
 }
 ~~~
-  - Bundle:
+
+- Bundle:
 ~~~
 function add(a, b) {
   return a + b;
@@ -146,9 +162,11 @@ console.log(add(16, 26)); // 42
 ~~~
 
 
+
 # Dicionário
 
 - `Code-splitting` dividindo o código
+- transpilar seu código React + ES6 em plan-vanilla JS
 - `bundling` empacotamento
-  - ferramentas usadas: [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org/guide/en/), [Browserify](http://browserify.org/) 
+
 
