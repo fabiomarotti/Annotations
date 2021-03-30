@@ -21,7 +21,6 @@
 
 
 ~~~HTML
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,21 +28,30 @@
     <title>Hello World</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="text/babel">
 
+   
+   <div id="root"></div>
+   
+   
+   <script type="text/babel">
       ReactDOM.render(
         <h1>Hello, world!</h1>,
         document.getElementById('root')
       );
+   </script>
 
-    </script>
-    <!--
+   
+  </body>
+</html>
+
+~~~
+
+~~~
+   <!--
       Note: this page is a great way to try React but it's not suitable for production.
       It slowly compiles JSX with Babel in the browser and uses a large development build of React.
 
@@ -56,7 +64,4 @@
       You can also use React without JSX, in which case you can remove Babel:
       https://reactjs.org/docs/react-without-jsx.html
     -->
-  </body>
-</html>
-
 ~~~
