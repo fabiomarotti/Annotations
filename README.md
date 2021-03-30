@@ -13,6 +13,7 @@ Repositório com as minhas anotações durante o estudo
 - `MySQL`
 - `Node.js`
 - `Python`
+- `React`
 - `SASS`
 - `TypeScript`
 - `VSCode`
