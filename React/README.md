@@ -3,6 +3,25 @@
 ## Informações
 - [React : site oficial](https://pt-br.reactjs.org/)
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
+- `npx` faz parte do `npm` > v5.2
+  - `npx create-react-app projeto` cria estrutura de diretórios
+  - `npm build`
+
+add babel
+add better coments
+add css peaker
+add debug for glrome
+add drawr io
+add eslint
+add git lens (espiar os commits na linha)
+add html css suport
+add live server
+add material icon theme
+add mithril emm
+add pretier
+add react native tools
+
+
 
 ## Editores online
 - [CodePen](https://codepen.io/pen?&editors=0010)
