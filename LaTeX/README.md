@@ -125,5 +125,6 @@ x_{i}  % x indice i
 
 # Referência
 [Apostila de LaTeX UFF](http://each.uspnet.usp.br/sarajane/wp-content/uploads/2016/10/manual-latex-1.pdf)
+
 [Prof. Thiago de Melo](http://www.rc.unesp.br/tmelo/latex/)
 
