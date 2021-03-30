@@ -12,7 +12,7 @@
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
 
 # Sintaxe
-> Resumidamente temos um arquivo HTML e um JavaScript.
+> Resumidamente temos um arquivo HTML e um JavaScript. <br>
 > O arquivo JS se comunica com o HTML por meio de funções JS. (exemplo: `document.getElementById('identificador')` )
 > 
 
