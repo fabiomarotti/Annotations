@@ -67,3 +67,24 @@
       https://reactjs.org/docs/react-without-jsx.html
     -->
 ~~~
+
+
+- Criando classes
+~~~
+<script type="text/babel">
+
+    // Código React (componente Uauario)
+    class Usuario extends React.Component{
+      render(){
+         return( 
+
+           // codigo JSX
+           <div><h1> Ola Mundo </h1></div>
+           
+         );
+      }
+    }
+    // Reinderizar no HTML
+    ReactDOM.render( <Usuario />, document.querySelector("#app") );
+</script>
+~~~
