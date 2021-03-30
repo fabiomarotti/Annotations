@@ -30,26 +30,70 @@
 \subsection{sub-secção}
 ~~~
 
-## Simbolos e Formulas
+## Formulas
+~~~
+$ \formula $
+~~~
+
+~~~
+\[  \formula   \]
+~~~
+
+## Simbolos
+
 ~~~tex
 $ a * x^2 +  b * x + c $
 ~~~
-
-~~~latex
-$ a * x^2 +  b * x + c $
+- Quantificadores
+~~~
+\exists
+\infty
 ~~~
 
+- Sobescrito e Sobrescrito
 ~~~
-$ a * x^2 +  b * x + c $
+x^{2}  % x ao quadrado
+
+x_{i}  % x indice i
 ~~~
 
-### Frações
+- Frações
 ~~~
-\frac{a+b}{2}
+\frac{a}{b}  % a sobre b
+~~~
+
+- Raízes
+~~~
+\sqrt{x}     % raiz quadrada de x
+
+\sqrt[3]{x}  % raiz cubica de x
+~~~
+
+- Funções
+~~~
+\log10
+\sen
+~~~
+
+- Somatorio
+~~~
+\sum_{ n=0 }^{ \infty }  a_{n}^{2}
+~~~
+
+- Limite
+~~~
+\lim_{ x \rightarrow \infty }  \frac{ x^2 }{ x+1 }
+~~~
+
+- Integral
+~~~
+\int
 ~~~
 
 
 
 
 # Referência
-[Prof. Thiago de Melo](http://www.rc.unesp.br/tmelo/latex/
+[Apostila de LaTeX UFF](http://each.uspnet.usp.br/sarajane/wp-content/uploads/2016/10/manual-latex-1.pdf)
+[Prof. Thiago de Melo](http://www.rc.unesp.br/tmelo/latex/)
+
