@@ -28,6 +28,13 @@
 \section{secção}
 
 \subsection{sub-secção}
+
+\subsubsection{sub-sub-secção}
+
+\paragraph
+
+\subparagraph
+
 ~~~
 
 ## Formulas
@@ -90,8 +97,31 @@ x_{i}  % x indice i
 \int
 ~~~
 
+# Pre-configurações de texto
+~~~
+% pré configurações
+\author{Autor do documento}
+\title{Titulo do documento}
+\date{data}
 
+% inserir atributos no texto
+\maketitle
 
+~~~
+
+# Pacotes
+~~~
+\usepackage[portuguese]{babel} 
+\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+~~~
+
+# Importações
+~~~
+\input{arquivo.tex}
+
+~~~
 
 # Referência
 [Apostila de LaTeX UFF](http://each.uspnet.usp.br/sarajane/wp-content/uploads/2016/10/manual-latex-1.pdf)
