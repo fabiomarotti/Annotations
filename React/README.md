@@ -43,45 +43,46 @@
 # Chamadas React
 - React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html)
 - React com ES6:
-- `React.Component` **Classe base** Usando ES6
-- `React.PureComponent` esta Classe implementa o método `shouldComponentUpdate()`
-- `React.memo` componentes em React definidos como funções
+  - `React.Component` **Classe base** Usando ES6
+  - `React.PureComponent` esta Classe implementa o método `shouldComponentUpdate()`
+  - `React.memo` componentes em React definidos como funções
 
 - **Cria Elementos**
-- `React.createElement()` 
-- `React.createFactory()` 
+  - `React.createElement()` 
+  - `React.createFactory()` 
 
 - **Manipula Elementos**
-- `React.cloneElement()`
-- `React.isValidElement()`
-- `React.Children` 
+  - `React.cloneElement()`
+  - `React.isValidElement()`
+  - `React.Children` 
 
 - **Renderizar multiplos elementos**
-- `React.Fragment`
+  - `React.Fragment`
 
 - **Refs**
-- `React.createRef`
-- `React.forwardRef`
+  - `React.createRef`
+  - `React.forwardRef`
 
 - **Suspender por algo antes de renderizar**
-- `React.lazy`
-- `React.Suspense`
+  - `React.lazy`
+  - `React.Suspense`
 
 [continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
-- **Hooks**
+
+> **Hooks**
 - __Hooks Básicos__
-- `useState`
-- `useEffect`
-- `useContext`
+  - `useState`
+  - `useEffect`
+  - `useContext`
 
 - __Hooks Adicionais__
-- `useReducer`
-- `useCallback`
-- `useMemo`
-- `useRef`
-- `useImperativeHandle`
-- `useLayoutEffect`
-- `useDebugValue`
+  - `useReducer`
+  - `useCallback`
+  - `useMemo`
+  - `useRef`
+  - `useImperativeHandle`
+  - `useLayoutEffect`
+  - `useDebugValue`
 
 
 ---
