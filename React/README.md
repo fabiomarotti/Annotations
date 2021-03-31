@@ -31,10 +31,47 @@
 
 # Tópicos
 - `JSX`
+  - pode ser usado dentro de `if`e `for`
+  - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas)
+  - fechar Tags vazias com `/>`
+  - pode conter elementos HTML filho
 - `State`
 - `Function Components`
 - `Props`
 - `Hooks`
+
+# Chamadas React
+- `React.createElement()`
+
+~~~
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+~~~
+
+> equivale a ...
+
+~~~
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+~~~
+
+> que significa..
+
+~~~
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+~~~
 
 ~~~
 add babel
@@ -56,7 +93,7 @@ add react native tools
 
 
 # Sintaxe
- [helo world](https://pt-br.reactjs.org/docs/hello-world.html)
+ [Hello world](https://pt-br.reactjs.org/docs/hello-world.html)
 
 
 > Resumidamente temos um arquivo **HTML** e um **JavaScript**. <br>
@@ -99,7 +136,7 @@ add react native tools
 </html>
 ~~~
 
-  - passando as variaveis por parâmetro
+> passando as variaveis por parâmetro
 ~~~JavaScript
 const elemento = <h1>Hello, world!</h1>;
 const conteudo = document.getElementById('root');
@@ -108,9 +145,19 @@ ReactDOM.render( elemento , conteudo );
 
 - Exemplo 02
 ~~~JavaScript
-// função a ser incorporada 
+// -- Funções a serem incorporadas
+
+// Função 01
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
+}
+
+// Função 02
+function getGreeting(user) {
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
 }
 
 // Variavel User
@@ -226,5 +273,6 @@ console.log(add(16, 26)); // 42
 - `Code-splitting` dividindo o código
 - transpilar seu código React + ES6 em plan-vanilla JS
 - `bundling` empacotamento
+- `CamelCase` cada palavra é iniciada com maiúsculas e unidas sem espaços
 
 
