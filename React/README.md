@@ -43,7 +43,7 @@
 # Chamadas React
 - `React.createElement()`
 
-~~~
+~~~JavaScript
 const element = React.createElement(
   'h1',
   {className: 'greeting'},
@@ -53,7 +53,7 @@ const element = React.createElement(
 
 > equivale a ...
 
-~~~
+~~~JavaScript
 const element = {
   type: 'h1',
   props: {
@@ -65,7 +65,7 @@ const element = {
 
 > que significa..
 
-~~~
+~~~JavaScript
 const element = (
   <h1 className="greeting">
     Hello, world!
