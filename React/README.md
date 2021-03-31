@@ -1,19 +1,25 @@
 # React
 
+
+
+## Informações
+- [site oficial React](https://pt-br.reactjs.org/)
+- `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
+- `npx` faz parte do `npm` > v5.2
+  - `npx create-react-app projeto` cria estrutura de diretórios
+  - `npm build`
+### Editores online
+- [CodePen](https://codepen.io/pen?&editors=0010)
+- [CodeSandbox](https://codesandbox.io/s/new)
+- [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
+
 # Topicos
 - `JSX`
 - `State`
 - `Function Components`
 - `Props`
 - `Hooks`
-
-## Informações
-- [React : site oficial](https://pt-br.reactjs.org/)
-- `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
-- `npx` faz parte do `npm` > v5.2
-  - `npx create-react-app projeto` cria estrutura de diretórios
-  - `npm build`
-
+- 
 ~~~
 add babel
 add better coments
@@ -31,10 +37,7 @@ add react native tools
 ~~~
 
 
-## Editores online
-- [CodePen](https://codepen.io/pen?&editors=0010)
-- [CodeSandbox](https://codesandbox.io/s/new)
-- [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
+
 
 # Sintaxe
  [helo world](https://pt-br.reactjs.org/docs/hello-world.html)
