@@ -309,7 +309,7 @@ const element = {
 };
 ~~~~ 
 
-# Elementos: Renderizando
+# Componentes: Renderizando
 
 ~~~
 function tick() {
@@ -327,7 +327,7 @@ function tick() {
 setInterval(tick, 1000);
 ~~~
 
-# Elementos: Estado e Ciclo de Vida
+# Componentes: Estado e Ciclo de Vida
 
 ~~~
 
@@ -668,7 +668,14 @@ console.log(new Polygon(4, 3).area);
 - transpilar seu código React + ES6 em plan-vanilla JS
 - `bundling` empacotamento
 - `CamelCase` cada palavra é iniciada com maiúsculas e unidas sem espaços
+- `Elemento` é um objeto descrevendo uma instância de um componente ou um nó DOM e suas propriedades 
+  - possui apenas 2 campos: 
+    - `type` (string | Componente) 
+      - se String: representa um nó DOM com uma tag de mesmo nome 
+    - `props` | Objeto 
+      - são seus atributos
 - `props` Propriedades, parâmetro dos componentes``(funçoes JS)
+- `state`
 - `Componentes de função` 
   - são funções JavaScript com um único argumento de entrada ( `Props` ) 
   - retorna um elemento React
