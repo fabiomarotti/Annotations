@@ -35,17 +35,29 @@
   - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas)
   - fechar Tags vazias com `/>`
   - pode conter elementos HTML filho
+- `Componentes` 
+  - transformam `props`em `UI` <br>
+- `HOCs` (Higher-Order Component) [ver +](https://pt-br.reactjs.org/docs/higher-order-components.html)
+  - transformam `Componentes`em outros `Componentes`  
+- `Refs` [ver +](https://pt-br.reactjs.org/docs/refs-and-the-dom.html)
 - `State`
 - `Function Components`
 - `Props`
 - `Hooks`
 
 # Chamadas React
-- React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html)
-- React com ES6:
-  - `React.Component` **Classe base** Usando ES6
-  - `React.PureComponent` esta Classe implementa o método `shouldComponentUpdate()`
-  - `React.memo` componentes em React definidos como funções
+
+> React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html) <br>
+
+> React com ES6:
+- `React.Component` **Classe base** Usando ES6
+- `React.PureComponent` 
+  - esta Classe implementa o método `shouldComponentUpdate()` 
+  - (estruturas simples) comparação superficial de objetos
+  - (estruturas complexas) usar `forceUpdate()`
+  - garantir que todos os descendentes sejão "puros"
+  
+- `React.memo` componentes em React definidos como funções
 
 - **Cria Elementos**
   - `React.createElement()` 
@@ -157,13 +169,12 @@ add react native tools
 # Sintaxe
  [Hello world](https://pt-br.reactjs.org/docs/hello-world.html)
 
-
 > Resumidamente temos um arquivo **HTML** e um **JavaScript**. <br>
 > <br>
 > O arquivo JS se comunica com o HTML por meio de __funções JS__. <br>
 > exemplo: `document.getElementById('identificador')`
 > <br>
-> 
+
 
 
 - Exemplo 01
@@ -328,6 +339,26 @@ function add(a, b) {
 }
 
 console.log(add(16, 26)); // 42
+~~~
+
+
+# CDN Links
+
+-  carrega o React de um CDN, recomenda-se manter o atributo `crossorigin`
+-  verificar se o CDN define o cabeçalho HTTP como `Access-Control-Allow-Origin: *`
+-  Para carregar uma versão específica do react e react-dom, substitua 17 com o número da versão que você deseja
+
+
+~~~HTML
+<!-- Desenvolvimento -->
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+~~~
+
+~~~HMTL
+<!-- Produção -->
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
 ~~~
 
 # ES6 - comentários
