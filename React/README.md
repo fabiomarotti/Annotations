@@ -333,6 +333,7 @@ console.log(add(16, 26)); // 42
 # ES6 - comentários
 
 > As **Classes** podem ser definidas como `expression` ou `declarations`
+> [ver +](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 - `expression`
 
