@@ -304,15 +304,17 @@ ReactDOM.render(
 
 
 <hr>
+
 - App:
-~~~
+
+~~~JavaScript
 // app.js
 import { add } from './math.js';
 
 console.log(add(16, 26)); // 42
 ~~~
 
-~~~
+~~~JavaScript
 // math.js
 export function add(a, b) {
   return a + b;
@@ -320,7 +322,7 @@ export function add(a, b) {
 ~~~
 
 - Bundle:
-~~~
+~~~JavaScript
 function add(a, b) {
   return a + b;
 }
