@@ -99,7 +99,7 @@ add react native tools
 </html>
 ~~~
 
-- passando as variaveis por parâmetro
+  - passando as variaveis por parâmetro
 ~~~JavaScript
 const elemento = <h1>Hello, world!</h1>;
 const conteudo = document.getElementById('root');
@@ -107,7 +107,7 @@ ReactDOM.render( elemento , conteudo );
 ~~~
 
 - Exemplo 02
-~~~
+~~~JavaScript
 // função a ser incorporada 
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
