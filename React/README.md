@@ -334,7 +334,7 @@ console.log(add(16, 26)); // 42
 
 - `expression`
 
-~~~JavaSCript
+~~~JavaScript
 const Rectangle = class {
   constructor(height, width) {
     this.height = height;
