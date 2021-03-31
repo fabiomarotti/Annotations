@@ -9,14 +9,13 @@
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
  
-### FErramentas que estão relacionadas
-- `npm`ou `Yarn`Gerenciamento de pacotes
-  - `npx` faz parte do `npm` > v5.2
+### Ferramentas que estão relacionadas
+- `npm`ou `Yarn`são os Gerenciadores de pacotes
+  - `npx` faz parte do `npm` (versão >= v5.2)
   - `npx create-react-app <NOME_PROJETO>` cria estrutura de diretórios
   - `npm build` 
-- `webpack` ou `Parcel`Bundler - otimiza o tempo de carregamento
-- `Babel` Escrever JavaScript moderno, mas que funcione em naegadores mais antigos
-- 
+- `webpack` ou `Parcel`Bundler - otimiza o tempo de carregamento das páginas
+- `Babel` Habilita escrever código JavaScript moderno, mas que funciona em navegadores mais antigos
 - `Next.JS` [ver +](https://nextjs.org/learn/basics/create-nextjs-app)
   - aplicativos estáticos e renderizados por servidor
   - soluções de estilo e roteamento
@@ -61,10 +60,14 @@ add react native tools
 
 
 > Resumidamente temos um arquivo **HTML** e um **JavaScript**. <br>
-> O arquivo JS se comunica com o HTML por meio de __funções JS__. (exemplo: `document.getElementById('identificador')` )
+> <br>
+> O arquivo JS se comunica com o HTML por meio de __funções JS__. <br>
+> exemplo: `document.getElementById('identificador')`
+> <br>
+> 
 
 
-
+- Exemplo 01
 ~~~HTML
 <!DOCTYPE html>
 <html>
@@ -96,12 +99,41 @@ add react native tools
 </html>
 ~~~
 
-- passando variavel por parâmetro
+- passando as variaveis por parâmetro
 ~~~JavaScript
 const elemento = <h1>Hello, world!</h1>;
 const conteudo = document.getElementById('root');
 ReactDOM.render( elemento , conteudo );
 ~~~
+
+- Exemplo 02
+~~~
+// função a ser incorporada 
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+// Variavel User
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+//Variavel Element, incorporada com uma função
+const element = (
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+);
+
+// Função React: Render
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+~~~
+
+
 
 ### Conversor JSX
 
