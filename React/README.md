@@ -1,5 +1,12 @@
 # React
 
+# Topicos
+- `JSX`
+- `State`
+- `Function Components`
+- `Props`
+- `Hooks`
+
 ## Informações
 - [React : site oficial](https://pt-br.reactjs.org/)
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
@@ -7,6 +14,7 @@
   - `npx create-react-app projeto` cria estrutura de diretórios
   - `npm build`
 
+~~~
 add babel
 add better coments
 add css peaker
@@ -20,7 +28,7 @@ add material icon theme
 add mithril emm
 add pretier
 add react native tools
-
+~~~
 
 
 ## Editores online
