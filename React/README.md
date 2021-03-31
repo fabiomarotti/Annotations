@@ -5,7 +5,11 @@
 ## Informações
 - [site oficial React](https://pt-br.reactjs.org/)
 
- - React pode ser declarado por meio de `Classes` ou `Funções` 
+ - `Componentes` React podem ser declarados por meio de `Classes` ou `Funções` 
+ - `Elementos` são variaveis que incorporam:
+   - `Componentes`
+   - `Componentes definidos pelo usuário`
+   - `JSX`
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
  
@@ -35,8 +39,17 @@
   - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas, apenas em atributos como String)
   - fechar Tags vazias com `/>`
   - pode conter elementos HTML filho
+- `Elementos`
+  - são imutaveis
+  - atulizar a interface é criar um novo elemento e passa-lo para `ReactDOM.render()`
+  
 - `Componentes` 
-  - transformam `props`em `UI` <br>
+  - `Componentes de função`
+  - `Componentes de classe`
+  - transformam `props`em `UI`
+- 
+- `Componentes de estado e Ciclo de Vida` [ver +](https://pt-br.reactjs.org/docs/state-and-lifecycle.html)
+- 
 - `HOCs` (Higher-Order Component) [ver +](https://pt-br.reactjs.org/docs/higher-order-components.html)
   - transformam `Componentes`em outros `Componentes`  
 - `Refs` [ver +](https://pt-br.reactjs.org/docs/refs-and-the-dom.html)
@@ -254,7 +267,7 @@ ReactDOM.render(
 );
 ~~~
 
-## Incorporando EXpressões em JSX
+## Incorporando Expressões em JSX
 
 > Variável
 ~~~JavaScript
@@ -295,6 +308,203 @@ const element = {
   }
 };
 ~~~~ 
+
+# Elementos: Renderizando
+
+~~~
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  // usa-se Render() apenas uma vez - por isso o callback
+  ReactDOM.render(element, document.getElementById('root'));
+}
+
+// callback: chama o ReacDOM.Render() a cada segundo
+setInterval(tick, 1000);
+~~~
+
+# Elementos: Estado e Ciclo de Vida
+
+~~~
+
+function Clock(props) {
+  return (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {props.date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+
+// Utiliza o componente Clock em seu callback
+function tick() {
+  ReactDOM.render(
+    <Clock date={new Date()} />,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
+
+~~~
+
+
+## Componentes de Função
+~~~JavaScript
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+~~~
+
+
+## Componentes de Classe
+
+~~~React
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+~~~
+
+
+## Componentes definidos pelo usuário
+
+> são elementos que incorporam componentes classes ou componentes funções.
+> passa-se **atributos JSX** e **componentes filhos** como objeto unico (`props`)
+
+
+~~~JavaScript
+// componente
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+// elemento que recebe um componente, 
+// se torna um componente definido pelo usuário
+const element = <Welcome name="Sara" />;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+~~~
+
+- Nós chamamos ReactDOM.render() com o elemento <Welcome name="Sara" />.
+- React chama o componente Welcome com {name: 'Sara'} como props.
+- Nosso componente Welcome retorna um elemento <h1>Hello, Sara</h1> como resultado.
+- React DOM atualiza eficientemente o DOM para corresponder <h1>Hello, Sara</h1>.
+
+## Composição de Componentes
+
+~~~
+// Componente A02
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+// Componente A01, compoem A02
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+// Renderização
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+
+~~~
+
+- Exemplo de Composiçao de Componentes
+
+~~~
+// Componente a ser analisado
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+        <div className="UserInfo-name">
+          {props.author.name}
+        </div>
+      </div>
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+~~~
+
+- quebra-se em componentes menores: 
+ 
+> Componente: Avatar
+~~~
+function Avatar(props) {
+  return (
+    <img className="Avatar"
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    />
+  );
+}
+~~~
+
+> Componente: UserInfo,         <br>
+> que compoem Componente Avatar
+~~~
+function UserInfo(props) {
+  return (
+    <div className="UserInfo">
+      
+      // Componente Avatar
+      <Avatar user={props.user} />
+      
+      <div className="UserInfo-name">
+        {props.user.name}
+      </div>
+    </div>
+  );
+}
+~~~
+
+> incorporando os Componentes UserInfor > Avatar   <br>
+> Componente Comment
+~~~
+function Comment(props) {
+  return (
+    <div className="Comment">
+    
+    // Componente UserInfo
+    <UserInfo user={props.author} />
+    
+    <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+~~~
 
 
 
@@ -458,5 +668,12 @@ console.log(new Polygon(4, 3).area);
 - transpilar seu código React + ES6 em plan-vanilla JS
 - `bundling` empacotamento
 - `CamelCase` cada palavra é iniciada com maiúsculas e unidas sem espaços
+- `props` Propriedades, parâmetro dos componentes``(funçoes JS)
+- `Componentes de função` 
+  - são funções JavaScript com um único argumento de entrada ( `Props` ) 
+  - retorna um elemento React
+- `Componentes de classe`
+
+
 
 
