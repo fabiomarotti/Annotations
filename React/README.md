@@ -41,7 +41,46 @@
 - `Hooks`
 
 # Chamadas React
+- `React.Component` **Classe base**
+- `React.PureComponent` esta implementa `shouldComponentUpdate()`
+- `React.memo`
+- 
 - `React.createElement()`
+- `React.createFactory()`
+- React.cloneElement() 
+
+
+
+- `ReactDOMServer`
+- `ReactDOM`
+  - `ReactDOM.render()` [ver +](https://pt-br.reactjs.org/docs/react-dom.html#render)
+  - `ReactDOM.hydrate()`
+  - `ReactDOM.unmountComponentAtNode()`
+  - `ReactDOM.findDOMNode()`
+  - `ReactDOM.createPortal()`
+
+### Hooks
+
+[continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
+- Hooks Básicos
+
+useState
+useEffect
+useContext
+
+- Hooks Adicionais
+
+useReducer
+useCallback
+useMemo
+useRef
+useImperativeHandle
+useLayoutEffect
+useDebugValue
+
+
+
+## `React.createElement()`
 
 ~~~JavaScript
 const element = React.createElement(
@@ -72,6 +111,10 @@ const element = (
   </h1>
 );
 ~~~
+
+> isto são os `Elementos React` <br>
+> `Componentes` são feitos de `Elementos`
+ 
 
 ~~~
 add babel
