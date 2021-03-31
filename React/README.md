@@ -32,7 +32,7 @@
 # Tópicos
 - `JSX`
   - pode ser usado dentro de `if`e `for`
-  - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas)
+  - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas, apenas em atributos como String)
   - fechar Tags vazias com `/>`
   - pode conter elementos HTML filho
 - `Componentes` 
@@ -176,6 +176,7 @@ add react native tools
 > <br>
 
 
+## Hello World
 
 - Exemplo 01
 ~~~HTML
@@ -253,6 +254,58 @@ ReactDOM.render(
 );
 ~~~
 
+## Incorporando EXpressões em JSX
+
+> Variável
+~~~JavaScript
+const name = 'Josh Perez';
+const element = <h1>Hello, {name}</h1>;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+~~~
+
+> Representação de Objetos
+
+~~~JavaScript
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+~~~
+
+~~~JavaScript
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+~~~
+
+~~~
+// Nota: esta estrutura está simplificada
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+~~~~ 
+
+
+
+-
+- t
+- t
+- t
+- t
+- https://pt-br.reactjs.org/docs/rendering-elements.html
+
+continuar
 
 
 ### Conversor JSX
