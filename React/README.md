@@ -41,15 +41,50 @@
 - `Hooks`
 
 # Chamadas React
-- `React.Component` **Classe base**
-- `React.PureComponent` esta implementa `shouldComponentUpdate()`
-- `React.memo`
-- 
-- `React.createElement()`
-- `React.createFactory()`
-- React.cloneElement() 
+- React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html)
+- React com ES6:
+- `React.Component` **Classe base** Usando ES6
+- `React.PureComponent` esta Classe implementa o método `shouldComponentUpdate()`
+- `React.memo` componentes em React definidos como funções
+
+- **Cria Elementos**
+- `React.createElement()` 
+- `React.createFactory()` 
+
+- **Manipula Elementos**
+- `React.cloneElement()`
+- `React.isValidElement()`
+- `React.Children` 
+
+- **Renderizar multiplos elementos**
+- `React.Fragment`
+
+- **Refs**
+- `React.createRef`
+- `React.forwardRef`
+
+- **Suspender por algo antes de renderizar**
+- `React.lazy`
+- `React.Suspense`
+
+[continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
+- **Hooks**
+- __Hooks Básicos__
+- `useState`
+- `useEffect`
+- `useContext`
+
+- __Hooks Adicionais__
+- `useReducer`
+- `useCallback`
+- `useMemo`
+- `useRef`
+- `useImperativeHandle`
+- `useLayoutEffect`
+- `useDebugValue`
 
 
+---
 
 - `ReactDOMServer`
 - `ReactDOM`
@@ -59,24 +94,7 @@
   - `ReactDOM.findDOMNode()`
   - `ReactDOM.createPortal()`
 
-### Hooks
 
-[continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
-- Hooks Básicos
-
-useState
-useEffect
-useContext
-
-- Hooks Adicionais
-
-useReducer
-useCallback
-useMemo
-useRef
-useImperativeHandle
-useLayoutEffect
-useDebugValue
 
 
 
@@ -309,10 +327,45 @@ function add(a, b) {
 console.log(add(16, 26)); // 42
 ~~~
 
+# ES6 - comentários
+
+> As **Classes** podem ser definidas como `expression` ou `declarations`
+
+- `expression`
+
+~~~JavaSCript
+const Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+  area() {
+    return this.height * this.width;
+  }
+};
+
+console.log(new Rectangle(5, 8).area());
+// expected output: 40
+~~~
+
+- `declaration`
+
+~~~JavaScript
+class Polygon {
+  constructor(height, width) {
+    this.area = height * width;
+  }
+}
+
+console.log(new Polygon(4, 3).area);
+// expected output: 12
+~~~
+
+
+
 
 
 # Dicionário
-
 - `Code-splitting` dividindo o código
 - transpilar seu código React + ES6 em plan-vanilla JS
 - `bundling` empacotamento
