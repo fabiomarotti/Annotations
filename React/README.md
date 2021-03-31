@@ -4,22 +4,39 @@
 
 ## Informações
 - [site oficial React](https://pt-br.reactjs.org/)
+
+ - React pode ser declarado por meio de `Classes` ou `Funções` 
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
-- `npx` faz parte do `npm` > v5.2
-  - `npx create-react-app projeto` cria estrutura de diretórios
-  - `npm build`
+
+ 
+### FErramentas que estão relacionadas
+- `npm`ou `Yarn`Gerenciamento de pacotes
+  - `npx` faz parte do `npm` > v5.2
+  - `npx create-react-app <NOME_PROJETO>` cria estrutura de diretórios
+  - `npm build` 
+- `webpack` ou `Parcel`Bundler - otimiza o tempo de carregamento
+- `Babel` Escrever JavaScript moderno, mas que funcione em naegadores mais antigos
+- 
+- `Next.JS` [ver +](https://nextjs.org/learn/basics/create-nextjs-app)
+  - aplicativos estáticos e renderizados por servidor
+  - soluções de estilo e roteamento
+- `Gatsby` [ver +](https://www.gatsbyjs.com/)
+  -  usa componentes React, mas gera HTML e CSS pré-renderizados  
+  -  [Galeria de exemplos](https://www.gatsbyjs.com/starters/?)
+
+
 ### Editores online
 - [CodePen](https://codepen.io/pen?&editors=0010)
 - [CodeSandbox](https://codesandbox.io/s/new)
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
 
-# Topicos
+# Tópicos
 - `JSX`
 - `State`
 - `Function Components`
 - `Props`
 - `Hooks`
-- 
+
 ~~~
 add babel
 add better coments
@@ -42,8 +59,6 @@ add react native tools
 # Sintaxe
  [helo world](https://pt-br.reactjs.org/docs/hello-world.html)
 
-- HTML e JavaScript (modo tradicional)
-- JSX (modo prático, porem precisa ser incorporado)
 
 > Resumidamente temos um arquivo **HTML** e um **JavaScript**. <br>
 > O arquivo JS se comunica com o HTML por meio de __funções JS__. (exemplo: `document.getElementById('identificador')` )
