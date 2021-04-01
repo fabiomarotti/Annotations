@@ -1,8 +1,6 @@
 # [React](https://pt-br.reactjs.org/)
 
 ## Informações
-
-
  - `Componentes` React podem ser declarados por meio de `Classes` ou `Funções` 
  - `Elementos` são variaveis que incorporam:
    - `Componentes`
@@ -11,7 +9,7 @@
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
  
-### Ferramentas que estão relacionadas
+## Ferramentas que estão relacionadas
 - `npm`ou `Yarn`são os Gerenciadores de pacotes
   - `npx` faz parte do `npm` (versão >= v5.2)
   - `npx create-react-app <NOME_PROJETO>` cria estrutura de diretórios
@@ -25,8 +23,7 @@
   -  usa componentes React, mas gera HTML e CSS pré-renderizados  
   -  [Galeria de exemplos](https://www.gatsbyjs.com/starters/?)
 
-
-### Editores online
+## Editores online
 - [CodePen](https://codepen.io/pen?&editors=0010)
 - [CodeSandbox](https://codesandbox.io/s/new)
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
