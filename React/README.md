@@ -1,9 +1,7 @@
-# React
-
-
+# React - [site](https://pt-br.reactjs.org/)
 
 ## Informações
-- [site oficial React](https://pt-br.reactjs.org/)
+
 
  - `Componentes` React podem ser declarados por meio de `Classes` ou `Funções` 
  - `Elementos` são variaveis que incorporam:
