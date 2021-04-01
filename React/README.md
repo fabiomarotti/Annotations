@@ -51,123 +51,6 @@
 - `Props` parâmetro da função componente
 - `Hooks`
 
-# Chamadas React
-
-> React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html) <br>
-
-> React com ES6:
-- `React.Component` **Classe base** Usando ES6
-- `React.PureComponent` 
-  - esta Classe implementa o método `shouldComponentUpdate()` 
-  - (estruturas simples) comparação superficial de objetos
-  - (estruturas complexas) usar `forceUpdate()`
-  - garantir que todos os descendentes sejão "puros"
-  
-- `React.memo` componentes em React definidos como funções
-
-- **Cria Elementos**
-  - `React.createElement()` 
-  - `React.createFactory()` 
-
-- **Manipula Elementos**
-  - `React.cloneElement()`
-  - `React.isValidElement()`
-  - `React.Children` 
-
-- **Renderizar multiplos elementos**
-  - `React.Fragment`
-
-- **Refs**
-  - `React.createRef`
-  - `React.forwardRef`
-
-- **Suspender por algo antes de renderizar**
-  - `React.lazy`
-  - `React.Suspense`
-
-[continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
-
-> **Hooks**
-- __Hooks Básicos__
-  - `useState`
-  - `useEffect`
-  - `useContext`
-
-- __Hooks Adicionais__
-  - `useReducer`
-  - `useCallback`
-  - `useMemo`
-  - `useRef`
-  - `useImperativeHandle`
-  - `useLayoutEffect`
-  - `useDebugValue`
-
-
----
-
-- `ReactDOMServer`
-- `ReactDOM`
-  - `ReactDOM.render()` [ver +](https://pt-br.reactjs.org/docs/react-dom.html#render)
-  - `ReactDOM.hydrate()`
-  - `ReactDOM.unmountComponentAtNode()`
-  - `ReactDOM.findDOMNode()`
-  - `ReactDOM.createPortal()`
-
-
-
-
-
-## `React.createElement()`
-
-~~~JavaScript
-const element = React.createElement(
-  'h1',
-  {className: 'greeting'},
-  'Hello, world!'
-);
-~~~
-
-> equivale a ...
-
-~~~JavaScript
-const element = {
-  type: 'h1',
-  props: {
-    className: 'greeting',
-    children: 'Hello, world!'
-  }
-};
-~~~
-
-> que significa..
-
-~~~JavaScript
-const element = (
-  <h1 className="greeting">
-    Hello, world!
-  </h1>
-);
-~~~
-
-> isto são os `Elementos React` <br>
-> `Componentes` são feitos de `Elementos`
- 
-
-~~~JavaScript
-add babel
-add better coments
-add css peaker
-add debug for glrome
-add drawr io
-add eslint
-add git lens (espiar os commits na linha)
-add html css suport
-add live server
-add material icon theme
-add mithril emm
-add pretier
-add react native tools
-~~~
 
 
 
@@ -677,6 +560,127 @@ console.log(new Polygon(4, 3).area);
   - são funções JavaScript com um único argumento de entrada ( `Props` ) 
   - retorna um elemento React
 - `Componentes de classe`
+
+
+# reolhar
+
+# Chamadas React
+
+> React sem ES6 : `create-react-class` [ver +](https://pt-br.reactjs.org/docs/react-without-es6.html) <br>
+
+> React com ES6:
+- `React.Component` **Classe base** Usando ES6
+- `React.PureComponent` 
+  - esta Classe implementa o método `shouldComponentUpdate()` 
+  - (estruturas simples) comparação superficial de objetos
+  - (estruturas complexas) usar `forceUpdate()`
+  - garantir que todos os descendentes sejão "puros"
+  
+- `React.memo` componentes em React definidos como funções
+
+- **Cria Elementos**
+  - `React.createElement()` 
+  - `React.createFactory()` 
+
+- **Manipula Elementos**
+  - `React.cloneElement()`
+  - `React.isValidElement()`
+  - `React.Children` 
+
+- **Renderizar multiplos elementos**
+  - `React.Fragment`
+
+- **Refs**
+  - `React.createRef`
+  - `React.forwardRef`
+
+- **Suspender por algo antes de renderizar**
+  - `React.lazy`
+  - `React.Suspense`
+
+[continuar em ..] (https://pt-br.reactjs.org/docs/react-api.html#cloneelement)
+
+> **Hooks**
+- __Hooks Básicos__
+  - `useState`
+  - `useEffect`
+  - `useContext`
+
+- __Hooks Adicionais__
+  - `useReducer`
+  - `useCallback`
+  - `useMemo`
+  - `useRef`
+  - `useImperativeHandle`
+  - `useLayoutEffect`
+  - `useDebugValue`
+
+
+---
+
+- `ReactDOMServer`
+- `ReactDOM`
+  - `ReactDOM.render()` [ver +](https://pt-br.reactjs.org/docs/react-dom.html#render)
+  - `ReactDOM.hydrate()`
+  - `ReactDOM.unmountComponentAtNode()`
+  - `ReactDOM.findDOMNode()`
+  - `ReactDOM.createPortal()`
+
+
+
+
+
+## `React.createElement()`
+
+~~~JavaScript
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+~~~
+
+> equivale a ...
+
+~~~JavaScript
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+~~~
+
+> que significa..
+
+~~~JavaScript
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+~~~
+
+> isto são os `Elementos React` <br>
+> `Componentes` são feitos de `Elementos`
+ 
+
+~~~JavaScript
+add babel
+add better coments
+add css peaker
+add debug for glrome
+add drawr io
+add eslint
+add git lens (espiar os commits na linha)
+add html css suport
+add live server
+add material icon theme
+add mithril emm
+add pretier
+add react native tools
+~~~
 
 
 
