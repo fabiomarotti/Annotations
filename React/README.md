@@ -394,10 +394,10 @@ ReactDOM.render(
 );
 ~~~
 
-- Nós chamamos ReactDOM.render() com o elemento <Welcome name="Sara" />.
-- React chama o componente Welcome com {name: 'Sara'} como props.
-- Nosso componente Welcome retorna um elemento <h1>Hello, Sara</h1> como resultado.
-- React DOM atualiza eficientemente o DOM para corresponder <h1>Hello, Sara</h1>.
+> - Nós chamamos ReactDOM.render() com o elemento <Welcome name="Sara" />.
+> - React chama o componente Welcome com {name: 'Sara'} como props.
+> - Nosso componente Welcome retorna um elemento Hello, Sara como resultado.
+> - React DOM atualiza eficientemente o DOM para corresponder Hello, Sara
 
 ## Composição de Componentes
 
