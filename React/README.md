@@ -1,4 +1,4 @@
-# React - [site](https://pt-br.reactjs.org/)
+# [React](https://pt-br.reactjs.org/)
 
 ## Informações
 
