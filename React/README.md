@@ -23,7 +23,7 @@
   -  usa componentes React, mas gera HTML e CSS pré-renderizados  
   -  [Galeria de exemplos](https://www.gatsbyjs.com/starters/?)
 
-## Editores online
+### Editores online
 - [CodePen](https://codepen.io/pen?&editors=0010)
 - [CodeSandbox](https://codesandbox.io/s/new)
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
@@ -250,7 +250,7 @@ class Welcome extends React.Component {
 
 ## Componentes definidos pelo usuário
 
-> são elementos que incorporam componentes classes ou componentes funções.
+> são elementos que incorporam componentes classes ou componentes funções. <br>
 > passa-se **atributos JSX** e **componentes filhos** como objeto unico (`props`)
 
 
@@ -384,6 +384,150 @@ function Comment(props) {
   );
 }
 ~~~
+
+# `Props`
+
+> Props por Função Componente
+~~~JavaScript
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+~~~
+
+> Props por Classe Componente
+~~~JavaScript
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+~~~
+
+# `Refs`
+> `React.createRef()` para versão React v16.3 ou superior  <br>
+> `ref com callback` para versão inferior a v16.3 <br>
+> Você não pode usar o atributo ref em um componente funcional, já que eles não possuem instâncias. <br>
+> Componentes Funcionais usam `forwardRef` (possivelmente em conjunto com `useImperativeHandle`) <br>
+> usar um atributo ref dentro de um componente funcional contanto que você referencie um elemento DOM ou um componente de classe <br>
+> Pode-se converter o Componente Funcional para Componente Classe <br>
+> 
+
+## Classe Componente usando Refs
+- referência para o nó se torna acessível no atributo **current** da ref
+~~~JavaScript
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.myRef = React.createRef();
+  
+  }
+  render() {
+     return <div ref={ this.myRef } />;
+  }
+}
+~~~
+
+- Acessando as Refs
+~~~JavaScript
+ const node = this.myRef.current;
+~~~
+
+
+## Ref a um Elemento DOM
+~~~JavaScript
+class CustomTextInput extends React.Component {
+  constructor(props) {
+    super(props);
+    // Cria uma ref para armazenar o elemento textInput do DOM
+    this.textInput = React.createRef();
+    this.focusTextInput = this.focusTextInput.bind(this);
+  }
+
+  focusTextInput() {
+    // Explicitamente foca o input de texto usando a API do DOM diretamente
+    // Nota: nós estamos acessando o campo "current" para obter um nó do DOM.
+    this.textInput.current.focus();
+  }
+
+  render() {
+    // Diz ao React que nós queremos associar o atributo ref do <input>
+    // com o `textInput` que nós criamos no construtor.
+    return (
+      <div>
+        <input
+          type="text"
+          ref={this.textInput} />
+        <input
+          type="button"
+          value="Focus the text input"
+          onClick={this.focusTextInput}
+        />
+      </div>
+    );
+  }
+}
+~~~
+
+## Ref a um Componente de Classe
+~~~JavaScript
+class AutoFocusTextInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.textInput = React.createRef();
+  }
+
+  componentDidMount() {
+    this.textInput.current.focusTextInput();
+  }
+
+  render() {
+    return (
+      <CustomTextInput ref={this.textInput} />
+    );
+  }
+}
+~~~
+
+-  só funciona se o CustomTextInput é declarado como uma Classe:
+~~~JavaScript
+class CustomTextInput extends React.Component {
+  // ...
+}
+~~~
+
+## Refs e Componentes Funcionais
+- usar um atributo ref dentro de um componente funcional contanto que você referencie: 
+  - um elemento DOM ou 
+  - um componente de classe:
+
+~~~JavaSCript
+function CustomTextInput(props) {
+  // textInput deve ser declarado aqui para então a ref poder referenciá-lo.
+  const textInput = useRef(null);
+
+  function handleClick() {
+    textInput.current.focus();
+  }
+
+  return (
+    <div>
+      <input
+        type="text"
+        ref={textInput} />
+      <input
+        type="button"
+        value="Focus the text input"
+        onClick={handleClick}
+      />
+    </div>
+  );
+}
+~~~
+
+
+
+
 
 
 
@@ -543,18 +687,30 @@ console.log(new Polygon(4, 3).area);
 
 
 
+
+
+
+
 # Dicionário
-- `Code-splitting` dividindo o código
-- transpilar seu código React + ES6 em plan-vanilla JS
-- `bundling` empacotamento
-- `CamelCase` cada palavra é iniciada com maiúsculas e unidas sem espaços
-- `Elemento` é um objeto descrevendo uma instância de um componente ou um nó DOM e suas propriedades 
-  - possui apenas 2 campos: 
-    - `type` (string | Componente) 
-      - se String: representa um nó DOM com uma tag de mesmo nome 
-    - `props` | Objeto 
-      - são seus atributos
-- `props` Propriedades, parâmetro dos componentes``(funçoes JS)
+- `Code-splitting` 
+  - dividindo o código
+  - transpilar seu código React + ES6 em plan-vanilla JS
+- `bundling` 
+  - empacotamento
+- `CamelCase` 
+  - cada palavra é iniciada com maiúsculas e unidas sem espaços
+- `Elemento` 
+  - menor bloco de construção
+  - usa-se o elemento como parâmetro no método `ReactDOM.render()`
+    - possui apenas 2 campos: 
+      - `type` (string | Componente) 
+        - se String: representa um nó DOM com uma tag de mesmo nome 
+      - `props` | Objeto 
+        - são seus atributos
+- `Refs` 
+  - forma de acessar os nós do DOM ou elementos React criados no método `ReactDOM.render()`
+- `props`
+  - Propriedades, parâmetro dos componentes``(funçoes JS)
 - `state`
 - `Componentes de função` 
   - são funções JavaScript com um único argumento de entrada ( `Props` ) 
