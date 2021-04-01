@@ -160,7 +160,7 @@ const element = (
 > `Componentes` são feitos de `Elementos`
  
 
-~~~
+~~~JavaScript
 add babel
 add better coments
 add css peaker
@@ -298,7 +298,7 @@ const element = React.createElement(
 );
 ~~~
 
-~~~
+~~~JavaScript
 // Nota: esta estrutura está simplificada
 const element = {
   type: 'h1',
@@ -311,7 +311,7 @@ const element = {
 
 # Componentes: Renderizando
 
-~~~
+~~~JavaScript
 function tick() {
   const element = (
     <div>
@@ -329,7 +329,7 @@ setInterval(tick, 1000);
 
 # Componentes: Estado e Ciclo de Vida
 
-~~~
+~~~JavaScript
 
 function Clock(props) {
   return (
@@ -363,7 +363,7 @@ function Welcome(props) {
 
 ## Componentes de Classe
 
-~~~React
+~~~JavaScript
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
@@ -401,7 +401,7 @@ ReactDOM.render(
 
 ## Composição de Componentes
 
-~~~
+~~~JavaScript
 // Componente A02
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
@@ -428,7 +428,7 @@ ReactDOM.render(
 
 - Exemplo de Composiçao de Componentes
 
-~~~
+~~~JavaScript
 // Componente a ser analisado
 function Comment(props) {
   return (
@@ -456,7 +456,8 @@ function Comment(props) {
 - quebra-se em componentes menores: 
  
 > Componente: Avatar
-~~~
+
+~~~JavaScript
 function Avatar(props) {
   return (
     <img className="Avatar"
@@ -469,7 +470,8 @@ function Avatar(props) {
 
 > Componente: UserInfo,         <br>
 > que compoem Componente Avatar
-~~~
+
+~~~JavaScript
 function UserInfo(props) {
   return (
     <div className="UserInfo">
@@ -487,7 +489,8 @@ function UserInfo(props) {
 
 > incorporando os Componentes UserInfor > Avatar   <br>
 > Componente Comment
-~~~
+
+~~~JavaScript
 function Comment(props) {
   return (
     <div className="Comment">
@@ -525,7 +528,7 @@ continuar
 ### Pré-processador JSX
 
 
-~~~
+~~~HTML
    <!--
       Note: this page is a great way to try React but it's not suitable for production.
       It slowly compiles JSX with Babel in the browser and uses a large development build of React.
@@ -543,7 +546,8 @@ continuar
 
 
 - Criando classes
-~~~
+
+~~~JavaScript
 <script type="text/babel">
 
     // Código React (componente Uauario)
