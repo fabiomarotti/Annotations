@@ -9,7 +9,7 @@
 - `JSX` é uma sintaxe hibrida de __HTML__ com __JavaScript__  [  ver + ](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
  
-## Ferramentas que estão relacionadas
+## Ferramentas relacionadas
 - `npm`ou `Yarn`são os Gerenciadores de pacotes
   - `npx` faz parte do `npm` (versão >= v5.2)
   - `npx create-react-app <NOME_PROJETO>` cria estrutura de diretórios
@@ -29,6 +29,7 @@
 - [Stackblitz](https://stackblitz.com/edit/react-ym9zdj)
 
 # Tópicos
+
 - `JSX`
   - pode ser usado dentro de `if`e `for`
   - usar `{` `}` para incorporar atributos JavaScript ao HTML (não usar aspas, apenas em atributos como String)
@@ -37,20 +38,17 @@
 - `Elementos`
   - são imutaveis
   - atulizar a interface é criar um novo elemento e passa-lo para `ReactDOM.render()`
-  
 - `Componentes` 
   - `Componentes de função`
   - `Componentes de classe`
   - transformam `props`em `UI`
-- 
 - `Componentes de estado e Ciclo de Vida` [ver +](https://pt-br.reactjs.org/docs/state-and-lifecycle.html)
-- 
 - `HOCs` (Higher-Order Component) [ver +](https://pt-br.reactjs.org/docs/higher-order-components.html)
   - transformam `Componentes`em outros `Componentes`  
 - `Refs` [ver +](https://pt-br.reactjs.org/docs/refs-and-the-dom.html)
 - `State`
 - `Function Components`
-- `Props`
+- `Props` parâmetro da função componente
 - `Hooks`
 
 # Chamadas React
