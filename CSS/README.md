@@ -181,6 +181,7 @@ h2 {
 | :fullscreen 		| :nth-last-child() 		| :target 		|
 | :focus 		| :nth-last-of-type() (en-US) 	| :valid 		|
 | :hover 		| :nth-of-type() 		| :visited 		|
+
 [ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
 
 # Resumo de Animações
