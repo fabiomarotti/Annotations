@@ -184,6 +184,21 @@ h2 {
 
 [ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
 
+
+# Pseudo Elementos
+
+|       	  |       		|       			|
+|---    	  |---    		|---    			|
+| ::after 	  | ::first-line 	| ::placeholder (en-US) 	|
+| ::before 	  | ::selection 	| ::marker (en-US)  		|
+| ::cue (en-US)   | ::slotted (en-US) 	| ::spelling-error (en-US)  	|
+| ::first-letter  | ::backdrop  	| ::grammar-error (en-US)    	|
+
+[ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements)
+
+
+
+
 # Resumo de Animações
 
 > Animações se resumem em **Transformação (2D/3D)**, **Transição** e **Animação**.
