@@ -166,22 +166,22 @@ h2 {
 
 # Pseudo Classes
 
-|       |       |       |
-|---    |---    |---    |
-| :active | :indeterminate (en-US) | :only-child |
-| :checked | :in-range (en-US) | :only-of-type |
-| :default (en-US) | :invalid | :optional |
-| :dir() (en-US) | :lang() (en-US) | :out-of-range |
-| :disabled | :last-child | :read-only (en-US) |
-| :empty | :last-of-type | :read-write |
-| :enabled | :left (en-US) | :required |
-| :first (en-US) | :link | :right (en-US) |
-| :first-child | :not() | :root |
-| :first-of-type | :nth-child() | :scope (en-US) |
-| :fullscreen | :nth-last-child() | :target |
-| :focus | :nth-last-of-type() (en-US) | :valid |
-| :hover | :nth-of-type() | :visited |
-
+|       		|       			|       		|
+|---    		|---    			|---    		|
+| :active 		| :indeterminate (en-US) 	| :only-child 		|
+| :checked 		| :in-range (en-US) 		| :only-of-type 	|
+| :default (en-US) 	| :invalid 			| :optional 		|
+| :dir() (en-US) 	| :lang() (en-US) 		| :out-of-range 	|
+| :disabled 		| :last-child 			| :read-only (en-US) 	|
+| :empty 		| :last-of-type 		| :read-write 		|
+| :enabled 		| :left (en-US) 		| :required 		|
+| :first (en-US) 	| :link 			| :right (en-US) 	|
+| :first-child 		| :not() 			| :root 		|
+| :first-of-type 	| :nth-child() 			| :scope (en-US) 	|
+| :fullscreen 		| :nth-last-child() 		| :target 		|
+| :focus 		| :nth-last-of-type() (en-US) 	| :valid 		|
+| :hover 		| :nth-of-type() 		| :visited 		|
+[ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
 
 # Resumo de Animações
 
