@@ -406,3 +406,5 @@ h2 {
 
 [W3C DOM Level 2](https://www.w3.org/TR/DOM-Level-2-Core/)
 
+[CSSOM - CSS Object Model](https://developer.mozilla.org/pt-BR/docs/Web/API/CSS_Object_Model)
+
