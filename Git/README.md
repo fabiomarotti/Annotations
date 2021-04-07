@@ -12,6 +12,7 @@ Repositório com os estudos realizados sobre o Git e Github
 - Repositório Local
 - Repositório Remoto  (Github)
 - HEAD é um ponteiro
+- [Resumo dos Comandos - Oficial](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet.pdf)
 
 
 ## Fluxo de trabalho geral 
