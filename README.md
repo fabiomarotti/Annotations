@@ -4,6 +4,7 @@ Repositório com as minhas anotações durante o estudo
 - `Angular`
 - `Bootstrap`
 - `CSS`
+- `Desenvolvimento de Software`
 - `Fortran`
 - `Git`
 - `Java`
