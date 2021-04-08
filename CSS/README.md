@@ -2,9 +2,20 @@
 Repositório com os estudos realizados sobre CSS
 
 # Variáveis CSS
-- elemento{ /*    `variavel_local`: valor */} 
-- :root{    /* `--variavel_global` : valor */} 
 
+## Declarar variáveis
+~~~
+elemento{ 
+   `variavel_local`: valor;
+} 
+
+:root{    
+   `--variavel_global` : valor; 
+} 
+~~~
+
+## Exemplos
+- Declarando e usando as variaveis
 ~~~
 :root {
   --blue: #6495ed;
