@@ -407,7 +407,7 @@ body{
 
 
 
-# 4 formas de Centralizar
+# Centralizar - (4 formas)
 
 ## 1º forma (centralizar)
 > A centralização gera uma sobreposição de elementos (absolute).
