@@ -13,6 +13,21 @@
 - Modelo Agil
 - Modelo Espiral
 - Modelo Cascata
+- SCRUM, XP
+
+## DevOps (Development and Operations)
+> Plan >> Code >> Build >> Test >> Release >> Deploy >> Operate >> Monitor > 
+
+- Desenvolvedores de Software
+  - Plan : (Openstack)
+  - Code : (Git, GitLab, Jira)
+  - Build : (Gradle, Sonatype Nexus, Maven, sbt)
+  - Test : (Azure, JUnit)
+- Operadores de Software
+  - Release : (Jekins, CodeShip)  
+  - Deploy : (AWS, Docker, DC/OS)
+  - Operate : (Chef, Ansible, Kubernetes)
+  - Monitor : (Grafana, Graylog, DataDog, Nagios, splunk)
 
 # Deploy
 
