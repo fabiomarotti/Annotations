@@ -15,6 +15,22 @@
 - Modelo Cascata
 - SCRUM, XP
 
+## CI / CD / CD
+
+- **CI** - Continuous Integration (Integração Contínua)
+  - Build
+  - Test
+  - Merge (merge day)
+
+- **CD** - Continuous Delivery (Entrega Contínua)
+  - Automaticaly Release To Repository
+  - Garantir estar sempre pronto para implantação em um ambiente de produção.
+
+- **CD** - Continuous Deployment (Implantação Contínua)
+  - Automaticaly Deploy to Production
+  - Etapa final de uma pipeline CI/CD
+  
+
 ## DevOps (Development and Operations)
 > --> Plan >> Code >> Build >> Test >> Release >> Deploy >> Operate >> Monitor --> 
 
@@ -29,7 +45,7 @@
   - Operate : (Chef, Ansible, Kubernetes)
   - Monitor : (Grafana, Graylog, DataDog, Nagios, splunk)
 
-# Deploy
+## Deploy
 
 ## Estratégias de Deploy
 - Rolling
