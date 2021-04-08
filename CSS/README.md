@@ -6,11 +6,13 @@ Repositório com os estudos realizados sobre CSS
 ## Declarar variáveis
 ~~~
 elemento{ 
-   `variavel_local`: valor;
+   variavel_local: valor;
 } 
+~~~
 
+~~~
 :root{    
-   `--variavel_global` : valor; 
+   --variavel_global : valor; 
 } 
 ~~~
 
