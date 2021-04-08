@@ -16,7 +16,7 @@
 - SCRUM, XP
 
 ## DevOps (Development and Operations)
-> Plan >> Code >> Build >> Test >> Release >> Deploy >> Operate >> Monitor > 
+> --> Plan >> Code >> Build >> Test >> Release >> Deploy >> Operate >> Monitor --> 
 
 - Desenvolvedores de Software
   - Plan : (Openstack)
