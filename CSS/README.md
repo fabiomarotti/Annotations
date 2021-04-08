@@ -3,56 +3,62 @@ Repositório com os estudos realizados sobre CSS
 
 # Variáveis CSS
 
-## Declarar variáveis
-~~~CSS
-elemento{ 
-   variavel_local : valor;
-} 
-~~~
-
+## Declarando variáveis
+- Global
 ~~~CSS
 :root{    
    --variavel_global : valor; 
 } 
 ~~~
 
+- Local
+~~~CSS
+elemento{ 
+   --variavel_local : valor;
+} 
+~~~
+
+- Usando
+~~~
+...
+atributo : var( --variavel) ;
+...
+~~~
+
+
 ## Exemplos
-- Declarando e usando as variaveis
-~~~CSS
-:root {
-  --blue: #6495ed;
-  --white: #faf0e6; 
+
+- Variavel Global
+~~~
+// global
+:root{
+  --main-color: #FFF;
+  --main-font: 'Arial';
 }
 
-h2 {
-  border-bottom: 2px solid var(--blue);
+body{
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+~~~
+
+- Variavel Local
+~~~
+// local
+.classe{
+  --main-color: #FFF;
+  --main-font: #000;
+}
+.classe p{
+  color: var(--main-color);
+  font-family: var(--main-font);
 }
 ~~~
 
 
-- substituindo o valor Global por um Local 
-~~~CSS
-:root {
-  blue: #6495ed;
-}
 
-h2 {
-  --blue: #0000ff;
-  border-bottom: 2px solid var(--blue);
-}
-~~~
 
-- declarando uma variavel Local 
-~~~CSS
-:root {
-  --blue: #6495ed;
-}
 
-h2 {
-  --h2-blue: #0000ff;
-  border-bottom: 2px solid var(--h2-blue);
-}
-~~~
 
 
 # Unidades de medida
