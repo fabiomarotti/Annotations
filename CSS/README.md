@@ -390,9 +390,55 @@ h2 {
 
 
 
+# 4 formas de Centralizar
+
+## 1º forma (centralizar)
+> A centralização gera uma sobreposição de elementos (absolute).
+
+~~~
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}	    
+~~~
 
 
+## 2º forma (centralizar)
+> Centraliza em linha, podendo ser redimencionado em coluna.
 
+~~~
+.center-div_pai {
+    text-align: center;
+}
+
+.center-div_filho {
+    display: inline-block;
+}
+~~~
+
+## 3º forma (centralizar)
+> Centraliza em colunas caso haja mais de uma div. <br>
+> Não sobrepoem os elementos
+
+~~~
+.center-div {
+	margin: 0 auto;
+}
+~~~
+
+
+## 4º forma (centralizar)
+> distorce background, border-radius
+
+~~~
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+~~~
 
 # Referências
 
