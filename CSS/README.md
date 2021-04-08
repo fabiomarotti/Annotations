@@ -4,13 +4,13 @@ Repositório com os estudos realizados sobre CSS
 # Variáveis CSS
 
 ## Declarar variáveis
-~~~
+~~~CSS
 elemento{ 
    variavel_local: valor;
 } 
 ~~~
 
-~~~
+~~~CSS
 :root{    
    --variavel_global : valor; 
 } 
@@ -18,7 +18,7 @@ elemento{
 
 ## Exemplos
 - Declarando e usando as variaveis
-~~~
+~~~CSS
 :root {
   --blue: #6495ed;
   --white: #faf0e6; 
@@ -31,7 +31,7 @@ h2 {
 
 
 - substituindo o valor Global por um Local 
-~~~
+~~~CSS
 :root {
   blue: #6495ed;
 }
