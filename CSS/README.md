@@ -2,10 +2,10 @@
 Repositório com os estudos realizados sobre CSS
 
 # Variáveis CSS
-- `elemento{ /*    variavel: valor */}` : variavel local
-- `:root{    /* --variavel : valor */}` : variavel global
+- elemento{ /*    `variavel_local`: valor */} 
+- :root{    /* `--variavel_global` : valor */} 
 
-~~~CSS
+~~~
 :root {
   --blue: #6495ed;
   --white: #faf0e6; 
@@ -17,10 +17,8 @@ h2 {
 ~~~
 
 
-~~~CSS
-
 - substituindo o valor Global por um Local 
-~~~CSS
+~~~
 :root {
   blue: #6495ed;
 }
