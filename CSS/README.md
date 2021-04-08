@@ -6,7 +6,7 @@ Repositório com os estudos realizados sobre CSS
 ## Declarar variáveis
 ~~~CSS
 elemento{ 
-   variavel_local: valor;
+   variavel_local : valor;
 } 
 ~~~
 
