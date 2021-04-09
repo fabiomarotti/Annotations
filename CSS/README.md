@@ -1,13 +1,32 @@
 # CSS (Cascading Style Sheets)
 Repositório com os estudos realizados sobre CSS
 
+# Informações
+- Sempre prevalece a ultima propriedade declarada.
 
-# Propriedades Personalizadas
+# Propriedades 
 - `--` declaranado
 - `var()` utilizando
 - [ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties)
+- Controle de Herança
+  - `inherit` aplica a mesma propriedade do elemento pai
+  - `initial` Define para ser o valor inicial
+  - `unset` Restaura seu valor natural.
+    - se a propriedade é herdada naturalmente, ela age como inherit, caso contrário, age como initial .
+  - `all` Aplica a __quase__ todas as propriedades.
+  - `revert` 
 
-## Declarando Variáveis CSS
+## Especificidade
+
+|Seletor	|Milhares	|Centenas	|Dezenas	|unidade	|Especificidade total   |
+|---		|--- 		|--- 		|--- 		|--- 		|--- 			|
+| h1									|0	|0	|0	|1	|0001|
+| h1 + p::first-letter 							|0	|0	|0	|3	|0003|
+| li > a[href*="en-US"] > .inline-warning				|0	|0	|2	|2	|0022|
+| #identifier								|0	|1	|0	|0	|0100|
+|Sem seletor, com uma regra dentro do styleatributo de um elemento	|1	|0	|0	|0	|1000|
+
+## Variáveis CSS
 - Global
 ~~~CSS
 :root{    
@@ -57,6 +76,9 @@ body{
   font-family: var(--main-font);
 }
 ~~~
+
+
+
 
 
 
