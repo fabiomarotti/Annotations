@@ -458,6 +458,12 @@ body{
 }
 ~~~
 
+# Dicionário
+- Pseduo Elemento
+- Seletor
+- 
+
+
 # Referências
 
 [Documentação](https://devdocs.io/css)
