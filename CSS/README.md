@@ -18,7 +18,7 @@ Repositório com os estudos realizados sobre CSS
 
 ## Especificidade
 
-|Seletor	|Milhares	|Centenas	|Dezenas	|unidade	|Especificidade total   |
+|Seletor	|Milhar		|Centena	|Dezena		|Unidade	|Especificidade Total   |
 |---		|--- 		|--- 		|--- 		|--- 		|--- 			|
 | h1									|0	|0	|0	|1	|0001|
 | h1 + p::first-letter 							|0	|0	|0	|3	|0003|
