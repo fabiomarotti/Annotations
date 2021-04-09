@@ -72,6 +72,7 @@ body{
 - `vmax` : 
 - `ex` : 
 - `ch` : character unit 
+- `fr` : fração do espaço disponivel (usado no Grid Layout)
 
 ## detalhes das unidades
 - `px`, `em`, `rem`  : usados para  margens, preenchimento, espaçamento e larguras / alturas, quando não for redimencionavel 
