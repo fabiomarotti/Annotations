@@ -24,7 +24,7 @@ Repositório com os estudos realizados sobre CSS
 | h1 + p::first-letter 							|0	|0	|0	|3	|0003|
 | li > a[href*="en-US"] > .inline-warning				|0	|0	|2	|2	|0022|
 | #identifier								|0	|1	|0	|0	|0100|
-|Sem seletor, com uma regra dentro do styleatributo de um elemento	|1	|0	|0	|0	|1000|
+|Sem seletor, com uma regra dentro do atributo **style** de um elemento	|1	|0	|0	|0	|1000|
 
 ## Variáveis CSS
 - Global
