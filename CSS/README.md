@@ -183,6 +183,17 @@ body{
 
 
 # Pseudo Classes
+> Pseudo Classes alteram o estado de um Seletor/Elemento.
+> Por se tratar de um Estado, usa-se `:`, diferente de `::` para Elementos.
+
+- Exemplo:
+~~~
+/* Pairar o ponteiro do mouse sobre qualquer botão */
+
+button:hover {
+  color: blue;
+}
+~~~
 
 |       		|       			|       		|
 |---    		|---    			|---    		|
@@ -204,6 +215,19 @@ body{
 
 
 # Pseudo Elementos
+> Acrescenta modificações a um Seletor/Elemento, sem a necessidade de cria-lo no HTML. <br>
+> Por se tratar de um Elemento, usa-se `::`, diferente de `:` para Estados dos Elementos.
+
+- Exemplo:
+~~~
+/* Seleciona a primeira linha dentro da tag <p> */
+
+p::first-line {
+  color: red;
+}
+~~~
+
+- Lista de Pseudo Elementos
 
 |       	  |       		|       			|
 |---    	  |---    		|---    			|
