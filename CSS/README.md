@@ -1,9 +1,13 @@
 # CSS (Cascading Style Sheets)
 Repositório com os estudos realizados sobre CSS
 
-# Variáveis CSS
 
-## Declarando variáveis
+# Propriedades Personalizadas
+- `--` declaranado
+- `var()` utilizando
+- [ver +](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties)
+
+## Declarando Variáveis CSS
 - Global
 ~~~CSS
 :root{    
@@ -24,7 +28,6 @@ elemento{
 atributo : var( --variavel) ;
 ...
 ~~~
-
 
 ## Exemplos
 
@@ -54,10 +57,6 @@ body{
   font-family: var(--main-font);
 }
 ~~~
-
-
-
-
 
 
 
