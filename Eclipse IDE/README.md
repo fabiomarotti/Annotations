@@ -26,3 +26,4 @@
   - **...** / Package Presentation / Hierarchical
 - `Encoding UTF-8`
   - Window / Preferences / General / Workspace / (Text file encoding : UTF-8)
+  - Window / Preferences / General / Content Types / (Text) / (Default encoding): UTF-8
