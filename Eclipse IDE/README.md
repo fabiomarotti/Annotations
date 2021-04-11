@@ -24,3 +24,5 @@
   - Window / Preferences / General / Editors / Text Editors / Spelling (enable)
 - `Package Explorer` (hierarquia dos pacotes sem os pontos)
   - **...** / Package Presentation / Hierarchical
+- `Encoding UTF-8`
+  - Window / Preferences / General / Workspace / (Text file encoding : UTF-8)
