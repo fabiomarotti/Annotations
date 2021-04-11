@@ -20,5 +20,5 @@
 
 - `Window Builder`
   - Help / Eclipse Marketplace / Window Builder
-- Desabilitar Corretor Ortográfico (nos comentários)
+- `Desabilitar Corretor Ortográfico` (nos comentários)
   - Window / Preferences / General / Editors / Text Editors / Spelling (enable)
