@@ -22,5 +22,5 @@
   - Help / Eclipse Marketplace / Window Builder
 - `Desabilitar Corretor Ortográfico` (nos comentários)
   - Window / Preferences / General / Editors / Text Editors / Spelling (enable)
-- `Package Explorer` (hierarquia sem pontos)
+- `Package Explorer` (hierarquia dos pacotes sem os pontos)
   - **...** / Package Presentation / Hierarchical
