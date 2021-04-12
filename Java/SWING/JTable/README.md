@@ -13,6 +13,7 @@
 
 ## JScrollPane
 
+- Dados
 ~~~
 String[] colunas = new String[]{"Nome","Idade","Sexo"};
   
@@ -24,10 +25,24 @@ String[][] dados = new String[][]{
 };
 ~~~
 
+- Exemplo 1
 ~~~
   JTable tabela = new JTable(dados,colunas);
   
   JScrollPane scroll = new JScrollPane();
   scroll.setViewportView(tabela);
+  this.add(scroll);
+~~~
+
+- Exemplo 2
+~~~
+  JTable tabela = new JTable();
+
+  DefaultTableModel model = new DefaultTableModel(dados , colunas );
+  tabela.setModel(model);
+  
+  JScrollPane scroll = new JScrollPane();
+  scroll.setViewportView(tabela);
+  
   this.add(scroll);
 ~~~
