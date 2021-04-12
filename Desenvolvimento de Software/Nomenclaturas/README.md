@@ -20,15 +20,15 @@
 
 ## Commits
 
-`build`: Mudanças que afetam o sistema de build ou dependências externas (example scopes: gulp, broccoli, npm);
-`ci`: Mudanças nos arquivos/scripts de continuos integration (example scopes: Travis, Circle, BrowserStack, SauceLabs);
-`docs`: Mudanças na documentação;
-`feat`: Nova “feature”;
-`fix`: Correção de um bug;
-`perf`: Mudança que melhora performance;
-`refactor`: Mudança no código que não adiciona novas “features” ou corrige bugs;
-`style`: Mudanças que não afetam o significado do código (white-space, formatting, missing semi-colons, etc);
-`test`: Adicionando testes faltantes ou corrigindo testes existentes.
+- `build`: Mudanças que afetam o sistema de build ou dependências externas (example scopes: gulp, broccoli, npm);
+- `ci`: Mudanças nos arquivos/scripts de continuos integration (example scopes: Travis, Circle, BrowserStack, SauceLabs);
+- `docs`: Mudanças na documentação;
+- `feat`: Nova “feature”;
+- `fix`: Correção de um bug;
+- `perf`: Mudança que melhora performance;
+- `refactor`: Mudança no código que não adiciona novas “features” ou corrige bugs;
+- `style`: Mudanças que não afetam o significado do código (white-space, formatting, missing semi-colons, etc);
+- `test`: Adicionando testes faltantes ou corrigindo testes existentes.
 
 # Liberação de Software
 - Desenvolvimento
