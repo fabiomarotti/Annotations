@@ -20,6 +20,7 @@
 
 - `Window Builder`
   - Help / Eclipse Marketplace / Window Builder
+  - [documentação](https://help.eclipse.org/2021-03/index.jsp?topic=%2Forg.eclipse.wb.doc.user%2Fhtml%2Findex.html)
 - `Desabilitar Corretor Ortográfico` (nos comentários)
   - Window / Preferences / General / Editors / Text Editors / Spelling (enable)
 - `Package Explorer` (hierarquia dos pacotes sem os pontos)
