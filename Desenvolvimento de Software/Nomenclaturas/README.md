@@ -19,6 +19,7 @@
 |Periodicidade Mínima	                              | Planejada	| Planejada	| Imediata	|              |       |
 |Periodicidade Máxima	                              | Planejada	| Semestral	| Mensal    |              |       |
 
+
 - Qualificador : Snapshot 
   - a : ALPHA 
   - b : BETA 
