@@ -8,7 +8,7 @@
 - **versão**: {{ * }} . {{ * }} . {{ * }} - {{ Qualificador }} {{ Build }}
 
 | Versão                                            | *         | *         | *         | Qualificador | Build |
-|---                                                |---        |---        |---        |---           |       |
+|---                                                |---        |---        |---        |---           |---    |
 |Característica	                                    |Maior	    |Menor	    |Micro  	  | a , b , rc   |       | 
 |Escopo	                                            |Inovação	  |Evolução	  |Manutenção	|              |       |
 |Bug                                                |	          |           | X	        |              |       |
