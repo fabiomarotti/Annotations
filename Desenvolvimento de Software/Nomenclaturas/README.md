@@ -1,9 +1,10 @@
 # Nomenclaturas (Convensão)
 
-> {{empresa}} - {{projeto}} - {{tipo}} - {{versão}}
+> Exemplo: google-maps-devops-1.0.0-ALPHA3 <br>
+> {{empresa}} - {{projeto}} - {{ **tipo** }} - {{ **versão** }}
 
 - **tipo**: front, back, web-service, devops
-- **versão**:
+- **versão**: {{ * }} . {{ * }} . {{ * }} - {{ Qualificador }} {{ Build }}
 
 | Versão                                            | *         | *         | *         |
 |---                                                |---        |---        |---        |
@@ -17,6 +18,8 @@
 |Periodicidade Mínima	                              | Planejada	| Planejada	| Imediata	|
 |Periodicidade Máxima	                              | Planejada	| Semestral	| Mensal    |
 
+- Qualificador : Snapshot (ALPHA, BETA , RC)
+- Numero de Build
 
 ## Commits
 
