@@ -7,19 +7,22 @@
 - **tipo**: front, back, web-service, devops
 - **versão**: {{ * }} . {{ * }} . {{ * }} - {{ Qualificador }} {{ Build }}
 
-| Versão                                            | *         | *         | *         |
-|---                                                |---        |---        |---        |
-|Característica	                                    |Maior	    |Menor	    |Micro  	  |
-|Escopo	                                            |Inovação	  |Evolução	  |Manutenção	|
-|Bug                                                |	          |           | X	        |
-|Improvement			                                  |           |           | X         |	
-|Feature Request	                                  | X	        | X         |           |		
-|Pode haver Depreciação?	                          | Sim       | Sim       | Não       |	
-|Pode haver Retirada?	                              | Sim       | Não       | Não       |	
-|Periodicidade Mínima	                              | Planejada	| Planejada	| Imediata	|
-|Periodicidade Máxima	                              | Planejada	| Semestral	| Mensal    |
+| Versão                                            | *         | *         | *         | Qualificador | Build |
+|---                                                |---        |---        |---        | a , b , rc   |       |
+|Característica	                                    |Maior	    |Menor	    |Micro  	  |              |       | 
+|Escopo	                                            |Inovação	  |Evolução	  |Manutenção	|              |       |
+|Bug                                                |	          |           | X	        |              |       |
+|Improvement			                                  |           |           | X         |	             |       |
+|Feature Request	                                  | X	        | X         |           |              |       |		
+|Pode haver Depreciação?	                          | Sim       | Sim       | Não       |	             |       |
+|Pode haver Retirada?	                              | Sim       | Não       | Não       |              |       |	
+|Periodicidade Mínima	                              | Planejada	| Planejada	| Imediata	|              |       |
+|Periodicidade Máxima	                              | Planejada	| Semestral	| Mensal    |              |       |
 
-- Qualificador : Snapshot (ALPHA, BETA , RC)
+- Qualificador : Snapshot 
+  - a : ALPHA 
+  - b : BETA 
+  - rc : Relase Candidate
 - Numero de Build
 
 ## Commits
