@@ -1,6 +1,7 @@
 # Nomenclaturas (Convensão)
 
-> Exemplo: google-maps-devops-1.0.0-ALPHA3 <br>
+> Exemplo: <br>
+>  google-maps-devops-1.0.0-ALPHA3 <br>
 > {{empresa}} - {{projeto}} - {{ **tipo** }} - {{ **versão** }}
 
 - **tipo**: front, back, web-service, devops
