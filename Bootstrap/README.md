@@ -66,6 +66,13 @@ Repositório com estudos realizados sobre o framework BOOTSTRAP
 </div>
 ~~~
 
+# Navbar
+
+[ver +](https://getbootstrap.com.br/docs/4.1/components/navbar/)
+
+
+
+# ReferÊncias
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
 
