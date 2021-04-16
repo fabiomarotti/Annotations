@@ -55,7 +55,7 @@ Repositório com os estudos realizados sobre a linguagem PHP.
   $y = (boolean) $x;   // $y é um booleano
 ?>
 ~~~
-[ver +] (https://www.php.net/manual/pt_BR/language.types.type-juggling.php#language.types.typecasting)
+[ver +](https://www.php.net/manual/pt_BR/language.types.type-juggling.php#language.types.typecasting)
 
 
 
