@@ -1,4 +1,5 @@
-# Repositório com os estudos realizados sobre a linguagem PHP.
+#  PHP
+Repositório com os estudos realizados sobre a linguagem PHP.
 
 - PHP ( Personal Home Page )  - 1994
 - PHP: Hypertext Preprocessor
