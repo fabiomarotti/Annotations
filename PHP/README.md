@@ -94,7 +94,7 @@ var_dump($array);
 - `eval()` : Executa uma string como código PHP. [ver +](https://www.php.net/manual/pt_BR/function.eval.php)
 - `call_user_func()` : Chama uma função de usuário dada pelo primeiro parâmetro.
 
-## funçoes para Bando de Dados
+## funçoes para Banco de Dados
 - `mysqli_connect()` : `host`,`username`,`passwd`,`dbname`,`port`,`socket`
   - `mysqli::connect`
   - `mysqli::__construct`
@@ -112,7 +112,7 @@ var_dump($array);
 - `$GLOBALS` — Referencia todas variáveis disponíveis no escopo global
 - `$_SERVER` — Informação do servidor e ambiente de execução [ver +](https://www.php.net/manual/pt_BR/reserved.variables.server.php)
 - `$_GET` — HTTP GET variáveis
-- `$_POST` — HTTP POST variables [ver +](https://www.php.net/manual/pt_BR/language.variables.external.php
+- `$_POST` — HTTP POST variables [ver +](https://www.php.net/manual/pt_BR/language.variables.external.php)
 - `$_REQUEST` — Variáveis de requisição HTTP 
 - `$_SESSION` — Variáveis de sessão
 - `$_FILES` — HTTP File Upload variáveis
