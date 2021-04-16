@@ -87,23 +87,24 @@ var_dump($array);
 
 
 ----------
-Sintaxe Básica
-Tipos
-Variáveis
-Constantes
-Expressões
-Operadores
-Estruturas de Controle
-Funções
-Classes e Objetos
-Namespaces
-Erros
-Exceções
-Generators
-Attributes
-Referências
-Variáveis pré-definidas
-Exceções pré-definidas
-Interfaces e Classes pré-definidas
-Opções e parâmetros de contexto
-Protocolos e Wrappers suportados
+Resumo
+- Sintaxe Básica
+- Tipos
+- Variáveis
+- Constantes
+- Expressões
+- Operadores
+- Estruturas de Controle
+- Funções
+- Classes e Objetos
+- Namespaces
+- Erros
+- Exceções
+- Generators
+- Attributes
+- Referências
+- Variáveis pré-definidas
+- Exceções pré-definidas
+- Interfaces e Classes pré-definidas
+- Opções e parâmetros de contexto
+- Protocolos e Wrappers suportados
