@@ -10,7 +10,7 @@ Repositório com os estudos realizados sobre a linguagem PHP.
 [Documentação](https://www.php.net/manual/pt_BR/)
 
 # Sintaxe Básica
-- <?php echo 'Ola Mundo'; ?>
+- `<?php echo 'Ola Mundo'; ?>`
 - `short_open_tag` <?= 'imprima essa string' ?>
 - Comentários:
   - // Comentário
