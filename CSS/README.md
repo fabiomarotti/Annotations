@@ -179,10 +179,12 @@ body{
 - `fixed` :  é posicionado em relação à janela de visualização, não se move nas rolagens;
 
 ## Overflow (texto que estoura uma caixa)
-- `visible` : o texto não é cortado
-- `hidden` : o texto é ocultado
-- `scroll` : a caixa gera um scroll na caixa (horizontal e vertical)
-- `auto` : a caixa gera um scroll onde for necessario.
+- `visible` : o texto não é cortado, mostra o conteúdo, mesmo que saia fora do tamanho.
+- `hidden` : o texto é ocultado, oculta caso o conteúdo que saia fora da tamanho.
+- `scroll` : Cria scroll (barra de rolagem) (largura e altura)
+- `auto` : Cria, se necessario, scroll (barra de rolagem) (largura/altura)
+- `overflow-X` (width) : Mantem o conteudo dentro da largura especificada
+- `overflow-Y` (height): Mantem o conteudo dentro da altura especificada
 
 ## Float
 - `left` a esquerda
@@ -202,13 +204,7 @@ body{
 - `flex`
 - `order`
 
-## Overflow
-- `visible` : Mostra o conteúdo, mesmo que saia fora da especificação.
-- `hidden` : Oculta o conteúdo que sair fora da especificação
-- `scroll` : Cria barra de rolagem (largura e altura)
-- `auto` : Cria, se necessario, barra de rolagem (largura/altura)
-- `overflow-X` (width) : Mantem o conteudo dentro da largura especificada
-- `overflow-Y` (height): Mantem o conteudo dentro da altura especificada
+
 
 
 # Pseudo Classes
