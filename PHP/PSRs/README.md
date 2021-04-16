@@ -1,10 +1,8 @@
 # PSRs
 
 Existem 16 PSRs desenvolvidas/em desenvolvimento pela [PHP-FIG](https://www.php-fig.org/) (Framework Interoperability Group).
-
-Das dezesseis, quatro estão em desenvolvimento e doze já foram aceitas. 
-
 As PSRs aceitas são:
+
 - `Basic Coding Standard` (Padrão de codificação básica)
 Aborda os elementos que devem ser considerados para garantir um código de de alta interoperabilidade.
 
