@@ -14,3 +14,11 @@
 
 - [Google Fonts] (https://fonts.google.com/)
   - Roboto
+
+# Browser (plugins-chrome)
+- Google Tradutor
+- WhatFont
+- ColorZilla
+- Resolution Test
+- Measure Dimensions
+- Page Ruler Redux
