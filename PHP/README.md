@@ -87,7 +87,7 @@ var_dump($array);
 
 
 ----------
-Resumo
+Tópicos
 - Sintaxe Básica
 - Tipos
 - Variáveis
