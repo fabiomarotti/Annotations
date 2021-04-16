@@ -12,7 +12,7 @@
 
 - [Progressbar](https://github.com/kimmobrunfeldt/progressbar.js/)
 
-- [Google Fonts] (https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/)
   - Roboto
 
 # Browser (plugins-chrome)
