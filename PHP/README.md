@@ -30,7 +30,7 @@ Repositório com os estudos realizados sobre a linguagem PHP.
   - callable (callbacks) 
     - `call_user_func()`
     - `usort()`
-  - iterable : [ver +](https://www.php.net/manual/pt_BR/language.types.iterable.php
+  - iterable : [ver +](https://www.php.net/manual/pt_BR/language.types.iterable.php)
 - outros:
   - resouce
   - NULL : 
