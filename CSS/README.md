@@ -202,6 +202,14 @@ body{
 - `flex`
 - `order`
 
+## Overflow
+- `visible` : Mostra o conteúdo, mesmo que saia fora da especificação.
+- `hidden` : Oculta o conteúdo que sair fora da especificação
+- `scroll` : Cria barra de rolagem (largura e altura)
+- `auto` : Cria, se necessario, barra de rolagem (largura/altura)
+- `overflow-X` (width) : Mantem o conteudo dentro da largura especificada
+- `overflow-Y` (height): Mantem o conteudo dentro da altura especificada
+
 
 # Pseudo Classes
 > Pseudo Classes alteram o estado de um Seletor/Elemento.
