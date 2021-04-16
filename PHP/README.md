@@ -36,8 +36,8 @@ Repositório com os estudos realizados sobre a linguagem PHP.
   - NULL : 
     - `is_null()` 
     - `unset()`
-  - mixed
-  - void
+  - mixed : um parâmetro pode aceitar vários tipos.
+  - void : não há valor a ser retornado.
 
 ## conversão de tipos
 
@@ -85,6 +85,43 @@ var_dump($array);
 ~~~
 
 
+
+
+
+# Funções
+- `isset()` : Informa se a variável foi iniciada.
+- `empty()` : Informa se a variável é vazia.
+- `eval()` : Executa uma string como código PHP. [ver +](https://www.php.net/manual/pt_BR/function.eval.php)
+- `call_user_func()` : Chama uma função de usuário dada pelo primeiro parâmetro.
+
+## funçoes para Bando de Dados
+- `mysqli_connect()` : `host`,`username`,`passwd`,`dbname`,`port`,`socket`
+  - `mysqli::connect`
+  - `mysqli::__construct`
+- `mysqli_real_connect()` - Opens a connection to a mysql server
+- `mysqli_options()` - Set options
+- `mysqli_connect_errno()` - Retorna o código de erro da ultima chamada a função connect
+- `mysqli_connect_error()` - Retorna uma string descrevendo o ultimo erro da função connect
+- `mysqli_close()` - Fecha uma conexão aberta anteriormente com o banco de dados
+
+- `mysqli_set_charset()`
+- `mysqli_change_user()`
+- `mysqli_init()`
+
+# Variáveis pré-definidas
+- `$GLOBALS` — Referencia todas variáveis disponíveis no escopo global
+- `$_SERVER` — Informação do servidor e ambiente de execução [ver +](https://www.php.net/manual/pt_BR/reserved.variables.server.php)
+- `$_GET` — HTTP GET variáveis
+- `$_POST` — HTTP POST variables [ver +](https://www.php.net/manual/pt_BR/language.variables.external.php
+- `$_REQUEST` — Variáveis de requisição HTTP 
+- `$_SESSION` — Variáveis de sessão
+- `$_FILES` — HTTP File Upload variáveis
+- `$_ENV` — Environment variables
+- `$_COOKIE` — HTTP Cookies
+- `$php_errormsg` — A mensagem de erro anterior
+- `$http_response_header` — Cabeçalhos de resposta HTTP
+- `$argc` — O número de argumentos passados para o script
+- `$argv` — Array de argumentos passados para o script
 
 ----------
 Tópicos
