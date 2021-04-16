@@ -93,6 +93,15 @@ var_dump($array);
 - `empty()` : Informa se a variável é vazia.
 - `eval()` : Executa uma string como código PHP. [ver +](https://www.php.net/manual/pt_BR/function.eval.php)
 - `call_user_func()` : Chama uma função de usuário dada pelo primeiro parâmetro.
+- `include()` : Adiciona um arquivo dentro de outro
+
+
+# Utilitários
+- `namespace`
+  - `include` 
+  - `use` x `as` y
+  - `\` namespace `\` classe `::` função() 
+
 
 ## funçoes para Banco de Dados
 - `mysqli_connect()` : `host`,`username`,`passwd`,`dbname`,`port`,`socket`
