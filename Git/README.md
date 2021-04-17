@@ -49,9 +49,12 @@ Repositório com os estudos realizados sobre o Git e Github
 
 ### `config` 
 - `git config`
+  - `git config --list`
   - `git config --global user.name "Fábio" `
   - `git config --global user.email "fabio@hotmail.com" `
-  - `git config --list`
+  - `git config --system`
+  - `git config --local`
+ 
 
 ### `help`
 - `git help` ajuda geral 
@@ -66,7 +69,7 @@ Repositório com os estudos realizados sobre o Git e Github
 
 ### `init`  
 ~~~JavaScript
-// comando para iniciar o repositório
+// comando para criar/iniciar o repositório
 git init
 
 // para inicar de modo (puro) Servidor
@@ -440,9 +443,46 @@ git pull request
   - gir merge origin/main
   - git push = git fetch+merge
   - 
+ 
+ # sequencia
+ git init
+ git remote add origin [link_repositorio]
+ git add [arquivo]
+ git reset [arquivo] : remover do index
+ git reset --hard    : remover e descartar
+ git checkout --[arquivo] : descartar mudanças
+ git commit -m "Commit mensagem"  : Comitar
+ git commit -am "Commit mensagem" : Adicionar e comitar
+ 
+ ### branchs
+ ## enviar
+ git branch [nome-branch]
+ git checkout [nome-branch-destine] : mudar de branch
+ git cheskout -b [nome-branch-nome] : criar e alternar para branch
+ git checkout [HASH-commit] : Alternar para um comita especifico pela HASH
+ git push -u origin [nome-branch] : enviar uma nova branch
+ git push : Enviar os commits
+ 
+ # receber
+- git clone [link-repositorio.git]
+- git pull : obtem commits e o branch do repositorio remoto
+- git checkout [nome-branch]
+ 
+- git status : mostrar status do workspace
+- git status -s : mostrar status do workspace
+- git log : mostrar log de commits
+- git log --graph --decorate --oneline
   
-  
-  
+- git diff
+- git diff HEAD
+- git diff --staged HEAD~N : diff do workspace
+- git diff --staged : diff do index  
+
+
+### Hooks
+- Scripts que são executados antes de um comando (commit, ou pull)
+- [ver +](https://git-scm.com/book/it/v2/Customizing-Git-Git-Hooks)
+
   
 # Dicionário
 
@@ -479,9 +519,11 @@ git pull request
 - `stash`
 
 ## Referências
-
+- https://git-scm.com/book/en/v2
 - https://git-scm.com/
 - https://github.com/
 - https://gist.github.com/discover
 - https://docs.github.com/en/github/searching-for-information-on-github/searching-code
 - https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Trabalhando-de-Forma-Remota
+- https://pt.slideshare.net/fernandomdr/controle-de-versao-e-colaboracao-com-git?fbclid=IwAR1FtaD0u6S70xcFMTqcjAIkbHQ0KPFRhJshAfusNm0doFawGUG5eVTr5Qs
+
