@@ -19,25 +19,25 @@ Repositório com os estudos realizados sobre a linguagem PHP.
 
 
 # Tipos
-- Escalares:
-  - bool : `$a_bool = TRUE;`
-  - int : `$an_int = 12;`
-  - float (ou double) : `$a_double = 1_234.567;` (a partir do PHP 7.4.0)
-  - string : `$a_str  = "foo";`
-- Compostos:
-  - array
-  - object
-  - callable (callbacks) 
+- **Escalares:**
+  - `bool` : `$a_bool = TRUE;`
+  - `int` : `$an_int = 12;`
+  - `float` (ou double) : `$a_double = 1_234.567;` (a partir do PHP 7.4.0)
+  - `string` : `$a_str  = "foo";`
+- **Compostos:**
+  - `array`
+  - `object`
+  - `callable` (callbacks) 
     - `call_user_func()`
     - `usort()`
-  - iterable : [ver +](https://www.php.net/manual/pt_BR/language.types.iterable.php)
-- outros:
-  - resouce
-  - NULL : 
+  - `iterable` : [ver +](https://www.php.net/manual/pt_BR/language.types.iterable.php)
+- **outros:**
+  - `resouce`
+  - `NULL` : 
     - `is_null()` 
     - `unset()`
-  - mixed : um parâmetro pode aceitar vários tipos.
-  - void : não há valor a ser retornado.
+  - `mixed` : um parâmetro pode aceitar vários tipos.
+  - `void` : não há valor a ser retornado.
 
 ## conversão de tipos
 
