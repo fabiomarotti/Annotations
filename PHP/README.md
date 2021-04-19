@@ -15,7 +15,7 @@ Repositório com os estudos realizados sobre a linguagem PHP.
 - Comentários:
   - `//` Comentário
   - `/*` Comentários `*/`
-  - `#` Comnetário
+  - `#` Comentário
 
 
 # Tipos
