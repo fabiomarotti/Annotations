@@ -62,30 +62,51 @@ Repositório com os estudos realizados sobre a linguagem PHP.
 
 # Variáveis
 
-- `array()` [ver +](https://www.php.net/manual/pt_BR/language.types.array.php)
-~~~
-array(
-    chave  => valor,
-    chave2 => valor2,
-    chave3 => valor3,
-    ...
-)
+## `array()` 
+- [ver +](https://www.php.net/manual/pt_BR/language.types.array.php)
+- `var_dump($lista)`
+- `print_r($lista)`
+
+~~~PHP
+// Acessando
+$lista[0]
 ~~~
 
 ~~~PHP
-<?php
-$array = array(
-    "foo" => "bar",
-    "bar" => "foo",
-    100   => -100,
-    -100  => 100,
-);
-var_dump($array);
-?>
+// (chave) => (valor)
+
+$lista = array(
+            "foo"   =>  "bar" ,
+            "bar"   =>  "foo" ,
+            100     =>  -100  ,
+            -100    =>  100   
+         );
 ~~~
 
+~~~PHP
+// a partir do PHP 5.4
 
+$lista = [
+    "foo" => "bar",
+    "bar" => "foo",
+];
+~~~
 
+~~~PHP
+$lista = array("foo", "bar", "hello", "world");
+~~~
+
+~~~PHP
+$Capitulo = array(
+            "nome"           => "Zé",
+             42              => 24,
+             "SubCapitulo"   => array(
+                                "Topico" => array(
+                                            "cor" => "red"
+                                            )
+                                )
+            );
+~~~
 
 
 # Funções
