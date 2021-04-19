@@ -136,7 +136,7 @@ $Capitulo = array(
 - `$this`
 
 
-## funçoes para Banco de Dados
+## Funçoes para Banco de Dados
 - `mysqli_connect()` : `host`,`username`,`passwd`,`dbname`,`port`,`socket`
   - `mysqli::connect`
   - `mysqli::__construct`
@@ -164,6 +164,66 @@ $Capitulo = array(
 - `$http_response_header` — Cabeçalhos de resposta HTTP
 - `$argc` — O número de argumentos passados para o script
 - `$argv` — Array de argumentos passados para o script
+
+# POO - Classes e Objetos
+- [ver+](https://www.php.net/manual/pt_BR/language.oop5.php)
+
+~~~PHP
+// Classe
+class Pessoa
+{
+    // Construtor
+    public function __construct() { }
+    
+    // Variaveis
+    public      $var01   = 'Valor01';
+    protected   $var02   = 'Valor02';
+    private     $var03   = 'Valor03';
+
+    // Métodos
+    function exibirDados()
+    {
+        echo $this->var01;
+        echo $this->var02;
+        echo $this->var03;
+    }
+}
+~~~
+
+~~~PHP
+// Instância
+$p = new Pessoa();
+
+// Acesso aos Dados 
+echo $p->var01; // Funciona
+echo $p->var02; // Erro Fatal
+echo $p->var03; // Erro Fatal
+
+// Acesso aos Métodos 
+     $p->exibirDados(); 
+echo Pessoa::exibirDados();
+~~~
+
+
+~~~PHP
+// Herança de Classe
+class Mutante extends Pessoa
+{
+
+}
+~~~
+
+
+~~~PHP
+// Classe Abstrata
+abstract class Viver 
+{
+
+}
+~~~
+
+
+
 
 ----------
 Tópicos
