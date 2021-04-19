@@ -13,9 +13,9 @@ Repositório com os estudos realizados sobre a linguagem PHP.
 - `<?php` `echo 'Ola Mundo';` `?>`
 - `<?=` `'imprima essa string' ` `?>` : short_open_tag
 - Comentários:
-  - `// Comentário`
-  - `/* Comentários */`
-  - `# Comnetário`
+  - `//` Comentário
+  - `/*` Comentários `*/`
+  - `#` Comnetário
 
 
 # Tipos
