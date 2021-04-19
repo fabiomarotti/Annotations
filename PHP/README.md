@@ -94,13 +94,26 @@ var_dump($array);
 - `eval()` : Executa uma string como código PHP. [ver +](https://www.php.net/manual/pt_BR/function.eval.php)
 - `call_user_func()` : Chama uma função de usuário dada pelo primeiro parâmetro.
 - `include()` : Adiciona um arquivo dentro de outro
+- `array_pad()`
+- `aray_keys()`
+- `implode()`
+- `count()`
+- `die()`
 
 
 # Utilitários
+- `->`
+- `=>`
+- `::`
 - `namespace`
   - `include` 
   - `use` x `as` y
   - `\` namespace `\` classe `::` função() 
+- `__DIR__`
+- `define`
+- `const`
+- `self::`
+- `$this`
 
 
 ## funçoes para Banco de Dados
