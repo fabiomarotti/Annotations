@@ -39,15 +39,14 @@ Repositório com os estudos realizados sobre a linguagem PHP.
   - `mixed` : um parâmetro pode aceitar vários tipos.
   - `void` : não há valor a ser retornado.
 
-## conversão de tipos
-
-- (int), (integer) - molde para inteiro
-- (bool), (boolean) - converte para booleano
-- (float), (double), (real) - converte para número de ponto flutuante
-- (string) - converte para string
-- (array) - converte para array
-- (object) - converte para objeto
-- (unset) - converte para NULL
+- Conversão de tipos
+  - `(int)`, `(integer)` - molde para inteiro
+  - `(bool)`, `(boolean)` - converte para booleano
+  - `(float)`, `(double)`, `(real)` - converte para número de ponto flutuante
+  - `(string)` - converte para string
+  - `(array)` - converte para array
+  - `(object)` - converte para objeto
+  - `(unset)` - converte para NULL
 
 ~~~PHP
 <?php
