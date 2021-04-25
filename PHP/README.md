@@ -122,6 +122,7 @@ $Capitulo = array(
 
 
 # Utilitários
+- `@` : supressão de erros [ver +](https://pt.stackoverflow.com/questions/50166/qual-a-fun%C3%A7%C3%A3o-do-arroba-no-inicio-de-express%C3%B5es-em-php)
 - `->`
 - `=>`
 - `::`
