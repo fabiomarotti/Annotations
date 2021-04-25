@@ -223,7 +223,9 @@ abstract class Viver
 }
 ~~~
 
+# Uoload de imagens
 
+[ver +](https://www.devmedia.com.br/upload-de-imagens-em-php-e-mysql/10041)
 
 
 ----------
