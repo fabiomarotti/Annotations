@@ -35,7 +35,7 @@
   - `Variant`
   - `User Defined`
 
-~~~
+~~~VBA
 ` Exemplo geral
 Dim nome_variavel As tipo
 Public nome As String
