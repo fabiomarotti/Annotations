@@ -44,7 +44,7 @@ Public estado As String * 2   ` limite de 2 caracteres
 Private x   'será tratada como o tipo Variant (qualquer coisa)
 ~~~
 
-~~~
+~~~VBA
 ` Exemplo para Datas
 Dim hoje As Date
 Const primeiroDia As Date = #1/1/2010”
@@ -60,7 +60,7 @@ Const noite = #12:00:00#
 ### Arrays e Matrizes 
 - `Option Base 1`: Aceitar o `1` como inicio ao inves do `0`
 
-~~~ 
+~~~VBA
 ` unidimesional
 Dim lista_1 (1 To 100) As Integer  ` 100 elementos
 Dim lista_2 (0 To 100) As Integer  ` 101 elementos
@@ -73,7 +73,7 @@ Dim matriz_B (1 To 10, 1 To 10, 1 To 10) As Integer
 ~~~
 
 - Arrays Dinâmicos usam `ReDim`
-~~~
+~~~VBA
 ` Array dinâmicos
 
 Dim   matriz_X () As Integer
@@ -86,13 +86,13 @@ ReDim matriz_X (1 To NumElements)
 ### Comandos
 
 `nome_objeto_vba(nome_planilha)`
-~~~ 
+~~~VBA 
 nome_objeto_vba.Select
 ~~~
 
 ### Funções
 
-~~~
+~~~VBA
 Sub nome_função()
   ` Código
 End Sub
@@ -102,7 +102,13 @@ End Sub
 ### Objetos
 - `Range`
 - `Worksheets(“Sheet2”).Cells(2, 3)`
-~~~
+~~~VBA
 Range(“A1:C5”)
+Range(“A1:J10”).Value = 99
+Range(Cells(1, 1), Cells(10, 10)).Value = 99
+Range(“A1”).Offset(1, 2)
+Columns(“A:C”)
+Rows(“1:5”)
+
 ~~~
 
