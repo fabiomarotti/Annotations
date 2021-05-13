@@ -1,7 +1,15 @@
 # Excel
+[Documentação](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
 
 ## Conceitos
+- Arquivo / Opções / Personalizar Faixa de Opções / Desenvolvedor
+- Salvar como `arquivo.xlsm` (Pasta de trabalho habilitada para Macro do Excel)
 - Suplementos são bibliotecas DLL utilizadas pelo VBA.
+- Estrutura 
+  - Microsoft Excel Objetos
+  - UserForm
+  - `Módulo`não se instancia como objeto
+  - `Módulo Classe` pode ser instanciada como objeto
 
 ### Comentários
 - comentário em linha: apóstrofo (‘)
@@ -103,11 +111,20 @@ End Sub
 - `Range`
 - `Worksheets(“Sheet2”).Cells(2, 3)`
 ~~~VBA
+`Selecionar células
 Range(“A1:C5”)
 Range(“A1:J10”).Value = 99
 Range(Cells(1, 1), Cells(10, 10)).Value = 99
+
+`Atribuir
+Range("A1").Value = "Olá Mundo"
+
 Range(“A1”).Offset(1, 2)
+
+`Selecionar Colunas
 Columns(“A:C”)
+
+`Selecionar Linhas
 Rows(“1:5”)
 
 ~~~
