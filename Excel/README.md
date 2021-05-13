@@ -1,5 +1,9 @@
 # Excel
-[Documentação](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
+[Documentação VB](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
+[Documentação VBA](https://docs.microsoft.com/pt-br/office/vba/api/overview/excel)
+[Funções VBA](https://www.techonthenet.com/excel/formulas/index_vba.php)
+[Conteúdo Geral](https://sites.google.com/a/gcloud.fe.up.pt/excel/Excel/vba)
+
 
 ## Conceitos
 - Arquivo / Opções / Personalizar Faixa de Opções / Desenvolvedor
