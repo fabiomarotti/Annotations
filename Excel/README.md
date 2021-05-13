@@ -1,8 +1,16 @@
 # Excel
 [Documentação VB](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
+
 [Documentação VBA](https://docs.microsoft.com/pt-br/office/vba/api/overview/excel)
+
 [Funções VBA](https://www.techonthenet.com/excel/formulas/index_vba.php)
+
 [Conteúdo Geral](https://sites.google.com/a/gcloud.fe.up.pt/excel/Excel/vba)
+
+- VBA: Visual Basic for Application
+- VBE: Visual Vasic Editor
+- Versões anteriores ao Excel 2007 tinham 65.536 linhas e 255 colunas (a última célula é IV65536)
+
 
 
 ## Conceitos
@@ -11,12 +19,29 @@
 - Suplementos são bibliotecas DLL utilizadas pelo VBA.
 - Estrutura 
   - Microsoft Excel Objetos
-  - UserForm
+  - `UserForm`
   - `Módulo`não se instancia como objeto
   - `Módulo Classe` pode ser instanciada como objeto
 
-### Comentários
+## Atalhos
+- Alt + F8
+- Ctrl + Shift + N
+- Ctrl + R : exibir janela do Projeto
+- Ctrl + E : exportar arquivo
+- Alt + F11 : Alternar VBA-Excel
+- Ctrl + Shift + F: gravar Macro
+- 
+
+
+
+### Comentário e outros
 - comentário em linha: apóstrofo (‘)
+- quebrar um alinha de codigo: termine a primeira linha com um espaço seguido de um underline (_)
+~~~VBA
+Selection.Sort Key1:=Range(“A1”), _
+Order1:=xlAscending, Header:=xlGuess, _
+Orientation:=xlTopToBottom
+~~~
 
 ### Operadores Regulares
 - `+` , `-`, `*`, `/` 
@@ -102,18 +127,59 @@ ReDim matriz_X (1 To NumElements)
 nome_objeto_vba.Select
 ~~~
 
-### Funções
+### Função e Procedimento
+~~~VBA
+`Função
+Function nome_função(arg1, arg2)
+  ` Código
+  nome_função = arg1 + arg2
+End Function
+~~~
 
 ~~~VBA
-Sub nome_função()
+`Procedimento
+Sub nome_Procedimento()
   ` Código
 End Sub
 ~~~
 
+### Funções do Excel
+- =AGORA()
 
-### Objetos
-- `Range`
+### Fuçoes do VBA
+- `MsgBox`
+
+### Objetos do Excel
+- `Application` o proprio excel é um objeto
+- ThisWorkbook
+- `Workbook` arquivo
+- `Worksheet` página
+- `Range` celula
+- `PivotTable` tabela principal
+- `Commet` Comentarios
+- `PageSetup` Configuração da Página
+- `Hiperlink`
+- `Name`nome
 - `Worksheets(“Sheet2”).Cells(2, 3)`
+- `Selection.Font.Bold = True`
+
+
+
+
+### Exemplos
+~~~VBA
+Worksheets(“Plan1”).Activate
+Range(“A1”).Copy Range(“B1”)
+Workbooks.Add
+Application.Workbooks(“Arquivo.xlsx”).Worksheets(“Página1”).Range(“A1”).Value
+~~~
+
+~~~VBA
+`Limpar conteúdo
+Worksheets(“Sheet1”).Range(“A1”).ClearContents
+~~~
+
+
 ~~~VBA
 `Selecionar células
 Range(“A1:C5”)
@@ -130,6 +196,14 @@ Columns(“A:C”)
 
 `Selecionar Linhas
 Rows(“1:5”)
-
 ~~~
+
+
+
+
+### Módulos
+- Declaração : variaveis
+- Procedimentos Sub: não retornam valor
+- Procedimentos Function: retornam valor
+- limite de 64.000 caracteres por módulo
 
