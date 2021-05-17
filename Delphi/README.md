@@ -1,11 +1,12 @@
 # Embarcadero Delphi 
+[site oficial](https://www.embarcadero.com/br/)
 - 1995 Borland (Turbo Pascal) -> para Windows 16-bit 3.1
 - 2006 CodeGear 
 - 2008 Embarcadero
 - Ambiente de Desenvolvimento (ferramenta/conceito)
 - RAD (Rapid Applicaiton Development)
 - Linguagem Pascal
-- [site oficial](https://www.embarcadero.com/br/)
+
 
 > versões da IDE RAD Studio 
 - RAD Studio 10.0 (Seattle) [2015]
