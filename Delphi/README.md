@@ -45,6 +45,16 @@
 // Comentário em uma linha
 ~~~
 
+~~~Delphi
+{ 
+  Comentário em múltiplas linhas
+}
+
+{* 
+  Comentário em múltiplas linhas
+*}
+~~~
+
 > Ocultar uma região
 ~~~Delphi
 {$REGION 'NomeRegion'}
@@ -52,8 +62,59 @@
 {$ENDREGION}
 ~~~
 
-## Tipos de variaveis
-TStringList
+## Tipos de Dados
+
+- Inteiras
+  - Integer
+  - Cardinal
+  - Shortint
+  - Smallint
+  - Longint
+  - Int64
+  - Byte
+  - Word
+  - LongWord
+
+- Reais
+  - Real48
+  - Single
+  - Double
+  - Extended
+  - Comp
+  - Currency
+  - Real equivale a double
+
+- Booleanas
+  - Boolean
+  - ByteBool
+  - WordBool
+  - LongBool
+
+- Caracter
+  - Char
+  - AnsiChar
+  - WideChar
+  - ShortString
+  - AnsiString
+  - WideString
+
+- Genéricas
+  - Variant (não compensa)
+  
+- Arquivo
+  - File
+  - TextFile
+  
+- Vetores
+
+
+## Operadores Aritméticos
+- `*` multiplicação 
+- `/` divisão entre variaveis reais
+- `+`
+- `-`
+- `div` divisão entre variaveis inteiras
+- `mod` resto da divisão
 
 ## Classes
 - Estrutura básica de um arquivo
