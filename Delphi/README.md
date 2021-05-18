@@ -16,14 +16,23 @@
 - RAD Studio 10.4 (Sydney)
 
 > Arquivos 
+- Executaveis (Project Manager)
+  - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
+  - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
+  - `*.dcu` arquivo pre-compilado, auxiliar o *.exe
 - `VCL Form Application` 
-  - `Delphi unit` : (../Forms/uFrmPrincipal) -> (Objeto: frmPrincipal)
-    - `*.pas`
-    - `*.dfm `
-  - `Delphi projects` : (../Projeto/Agenda)
-    - `*.dproj` 
+  - `Delphi Unit` : 
+    - `*.pas` : arquivo de código
+    - `*.dfm` : informações complementares de um formulário
+    - (../Forms/uFrmPrincipal) -> (Objeto: frmPrincipal)
+    - (../Forms/FrmPrincipalU)
+  - `Delphi projects` : informações do Projeto
+    - `*.dproj` : Usar este arquivo para editar o projeto
     - `*.dproj.local` 
     - `*.dpr`
+    - `*.res` : arquivos de icones, imagens, outros
+    - (../Projeto/Agenda)
+    - `~arquivo` arquivos de backup
 - `VCL Form `
   - `Delphi unit (*.pas)` : (../Forms/uFrmCadastrar) -> (Objeto: frmCadsatrar)
 - `DataModule`
