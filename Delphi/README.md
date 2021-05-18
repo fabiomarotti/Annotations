@@ -35,7 +35,30 @@
     - `~arquivo` arquivos de backup
 - `VCL Form `
   - `Delphi unit (*.pas)` : (../Forms/uFrmCadastrar) -> (Objeto: frmCadsatrar)
+- `Unit` arquivo *.pas
 - `DataModule`
+
+## Classes
+~~~Delphi
+unit Unidade
+
+interface
+
+implementation
+
+end. // fim implementation
+~~~
+
+~~~Pascal
+unit Unidade
+
+interface
+
+implementation
+
+end. // fim implementation
+~~~
+
 
 ## Componentes
 - `TMainMenu` (Standard)
