@@ -36,3 +36,7 @@
 - `TDBGrid` (Data Controls)
 - `TLabeledEdit` (Additional)
 - `TSpeedButton` (Additional) : Botão
+
+## Teclas de Atalho
+- `Ctrl` + `seta` : mover componente
+- `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
