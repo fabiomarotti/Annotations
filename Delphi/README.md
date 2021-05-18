@@ -156,7 +156,7 @@ implementation  // região de implementação
     begin
       resultado := Nome;
     end;
-
+ 
     // procedimento implementado
     procedure TPessoa.setNome( n : String);
     begin
