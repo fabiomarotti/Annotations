@@ -48,11 +48,17 @@
 > Ocultar uma região
 ~~~Delphi
 {$REGION 'NomeRegion'}
-  // código
+  // código a ser ocultado
 {$ENDREGION}
 ~~~
 
 ## Classes
+- Estrutura básica de um arquivo
+  - Nome do arquivo: `unit`
+  - Declaração: `interface`
+    - Bibliotecas: `uses` 
+    - Classes: `Type` e `TClasse = class` , `end;`
+  - Implementação: `implementation`
 
 ~~~Delphi
 unit nome_unidade; 
