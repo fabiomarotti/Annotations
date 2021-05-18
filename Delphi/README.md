@@ -52,6 +52,9 @@
 {$ENDREGION}
 ~~~
 
+## Tipos de variaveis
+TStringList
+
 ## Classes
 - Estrutura básica de um arquivo
   - Nome do arquivo: `unit`
