@@ -18,7 +18,9 @@
 > Arquivos 
 - `VCL Form Application` 
   - `Delphi unit (*.pas)` : ../Forms/uFrmPrincipal -> Objeto: frmPrincipal
+    - `*.dpr `
   - `Delphi projects (*.dproj)` : ../Projeto/Agenda
+    - `*.dproj` 
 - `VCL Form `
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> Objeto: frmCadsatrar
 - `DataModule`
