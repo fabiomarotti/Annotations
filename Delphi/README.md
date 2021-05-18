@@ -17,19 +17,21 @@
 
 > Arquivos 
 - `VCL Form Application` 
-  - `Delphi unit (*.pas)` : ../Forms/uFrmPrincipal -> Objeto: frmPrincipal
-    - `*.dpr `
-  - `Delphi projects (*.dproj)` : ../Projeto/Agenda
+  - `Delphi unit` : (../Forms/uFrmPrincipal) -> (Objeto: frmPrincipal)
+    - `*.pas`
+    - `*.dfm `
+  - `Delphi projects` : (../Projeto/Agenda)
     - `*.dproj` 
+    - `*.dpr`
 - `VCL Form `
-  - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> Objeto: frmCadsatrar
+  - `Delphi unit (*.pas)` : (../Forms/uFrmCadastrar) -> (Objeto: frmCadsatrar)
 - `DataModule`
 
 ## Componentes
 - `TMainMenu` (Standard)
 - `TPanel` (Standard)
-- `TButton` (Standard)
+- `TButton` (Standard) : Botão
 - `TPageControll` (Win32) > (new Page)
 - `TDBGrid` (Data Controls)
 - `TLabeledEdit` (Additional)
-- 
+- `TSpeedButton` (Additional) : Botão
