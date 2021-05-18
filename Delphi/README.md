@@ -22,6 +22,7 @@
     - `*.dfm `
   - `Delphi projects` : (../Projeto/Agenda)
     - `*.dproj` 
+    - `*.dproj.local` 
     - `*.dpr`
 - `VCL Form `
   - `Delphi unit (*.pas)` : (../Forms/uFrmCadastrar) -> (Objeto: frmCadsatrar)
