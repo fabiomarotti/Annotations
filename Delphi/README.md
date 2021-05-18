@@ -38,26 +38,130 @@
 - `Unit` arquivo *.pas
 - `DataModule`
 
-## Classes
+
+## Comentários e Regiões
+> Comentar
 ~~~Delphi
-unit Unidade
-
-interface
-
-implementation
-
-end. // fim implementation
+// Comentário em uma linha
 ~~~
 
-~~~Pascal
-unit Unidade
+> Ocultar uma região
+~~~Delphi
+{$REGION 'NomeRegion'}
+  // código
+{$ENDREGION}
+~~~
+
+## Classes
+
+~~~Delphi
+unit nome_unidade; 
+
+  interface
+  // região de declaração de bibliotecas, classes, funções, procedimento e variáveis.
+  
+  implementation
+  // região de implementação de código
+
+end. // fim unidade
+~~~
+
+~~~Delphi
+unit nome_unidade; 
+
+  interface  // declaração de bibliotecas, funções, procedimento.
+    uses System.classes;
+    function calcular : Real;
+    procedure escreverNome ( n : String);
+  
+  implementation // região de implementação
+    
+    // função implementada
+    function calcular : Real;
+    begin
+    // código da função calcular
+    end;
+
+    // procedimento implementado
+    procedure escreverNome( n : String);
+    begin
+      println("Ola "), n;
+    end;
+    
+end. // fim unidade
+~~~
+
+~~~Delphi
+unit nome_unidade; 
+
+  interface  // declaração de bibliotecas, funções, procedimento.
+    uses System.classes;
+    function calcular : Real;
+    procedure escreverNome ( n : String);
+  
+  implementation // região de implementação
+    
+    // função implementada
+    function calcular : Real;
+    begin
+    // código da função calcular
+    end;
+
+    // procedimento implementado
+    procedure escreverNome( n : String);
+    begin
+      println("Ola "), n;
+    end;
+    
+end. // fim unidade
+~~~
+
+
+
+~~~Delphi
+unit PessoaU; 
+
 
 interface
+  uses System.classes; 
+  
+    // Classes
+    Type
+        TPessoa = class         // inicio da classe
+ 
+        // declaração variáveis da classe TPessoa
+        Private
+          Nome   : String;
+          Idade  : Integer;
+          Altura : Real;
+          Outros : TStringList;
+        
+        public
+          function getNome : String;
+          procedure setNome(vNome : String );
+        
+        end;                    // final da classe TPessoa
+      
+  
+implementation  // região de implementação
 
-implementation
+    // função implementada
+    function TPessoa.getNome : String;
+    begin
+      resultado := Nome;
+    end;
 
-end. // fim implementation
+    // procedimento implementado
+    procedure TPessoa.setNome( n : String);
+    begin
+      Nome := n;
+    end;
+    
+    
+end. // fim unidade
 ~~~
+
+
 
 
 ## Componentes
@@ -72,3 +176,5 @@ end. // fim implementation
 ## Teclas de Atalho
 - `Ctrl` + `seta` : mover componente
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
+- `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
+- `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
