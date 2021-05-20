@@ -1,4 +1,8 @@
 # Excel
+[Funções do Excel: Afabetico](https://support.microsoft.com/pt-br/office/fun%C3%A7%C3%B5es-do-excel-ordem-alfab%C3%A9tica-b3944572-255d-4efb-bb96-c6d90033e188)
+
+[Funções do Excel: Categoria](https://support.microsoft.com/pt-br/office/fun%C3%A7%C3%B5es-do-excel-por-categoria-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb)
+
 [Documentação VB](https://docs.microsoft.com/pt-br/dotnet/visual-basic/)
 
 [Documentação VBA](https://docs.microsoft.com/pt-br/office/vba/api/overview/excel)
