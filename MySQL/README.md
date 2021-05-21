@@ -24,6 +24,7 @@ Repositório com os estudos realizados sobre MySQL
 > Comandos
   
 - mysql -u `usuário` -p `senha` -h `servidor`
+- mysqlshow -u `usuário` -p [ `banco` [ `tabela` [ `coluna` ] ] ]
 
 - **DUMP: Exportar** (Backup)
   - mysqldump -u `usuário` -p `senha` `nome_banco` > `nome_banco_bkp.sql`; <br> 
@@ -53,7 +54,7 @@ Repositório com os estudos realizados sobre MySQL
 
 # Banco de Dados
 
-> SHOW DATABASE;
+> SHOW DATABASES;
 
 > CREATE DATABASE `nome_do_banco`;
 
@@ -61,11 +62,16 @@ Repositório com os estudos realizados sobre MySQL
 
 > DROP DATABASE `nome_banco`;
 
+> Editar: `CREATE` seguido de um `DROP` 
+
+
 # Tabelas
 
 > SHOW TABLES;
 
+> SHOW COLUMNS FROM `nome_tabela`;
 > DESCRIBE `nome_tabela`;
+> DESC `nome_tabela`;
 
 > SELECT `campo` FROM `nome_tabela`;
 
@@ -79,10 +85,16 @@ Repositório com os estudos realizados sobre MySQL
 
 > DROP TABLE `nome_tabela`;
 
+> Exemplo - criar tabela
 ~~~
-CREATE TABLE nome_tabela (  campo_01 INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE nome_tabela (  campo_01 INT 
+                                NOT NULL 
+                                AUTO_INCREMENT,
                             campo_02 VARCHAR( 255 ),
                             campo_03 DEFAULT NUL,
                             PRIMARY KEY( campo_O1 )  
                             );
 ~~~
+
+# Campos das Tabelas
+
