@@ -11,7 +11,7 @@
 > versões da IDE RAD Studio 
 - RAD Studio 10.0 (Seattle) [2015]
 - RAD Studio 10.1 (Berlim) [2016]
-- RAD Studio 10.2 (Tokyo)
+- RAD Studio 10.2 (Tokyo) *
 - RAD Studio 10.3 (Rio)
 - RAD Studio 10.4 (Sydney)
 
@@ -194,27 +194,22 @@ end. // fim unidade
 ~~~Delphi
 unit PessoaU; 
 
-
 interface
   uses System.classes; 
   
     // Classes
     Type
         TPessoa = class         // inicio da classe
- 
-        // declaração variáveis da classe TPessoa
-        Private
-          Nome   : String;
-          Idade  : Integer;
-          Altura : Real;
-          Outros : TStringList;
-        
-        public
-          function getNome : String;
-          procedure setNome(vNome : String );
-        
+          // declaração variáveis da classe TPessoa
+          Private
+            Nome   : String;
+            Idade  : Integer;
+            Altura : Real;
+            Outros : TStringList;
+          Public
+            function getNome : String;
+            procedure setNome(vNome : String );
         end;                    // final da classe TPessoa
-      
   
 implementation  // região de implementação
 
