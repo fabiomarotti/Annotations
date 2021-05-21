@@ -45,17 +45,29 @@ Repositório com os estudos realizados sobre MySQL
 
 - `--comentado` Comentário ANSI SQL
 - `#comentário` , `/*comentário*/`  Comentários aceitos
-- `/*!40101 Comando comentado*/` o comando, mesmo que comentado, será executado apenas por versões do MySQL ≥ 4.1.1
+- `/*!40101 Comando comentado*/` 
+  - o comando, mesmo que comentado, será executado apenas por versões do MySQL ≥ 4.1.1
 - `\! cls` limpar tela (Prompt Windows)
 - `exit` sair
 
 
 
-# Tipos de Dados
+# Tipos de Dados [Ver +](https://dev.mysql.com/doc/refman/8.0/en/precision-math-numbers.html)
 
-|Tipo   |Armazenamento  | Range
-|--     |--             |--
-|||
+|Tipo            | Tamanho  | Range    | 
+|--              |--        |--        |
+| TINYINT        |	1 byte	| 127 | 
+| SMALLINT       |	2 bytes	| 32767|
+| MEDIUMINT      |	3 bytes	| 8388607 |
+| INT ou inteiro |	4 bytes	| 2147483647|
+| BIGINT         |	8 bytes	| 2^(63) |
+| FLOAT          |	4 bytes	| |
+| DUPLO          |	8 bytes	| |
+| DATA           |	3 bytes	| 1000/01/01 / 9999-12-31                    |
+| TEMPO          |	3 bytes	| '-838: 59: 59' / '838: 59: 59'             |
+| ANO            |	1 bytes	| 1901/2155                                  |
+| DATETIME       |	8 bytes	| 1000-01-0100: 00: 00 / 9999-12-31 23:59:59 |
+| TIMESTAMP      |	4 bytes	| Algum 00/2037 Ano: 1970-01-01 00:00        |
 
 
 # Banco de Dados
@@ -123,15 +135,16 @@ DELETE FROM tb_contatos WHERE user_id=123;
 > Exemplo - Pesquisar
 ~~~ 
 SELECT user_nome, user_email FROM tb_usuarios;
+~~~
 
+~~~
 SELECT * FROM tb_usuarios;
-
 ~~~
 
 # Filtros de busca
-LIKE
-DES
-ASC
+- LIKE
+- DES
+- ASC
 
 
 # continuar ...
@@ -141,6 +154,6 @@ SHOW COLUMNS FROM tbl_Livro WHERE Type like ‘varchar%’;
 
 # Comandos extras
 
-> # Mostrar os privilégios de acesso ao Banco de Dados
+> Mostrar os privilégios de acesso ao Banco de Dados
 > SHOW GRANTS FOR root@localhost;
 
