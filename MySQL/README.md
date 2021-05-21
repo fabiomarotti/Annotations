@@ -9,6 +9,18 @@ Repositório com os estudos realizados sobre MySQL
 - `utf8_general_ci`
 - `utf8_bin` comparação bit-a-bit dos caracteres, comparação **case-sensitive**.
 
+> Tabelas
+- `MyISAM` *
+  - com proteção de tabelas (table locking). 
+  - melhor performance para tabelas fixas (pouco acesso a tabela, Exemplo: tb_cidade)
+  - check / repair : resolve problemas
+- `InnoDB` 
+  - maior complexidade (arquivo com histórico de transações)
+  - mais propício a corrompimento irrecuperável 
+  - baseado em transações (transaction locking).
+  - mais rapido para tabelas em constantes mudanças
+  - observa-se diferença em grandes bancos de dados
+
 > Comandos
   
 - mysql -u `usuário` -p `senha` -h `servidor`
