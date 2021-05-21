@@ -115,29 +115,29 @@ CREATE TABLE nome_tabela (  campo_01 INT
 ~~~
 
 > Exemplo - Inserir
-~~~
+~~~MySQL
 INSERT INTO tb_usuarios (user_nome, user_email) VALUES ( 'valor01' , 'valor02' );
 ~~~
 
 > Exemplo - Atualizar
-~~~
+~~~MySQL
 UPDATE tb_usuarios SET user_nome='valor011' , user_email='valor022';
 ~~~
-~~~
+~~~MySQL
 UPDATE tb_usuarios SET user_nome='valor011' WHERE user_id=123;
 ~~~
 
 > Exemplo - Apagar
-~~~
+~~~MySQL
 DELETE FROM tb_contatos WHERE user_id=123;
 ~~~
 
 > Exemplo - Pesquisar
-~~~ 
+~~~MySQL 
 SELECT user_nome, user_email FROM tb_usuarios;
 ~~~
 
-~~~
+~~~MySQL
 SELECT * FROM tb_usuarios;
 ~~~
 
@@ -148,12 +148,12 @@ SELECT * FROM tb_usuarios;
 
 
 # continuar ...
-SHOW [FULL] COLUMNS FROM tbl_editoras;
-SHOW COLUMNS FROM tbl_Livro LIKE ‘I%’;
-SHOW COLUMNS FROM tbl_Livro WHERE Type like ‘varchar%’;
+- SHOW [FULL] COLUMNS FROM tbl_editoras;
+- SHOW COLUMNS FROM tbl_Livro LIKE ‘I%’;
+- SHOW COLUMNS FROM tbl_Livro WHERE Type like ‘varchar%’;
 
 # Comandos extras
 
-> Mostrar os privilégios de acesso ao Banco de Dados
+> Mostrar os privilégios de acesso ao Banco de Dados <br>
 > SHOW GRANTS FOR root@localhost;
 
