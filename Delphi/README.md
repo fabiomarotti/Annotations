@@ -24,17 +24,17 @@
   - `Delphi Unit` : 
     - `*.pas` : arquivo de código
     - `*.dfm` : informações complementares de um formulário
-    - (../Forms/uFrmPrincipal) -> (Objeto: frmPrincipal)
-    - (../Forms/FrmPrincipalU)
+    - ../Forms/uFrmPrincipal -> (Objeto: frmPrincipal)
+    - ../Forms/FrmPrincipalU
   - `Delphi projects` : informações do Projeto
     - `*.dproj` : Usar este arquivo para editar o projeto
     - `*.dproj.local` 
     - `*.dpr`
     - `*.res` : arquivos de icones, imagens, outros
-    - (../Projeto/Agenda)
+    - ../Projeto/Agenda
     - `~arquivo` arquivos de backup
 - `VCL Form `
-  - `Delphi unit (*.pas)` : (../Forms/uFrmCadastrar) -> (Objeto: frmCadsatrar)
+  - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo *.pas
 - `DataModule`
 
