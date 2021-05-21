@@ -35,8 +35,8 @@
     - `~arquivo` arquivos de backup
 - `VCL Form `
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
-- `Unit` arquivo *.pas
-- `DataModule`
+- `Unit` arquivo: *.pas
+- `DataModule` : Drag-and-Drop
 
 
 ## Comentários e Regiões
@@ -111,19 +111,20 @@
 ## Operadores Aritméticos
 - `*` multiplicação 
 - `/` divisão entre variaveis reais
-- `+`
-- `-`
+- `+` soma
+- `-` subtração
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
 ## Classes
-- Estrutura básica de um arquivo
-  - Nome do arquivo: `unit`
-  - Declaração: `interface`
-    - Bibliotecas: `uses` 
-    - Classes: `Type` e `TClasse = class` , `end;`
-  - Implementação: `implementation`
+- Estrutura básica de um código:
+  - `unit` : nome do arquivo
+  - `interface` declaração
+    - `uses`: Bibliotecas
+    - `Type` e `TClasse = class` , `end;` : Classes
+  - `implementation`: Implementação
 
+> Exemplo 01
 ~~~Delphi
 unit nome_unidade; 
 
@@ -136,6 +137,7 @@ unit nome_unidade;
 end. // fim unidade
 ~~~
 
+> Exemplo 02
 ~~~Delphi
 unit nome_unidade; 
 
@@ -161,6 +163,7 @@ unit nome_unidade;
 end. // fim unidade
 ~~~
 
+> Exemplo 03
 ~~~Delphi
 unit nome_unidade; 
 
@@ -187,7 +190,7 @@ end. // fim unidade
 ~~~
 
 
-
+> Exemplo 04
 ~~~Delphi
 unit PessoaU; 
 
@@ -235,6 +238,7 @@ end. // fim unidade
 
 
 ## Componentes
+> Interface
 - `TMainMenu` (Standard)
 - `TPanel` (Standard)
 - `TButton` (Standard) : Botão
@@ -242,6 +246,10 @@ end. // fim unidade
 - `TDBGrid` (Data Controls)
 - `TLabeledEdit` (Additional)
 - `TSpeedButton` (Additional) : Botão
+
+> Para Banco de Dados:
+- `FireDac`
+- `Zeos`
 
 ## Teclas de Atalho
 - `Ctrl` + `seta` : mover componente
