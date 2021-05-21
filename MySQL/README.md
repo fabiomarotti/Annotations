@@ -104,7 +104,7 @@ Repositório com os estudos realizados sobre MySQL
 > DROP TABLE `nome_tabela`;
 
 > Exemplo - Criar Tabela
-~~~
+~~~MySQL
 CREATE TABLE nome_tabela (  campo_01 INT 
                                 NOT NULL 
                                 AUTO_INCREMENT,
