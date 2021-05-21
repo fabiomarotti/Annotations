@@ -1,7 +1,8 @@
 # MySQL
 Repositório com os estudos realizados sobre MySQL
 
-- https://www.mysql.com/
+- [site (Oficial)](https://www.mysql.com/)
+- [Documentação MySql 5.6](https://dev.mysql.com/doc/refman/5.6/en/)
 
 # Configurações e Comandos
 
@@ -24,7 +25,12 @@ Repositório com os estudos realizados sobre MySQL
 > Comandos
   
 - mysql -u `usuário` -p `senha` -h `servidor`
+
+- mysqlshow -u root -p
+  - ver banco de dados disponiveis
+
 - mysqlshow -u `usuário` -p [ `banco` [ `tabela` [ `coluna` ] ] ]
+  - opera diretamente no Shell do Linux
 
 - **DUMP: Exportar** (Backup)
   - mysqldump -u `usuário` -p `senha` `nome_banco` > `nome_banco_bkp.sql`; <br> 
@@ -85,7 +91,7 @@ Repositório com os estudos realizados sobre MySQL
 
 > DROP TABLE `nome_tabela`;
 
-> Exemplo - criar tabela
+> Exemplo - Criar Tabela
 ~~~
 CREATE TABLE nome_tabela (  campo_01 INT 
                                 NOT NULL 
@@ -96,5 +102,45 @@ CREATE TABLE nome_tabela (  campo_01 INT
                             );
 ~~~
 
-# Campos das Tabelas
+> Exemplo - Inserir
+~~~
+INSERT INTO tb_usuarios (user_nome, user_email) VALUES ( 'valor01' , 'valor02' );
+~~~
+
+> Exemplo - Atualizar
+~~~
+UPDATE tb_usuarios SET user_nome='valor011' , user_email='valor022';
+~~~
+~~~
+UPDATE tb_usuarios SET user_nome='valor011' WHERE user_id=123;
+~~~
+
+> Exemplo - Apagar
+~~~
+DELETE FROM tb_contatos WHERE user_id=123;
+~~~
+
+> Exemplo - Pesquisar
+~~~ 
+SELECT user_nome, user_email FROM tb_usuarios;
+
+SELECT * FROM tb_usuarios;
+
+~~~
+
+# Filtros de busca
+LIKE
+DES
+ASC
+
+
+# continuar ...
+SHOW [FULL] COLUMNS FROM tbl_editoras;
+SHOW COLUMNS FROM tbl_Livro LIKE ‘I%’;
+SHOW COLUMNS FROM tbl_Livro WHERE Type like ‘varchar%’;
+
+# Comandos extras
+
+> # Mostrar os privilégios de acesso ao Banco de Dados
+> SHOW GRANTS FOR root@localhost;
 
