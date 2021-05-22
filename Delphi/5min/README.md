@@ -19,8 +19,7 @@
     - Query Editor: SELECT * FROM tb_pessoas;
     - Filds Editor/ Add Fields / (drag-drop)
     - Active: True
-  - `TFDGuixWaitCursor`
-    - Ajuste funcional
+  - `TFDGuixWaitCursor` (para ajuste funcional)
   - `TDataSource`
     - DataSet: `FDQuery`
 
