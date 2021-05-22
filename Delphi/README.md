@@ -29,7 +29,7 @@
   - `Delphi projects` : informações do Projeto
     - `*.dproj` : Usar este arquivo para editar o projeto
     - `*.dproj.local` 
-    - `*.dpr`
+    - `*.dpr` : **Arquivo para se abrir os projetos**
     - `*.res` : arquivos de icones, imagens, outros
     - ../Projeto/Agenda
     - `~arquivo` arquivos de backup
