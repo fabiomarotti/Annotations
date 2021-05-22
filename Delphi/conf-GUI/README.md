@@ -6,12 +6,16 @@
 # Componentes
 - `TMainMenu`
   - `&nome` gera atalho do teclado  
+
 - `TToolBar` cabeçalho
   - `New Button` Botões para cabeçalho
   - Conterá chamdas do `TActionList`
+
 - `TStatusBar` rodapé
+
 - `TImageList` conjunto de imagens a serem usadas no sistema
-  - boa pratica, nomear pelo tamanho usado
+  - boa pratica, nomear pelo tamanho da imagem a ser usada
+  - sua chamda é na propriedade `Image`
 
 - `TActionList` Uma lista de ações para reaproveitar codigo
   - `New Action` Cria uma ação (botão)
