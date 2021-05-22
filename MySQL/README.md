@@ -30,6 +30,7 @@ Repositório com os estudos realizados sobre MySQL
   - observa-se diferença em grandes bancos de dados
 
 > Comandos
+- `\. c:/pasta_bd/banco_dados.sql` : Executar um arquivo via terminal MySQL  
   
 - mysql -u `usuário` -p `senha` -h `servidor`
 
