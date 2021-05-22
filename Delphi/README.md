@@ -244,7 +244,7 @@ end. // fim unidade
 
 > Para Banco de Dados:
 - `FireDac`
-- `Zeos`
+- `Zeos Access`
 
 ## Teclas de Atalho
 - `Ctrl` + `seta` : mover componente
