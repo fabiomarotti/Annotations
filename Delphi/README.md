@@ -36,8 +36,15 @@
 - `VCL Form `
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
+
 - `DataModule` : Drag-and-Drop
 
+## Data Module
+- Formulario centralizador de componetes não visuais
+- componentes de Banco de Dados
+- boa ptrática nomear como 
+  - `dmModulo` objeto
+  - `dmUnidadeMdoulo` arquivo
 
 ## Comentários e Regiões
 > Comentar
@@ -244,9 +251,26 @@ end. // fim unidade
 
 > Para Banco de Dados:
 - `FireDac`
-- `Zeos Access` multidirecional
 - `DBExpress` 
 
+### `Zeos Access` multidirecional
+- `TZConection` (zConexao)
+  - HostName: localhost
+  - User: root
+  - Password: -
+  - Port: 3306 (padrão)
+  - Protocol: mysql-5 (banco usado)
+  - Database: bd_nomeBanco
+  - Connected: True
+ 
+ - `TZTable` (ztbPessoa)
+  - Connection: TZConnection
+  - TableName:  vincula a tabela no banco de dados ao componente (qnd BD estiver ativo)
+  - Active: True
+  - Add All Fields 
+  - OBS.: carrega a tabela inteira na memoria. Pode acabar travando se haver muitos registros.
+  - Centraliza a formatação para futuras chamadas multiplas nos formularios.
+  
 ## Teclas de Atalho
 - `Ctrl` + `seta` : mover componente
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
