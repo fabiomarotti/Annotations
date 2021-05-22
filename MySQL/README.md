@@ -4,6 +4,13 @@ Repositório com os estudos realizados sobre MySQL
 - [site (Oficial)](https://www.mysql.com/)
 - [Documentação MySql 5.6](https://dev.mysql.com/doc/refman/5.6/en/)
 
+- SQL - "Structured Query Language" (Linguagem Estruturada de Consulta)
+
+- DML - "Data Manipulation Language" (Linguagem de Manipulação de Dados)
+- DCL - "Data Control Language" (Linguagem de Controle de Dados)
+- DDL - "Data Definition Language" (Linguagem de Definição de Dados) 
+
+
 # Configurações e Comandos
 
 > Configurações
