@@ -1,7 +1,9 @@
 # Programação Orientada a Objetos (Delphi)
 
-# Classe
+# Métodos Construtores e Destrutores
+.Create
 
+# Classe
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
 unit Unit_Pessoa;
@@ -11,10 +13,12 @@ interface
 
 { Classe }
 type
-  TPessoa = class
+  TPessoa = class  // Herda a classe Object
     private
-    
+      Idade : Integer;
     public
+      Nome : String;
+    
  end;
  
 { Implementação }
@@ -28,10 +32,17 @@ end.
 unit Unit_Principal
 
 interface
-
-uses
-  Unit_Pessoa;
+  uses
+    Unit_Pessoa;
   
- p := TPessoa.Create;
-
+implementation 
+  pessoa := TPessoa.Create;
+  try
+    pessoa.Nome := 'Fulano';
+    ShowMessage(pessoa.Nome);
+  finally
+    pessoa.Free;
+  end;
+ 
+end.
 ~~~
