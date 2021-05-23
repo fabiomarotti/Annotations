@@ -1,19 +1,18 @@
 # Programação Orientada a Objetos (Delphi)
 
- [✅] Estrutura básica
+ [✅] Abstração
  
- [ ] Abstração
- 
+ [✅] Encapsulamento
+
  [ ] Herança
- 
- [ ] Encapsulamento
- 
+  
  [ ] Polimorfismo
 
 
-# Classe
+# Classe (Abstração)
+
 - `instancia.Create` : Construtor
-- `instancia.Free` : Destrutor
+- `instancia.Free`   : Destrutor
 
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
@@ -58,6 +57,32 @@ implementation
 end.
 ~~~
 
+
 ## Encapsulamento
 
+> Unidade contendo a Classe Pessoa Encapsulada
+~~~Delphi
+unit Unit_Pessoa;
+
+{ Declaração }
+interface
+
+{ Classe }
+type
+  TPessoa = class  
+    private
+      Idade : Integer;
+      Nome  : String;
+    public
+      // não tem, quebraria o conceito de Encapsulamento
+     function setIdade : Integer
+     procedure getIdade
+    
+ end;
+ 
+{ Implementação }
+implementation
+
+end.
+~~~
 
