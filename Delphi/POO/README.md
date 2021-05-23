@@ -1,10 +1,10 @@
 # Programação Orientada a Objetos (Delphi)
 
 - [✅] Estrutura básica
-- [] Abstração
-- [] Herança
-- [] Encapsulamento
-- [] Polimorfismo
+- [ ] Abstração
+- [ ] Herança
+- [ ] Encapsulamento
+- [ ] Polimorfismo
 
 # Métodos Construtores e Destrutores
 .Create
