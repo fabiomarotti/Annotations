@@ -13,6 +13,7 @@
 
 - `instancia.Create` : Construtor
 - `instancia.Free`   : Destrutor
+- `class var` : Variavel de Classe
 
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
