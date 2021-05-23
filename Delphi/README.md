@@ -71,6 +71,28 @@
 {$ENDREGION}
 ~~~
 
+## Varáveis
+~~~
+var 
+  Nome: string;
+Nome := 'Fábio Marotti';
+~~~ 
+
+~~~
+var 
+  Nome: string := 'Fábio Marotti';
+~~~ 
+
+~~~
+var Idade := 20; // compilador infere que é um tipo inteiro
+~~~ 
+
+~~~
+for var Contador := 0 to 10 do { ... }
+~~~
+
+
+
 ## Tipos de Dados
 
 - Inteiras
