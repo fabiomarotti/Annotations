@@ -153,6 +153,37 @@ for var Contador := 0 to 10 do { ... }
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
+## Estruturas logicas
+
+> Estrutura de Repetição FOR
+~~~
+var
+  i: Integer;
+  
+for i := 0  to  10   do
+begin
+  ShowMessage( IntToStr(i) );
+end;
+~~~~
+
+~~~
+var
+  i: Integer;
+  
+for i := 10  DownTo   0  do
+begin
+  ShowMessage( IntToStr(i) );
+end;
+~~~   
+> Estrutura de Repetição UNTIL
+~~~
+i := 10;
+
+repeat
+  ShowMessage( IntToStr(i) );
+  Inc( i );
+until ( i >= 10 );
+~~~   
 
 ## Unidades (Unit)
 >  Estrutura de uma Unit:
@@ -191,34 +222,67 @@ unit nome_unidade;
 end. // fim unidade
 ~~~
 
-## Funções e Procedimentos
+## Funções
 
+- são declaradas na seção `interface`
+- `Result` ou `nome_função`para trabalhar o Retorno da função
+
+> Função 
 ~~~Delphi
 unit nome_unidade; 
 
 interface 
-  
-    function  calcDividir   (a,b: Integer);
-    procedure escreverNome ();
-  
+    function  Somar   (a,b: Integer);
   
 implementation 
-  
-  function calcDividir(a,b: Integer);
+  function Somar(a, b: Integer): Integer;
   begin
-    result := a / b;
+      Result := a + b;
   end;
+    
+end. // fim unidade
+~~~
 
-  procedure escreverNome();
+~~~
+var
+   resultado: Integer;
+  { ... }
+  resultado := Somar(10, 20);
+~~~
+
+## Procedimetnos
+- Pode receber um ou nenhum parâmetro
+
+
+> Procedimento
+~~~Delphi
+unit nome_unidade; 
+
+interface 
+    procedure escreverNome ( n := String );
+
+implementation 
+  procedure escreverNome( n );
   begin
-    println("Ola Mundo!");
+    println( "Ola ", n );
   end;
     
     
 end. // fim unidade
 ~~~
 
-
+> Pasagem por Referencia
+- `var`
+- `out`
+~~~
+function TForm1.SomaValor(var x: integer): Integer;
+begin
+     //Adiciona 1000 ao valor de a
+     x := x + 1000;
+     //Retorna o valor de a
+     Result := x;
+end;
+~~~
 
 ## Componentes
 > Interface
@@ -252,6 +316,13 @@ end. // fim unidade
   - OBS.: carrega a tabela inteira na memoria. Pode acabar travando se haver muitos registros.
   - Centraliza a formatação para futuras chamadas multiplas nos formularios.
   
+## Funções do Delphi
+- `INC(x)` : x := x + 1;
+- `DEC(x)` : x := x - 1;
+- `StrToInt(x)` : de String para Integer
+- `IntToStr(x)` : de Integer para String
+
+
 ## Teclas de Atalho
 - `F12` : Alternar entre Código-View
 - `F9` : Executar
