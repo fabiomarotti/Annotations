@@ -25,6 +25,72 @@ interface
 type
   TPessoa = class  // Herda a classe Object
     private
+      Nome  : String;
+      Idade : Integer;
+
+    public
+      procedure setNome(  n  : String );
+      procedure setIdade( i : Integer);
+      
+      function getNome  : String;
+      function getIdade : Integer;
+      
+      constructor CriarObjeto;
+      destructor  DestruirObjeto;
+ end;
+ 
+{ Implementação }
+implementation
+
+{ TPessoa }
+
+constructor TPessoa.construirObjeto;
+begin
+  Nome  := '';
+  Idade := 0;
+end;
+
+destructor TPessoa.destruirObjeto;
+begin
+end;
+
+
+function TPessoa.getIdade: Integer;
+begin
+  result := Idade;
+end;
+
+function TPessoa.getNome: String;
+begin
+  result := Nome;
+end;
+
+
+procedure TPessoa.setIdade(i: Integer);
+begin
+  Idade := i;
+end;
+
+procedure TPessoa.setNome(n: String);
+begin
+  Nome := n;
+end;
+   
+
+end.
+~~~
+
+> Unidade contendo a Classe Pessoa
+~~~Delphi
+unit Unit_Pessoa;
+
+{ Declaração }
+interface
+
+{ Classe }
+type
+  TPessoa = class  // Herda a classe Object
+    private
       Idade : Integer;
     public
       Nome : String;
