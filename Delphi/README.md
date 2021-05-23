@@ -31,7 +31,7 @@
     - `*.dproj.local` 
     - `*.dpr` : **Arquivo para se abrir os projetos**
     - `*.res` : arquivos de icones, imagens, outros
-    - ../Projeto/Agenda
+    - ../Projeto/Nome_Projeto
     - `~arquivo` arquivos de backup
 - `VCL Form `
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
