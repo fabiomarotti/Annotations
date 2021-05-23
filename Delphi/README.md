@@ -150,7 +150,8 @@ unit nome_unidade;
   // região de declaração
   
     uses
-    // Bibliotecas
+    // Bibliotecas do Sistema e Componentes
+    // Ex.: System.Classes, System.SysUtils
     
     type
     // Classes
@@ -160,6 +161,10 @@ unit nome_unidade;
   
   implementation
   // região de implementação de código
+  
+    uses
+    // Bibliotecas Implementadas para o Sistemas
+    // Ex.: uTelaPrincipal
 
 end. // fim unidade
 ~~~
