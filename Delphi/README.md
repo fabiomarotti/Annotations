@@ -119,6 +119,10 @@
 - Vetores
 
 
+### Converter tipos
+
+- `IntToStr()`
+
 ## Operadores Aritméticos
 - `*` multiplicação 
 - `/` divisão entre variaveis reais
