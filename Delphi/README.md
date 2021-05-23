@@ -164,21 +164,23 @@ end. // fim unidade
 unit nome_unidade; 
 
 interface 
-    uses 
-      System.classes;
-    function calcular : Real;
-    procedure escreverNome ( n : String);
+  
+    function  calcDividir   (a,b: Integer);
+    procedure escreverNome ();
+  
   
 implementation 
-  function calcular : Real;
+  
+  function calcDividir(a,b: Integer);
   begin
-    soma :=  1 + 1;
+    result := a / b;
   end;
 
-  procedure escreverNome( n : String);
+  procedure escreverNome();
   begin
-    println("Ola "), n;
+    println("Ola Mundo!");
   end;
+    
     
 end. // fim unidade
 ~~~
