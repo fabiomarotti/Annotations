@@ -1,4 +1,7 @@
 # Configurações importantes para Interface
+- Project / Options / Forms / Auto-create Forms (principal)
+
+## Definições
 - Name: Nome do objeto
 - Caption: Nome de exibição
     
