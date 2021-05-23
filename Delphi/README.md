@@ -107,6 +107,8 @@
   - AnsiString
   - WideString
 
+- String : usar aspas simples *
+
 - Genéricas
   - Variant (não compensa)
   
