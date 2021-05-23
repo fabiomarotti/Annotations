@@ -216,6 +216,9 @@ end. // fim unidade
   - Centraliza a formatação para futuras chamadas multiplas nos formularios.
   
 ## Teclas de Atalho
+- `F12` : Alternar entre Código-View
+- `F9` : Executar
+- `Ctrl` + `Shift` + `F9` : Executar sem Debug
 - `Ctrl` + `seta` : mover componente
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
