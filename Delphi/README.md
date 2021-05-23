@@ -123,13 +123,16 @@
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
-## Classes
-- Estrutura básica de um código:
-  - `unit` : nome do arquivo
-  - `interface` declaração
-    - `uses`: Bibliotecas
-    - `Type` e `TClasse = class` , `end;` : Classes
-  - `implementation`: Implementação
+
+## Unidades (Unit)
+>  Estrutura de uma Unit:
+- `unit` : nome do arquivo
+- `interface` declaração
+  - `uses`: Bibliotecas
+  - `type` 
+    - `TClasse = class` , `end;` : Classes
+  - `var` : Declaração de variaveis 
+  - `implementation`: Implementação dos métodos ou procedimentos
 
 > Exemplo 01
 ~~~Delphi
@@ -138,30 +141,35 @@ unit nome_unidade;
   interface
   // região de declaração de bibliotecas, classes, funções, procedimento e variáveis.
   
+    uses
+    
+    type
+    
+    var
+  
   implementation
   // região de implementação de código
 
 end. // fim unidade
 ~~~
 
-> Exemplo 02
+## Funções e Procedimentos
+
 ~~~Delphi
 unit nome_unidade; 
 
-  interface  // declaração de bibliotecas, funções, procedimento.
+  interface 
     uses System.classes;
     function calcular : Real;
     procedure escreverNome ( n : String);
   
-  implementation // região de implementação
-    
-    // função implementada
+  implementation 
+
     function calcular : Real;
     begin
-    // código da função calcular
+      soma := 
     end;
 
-    // procedimento implementado
     procedure escreverNome( n : String);
     begin
       println("Ola "), n;
@@ -169,73 +177,6 @@ unit nome_unidade;
     
 end. // fim unidade
 ~~~
-
-> Exemplo 03
-~~~Delphi
-unit nome_unidade; 
-
-  interface  // declaração de bibliotecas, funções, procedimento.
-    uses System.classes;
-    function calcular : Real;
-    procedure escreverNome ( n : String);
-  
-  implementation // região de implementação
-    
-    // função implementada
-    function calcular : Real;
-    begin
-    // código da função calcular
-    end;
-
-    // procedimento implementado
-    procedure escreverNome( n : String);
-    begin
-      println("Ola "), n;
-    end;
-    
-end. // fim unidade
-~~~
-
-
-> Exemplo 04
-~~~Delphi
-unit PessoaU; 
-
-interface
-  uses System.classes; 
-  
-    // Classes
-    Type
-        TPessoa = class         // inicio da classe
-          // declaração variáveis da classe TPessoa
-          Private
-            Nome   : String;
-            Idade  : Integer;
-            Altura : Real;
-            Outros : TStringList;
-          Public
-            function getNome : String;
-            procedure setNome(vNome : String );
-        end;                    // final da classe TPessoa
-  
-implementation  // região de implementação
-
-    // função implementada
-    function TPessoa.getNome : String;
-    begin
-      resultado := Nome;
-    end;
- 
-    // procedimento implementado
-    procedure TPessoa.setNome( n : String);
-    begin
-      Nome := n;
-    end;
-    
-    
-end. // fim unidade
-~~~
-
 
 
 
