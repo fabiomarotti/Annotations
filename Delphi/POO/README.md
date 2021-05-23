@@ -10,10 +10,11 @@
  
  [ ] Polimorfismo
 
-# Métodos Construtores e Destrutores
-.Create
 
 # Classe
+- `instancia.Create` : Construtor
+- `instancia.Free` : Destrutor
+
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
 unit Unit_Pessoa;
@@ -56,3 +57,7 @@ implementation
  
 end.
 ~~~
+
+## Encapsulamento
+
+
