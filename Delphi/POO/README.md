@@ -1,5 +1,10 @@
 # Programação Orientada a Objetos (Delphi)
 
+[ ] Abstração
+[ ] Herança
+[ ] Encapsulamento
+[ ] Polimorfismo
+
 # Métodos Construtores e Destrutores
 .Create
 
