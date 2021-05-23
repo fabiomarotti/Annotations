@@ -40,3 +40,15 @@
   - dgRowSelect
   - dgAlwaysShowSelection
 
+# Ação para um Form
+
+> Procedimento em (TFormPrincipal) para chamar um formulario do (TFormCadastro)
+~~~Delphi
+procedure TFormPrincipal.Gravar1Click(Sender: TObject);
+var cadastro : TFormCadastro;
+begin
+    cadastro := TFormCadastro.Create(self);
+    cadastro.ShowModal;
+end;
+
+~~~
