@@ -127,25 +127,28 @@
 ## Unidades (Unit)
 >  Estrutura de uma Unit:
 - `unit` : nome do arquivo
-- `interface` declaração
-  - `uses`: Bibliotecas
+- `interface` : Declarações
+  - `uses`: Declarar Bibliotecas
   - `type` 
-    - `TClasse = class` , `end;` : Classes
-  - `var` : Declaração de variaveis 
-  - `implementation`: Implementação dos métodos ou procedimentos
+    - `TClasse = class` , `end;` : Declarar Classe
+  - `var` : Declarar variaveis
+  - `implementation`: Implementação de métodos ou procedimentos
 
-> Exemplo 01
+> Exemplo da estrutura de uma Unit
 ~~~Delphi
 unit nome_unidade; 
 
   interface
-  // região de declaração de bibliotecas, classes, funções, procedimento e variáveis.
+  // região de declaração
   
     uses
+    // Bibliotecas
     
     type
+    // Classes
     
     var
+    // Variaveis
   
   implementation
   // região de implementação de código
@@ -158,22 +161,22 @@ end. // fim unidade
 ~~~Delphi
 unit nome_unidade; 
 
-  interface 
-    uses System.classes;
+interface 
+    uses 
+      System.classes;
     function calcular : Real;
     procedure escreverNome ( n : String);
   
-  implementation 
+implementation 
+  function calcular : Real;
+  begin
+    soma :=  1 + 1;
+  end;
 
-    function calcular : Real;
-    begin
-      soma := 
-    end;
-
-    procedure escreverNome( n : String);
-    begin
-      println("Ola "), n;
-    end;
+  procedure escreverNome( n : String);
+  begin
+    println("Ola "), n;
+  end;
     
 end. // fim unidade
 ~~~
