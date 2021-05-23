@@ -50,5 +50,11 @@ begin
     cadastro := TFormCadastro.Create(self);
     cadastro.ShowModal;
 end;
-
 ~~~
+
+# Caixa de Mensagem
+~~~Delphi
+ShowMessage('Ola Mundo! ");
+~~~
+
+
