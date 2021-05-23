@@ -56,13 +56,15 @@
 { 
   Comentário em múltiplas linhas
 }
+~~~
 
+~~~Delphi
 {* 
   Comentário em múltiplas linhas
 *}
 ~~~
 
-> Ocultar uma região
+> Região: possibilidade de Ocultar código
 ~~~Delphi
 {$REGION 'NomeRegion'}
   // código a ser ocultado
