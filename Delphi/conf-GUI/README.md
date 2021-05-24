@@ -29,7 +29,7 @@
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
 > [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir (qnd estiver vazio)]
-- [Regra]
+- **Regra**
     - `A` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento obrigatório. Ex: AAA;1;_
     - `a` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento opcional. Ex: aaa;1;_
     - `0` Caracteres numéricos (0-9) com preenchimento obrigatório. Ex: 000;1;_
@@ -46,7 +46,7 @@
     - `:` Utilizado como separador de horas, minutos e segundos. Ex: !00:00:00;1;_
     - `/` Utilizado como separador de dia, mês e ano. Ex: !99/99/9999;1;_
     - `_` Caractere usado normalmente nas posições do campo ainda não preenchidas.
-- [ ; (ponto e virgula)]
+- **;** (ponto e virgula)
     - Separa os três campos da máscara. 
 
    
