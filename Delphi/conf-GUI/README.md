@@ -26,7 +26,8 @@
     - `onExecute` conterá o evento
     - propriedade `Action` nos botões aciona uma evento do `onExecute`
 - `TGroupBox` TPainel com label 
-### `TMaskEdit` 
+
+### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
 - `A` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento obrigatório. Ex: AAA;1;_
 - `a` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento opcional. Ex: aaa;1;_
 - `0` Caracteres numéricos (0-9) com preenchimento obrigatório. Ex: 000;1;_
