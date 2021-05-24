@@ -28,24 +28,25 @@
 - `TGroupBox` TPainel com label 
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
-> [regra] ; [salvar/não os caracteres] ; [caracter a se exibir (qnd estiver vazio)]
-- `A` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento obrigatório. Ex: AAA;1;_
-- `a` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento opcional. Ex: aaa;1;_
-- `0` Caracteres numéricos (0-9) com preenchimento obrigatório. Ex: 000;1;_
-- `9` Caracteres numéricos (0-9) com preenchimento opcional. Ex: 999;1;_
-- `L` Caracteres alfabéticos (A-Z, a-z) com preenchimento obrigatório. Ex: LLL;1;_
-- `l` (Letra ele minúscula) Caracteres alfabéticos (A-Z, a-z) com preenchimento opcional. Ex: lll;1;_
-- `>` Todos os caracteres alfabéticos digitados após este símbolo serão convertidos para maiúsculos. Ex:>aaa;0;_
-- `<` Todos os caracteres alfabéticos digitados após este símbolo serão convertidos para minúsculos. Ex:<aaa;0;_
-- `<>` Anula o uso dos caracteres > e <. Ex: >aaa<>aaa;0;_
-- `\` Utilizado para marcar determinado caractere não especial como fixo, não podendo sobrescrevê-lo. Ex:!\(999\)000-0000;0;_
-- `C` Exige preenchimento obrigatório com qualquer caractere para a posição. Ex: CCC;1;_
-- `c` Permite qualquer caractere para a posição com preenchimento opcional. Ex: ccc;1;_
-- `#` Caracteres numéricos (0-9) e os sinais de – ou + com preenchimento opcional. Ex: ###;1;_
-- `:` Utilizado como separador de horas, minutos e segundos. Ex: !00:00:00;1;_
-- `/` Utilizado como separador de dia, mês e ano. Ex: !99/99/9999;1;_
-- `;` Separa os três campos da máscara.
-- `_` Caractere usado normalmente nas posições do campo ainda não preenchidas.
+> [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir (qnd estiver vazio)]
+- [Regra]
+    - `A` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento obrigatório. Ex: AAA;1;_
+    - `a` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento opcional. Ex: aaa;1;_
+    - `0` Caracteres numéricos (0-9) com preenchimento obrigatório. Ex: 000;1;_
+    - `9` Caracteres numéricos (0-9) com preenchimento opcional. Ex: 999;1;_
+    - `L` Caracteres alfabéticos (A-Z, a-z) com preenchimento obrigatório. Ex: LLL;1;_
+    - `l` (Letra ele minúscula) Caracteres alfabéticos (A-Z, a-z) com preenchimento opcional. Ex: lll;1;_
+    - `>` Todos os caracteres alfabéticos digitados após este símbolo serão convertidos para maiúsculos. Ex:>aaa;0;_
+    - `<` Todos os caracteres alfabéticos digitados após este símbolo serão convertidos para minúsculos. Ex:<aaa;0;_
+    - `<>` Anula o uso dos caracteres > e <. Ex: >aaa<>aaa;0;_
+    - `\` Utilizado para marcar determinado caractere não especial como fixo, não podendo sobrescrevê-lo. Ex:!\(999\)000-0000;0;_
+    - `C` Exige preenchimento obrigatório com qualquer caractere para a posição. Ex: CCC;1;_
+    - `c` Permite qualquer caractere para a posição com preenchimento opcional. Ex: ccc;1;_
+    - `#` Caracteres numéricos (0-9) e os sinais de – ou + com preenchimento opcional. Ex: ###;1;_
+    - `:` Utilizado como separador de horas, minutos e segundos. Ex: !00:00:00;1;_
+    - `/` Utilizado como separador de dia, mês e ano. Ex: !99/99/9999;1;_
+    - `;` Separa os três campos da máscara.
+    - `_` Caractere usado normalmente nas posições do campo ainda não preenchidas.
 
    
 
