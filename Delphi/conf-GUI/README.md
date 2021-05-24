@@ -53,7 +53,8 @@
     - **0** : Não salvar os caracteres da mascara   
 - **caracter a se exibir** (quando estiver vazio/branco)
     - caracter a se exibir no campo em branco
-   
+
+> Boa prática: salvar apenas dados (numeros e letras), sem a máscara.   
 
 # Form
 - `Icon`: *.ico
