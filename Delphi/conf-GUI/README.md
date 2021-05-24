@@ -58,4 +58,10 @@ end;
 ShowMessage('Ola Mundo!' + var);
 ~~~
 
+# Eventos
+- `onClick`
+- `onChange` 
+- `onExit` validar ao sair/terminar
 
+## considerações
+- SpeedButton não recebem foco
