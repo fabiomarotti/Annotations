@@ -45,8 +45,9 @@
     - `#` Caracteres numéricos (0-9) e os sinais de – ou + com preenchimento opcional. Ex: ###;1;_
     - `:` Utilizado como separador de horas, minutos e segundos. Ex: !00:00:00;1;_
     - `/` Utilizado como separador de dia, mês e ano. Ex: !99/99/9999;1;_
-    - `;` Separa os três campos da máscara.
     - `_` Caractere usado normalmente nas posições do campo ainda não preenchidas.
+- [ ; (ponto e virgula)]
+    - Separa os três campos da máscara. 
 
    
 
