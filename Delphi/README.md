@@ -335,6 +335,14 @@ end;
 ### `FireDac`
 
 ### `DBExpress` 
+- `TSQLConnection` 
+- `TSQLDataSet`
+  - CommandText : Linha de comando SQL
+  - CommandType : ?
+
+- `TClientDataSet`
+- `DataAccess` ?
+- [ver +](https://www.youtube.com/watch?v=rrxT3P7MTBQ)
 
 ### `Zeos Access` multidirecional
 - `TZConection` (zConexao)
