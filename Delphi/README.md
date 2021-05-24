@@ -37,14 +37,6 @@
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
-> Configurações importantes
-- View / Tool Windows
-  - `Project Manager` Ctrl + Alt + F11
-  - `Structure`
-  - `Object Inspector` : F11
-  - `Tool Palet`
-
-
 
 ## Data Module
 - Formulario centralizador de componetes não visuais
@@ -338,3 +330,9 @@ end;
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
 - `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
+
+> Exibir Ferramentas
+`Ctrl` + `Alt` + `F11`  : Project Manager 
+`Shift` + `Alt` + `F11` : Structure
+`F11`                   : Object Inspecto
+`Ctrl` + `Alt` + `P`    : Tool Palet
