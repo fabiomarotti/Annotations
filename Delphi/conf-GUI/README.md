@@ -28,6 +28,7 @@
 - `TGroupBox` TPainel com label 
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
+> [regra] ; [salvar/não os caracteres] ; [caracter a se exibir (qnd estiver vazio)]
 - `A` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento obrigatório. Ex: AAA;1;_
 - `a` Caracteres alfanuméricos (A-Z, a-z, 0-9) com preenchimento opcional. Ex: aaa;1;_
 - `0` Caracteres numéricos (0-9) com preenchimento obrigatório. Ex: 000;1;_
