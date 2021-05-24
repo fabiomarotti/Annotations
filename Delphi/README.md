@@ -37,7 +37,14 @@
   - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
-- `DataModule` : Drag-and-Drop
+> Configurações importantes
+- View / Tool Windows
+  - `Project Manager` Ctrl + Alt + F11
+  - `Structure`
+  - `Object Inspector` : F11
+  - `Tool Palet`
+
+
 
 ## Data Module
 - Formulario centralizador de componetes não visuais
