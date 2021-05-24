@@ -25,31 +25,32 @@
 - Executaveis (Project Manager)
   - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
   - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
-  - `*.dcu` arquivo pre-compilado, auxiliar o *.exe
+  - `*.dcu` arquivo pre-compilado, para auxiliar o `*.exe`
 - `VCL Form Application` 
   - `Delphi Unit` : 
     - `*.pas` : arquivo de código
     - `*.dfm` : informações complementares de um formulário
-    - ../Forms/uFrmPrincipal -> (Objeto: frmPrincipal)
-    - ../Forms/FrmPrincipalU
+      - ../Forms/uFrmPrincipal -> (Objeto: frmPrincipal)
+      - ../Forms/FrmPrincipalU
   - `Delphi projects` : informações do Projeto
     - `*.dproj` : Usar este arquivo para editar o projeto
+      - ../Projeto/Nome_Projeto 
     - `*.dproj.local` 
     - `*.dpr` : **Arquivo para se abrir os projetos**
     - `*.res` : arquivos de icones, imagens, outros
-    - ../Projeto/Nome_Projeto
-    - `~arquivo` arquivos de backup
+    - `~arquivo` : arquivos de backup
 - `VCL Form `
-  - `Delphi unit (*.pas)` : ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
+  - `Delphi unit (*.pas)`
+    -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
 
 ## Data Module
 - Formulario centralizador de componetes não visuais
 - componentes de Banco de Dados
-- boa ptrática nomear como 
-  - `dmModulo` objeto
-  - `dmUnidadeMdoulo` arquivo
+- boa prática, nomear como:
+  - `dmModulo` : objeto
+  - `dmUnidadeMdoulo` : arquivo
 
 ## Comentários e Regiões
 > Comentar
