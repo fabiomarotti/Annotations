@@ -77,23 +77,23 @@
 {$ENDREGION}
 ~~~
 
-## Varáveis
-~~~
+## Declaração de Variáveis
+~~~Delphi
 var 
   Nome: string;
 Nome := 'Fábio Marotti';
 ~~~ 
 
-~~~
+~~~Delphi
 var 
   Nome: string := 'Fábio Marotti';
 ~~~ 
 
-~~~
+~~~Delphi
 var Idade := 20; // compilador infere que é um tipo inteiro
 ~~~ 
 
-~~~
+~~~Delphi
 for var Contador := 0 to 10 do { ... }
 ~~~
 
@@ -104,7 +104,7 @@ for var Contador := 0 to 10 do { ... }
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
 - Numéricos
-~~~
+~~~Delphi
 var
    // Integer data types :
    Int1 : Byte;     //                        0 to 255
@@ -118,7 +118,7 @@ var
    Int9 : Int64;  // -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 ~~~   
 
-~~~
+~~~Delphi
 var 
    // Decimal data types :
    Dec1 : Single;   //  7  significant digits, exponent   -38 to +38
@@ -128,7 +128,7 @@ var
 ~~~
 
 - Texto
-~~~
+~~~Delphi
 var
    Str1 : Char;        // Holds a single character, small alphabet
    Str2 : WideChar;    // Holds a single character, International alphabet
@@ -140,20 +140,20 @@ var
 ~~~   
 
 - Lógico
-~~~
+~~~Delphi
  var
    Log1 : Boolean;     // Can be 'True' or 'False'
 ~~~
 
 - Conjuntos, Enumerados e Subtipos
-~~~
+~~~Delphi
 type
    TSuit = (Hearts, Diamonds, Clubs, Spades);    // Defines the enumeration
  var
    suit : TSuit;                                 // An enumeration variable
 ~~~   
 
-~~~
+~~~Delphi
 type
    TWeek = Set of 1..7;             // Set comprising the days of the week, by number
  var
@@ -164,7 +164,7 @@ type
  ~~~
 
 - Constantes
-~~~
+~~~Delphi
 const
    FRED          = 'Fred';       // String constant
    YOUNG_AGE     = 23;           // Integer constant
@@ -173,7 +173,7 @@ const
 ~~~   
 
 ### Arrays
-~~~
+~~~Delphi
 var 
   A: array[0..5] of Integer;
 ~~~
@@ -191,7 +191,7 @@ var
 ## Estruturas logicas
 
 > Estrutura de Repetição FOR
-~~~
+~~~Delphi
 var
   i: Integer;
   
@@ -201,7 +201,7 @@ begin
 end;
 ~~~~
 
-~~~
+~~~Delphi
 var
   i: Integer;
   
@@ -210,8 +210,9 @@ begin
   ShowMessage( IntToStr(i) );
 end;
 ~~~   
+
 > Estrutura de Repetição UNTIL
-~~~
+~~~Delphi
 i := 10;
 
 repeat
@@ -278,7 +279,8 @@ implementation
 end. // fim unidade
 ~~~
 
-~~~
+> Chamando a Função
+~~~Delphi
 var
    resultado: Integer;
   { ... }
@@ -309,7 +311,7 @@ end. // fim unidade
 > Pasagem por Referencia
 - `var`
 - `out`
-~~~
+~~~Delphi
 function TForm1.SomaValor(var x: integer): Integer;
 begin
      //Adiciona 1000 ao valor de a
