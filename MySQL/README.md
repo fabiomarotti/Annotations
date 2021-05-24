@@ -165,3 +165,4 @@ SELECT * FROM tb_usuarios;
 > Mostrar os privilégios de acesso ao Banco de Dados <br>
 > SHOW GRANTS FOR root@localhost;
 
+> `SELECT * FROM tb_pessoa\G` mostra dados organizados (prompt mysql)
