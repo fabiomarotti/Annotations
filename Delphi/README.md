@@ -332,7 +332,7 @@ end;
 - `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
 
 > Exibir Ferramentas
-`Ctrl` + `Alt` + `F11`  : Project Manager 
-`Shift` + `Alt` + `F11` : Structure
-`F11`                   : Object Inspecto
-`Ctrl` + `Alt` + `P`    : Tool Palet
+- `Ctrl` + `Alt` + `F11`  : Project Manager 
+- `Shift` + `Alt` + `F11` : Structure
+- `F11`                   : Object Inspecto
+- `Ctrl` + `Alt` + `P`    : Tool Palet
