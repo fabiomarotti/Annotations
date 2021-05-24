@@ -28,7 +28,7 @@
 - `TGroupBox` TPainel com label 
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
-> [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir (qnd estiver vazio)]
+> [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir]
 - **;** (ponto e virgula)
     - Separa os três campos da máscara. 
 - **Regra**
@@ -51,7 +51,7 @@
 - **salvar/não**
     - **1** : Salvar os caracteres da mascara
     - **0** : Não salvar os caracteres da mascara   
-- **caracter a se exibir**
+- **caracter a se exibir** (quando estiver vazio/branco)
     - exibe o caracter que for definido no terceiro campo 
    
 
