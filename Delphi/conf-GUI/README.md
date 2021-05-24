@@ -48,7 +48,11 @@
     - `_` Caractere usado normalmente nas posições do campo ainda não preenchidas.
 - **;** (ponto e virgula)
     - Separa os três campos da máscara. 
-
+- **salvar/não**
+    - **1** : Salvar os caracteres da mascara
+    - **0** : Não salvar os caracteres da mascara   
+- **caracter a se exibir**
+    - exibe o caracter que for definido no terceiro campo 
    
 
 # Form
