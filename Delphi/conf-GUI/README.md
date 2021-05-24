@@ -52,7 +52,7 @@
     - **1** : Salvar os caracteres da mascara
     - **0** : Não salvar os caracteres da mascara   
 - **caracter a se exibir** (quando estiver vazio/branco)
-    - exibe o caracter que for definido no terceiro campo 
+    - caracter a se exibir no campo em branco
    
 
 # Form
