@@ -1,12 +1,18 @@
 # Embarcadero Delphi 
 [site (oficial)](https://www.embarcadero.com/br/)
 
-- 1995 Borland (Turbo Pascal) -> para Windows 3.1 (16 bits)
-- 2006 CodeGear 
-- 2008 Embarcadero
-- Ambiente de Desenvolvimento (ferramenta/conceito)
+> Informações
+- Delphi é um Ambiente de Desenvolvimento (ferramenta/conceito)
 - RAD (Rapid Applicaiton Development)
 - Linguagem Pascal
+- VCL (Visual Component Library)
+- CLX (Component Library for Cross Platform) 
+  - Borland Kylix 
+
+> História
+- 1995 : Borland (Turbo Pascal) -> para Windows 3.1 (16 bits)
+- 2006 : CodeGear 
+- 2008 : Embarcadero
 
 > versões da IDE RAD Studio 
 - RAD Studio 10.0 (Seattle) [2015]
