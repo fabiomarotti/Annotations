@@ -160,9 +160,9 @@ SELECT * FROM tb_usuarios;
 - SHOW COLUMNS FROM tbl_Livro LIKE ‘I%’;
 - SHOW COLUMNS FROM tbl_Livro WHERE Type like ‘varchar%’;
 
-# Comandos extras
-
 > Mostrar os privilégios de acesso ao Banco de Dados <br>
 > SHOW GRANTS FOR root@localhost;
 
 > `SELECT * FROM tb_pessoa\G` mostra dados organizados (prompt mysql)
+
+> `SELECT * FROM tb_pessoa WHERE nome LIKE 'f%' `
