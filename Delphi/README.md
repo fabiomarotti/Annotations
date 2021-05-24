@@ -99,57 +99,86 @@ for var Contador := 0 to 10 do { ... }
 
 
 
-## Tipos de Dados
+## Tipos de Dados 
+[1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
+[2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
-- Inteiras
-  - Integer
-  - Cardinal
-  - Shortint
-  - Smallint
-  - Longint
-  - Int64
-  - Byte
-  - Word
-  - LongWord
+- Numéricos
+~~~
+var
+   // Integer data types :
+   Int1 : Byte;     //                        0 to 255
+   Int2 : ShortInt; //                     -127 to 127
+   Int3 : Word;     //                        0 to 65,535
+   Int4 : SmallInt; //                  -32,768 to 32,767
+   Int5 : LongWord; //                        0 to 4,294,967,295
+   Int6 : Cardinal; //                        0 to 4,294,967,295
+   Int7 : LongInt;  //           -2,147,483,648 to 2,147,483,647
+   Int8 : Integer;  //           -2,147,483,648 to 2,147,483,647
+   Int9 : Int64;  // -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+~~~   
 
-- Reais
-  - Real48
-  - Single
-  - Double
-  - Extended
-  - Comp
-  - Currency
-  - Real equivale a double
+~~~
+var 
+   // Decimal data types :
+   Dec1 : Single;   //  7  significant digits, exponent   -38 to +38
+   Dec2 : Currency; // 50+ significant digits, fixed 4 decimal places
+   Dec3 : Double;   // 15  significant digits, exponent  -308 to +308
+   Dec4 : Extended; // 19  significant digits, exponent -4932 to +4932
+~~~
 
-- Booleanas
-  - Boolean
-  - ByteBool
-  - WordBool
-  - LongBool
+- Texto
+~~~
+var
+   Str1 : Char;        // Holds a single character, small alphabet
+   Str2 : WideChar;    // Holds a single character, International alphabet
+   Str3 : AnsiChar;    // Holds a single character, small alphabet
+   Str4 : ShortString; // Holds a string of up to 255 Char's
+   Str5 : String;      // Holds strings of Char's of any size desired
+   Str6 : AnsiString;  // Holds strings of AnsiChar's any size desired
+   Str7 : WideString;  // Holds strings of WideChar's of any size desired
+~~~   
 
-- Caracter
-  - Char
-  - AnsiChar
-  - WideChar
-  - ShortString
-  - AnsiString
-  - WideString
+- Lógico
+~~~
+ var
+   Log1 : Boolean;     // Can be 'True' or 'False'
+~~~
 
-- String : usar aspas simples *
+- Conjuntos, Enumerados e Subtipos
+~~~
+type
+   TSuit = (Hearts, Diamonds, Clubs, Spades);    // Defines the enumeration
+ var
+   suit : TSuit;                                 // An enumeration variable
+~~~   
 
-- Genéricas
-  - Variant (não compensa)
-  
-- Arquivo
-  - File
-  - TextFile
-  
-- Vetores
+~~~
+type
+   TWeek = Set of 1..7;             // Set comprising the days of the week, by number
+ var
+   week : TWeek;
+ begin
+   week := [1,2,3,4,5];      // Switch on the first 5 days of the week
+ end;
+ ~~~
+
+- Constantes
+~~~
+const
+   FRED          = 'Fred';       // String constant
+   YOUNG_AGE     = 23;           // Integer constant
+   TALL : Single = 196.9;        // Decimal constant
+   NO            = False;        // Boolean constant
+~~~   
+
+### Arrays
+~~~
+var 
+  A: array[0..5] of Integer;
+~~~
 
 
-### Converter tipos
-
-- `IntToStr()`
 
 ## Operadores Aritméticos
 - `*` multiplicação 
@@ -325,6 +354,7 @@ end;
 ## Funções do Delphi
 - `INC(x)` : x := x + 1;
 - `DEC(x)` : x := x - 1;
+- `LOW(x)` : retorna o valor mais baixo
 - `StrToInt(x)` : de String para Integer
 - `IntToStr(x)` : de Integer para String
 
@@ -343,3 +373,6 @@ end;
 - `Shift` + `Alt` + `F11` : Structure
 - `F11`                   : Object Inspecto
 - `Ctrl` + `Alt` + `P`    : Tool Palet
+
+# Links
+[Conteudo basico para pesquisa](http://www.delphibasics.co.uk/RTL.asp?Name=Low)
