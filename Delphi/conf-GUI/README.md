@@ -25,6 +25,7 @@
     - `Images` associa ao `TImageList`
     - `onExecute` conterá o evento
     - propriedade `Action` nos botões aciona uma evento do `onExecute`
+- `TGroupBox` TPainel com label 
 
 # Form
 - `Icon`: *.ico
