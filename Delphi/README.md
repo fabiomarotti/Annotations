@@ -15,6 +15,15 @@
 - 2008 : Embarcadero
 
 > versões da IDE RAD Studio 
+- Delphi 1 [1994]
+- ...
+- Delphi 7 [2002]
+- ...
+- Delphi 2010
+- Delphi XE
+- Delphi XE2 [2011] *
+- ...
+- Delphi XE8 [2015]
 - RAD Studio 10.0 (Seattle) [2015]
 - RAD Studio 10.1 (Berlim) [2016]
 - RAD Studio 10.2 (Tokyo) *
