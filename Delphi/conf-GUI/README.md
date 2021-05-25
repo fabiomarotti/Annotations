@@ -16,13 +16,16 @@
 
 - `TStatusBar` rodapé
 
-- `TImageList` conjunto de imagens a serem usadas no sistema
+- `TImageList` conjunto de imagens a serem compartilhadas no sistema
+  - ColorDepth: cd32bit
+  - Width e Height 
   - boa pratica, nomear pelo tamanho da imagem a ser usada
   - sua chamda é na propriedade `Image`
 
-- `TActionList` Uma lista de ações para reaproveitar codigo
+- `TActionList` Cria uma lista de ações pre-configuradas e reaproveitas no codigo
   - `New Action` Cria uma ação (botão)
-    - `Images` associa ao `TImageList`
+    - `Caption` Nome exposto ao Usuario
+    - `ImagesIndex` associado ao `TImageList`
     - `onExecute` conterá o evento
     - propriedade `Action` nos botões aciona uma evento do `onExecute`
 - `TGroupBox` TPainel com label 
@@ -59,9 +62,10 @@
 # Form
 - `Icon`: *.ico
 - `FormStyle`:
+  - fsNormal (formulários independentes) 
   - fsMDIForm (formulario Pai)
   - fsMDIChild (formulario Filho)  
-- `Position`: poScreenCenter (onde aparecer o form)
+- `Position`: poScreenCenter (onde o form vai aparecer)
 - `WindowsState`: wsNormal, Minimizado e Maximizado
 
 # TDBGrid
