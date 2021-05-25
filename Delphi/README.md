@@ -364,7 +364,7 @@ end;
   - Connected: True
  
  - `TZTable` (ztbPessoa)
-  - Connection: TZConnection
+  - Connection: `TZConnection`
   - TableName:  vincula a tabela no banco de dados ao componente (qnd BD estiver ativo)
   - Active: True
   - Add All Fields 
