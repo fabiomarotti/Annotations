@@ -347,6 +347,8 @@ end;
 - `LOW(x)` : retorna o valor mais baixo
 - `StrToInt(x)` : de String para Integer
 - `IntToStr(x)` : de Integer para String
+- `QuotedStr(x)` : deixa entre aspas simples
+  -ex.:  `QuotedStr('*'+campo+'*' ) `
 
 
 ## Teclas de Atalho
