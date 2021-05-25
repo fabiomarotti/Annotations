@@ -79,6 +79,8 @@
   - dgIndicator
   - dgRowSelect
   - dgAlwaysShowSelection
+### Eventos
+- `onTitleClik` : Ao clicar no titulo da tabela
 
 # Ação para um Form
 
