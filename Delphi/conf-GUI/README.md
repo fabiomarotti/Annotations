@@ -29,7 +29,10 @@
     - `ImagesIndex` associado ao `TImageList`
     - `onExecute` conterá o evento
     - propriedade `Action` nos botões aciona uma evento do `onExecute`
+
 - `TGroupBox` TPainel com label 
+
+- `TBitBtn` : Botão
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
 > [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir]
@@ -66,7 +69,7 @@
   - fsNormal (formulários independentes) 
   - fsMDIForm (formulario Pai)
   - fsMDIChild (formulario Filho)  
-- `Position`: poScreenCenter (onde o form vai aparecer)
+- `Position`: poScreenCenter, poMainFormCenter,.. (onde o form vai aparecer)
 - `WindowsState`: wsNormal, Minimizado e Maximizado
 
 # TDBGrid
@@ -96,6 +99,10 @@ ShowMessage('Ola Mundo!' + var);
 - `onClick`
 - `onChange` 
 - `onExit` validar ao sair/terminar
+
+# Formulário Modelo
+
+
 
 ## considerações
 - SpeedButton não recebem foco
