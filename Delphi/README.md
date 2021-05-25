@@ -340,36 +340,6 @@ end;
 - `TLabeledEdit` (Additional)
 - `TSpeedButton` (Additional) : Botão
 
-# Banco de Dados:
-### `FireDac`
-
-### `DBExpress` 
-- `TSQLConnection` 
-- `TSQLDataSet`
-  - CommandText : Linha de comando SQL
-  - CommandType : ?
-
-- `TClientDataSet`
-- `DataAccess` ?
-- [ver +](https://www.youtube.com/watch?v=rrxT3P7MTBQ)
-
-### `Zeos Access` multidirecional
-- `TZConection` (zConexao)
-  - HostName: localhost
-  - User: root
-  - Password: -
-  - Port: 3306 (padrão)
-  - Protocol: mysql-5 (banco usado)
-  - Database: bd_nomeBanco
-  - Connected: True
- 
- - `TZTable` (ztbPessoa)
-  - Connection: `TZConnection`
-  - TableName:  vincula a tabela no banco de dados ao componente (qnd BD estiver ativo)
-  - Active: True
-  - Add All Fields 
-  - OBS.: carrega a tabela inteira na memoria. Pode acabar travando se haver muitos registros.
-  - Centraliza a formatação para futuras chamadas multiplas nos formularios.
   
 ## Funções do Delphi
 - `INC(x)` : x := x + 1;
