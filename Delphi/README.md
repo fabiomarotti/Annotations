@@ -348,7 +348,7 @@ end;
 - `StrToInt(x)` : de String para Integer
 - `IntToStr(x)` : de Integer para String
 - `QuotedStr(x)` : deixa entre aspas simples
-  -ex.:  `QuotedStr('*'+campo+'*' ) `
+  - ex.:  `QuotedStr('*'+campo+'*' ) `
 
 
 ## Teclas de Atalho
