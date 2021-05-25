@@ -12,6 +12,7 @@
 
 - `TToolBar` cabeçalho
   - `New Button` Botões para cabeçalho
+  - `Images` selecionar `TImageList`
   - Conterá chamdas do `TActionList`
 
 - `TStatusBar` rodapé
