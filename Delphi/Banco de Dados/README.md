@@ -32,6 +32,11 @@
   - ReadOnly : Apenas Ler e nao alterar os dados
   - EditMask : Mascara para os dados tipo Data
   - DisplayFormat : Mascara para Números
+  - Filter : exemplo: 
+    - SQL :`cli_nome LIKE '%fulano%'`
+    - ZEOS : `cli_nome LIKE '* fulano *'`
+  - Filtered : True or False
+  - 
  
  > OBS.: 
   - carrega a tabela inteira na memoria. Pode acabar travando se haver muitos registros.
