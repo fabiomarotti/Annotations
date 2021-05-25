@@ -33,6 +33,8 @@
 - `TGroupBox` TPainel com label 
 
 - `TBitBtn` : Botão
+  - Glyph : Inserir Icone no botão
+  - `Layout` relação Texto e Imagem no botão
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
 > [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir]
@@ -98,6 +100,7 @@ ShowMessage('Ola Mundo!' + var);
 # Eventos
 - `onClick`
 - `onChange` 
+- `onShow` : quando abrir/exibir (formulario)
 - `onExit` validar ao sair/terminar
 
 # Formulário Modelo
