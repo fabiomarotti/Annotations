@@ -74,13 +74,7 @@
 - `Position`: poScreenCenter, poMainFormCenter,.. (onde o form vai aparecer)
 - `WindowsState`: wsNormal, Minimizado e Maximizado
 
-# TDBGrid
-- `Options`:
-  - dgIndicator
-  - dgRowSelect
-  - dgAlwaysShowSelection
-### Eventos
-- `onTitleClik` : Ao clicar no titulo da tabela
+
 
 # Ação para um Form
 
@@ -106,8 +100,31 @@ ShowMessage('Ola Mundo!' + var);
 - `onExit` validar ao sair/terminar
 
 # Formulário Modelo
+- Inheritable Items
+
+# Data Controls
+- Componentes que interagem automaticamente com o Banco de Dados.
+
+## Componentes
+- `TDBGrid`
+- `TDBNavigator`
+- `TDBText`
+- `TDBEdit`
+- `TDBMemo`
+- `TDBImage`
+- `TDBListBox`
+
+### `TDBEdit` 
 
 
+### `TDBGrid`
+- `Options`:
+  - dgIndicator
+  - dgRowSelect
+  - dgAlwaysShowSelection
+
+> Eventos
+- `onTitleClik` : Ao clicar no titulo da tabela
 
 ## considerações
 - SpeedButton não recebem foco
