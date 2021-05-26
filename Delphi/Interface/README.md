@@ -104,7 +104,7 @@ ShowMessage('Ola Mundo!' + var);
 
 # Data Controls
 - Componentes que interagem automaticamente com o Banco de Dados.
-- Possuem `DataSouce` -> [DataSet] (liga o componente com a tabela)
+- `DataSouce` -> [DataSet] (liga o componente com a tabela)
 - `DataField` (um campo apenas da tabela)
 
 ## Componentes
@@ -118,6 +118,8 @@ ShowMessage('Ola Mundo!' + var);
 
 ### `TDBEdit` 
 
+### `TDBComboBox` 
+- `Items` : Define os campos validos do ComboBox
 
 ### `TDBGrid`
 - `Options`:
@@ -127,6 +129,8 @@ ShowMessage('Ola Mundo!' + var);
 
 > Eventos
 - `onTitleClik` : Ao clicar no titulo da tabela
+
+
 
 ## considerações
 - SpeedButton não recebem foco
