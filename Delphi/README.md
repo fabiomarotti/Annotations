@@ -200,6 +200,7 @@ var
 
 ## Estruturas logicas
 
+### For
 > Estrutura de Repetição FOR
 ~~~Delphi
 var
@@ -229,7 +230,27 @@ repeat
   ShowMessage( IntToStr(i) );
   Inc( i );
 until ( i >= 10 );
-~~~   
+~~~  
+
+### if then else
+
+~~~
+if x >10 then
+begin
+ // codigo
+end;
+~~~
+
+~~~
+if x >10 then
+begin
+ // se Sim
+end
+else
+begin
+  // se Não
+end;
+~~~
 
 ## Unidades (Unit)
 >  Estrutura de uma Unit:
