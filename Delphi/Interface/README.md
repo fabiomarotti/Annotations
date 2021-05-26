@@ -107,6 +107,7 @@ ShowMessage('Ola Mundo!' + var);
 - `onChange` 
 - `onShow` : quando abrir/exibir (formulario)
 - `onExit` validar ao sair/terminar
+- `onStateChange` (para DataSource)
 
 # Formulário Modelo
 - Inheritable Items
