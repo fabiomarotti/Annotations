@@ -104,12 +104,14 @@ ShowMessage('Ola Mundo!' + var);
 
 # Data Controls
 - Componentes que interagem automaticamente com o Banco de Dados.
+- Possuem `DataSouce` -> [DataSet] (liga o componente com a tabela)
+- `DataField` (um campo apenas da tabela)
 
 ## Componentes
 - `TDBGrid`
 - `TDBNavigator`
-- `TDBText`
-- `TDBEdit`
+- `TDBText` (Label) 
+- `TDBEdit` 
 - `TDBMemo`
 - `TDBImage`
 - `TDBListBox`
