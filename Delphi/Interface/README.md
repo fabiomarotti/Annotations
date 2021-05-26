@@ -11,6 +11,7 @@
 - `Caption` Nome de exibição
 - `CharCase` deixar campo tudo Maiusculo ou Minusculo
 - `ReadOnly` apenas Leitura, pode copiar (Enable não copia)
+
     
 
 # Componentes
@@ -113,6 +114,8 @@ ShowMessage('Ola Mundo!' + var);
 - Componentes que interagem automaticamente com o Banco de Dados.
 - `DataSouce` -> [DataSet] (liga o componente com a tabela)
 - `DataField` (um campo apenas da tabela)
+- `PasswordChar` : Efeito de mascara 
+- `DisplayFormat` : Efeito mascara em zTable
 
 ## Componentes
 - `TDBGrid`
