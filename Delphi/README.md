@@ -110,6 +110,7 @@ for var Contador := 0 to 10 do { ... }
 
 ## Tipos de Dados 
 [1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
+
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
 - Numéricos
@@ -320,6 +321,7 @@ end. // fim unidade
 > Pasagem por Referencia
 - `var`
 - `out`
+
 ~~~Delphi
 function TForm1.SomaValor(var x: integer): Integer;
 begin
