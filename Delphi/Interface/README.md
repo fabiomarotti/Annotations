@@ -12,7 +12,7 @@
 - `Caption` Nome de exibição
 - `CharCase` deixar campo tudo Maiusculo ou Minusculo
 - `ReadOnly` apenas Leitura, pode copiar (Enable não copia)
-
+- `Default` : True habilita em botoões a ação do Enter no teclado.
     
 
 # Componentes
