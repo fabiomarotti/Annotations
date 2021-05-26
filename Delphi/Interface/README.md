@@ -1,9 +1,16 @@
 # Configurações importantes para Interface
 - Project / Options / Forms / Auto-create Forms (principal)
 
-## Definições
+## Definições e Propriedades em Geral
+- `TAB` avança
+- `Alt` + `TAB` : retrocede
+- `TabOrder` : Ordenar por indice ou drag-drop
+- `TabStop` : Tab inativo para componente especifico
+  - Panel ou GroupBox possuem a propriedade para ordenar drag-drop
 - Name: Nome do objeto
 - Caption: Nome de exibição
+- CharCase: deixar campo tudo Maiusculo ou Minusculo
+- ReadOnly: apenas Leitura, pode copiar (Enable não copia)
     
 
 # Componentes
