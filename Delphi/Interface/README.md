@@ -2,6 +2,7 @@
 - Project / Options / Forms / Auto-create Forms (principal)
 
 ## Definições e Propriedades em Geral
+- `F1` : documentação da propriedade selecionada
 - `TAB` avança
 - `Alt` + `TAB` : retrocede
 - `TabOrder` : Ordenar por indice ou drag-drop
