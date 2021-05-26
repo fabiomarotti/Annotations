@@ -111,6 +111,8 @@ ShowMessage('Ola Mundo!' + var);
 - `onKeyDown` na hora que preciona a tecla
 - `onKeyUp` na hora que solta a tecla
 
+> `KeyPreview` : true, para funcionar
+
 # Formulário Modelo
 - Inheritable Items
 
