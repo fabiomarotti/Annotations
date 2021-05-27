@@ -18,21 +18,18 @@
 
 > versões da IDE RAD Studio 
 - Delphi 1 [1994]
-- ...
 - Delphi 7 [2002]
-- ...
 - Delphi 2010
 - Delphi XE
 - Delphi XE2 [2011] *
-- ...
 - Delphi XE8 [2015]
 - RAD Studio 10.0 (Seattle) [2015]
 - RAD Studio 10.1 (Berlim) [2016]
-- RAD Studio 10.2 (Tokyo) *
+- RAD Studio 10.2 (Tokyo) [2017] *
 - RAD Studio 10.3 (Rio)
 - RAD Studio 10.4 (Sydney)
 
-> Arquivos 
+> Arquivos importantes no Delphi
 - Executaveis (Project Manager)
   - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
   - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
@@ -54,9 +51,6 @@
   - `Delphi unit (*.pas)`
     -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
-
-
-
 
 ## Comentários e Regiões
 > Comentar
@@ -107,7 +101,6 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `=` , `<>` , `>=`, `<=`
 - `AND`, `OR`, `NOT`  
 - `True`, `False`
-
 
 
 ## Tipos de Dados 
@@ -175,16 +168,21 @@ type
 ### Constantes
 ~~~Delphi
 const
+   PI : Single   = 3.14;         // Decimal tipo Single constant
    FRED          = 'Fred';       // String constant
    YOUNG_AGE     = 23;           // Integer constant
-   TALL : Single = 196.9;        // Decimal constant
    NO            = False;        // Boolean constant
 ~~~   
 
 ### Arrays
 ~~~Delphi
 var 
-  A: array[0..5] of Integer;
+  lista : Array[ 0 .. 3 ] Of String;
+
+lista[0] := 'Fulano';
+lista[1] := 'Beltrano';
+lista[2] := 'Ciclano';
+lista[3] := 'Mariano';
 ~~~
 
 
