@@ -1,13 +1,33 @@
 # Programação Orientada a Objetos (Delphi)
+✅
+- Abstração (modelar o que interessa)
+- Encapsulamento (não permitir modificações externas)
+- Polimorfismo (uma ação pode ser exercida de varias formas)
+ - Sobrecarga: dois metodos podem ter o mesmo nome, mas com assinaturas diferentes
 
- [✅] Abstração
- 
- [✅] Encapsulamento
+- 1986 : Object Pascal
 
- [ ] Herança
-  
- [ ] Polimorfismo
+- Generalização  : da **Sub Classe** para **Super Classe**
+- Especialização : da **Super Classe** para **Sub Classe**
+- Herança: (é um tipo de) : as propriedades são herdadas
+  - Simples: Herdar apenas uma Super Classe 
+  - Multipla: Herdar varias Super Classes
+- Agregação: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
+- Composição: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
+- 
 
+
+## Convenção
+- Toda classe tem o nome iniciado pela letra T
+
+## Hierarquia simplificada das classes Delphi:
+- `TObject`
+  - `TPersistent`
+   - `TComponent`
+     - `TControl`
+       - `TForm`
+       - `TButton`
+       - `TListBox`
 
 # Classe (Abstração)
 
@@ -24,7 +44,7 @@ interface
 
 { Classe }
 type
-  TPessoa = class  // Herda a classe Object
+  TPessoa = class  // TPessoa = class(TOjbect) {Herda implicitamente a classe TObject}
     private
       Nome  : String;
       Idade : Integer;
@@ -81,6 +101,8 @@ end;
 end.
 ~~~
 
+
+
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
 unit Unit_Pessoa;
@@ -104,25 +126,35 @@ implementation
 end.
 ~~~
 
+
+
+
 > Unidade contendo a instanciação da classe Pessoa
 ~~~Delphi
-unit Unit_Principal
+unit Unidade_Principal;
 
 interface
-  uses
-    Unit_Pessoa;
+
+uses
+  Unidade_Pessoa;
   
 implementation 
+  // Criando uma instancia da classe TPessoa.  
   pessoa := TPessoa.Create;
+  
   try
+    // Acessando a variavel Nome, da instancia da classe TPessoa;
     pessoa.Nome := 'Fulano';
     ShowMessage(pessoa.Nome);
   finally
+    // Destruindo uma instancia da classe TPessoa.
     pessoa.Free;
   end;
  
 end.
 ~~~
+
+
 
 
 ## Encapsulamento
@@ -153,3 +185,20 @@ implementation
 end.
 ~~~
 
+# Operadores com Objetos
+## `As`
+- typecasting
+~~~
+with  Sender  as  TButton  do
+Begin
+  Caption := '&Ok';
+  OnClick := OkClick;
+End; 
+~~~
+## `Is`
+- Checar se um Objeto pertence a uma Classe
+- Retorna um valor booleano
+
+~~~Delphi
+ if (form1.Components[i]  is  TEdit)
+~~~
