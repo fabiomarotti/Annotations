@@ -10,8 +10,8 @@
 - Implantação do SW (Deploy)
 
 ## Metodologias Ágeis
-- XP (eXtreme Programming)
-- Scrum
+- XP (eXtreme Programming) : (Chrysler) Desenvolvimento
+- Scrum : (Toyota) Gerenciamento
 - Kanban
 - FDD (Feature Driven Development)
 - MSF (Microsoft Solutions Framework)
