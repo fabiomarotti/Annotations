@@ -450,3 +450,5 @@ Windows.RemoveDirectory('c:pasta');
 # Links
 [Conteudo basico para pesquisa](http://www.delphibasics.co.uk/RTL.asp?Name=Low)
 
+[dicas prontas](http://www.planetadelphi.com.br/dicas/2)
+
