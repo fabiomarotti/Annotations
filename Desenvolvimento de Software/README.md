@@ -9,11 +9,15 @@
 - Testes
 - Implantação do SW (Deploy)
 
-## Modelos
-- Modelo Agil
+## Metodologias Ágeis
+- XP (eXtreme Programming)
+- Scrum
+- Kanban
+- FDD (Feature Driven Development)
+- MSF (Microsoft Solutions Framework)
 - Modelo Espiral
 - Modelo Cascata
-- SCRUM, XP
+
 
 ## CI / CD / CD
 
