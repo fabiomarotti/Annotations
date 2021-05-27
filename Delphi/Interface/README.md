@@ -25,6 +25,9 @@
   - Conterá chamdas do `TActionList`
 
 - `TStatusBar` rodapé
+-  `TImage`
+  - Strech : não cortar a imagem caso seja retangular em um espaço quadrado
+  - Proporcional: manter proporcional 
 
 - `TImageList` conjunto de imagens a serem compartilhadas no sistema
   - ColorDepth: cd32bit
