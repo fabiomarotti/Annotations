@@ -440,6 +440,8 @@ End;
 - TJPEGImage , uses JPEG
 - TMemoryStream
 
+# Design Patterns
+[DP - Strategy](https://drgarcia1986.wordpress.com/2014/04/25/design-pattern-strategy-com-delphi/)
 
 # Links
 [Conteudo basico para pesquisa](http://www.delphibasics.co.uk/RTL.asp?Name=Low)
