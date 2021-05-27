@@ -129,7 +129,10 @@ ShowMessage('Ola Mundo!' + var);
 - `TDBText` (Label) 
 - `TDBEdit` 
 - `TDBMemo`
-- `TDBImage`
+- `TDBImage` 
+  - não trabalho com *.jpg
+  - trabalha apenas com *.bmp
+  - deixa o banco de dados lento
 - `TDBListBox`
 
 ### `TDBEdit` 
