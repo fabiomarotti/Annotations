@@ -1,5 +1,6 @@
 # Embarcadero Delphi 
 [site (oficial)](https://www.embarcadero.com/br/)
+[Exemplos (oficial)](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Code_Examples_Index)
 
 > Informações
 - Delphi é um Ambiente de Desenvolvimento (ferramenta/conceito)
@@ -368,25 +369,26 @@ end;
 - `INC(x)` : x := x + 1;
 - `DEC(x)` : x := x - 1;
 - `LOW(x)` : retorna o valor mais baixo
-- `StrToInt(x)` : de String para Integer
-- `IntToStr(x)` : de Integer para String
-- `QuotedStr(x)` : deixa entre aspas simples
+- `StrToInt(x)`   : de String para Integer
+- `IntToStr(x)`   : de Integer para String
+- `QuotedStr(x)`  : deixa entre aspas simples
   - ex.:  `QuotedStr('*'+campo+'*' ) `
 
 
 ## Teclas de Atalho
 - `F12` : Alternar entre Código-View
-- `F9` : Executar
-- `Ctrl` + `Shift` + `F9` : Executar sem Debug
+- `F9`  : Executar
+- `Ctrl` + `F2`   : Cancelar Execução
 - `Ctrl` + `seta` : mover componente
+- `Ctrl` + `Shift` + `F9`   : Executar sem Debug
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
 - `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
 
 > Exibir Ferramentas
+- `F11`                   : Object Inspecto
 - `Ctrl` + `Alt` + `F11`  : Project Manager 
 - `Shift` + `Alt` + `F11` : Structure
-- `F11`                   : Object Inspecto
 - `Ctrl` + `Alt` + `P`    : Tool Palet
 
 # Imagens
