@@ -56,12 +56,7 @@
 - `Unit` arquivo: *.pas
 
 
-## Data Module
-- Formulario centralizador de componetes não visuais
-- componentes de Banco de Dados
-- boa prática, nomear como:
-  - `dmModulo` : objeto
-  - `dmUnidadeMdoulo` : arquivo
+
 
 ## Comentários e Regiões
 > Comentar
@@ -91,12 +86,6 @@
 ## Declaração de Variáveis
 ~~~Delphi
 var 
-  Nome: string;
-Nome := 'Fábio Marotti';
-~~~ 
-
-~~~Delphi
-var 
   Nome: string := 'Fábio Marotti';
 ~~~ 
 
@@ -104,18 +93,26 @@ var
 var Idade := 20; // compilador infere que é um tipo inteiro
 ~~~ 
 
-~~~Delphi
-for var Contador := 0 to 10 do { ... }
-~~~
+## Operadores Aritméticos
+- `*` multiplicação 
+- `/` divisão entre variaveis reais
+- `+` soma
+- `-` subtração
+- `div` divisão entre variaveis inteiras
+- `mod` resto da divisão
+
+> Obs.: `:=` atribuição
+
+## Operadores Logicos
+- `=` , `<>` , `>=`, `<=`
+- `AND`, `OR`, `NOT`  
+- `True`, `False`
 
 
 
 ## Tipos de Dados 
-[1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
 
-[2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
-
-- Numéricos
+### Numéricos
 ~~~Delphi
 var
    // Integer data types :
@@ -139,7 +136,7 @@ var
    Dec4 : Extended; // 19  significant digits, exponent -4932 to +4932
 ~~~
 
-- Texto
+### Texto
 ~~~Delphi
 var
    Str1 : Char;        // Holds a single character, small alphabet
@@ -151,13 +148,13 @@ var
    Str7 : WideString;  // Holds strings of WideChar's of any size desired
 ~~~   
 
-- Lógico
+### Lógico
 ~~~Delphi
  var
    Log1 : Boolean;     // Can be 'True' or 'False'
 ~~~
 
-- Conjuntos, Enumerados e Subtipos
+### Conjuntos, Enumerados e Subtipos
 ~~~Delphi
 type
    TSuit = (Hearts, Diamonds, Clubs, Spades);    // Defines the enumeration
@@ -175,7 +172,7 @@ type
  end;
  ~~~
 
-- Constantes
+### Constantes
 ~~~Delphi
 const
    FRED          = 'Fred';       // String constant
@@ -192,50 +189,59 @@ var
 
 
 
-## Operadores Aritméticos
-- `*` multiplicação 
-- `/` divisão entre variaveis reais
-- `+` soma
-- `-` subtração
-- `div` divisão entre variaveis inteiras
-- `mod` resto da divisão
+[1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
 
-## Estruturas logicas
+[2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
-### For
-> Estrutura de Repetição FOR
+
+
+
+## Estruturas Lógicas
+
+> `Break` , `Continue`, `Exit`
+
+### For 
+> For .. to .. do
 ~~~Delphi
-var
-  i: Integer;
-  
-for i := 0  to  10   do
-begin
+For   var i := 0    To   10    Do
+Begin
   ShowMessage( IntToStr(i) );
-end;
+End;
 ~~~~
 
+> For .. dowto .. do
 ~~~Delphi
-var
-  i: Integer;
+For   var i := 10    Downto   0    Do
+Begin
+  ShowMessage( IntToStr(i) );
+End;
+~~~~
+
+### While
+> Whie .. Do
+~~~Delphi
+var contador := 0;
   
-for i := 10  DownTo   0  do
-begin
-  ShowMessage( IntToStr(i) );
-end;
-~~~   
+While   contador <= 10    Do
+Begin
+  Contador:= Contador + 1;
+End;
+~~~
 
-> Estrutura de Repetição UNTIL
+### Repeat 
+> Repeat .. Until
 ~~~Delphi
-i := 10;
+contador := 10;
 
-repeat
-  ShowMessage( IntToStr(i) );
-  Inc( i );
-until ( i >= 10 );
+Repeat
+Begin
+  ShowMessage('Contandor em: '+ contador );
+  Inc( contador );  // Função de Incremento
+End;  
+Until i <= 10 ;
 ~~~  
 
-### if then else
-
+### If Then Else
 ~~~
 if x >10 then
 begin
@@ -320,58 +326,94 @@ var
   resultado := Somar(10, 20);
 ~~~
 
-## Procedimetnos
-- Pode receber um ou nenhum parâmetro
+## Procedimentos
 
-
-> Procedimento
+> Procedimento sem parametro
 ~~~Delphi
-unit nome_unidade; 
-
 interface 
-    procedure escreverNome ( n := String );
+  // Declaração do Procedimento
+  Procedure escreverNome( );
 
 implementation 
-  procedure escreverNome( n );
-  begin
-    println( "Ola ", n );
-  end;
-    
-    
-end. // fim unidade
+  // Instanciação do Procedimento
+  Procedure escreverNome( );
+  Begin
+    println('Ola Mundo!');
+  End;
 ~~~
 
-> Pasagem por Referencia
+> Procedimento com parametro
+~~~Delphi
+interface 
+  // Declaração do Procedimento
+  Procedure escreverNome( n : String );
+
+implementation 
+  // Instanciação do Procedimento
+  Procedure escreverNome( n );
+  Begin
+    println('Ola ' + n );
+  End;
+~~~
+
+> Pasagem por Referencia em Funções ou Procedimentos
 - `var`
 - `out`
 
 ~~~Delphi
-function TForm1.SomaValor(var x: integer): Integer;
-begin
+Function TForm1.SomaValor(var x: integer): Integer;
+Begin
      //Adiciona 1000 ao valor de a
      x := x + 1000;
      //Retorna o valor de a
      Result := x;
-end;
+End;
 ~~~
 
+## Data Module
+- Formulario centralizador de componetes não visuais
+- componentes de Banco de Dados
+- boa prática, nomear como:
+  - `dmModulo` : objeto
+  - `dmUnidadeMdoulo` : arquivo
+  
 ## Componentes
 > Interface
 - `TMainMenu` (Standard)
 - `TPanel` (Standard)
 - `TButton` (Standard) : Botão
+- `TBitBtn` : permite imagem
 - `TPageControll` (Win32) > (new Page)
 - `TDBGrid` (Data Controls)
 - `TLabeledEdit` (Additional)
 - `TSpeedButton` (Additional) : Botão
+- `TMaskEdit`
+- `TMemo` Caixa para textos longos
+- `TOpenDialog` abertura de arquivos
+- `TSaveDialog` gravação de arquivos
 
   
 ## Funções do Delphi
 - `INC(x)` : x := x + 1;
 - `DEC(x)` : x := x - 1;
 - `LOW(x)` : retorna o valor mais baixo
-- `StrToInt(x)`   : de String para Integer
-- `IntToStr(x)`   : de Integer para String
+- `DATE()` : retorna Data autal
+- `NOW()` : Data e Hora atual
+- `IncDay(data , dias)` : Incrementa dias a uma data
+- `DaysBetween(data1 , data2)` : numero de dias entre duas datas
+> Conversões
+- `IntToStr(x)`   
+- `FloatToStr(x)` 
+- `FloatToStrF` : String formatada 
+- `StrToInt(x)`   
+- `StrToFloat`
+- `DateToStr`
+- `StrToDate`
+- `DateTimeToStr`
+- `TimeToStr`
+
+
+- `RANDOM()` : Valor aleatório (usar Randomize)
 - `QuotedStr(x)`  : deixa entre aspas simples
   - ex.:  `QuotedStr('*'+campo+'*' ) `
 
@@ -403,3 +445,4 @@ end;
 
 # Links
 [Conteudo basico para pesquisa](http://www.delphibasics.co.uk/RTL.asp?Name=Low)
+
