@@ -16,8 +16,8 @@
 - 2006 : CodeGear 
 - 2008 : Embarcadero
 
-> versões da IDE RAD Studio 
-- Delphi 1 [1994]
+> versões 
+- Delphi 1 [1995]
 - Delphi 7 [2002]
 - Delphi 2010
 - Delphi XE
@@ -185,8 +185,6 @@ lista[2] := 'Ciclano';
 lista[3] := 'Mariano';
 ~~~
 
-
-
 [1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
 
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
@@ -295,36 +293,32 @@ unit nome_unidade;
 end. // fim unidade
 ~~~
 
-## Funções
+## Função
 
 - são declaradas na seção `interface`
-- `Result` ou `nome_função`para trabalhar o Retorno da função
+- `Result` ou `nome_funcao` para trabalhar com o Retorno da função
 
-> Função 
+> Função retornando valor pelo Result 
 ~~~Delphi
-unit nome_unidade; 
-
 interface 
-    function  Somar   (a,b: Integer);
+    Function  Somar  (a,b: Integer) : Integer;
   
 implementation 
-  function Somar(a, b: Integer): Integer;
-  begin
+    Function Somar(a, b: Integer): Integer;
+    Begin
       Result := a + b;
-  end;
-    
-end. // fim unidade
+    End;
 ~~~
 
 > Chamando a Função
 ~~~Delphi
 var
    resultado: Integer;
-  { ... }
-  resultado := Somar(10, 20);
+
+resultado := Somar(10, 20);
 ~~~
 
-## Procedimentos
+## Procedimento
 
 > Procedimento sem parametro
 ~~~Delphi
@@ -436,9 +430,19 @@ End;
 
 - Hint : dica
 - ShowHint : Mostrar dica
-
 - TJPEGImage , uses JPEG
 - TMemoryStream
+
+# Arquivos
+~~~Delphi
+// Apagar arquivo
+Windows.DeleteFile('c:arquivo.txt');
+
+// Apagar Pasta
+Windows.RemoveDirectory('c:pasta');
+~~~
+
+
 
 # Design Patterns
 [DP - Strategy](https://drgarcia1986.wordpress.com/2014/04/25/design-pattern-strategy-com-delphi/)
