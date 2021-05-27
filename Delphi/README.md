@@ -389,5 +389,14 @@ end;
 - `F11`                   : Object Inspecto
 - `Ctrl` + `Alt` + `P`    : Tool Palet
 
+# Imagens
+
+- Hint : dica
+- ShowHint : Mostrar dica
+
+- TJPEGImage , uses JPEG
+- TMemoryStream
+
+
 # Links
 [Conteudo basico para pesquisa](http://www.delphibasics.co.uk/RTL.asp?Name=Low)
