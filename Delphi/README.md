@@ -52,6 +52,26 @@
     -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
+> Principais Componentes
+- Standard : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
+- Additional : Complementa o Standar com exibição  de  textos,  imagens, botões
+- Win32 : Componentes como zoom, controle deslizantes, barras de progresso, barras de status, ícones, barras de ferramenta
+- System : Componentes avançados para sistema operacional, como conexão OLE, DDE, multimídia e temporização
+- Data Access : Conexão com banco de dados e controles de exibição de dados.
+- Data Control :  Recursos **Standard** e **Additional**, porem os componentes estão ligados ao Banco de Dados
+- dbExpress : conexão  com  bancos  de  dados  SQL
+- Data Snap
+- ADO : ActiveX Data Objects
+  - OLE DB (drivers  de  acesso) 
+  - MDAC (Microsoft  Data  Access  Components)
+- Interbase: SGBD Embarcadero (Sistemas de Banco de Dados da Embarcadeiro)
+- WebServices: conexão Web services aseados em XML/SOAP
+- Internet e Internet Express: recursos para navegadores
+
+> Two-Way-Tool (ferramenta de duas vias)
+- Conforme  o  formulário  recebe  componentes  a  Unit  instantaneamente  é  alterada. 
+
+
 ## Comentários e Regiões
 > Comentar
 ~~~Delphi
@@ -185,6 +205,32 @@ lista[2] := 'Ciclano';
 lista[3] := 'Mariano';
 ~~~
 
+> Arrays Multidimensionais
+~~~Delphi
+var
+  vetor_inteiros : Array Of   Integer;
+  matriz_2x2     : Array Of   Array Of   Real;
+  multidimencional : Array Of   Array Of   Array Of  Char;
+  
+~~~
+
+### Types
+> Definindo um tipo 
+~~~Delphi
+type
+  letras  = array[1 .. 23] Of Char;
+~~~
+
+> Instanciando uma varaivel do tipo criada
+~~~Delphi
+var 
+  alfabeto : letras;
+
+alfabeto[1] := 'a';
+alfabeto[2] := 'b';
+alfabeto[3] := 'c';
+~~~
+
 [1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
 
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
@@ -192,12 +238,12 @@ lista[3] := 'Mariano';
 
 
 
-## Estruturas Lógicas
+## Estruturas de Programação
 
 > `Break` , `Continue`, `Exit`
 
 ### For 
-> For .. to .. do
+> For .. to .. do (crescente)
 ~~~Delphi
 For   var i := 0    To   10    Do
 Begin
@@ -205,7 +251,7 @@ Begin
 End;
 ~~~~
 
-> For .. dowto .. do
+> For .. dowto .. do (decrescente)
 ~~~Delphi
 For   var i := 10    Downto   0    Do
 Begin
@@ -234,8 +280,23 @@ Begin
   ShowMessage('Contandor em: '+ contador );
   Inc( contador );  // Função de Incremento
 End;  
-Until i <= 10 ;
+Until (i <= 10);
 ~~~  
+
+### Case
+~~~Delphi
+Case <expressão> Of   
+  
+  Valor_1: <Bloco de comandos>    
+  Valor_2: <Bloco de comandos>   
+  ......
+  Valor_n: <Bloco de comandos>  
+  
+  else: <Bloco de comandos> 
+  
+End;
+~~~
+
 
 ### If Then Else
 ~~~
