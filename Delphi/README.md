@@ -109,7 +109,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
-## Operadores Logicos
+## Operadores Lógicos
 - `=` , `<>` , `>=`, `<=`
 - `AND`, `OR`, `NOT`  
 - `True`, `False`
@@ -117,6 +117,30 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 > Obs.: `:=` atribuição
 
 ## Tipos de Dados 
+
+### Types
+- Define-se um **tipo** 
+
+~~~Delphi
+type
+  // Letras se torna um tipo vetor de caracteres
+  Letras  = Array[1 .. 23] Of Char;
+~~~
+
+> Instanciando uma varaivel do tipo criada
+~~~Delphi
+var
+  // alfabeto é uma instância do tipo Letras
+  alfabeto : Letras;
+
+alfabeto[1] := 'a';
+alfabeto[2] := 'b';
+alfabeto[3] := 'c';
+~~~
+
+[1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
+
+[2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
 ### Numéricos
 ~~~Delphi
@@ -160,7 +184,6 @@ var
    Log1 : Boolean;     // Can be 'True' or 'False'
 ~~~
 
-
 ### Enumerados 
 - lista organizada de itens 
 - acessados por um nome de valor e não por um numero
@@ -174,18 +197,17 @@ type
    dia := Segunda;
 ~~~   
 
-
-### Conjuntos
-- Elementos não se repetem
+### Conjuntos e Sub Conjutnos
+- Os elementos não se repetem
 - Operações:
-  - `+` retorna a união de dois conjuntos
-  - `-` retorna a diferença entre dois cnojutnos
-  - `*` retorna a interseção de dois conjuntos
-  - `=` retorna True caso os dois conjuntos são iguais (Tem os mesmos elementos)
-  - `<=` retorna True, se o primeiro conjunto é Sub Conjunto do segundo conjunto.
-  - `>=` retorna True, se o primeiro conjunto é Super Conjunto do segundo conjunto
+  - `+` retorna a **união** de dois conjuntos
+  - `-` retorna a **diferença** entre dois cnojutnos
+  - `*` retorna a **interseção** de dois conjuntos
+  - `=` retorna True caso os dois conjuntos são **iguais** (Tem os mesmos elementos)
+  - `<=` retorna True, se o primeiro conjunto é **Sub Conjunto** do segundo conjunto.
+  - `>=` retorna True, se o primeiro conjunto é **Super Conjunto** do segundo conjunto
   - `<>` retorna True se os dois conjutnos não forem identicos
-  - `IN` retorna True se um elemento está incluso em um conjunto
+  - `IN` retorna True se um elemento está **incluso** em um conjunto
 
 ~~~Delphi
 type
@@ -240,11 +262,6 @@ var
   End;
  ~~~
  
-
- 
-### Subconjuntos
- 
-
 ### Constantes
 ~~~Delphi
 const
@@ -254,7 +271,9 @@ const
    NO            = False;        // Boolean constant
 ~~~   
 
-### Arrays
+### Vetores e Matrizes (Array Unidimensional e Array Multidimensional)
+
+> Vetores (Array Unidimensional)
 ~~~Delphi
 var 
   lista : Array[ 0 .. 3 ] Of String;
@@ -265,41 +284,42 @@ lista[2] := 'Ciclano';
 lista[3] := 'Mariano';
 ~~~
 
-> Arrays Multidimensionais
+> Matrizes (Arrays Multidimensionais)
 ~~~Delphi
 var
-  vetor_inteiros : Array Of   Integer;
-  matriz_2x2     : Array Of   Array Of   Real;
-  multidimencional : Array Of   Array Of   Array Of  Char;
+  matriz_2x2 : Array[1..2,1..2] Of  Integer
+  matriz_3x3 : Array[1..3] Of       Array[1..3] Of    Integer;
+
+// atribuição de valores matriz 2x2
+matriz_2x2 : = [
+                  [ 1 , 2 ],
+                  [ 3 , 4 ]
+               ];
+
+// atribuição de valores matriz 3x3
+matriz_3x3 :=  [
+                 [ 1 , 2 , 3 ] ,
+                 [ 4 , 5 , 6 ] ,
+                 [ 7 , 8 , 9 ]
+               ]; 
+~~~
+
+> Declaração do tamanho o Array pela função SetLength
+~~~Delphi
+var
+  vetor       : Array Of   Integer;
+  matriz      : Array Of   Array Of   Real;
+  matrizMulti : Array Of   Array Of   Array Of  Char;
   
+ // Setando tamanho dos Arrays
+ SetLength(vetor       ,3          );
+ SetLength(matriz      ,3  ,3      );
+ SetLength(matrizMulti ,3  ,3  ,3  );
 ~~~
-
-### Types
-> Definindo um tipo 
-~~~Delphi
-type
-  letras  = array[1 .. 23] Of Char;
-~~~
-
-> Instanciando uma varaivel do tipo criada
-~~~Delphi
-var 
-  alfabeto : letras;
-
-alfabeto[1] := 'a';
-alfabeto[2] := 'b';
-alfabeto[3] := 'c';
-~~~
-
-[1 ver +](http://norbertoifsul.blogspot.com/2011/11/tipos-de-dados-no-delphi.html)
-
-[2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
-
 
 
 
 ## Estruturas de Programação
-
 > `Break` , `Continue`, `Exit`
 
 ### For 
@@ -377,7 +397,8 @@ begin
 end;
 ~~~
 
-## Unidades (Unit)
+
+# Unidades (Unit)
 >  Estrutura de uma Unit:
 - `unit` : nome do arquivo
 - `interface` : Declarações
