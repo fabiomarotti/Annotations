@@ -317,6 +317,48 @@ var
  SetLength(matrizMulti ,3  ,3  ,3  );
 ~~~
 
+## Ponteiros :
+- `@` : acessa o Endereço de Memória de uma variavel. Exemplo: `@variavel`
+- `^` : Declarar uma variável do tipo ponteiro e/ou Acessar o Valor de um ponteiro.
+  - (Define) ` ponteiro : ^interger `
+  - (Acessa) ` ponteiro^ ` 
+- Atribuição de Endereço de Memória : ` ponteiro := @variavel; `
+- Um ponteiro recém declarado que não aponta para nenhum lugar tem o valor `nil` (sem referência a um endereço de memória)
+
+> Declaração das variaveis
+~~~Delphi
+var 
+  x_variavel  :  Integer ;
+  x_ponteiro  : ^Integer ;
+~~~
+
+> Endereço de Memória
+~~~Delphi
+// O Endereço de Memória da x_variavel é: 
+IntToStr( Integer( @x_variavel ) ) ;
+
+// O Endereço de Memória do x_ponteiro é: 
+IntTosSr( Integer( x_ponteiro ) );
+~~~
+
+> Valor
+~~~Delphi
+// O valor da varaivel x_varaivel é:
+IntToStr( Integer( x_varaivel ) );
+
+// O valor apontado pela variavel x_ponteiro é: 
+IntToStr( Integer( x_ponteiro^ ) );
+~~~
+
+> Tamanho em Memória
+~~~
+// O tamanho da x_variavel é: 
+IntToStr( SizeOf( x_variavel) );
+
+// O tamanho do x_ponteiro é: 
+IntToStr( SizeOf( x_ponteiro ) );
+~~~
+
 
 
 ## Estruturas de Programação
