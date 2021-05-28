@@ -53,22 +53,22 @@
 - `Unit` arquivo: *.pas
 
 > Principais Abas para Componentes
-- Standard : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
-- Additional : Complementa o Standar com exibição  de  textos,  imagens, botões
-- Win32 : Componentes como zoom, controle deslizantes, barras de progresso, barras de status, ícones, barras de ferramenta
-- System : Componentes avançados para sistema operacional, como conexão OLE, DDE, multimídia e temporização
-- Data Access : Conexão com banco de dados e controles de exibição de dados.
-- Data Control :  Recursos **Standard** e **Additional**, porem os componentes estão ligados ao Banco de Dados
-- dbExpress : conexão  com  bancos  de  dados  SQL
-- Data Snap
-- ADO : ActiveX Data Objects
+- `Standard` : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
+- `Additional` : Complementa o Standar com exibição  de  textos,  imagens, botões
+- `Win32` : Componentes como zoom, controle deslizantes, barras de progresso, barras de status, ícones, barras de ferramenta
+- `System` : Componentes avançados para sistema operacional, como conexão OLE, DDE, multimídia e temporização
+- `Data Access` : Conexão com banco de dados e controles de exibição de dados.
+- `Data Control` :  Recursos **Standard** e **Additional**, porem os componentes estão ligados ao Banco de Dados
+- `dbExpress` : conexão  com  bancos  de  dados  SQL
+- `DataSnap` :
+- `ADO` : ActiveX Data Objects
   - OLE DB (drivers  de  acesso) 
   - MDAC (Microsoft  Data  Access  Components)
-- Interbase: SGBD Embarcadero (Sistemas de Banco de Dados da Embarcadeiro)
-- WebServices: conexão Web services aseados em XML/SOAP
-- Internet e Internet Express: recursos para navegadores
+- `Interbase`: SGBD Embarcadero (Sistemas de Banco de Dados da Embarcadeiro)
+- `WebServices`: conexão Web services aseados em XML/SOAP
+- `Internet` e `Internet Express`: recursos para navegadores
 
-> Two-Way-Tool (ferramenta de duas vias)
+> `Two-Way-Tool` (ferramenta de duas vias)
 - Conforme  o  formulário  recebe  componentes  a  Unit  instantaneamente  é  alterada. 
 
 
