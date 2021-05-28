@@ -52,7 +52,7 @@
     -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
-> Principais Componentes
+> Principais Abas para Componentes
 - Standard : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
 - Additional : Complementa o Standar com exibição  de  textos,  imagens, botões
 - Win32 : Componentes como zoom, controle deslizantes, barras de progresso, barras de status, ícones, barras de ferramenta
