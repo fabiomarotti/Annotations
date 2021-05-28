@@ -185,9 +185,9 @@ var
 ~~~
 
 ### Enumerados 
-- lista organizada de itens 
-- acessados por um nome de valor e não por um numero
-- 
+- São uma Lista organizada de itens 
+- Sao acessados por um nome de valor e não por um número
+ 
 ~~~Delphi
 type
    TDiasDaSemana = (Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado);    
