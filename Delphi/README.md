@@ -79,15 +79,9 @@
 ~~~
 
 ~~~Delphi
-{ 
-  Comentário em múltiplas linhas
-}
-~~~
+{ Comentário em múltiplas linhas }
 
-~~~Delphi
-{* 
-  Comentário em múltiplas linhas
-*}
+{* Comentário em múltiplas linhas *}
 ~~~
 
 > Região: possibilidade de Ocultar código
