@@ -160,23 +160,90 @@ var
    Log1 : Boolean;     // Can be 'True' or 'False'
 ~~~
 
-### Conjuntos, Enumerados e Subtipos
+
+### Enumerados 
+- lista organizada de itens 
+- acessados por um nome de valor e não por um numero
+- 
 ~~~Delphi
 type
-   TSuit = (Hearts, Diamonds, Clubs, Spades);    // Defines the enumeration
+   TDiasDaSemana = (Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado);    
+ 
  var
-   suit : TSuit;                                 // An enumeration variable
+   dia : TDiasDaSemana;
+   dia := Segunda;
 ~~~   
+
+
+### Conjuntos
+- Elementos não se repetem
+- Operações:
+  - `+` retorna a união de dois conjuntos
+  - `-` retorna a diferença entre dois cnojutnos
+  - `*` retorna a interseção de dois conjuntos
+  - `=` retorna True caso os dois conjuntos são iguais (Tem os mesmos elementos)
+  - `<=` retorna True, se o primeiro conjunto é Sub Conjunto do segundo conjunto.
+  - `>=` retorna True, se o primeiro conjunto é Super Conjunto do segundo conjunto
+  - `<>` retorna True se os dois conjutnos não forem identicos
+  - `IN` retorna True se um elemento está incluso em um conjunto
 
 ~~~Delphi
 type
-   TWeek = Set of 1..7;             // Set comprising the days of the week, by number
- var
-   week : TWeek;
- begin
-   week := [1,2,3,4,5];      // Switch on the first 5 days of the week
- end;
+  TFrutas   = (Maça, Abacaxi, Pera, Banana);
+  TConjunto = Set of TFrutas;
+
+var
+  // Declaração das variaveis como do tipo Conjunto
+  segunda : TConjunto;
+  terça   : TConjunto;
+  quarta  : TConjunto;
+  quinta  : TConjunto;
+  sexta   : TConjunto;
+  sabado  : TConjunto;
+  domingo : TConjunto;
+~~~
+
+~~~Delphi
+  // inicializando as varaiveis
+  segunda := [];
+  terça   := [];
+  quarta  := [];
+  quinta  := [];
+  sexta   := [];
+  sabado  := [];
+  domingo := [];
+~~~
+
+~~~Delphi
+  // atribuindo os elementos ao TConjunto
+  Include(segunda , Maça);
+  Include(terça   , Maça);
+  Include(quarta  , Abacaxi);
+  Include(domingo , Maça);
+~~~
+
+~~~Delphi
+  // exemplo: Operação de Igualdade de Conjuntos
+  If (segunda = domingo) Then
+    // Conjuntos iguais  
+  Else
+    // Conjuntos diferentes
+  End;
+~~~
+
+~~~Delphi  
+  // exemplo: Elemento pertence ao Conjunto
+  If (Maça in segunda) Then
+    // Segunda contem Maça
+  Else
+    // Segunda não contem Maça
+  End;
  ~~~
+ 
+
+ 
+### Subconjuntos
+ 
 
 ### Constantes
 ~~~Delphi
