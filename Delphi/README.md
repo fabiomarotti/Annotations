@@ -109,13 +109,12 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
-> Obs.: `:=` atribuição
-
 ## Operadores Logicos
 - `=` , `<>` , `>=`, `<=`
 - `AND`, `OR`, `NOT`  
 - `True`, `False`
 
+> Obs.: `:=` atribuição
 
 ## Tipos de Dados 
 
