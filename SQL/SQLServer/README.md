@@ -6,7 +6,7 @@
 - **Configuração do Servidor** : SQL Server Browser : Automático e Agrupamento: Latin1_General_CI_AS
 - **Configuração do Mecanismo de Banco de Dados** : Modo Misto: usuario master : **sa** e inserir senha
 
-- SQL MAnagement Studio:
+- SQL Management Studio:
   - Nome do servidor: nomePC\Instancia
   - Autenticação do SQL Server: sa e senha
 
