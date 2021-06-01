@@ -1,13 +1,14 @@
 # SQL Server
 
+### Downloads
 - [Download SSEI - SQL 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658)
 - [Download SSMS - SQL Server Management Studio 18.9.1](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-ver15)
 
+### Pre-Configurações
 - **Configuração da Instância** : SQLSPRESS, SQLTrabalho
 - **Configuração do Servidor** : SQL Server Browser : Automático e Agrupamento: Latin1_General_CI_AS
 - **Configuração do Mecanismo de Banco de Dados** : Modo Misto: usuario master : **sa** e inserir senha
-
-- SQL Management Studio:
+- **SQL Management Studio**:
   - Nome do servidor: nomePC\Instancia
   - Autenticação do SQL Server: sa e senha
 
