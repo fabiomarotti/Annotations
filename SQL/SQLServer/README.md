@@ -16,6 +16,20 @@
 
 [continuar](https://www.youtube.com/watch?v=_gEeh3lPhl0&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=3)
 
+# Comandos
+
+~~~SQL
+CREATE DATA BASE nome_bd
+~~~ 
+
+~~~SQL
+USE nome_bd
+~~~
+
+~~~SQL
+
+~~~
+
 
 # Refêrencias 
 [link 01](https://www.youtube.com/watch?v=DEh0B6PRn5k&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=1)
