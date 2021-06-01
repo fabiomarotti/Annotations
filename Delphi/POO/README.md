@@ -1,8 +1,9 @@
 # Programação Orientada a Objetos (Delphi)
-✅
-- Abstração (modelar o que interessa)
-- Encapsulamento (não permitir modificações externas)
-- Polimorfismo (uma ação pode ser exercida de varias formas)
+
+- ✅ Abstração (modelar o que interessa)
+- ✅ Encapsulamento (não permitir modificações externas)
+- ✅ Herança
+- ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
  - Sobrecarga: dois metodos podem ter o mesmo nome, mas com assinaturas diferentes
 
 - 1986 : Object Pascal
@@ -184,6 +185,47 @@ implementation
 
 end.
 ~~~
+
+
+# Polimorfismo
+- `virtual` : permissão de `override` (reescrita) nas clases derivadas
+
+
+> Exemplo
+~~~Delphi
+Unit Unit1;
+
+Interface
+
+Uses
+  extCtrls, graphics, classes;
+
+Type
+  // Super Classe
+  TClassFigura = class(TObject)
+    private
+       MinhaImagem: TImage;
+    public
+        property Imagem: TImage read MinhaImagem write MinhaImagem;
+        procedure Desenhar; virtual;  // Permissão para reescrita
+  end;
+
+  // Sub Classe herdando a SuperClasse
+  TClassQuadrado = class(TClassFigura)
+     public
+         procedure Criar; override;  // Reescrita
+  end;
+
+  // Sub Classe herdando a SuperClasse
+  TClassCirculo = class(TClassFigura)
+      public
+          procedure Criar; override;  // Rescrita
+   end;
+
+Implementation
+{...}
+~~~
+
 
 # Operadores com Objetos
 ## `As`
