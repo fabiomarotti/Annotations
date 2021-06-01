@@ -1,4 +1,5 @@
 # SQL Server
+- Porta Padrão : `1433`
 
 ### Downloads
 - [Download SSEI - SQL 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658)
