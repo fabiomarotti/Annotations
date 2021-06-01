@@ -43,3 +43,24 @@
 - `SUBQUERY` (414)
 - `TRUNCATE TABLE` (419)
 - `UPDATE` (424)
+
+# Cláusulas
+- `ORDER BY` (327) (364)
+- `JOIN` (308) (355)
+- `WHERE`	(356)
+- `GROUP BY` (358)
+- `MODEL`(377)
+- `WHERE` (433)
+
+# Operadores
+- `ALL/ANY/SOME` (63)
+- `BETWEEN`	(65)
+- `EXITS` (258)
+- `IN` (290)
+- `IS` (307)
+- `LIKE` (316)
+
+# Operador de Conjunto
+- `EXCEPT` (254)
+- `INTERSECT` (304)
+- `UNION` (421)
