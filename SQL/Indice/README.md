@@ -60,7 +60,9 @@
 - `IS` (307)
 - `LIKE` (316)
 
-# Operador de Conjunto
+# Operadores de Conjunto
 - `EXCEPT` (254)
 - `INTERSECT` (304)
 - `UNION` (421)
+
+# Funções
