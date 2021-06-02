@@ -33,8 +33,8 @@
 
 # Classe (Abstração)
 
-- `instancia` `:=` `Classe`.`Create` : Construtor
-- `instancia`.`Free`   : Destrutor
+- **Construtor: **  `instancia` `:=` `Classe`.`Create` 
+- **Destrutor: **   `instancia`.`Free` 
 - `class var` : Variavel de Classe
 
 > Unidade contendo a Classe Pessoa
