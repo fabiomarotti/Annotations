@@ -33,9 +33,9 @@
 
 # Classe (Abstração)
 
-- **Construtor:**  `instancia` `:=` `Classe`.`Create` 
-- **Destrutor:**   `instancia`.`Free` 
-- `class var` : Variavel de Classe
+- **Construtor:**         `instancia` `:=` `Classe`.`Create` 
+- **Destrutor:**          `instancia`.`Free` 
+- **Variavel de Classe:** `class var`
 
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
