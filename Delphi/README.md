@@ -141,6 +141,7 @@ Type
       property ID       :String;
       property Nome     :String;
       property CPF      :String;
+end;      
 ~~~
 
 > - `Ctrl` + `Shift` + `C` : Implementação automática
