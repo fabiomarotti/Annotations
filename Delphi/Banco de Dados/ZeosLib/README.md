@@ -1,8 +1,19 @@
 # Zeos Lib Access 
+### Instalação
+- [download](https://sourceforge.net/projects/zeoslib/)
+- Criar um diretório proprio para as Livrarias do Delphi
+- Descompactar arquivo
+- Abrir projeto Delphi: `zeos__/packages/Delphi__/ZeosDbo`
+- Project Manager: ZeosDbo / btn_direito / Build All 
+- Project Manager: ZeosDbo / ZComponentDesign__.bpl / btn_direito / Install
+- **Variaveis de Ambiente** : Tools / Options / Library
+  - `C:/pasta../src/Component`
+  - `C:/pasta../src/Core`
+  - `C:/pasta../src/dbc`
+  - `C:/pasta../src/parsesql`
+  - `C:/pasta../src/plain` 
 
-[download](https://sourceforge.net/projects/zeoslib/)
-
-# Componentes
+### Componentes
 
 - `TZConection` (zConexao)
   - HostName: localhost
