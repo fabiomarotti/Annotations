@@ -189,7 +189,7 @@ end.
 
 ## `Property`
 
-[ver +] (http://docwiki.embarcadero.com/RADStudio/Sydney/en/Properties_(Delphi))
+[ver +](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Properties_(Delphi))
 
 > - Classe `TCliente` com variaveis `public` definidas como `property` <br>
 ~~~Delphi
