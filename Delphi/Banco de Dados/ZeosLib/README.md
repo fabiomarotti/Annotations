@@ -6,12 +6,14 @@
 - Abrir projeto Delphi: `zeos__/packages/Delphi__/ZeosDbo`
 - Project Manager: ZeosDbo / btn_direito / Build All 
 - Project Manager: ZeosDbo / ZComponentDesign__.bpl / btn_direito / Install
-- **Variaveis de Ambiente** : Tools / Options / Library
-  - `C:/pasta../src/Component`
-  - `C:/pasta../src/Core`
-  - `C:/pasta../src/dbc`
-  - `C:/pasta../src/parsesql`
-  - `C:/pasta../src/plain` 
+- Library
+  - v10.2 : `Tools / Options / Envirment Options / Delphi Options / Library` 
+  - v10.3 : `Tools / Options / Language / Delphi / Library` 
+    - `C:/pasta../src/Component`
+    - `C:/pasta../src/Core`
+    - `C:/pasta../src/dbc`
+    - `C:/pasta../src/parsesql`
+    - `C:/pasta../src/plain` 
 
 ### Componentes
 
