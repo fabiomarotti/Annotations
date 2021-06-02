@@ -2,7 +2,7 @@
 
 - ✅ Abstração (modelar o que interessa)
 - ✅ Encapsulamento (não permitir modificações externas)
- - ✅ Property 
+  - ✅ Property 
 - ✅ Herança
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
  - Sobrecarga: dois metodos podem ter o mesmo nome, mas com assinaturas diferentes
