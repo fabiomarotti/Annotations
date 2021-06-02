@@ -11,3 +11,5 @@
 - Abrir projeto Delphi: `fortesreport/Packages/frce.dpk`
 - Project Manager: frce.bpl / btn_direito / Build
 - Project Manager: frce.bpl / btn_direito / Install
+- **Variaveis de Ambiente** : Tools / Options / Library
+  - `C:/pasta../Source`
