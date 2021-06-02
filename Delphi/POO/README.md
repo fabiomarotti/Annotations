@@ -189,8 +189,6 @@ end.
 
 ## `Property`
 
-[ver +](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Properties_(Delphi))
-
 > - Classe `TCliente` com variaveis `public` definidas como `property` <br>
 ~~~Delphi
 unit uCliente;
@@ -245,11 +243,12 @@ implementation
   end;
 ~~~
 
+[ver +](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Properties_(Delphi))
+
 
 
 # Polimorfismo
 - `virtual` : permissão de `override` (reescrita) nas clases derivadas
-
 
 > Exemplo
 ~~~Delphi
