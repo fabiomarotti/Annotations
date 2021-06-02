@@ -32,7 +32,7 @@
 
 # Classe (Abstração)
 
-- `instancia.Create` : Construtor
+- `instancia := Classe.Create` : Construtor
 - `instancia.Free`   : Destrutor
 - `class var` : Variavel de Classe
 
