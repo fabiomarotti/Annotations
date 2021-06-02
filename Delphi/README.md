@@ -103,6 +103,14 @@ var
 var Idade := 20; // compilador infere que é um tipo inteiro
 ~~~ 
 
+## Modificadores de Acesso
+- `Private`
+- `Protected`
+- `Public`
+  - `Property` (ver + em POO)
+- `Published`
+- `Const`
+
 ## Operadores Aritméticos
 - `*` multiplicação 
 - `/` divisão entre variaveis reais
@@ -117,70 +125,6 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `True`, `False`
 
 > Obs.: `:=` atribuição
-
-## Modificadores de Acesso
-- `Private`
-- `Protected`
-- `Public`
-  - `Property`
-- `Published`
-- `Const`
-
-### `Property`
-
-> - Classe `TCliente` com variaveis `public` definidas como `property` <br>
-~~~Delphi
-unit uCliente;
-
-interface 
-  use SysUtils;
-
-Type
-  TCliente = class
-  public
-      property ID       :String;
-      property Nome     :String;
-      property CPF      :String;
-end;      
-~~~
-
-> - `Ctrl` + `Shift` + `C` : Implementação automática
-
-> - Cria-se variaveis `private`, denominadas Fields `F_nome_variavel_` <br>
-> - Declara e Implementa os procedimentos de atribuição `Set` 
-> - Atribui-se `read` e `write` nas variaveis <br>
-~~~Delphi
-private
-    FID:    String;
-    FNome:  String;
-    FCEP:   String;
-    procedure SetID(const   Value: String);
-    procedure SetNome(const Value: String);
-    procedure SetCPF(const  Value: String); 
-
-public
-    property ID       :String   read FID    write SetID;
-    property Nome     :String   read FNome  write SetNome;
-    property CPF      :String   read FCPF   write SetCPF;    
-
-
-implementation
-
-  procedure TCliente.SetID(const Value: String);
-  begin
-    FID := Value;
-  end;
-
-  procedure TCliente.SetNome(const Value: String);
-  begin
-    FNome := Value;
-  end;
-
-  procedure TCliente.SetCPF(const Value: String);
-  begin
-    FCPF := Value;
-  end;
-~~~
 
 
 
