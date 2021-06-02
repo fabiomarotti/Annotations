@@ -2,6 +2,7 @@
 
 - ✅ Abstração (modelar o que interessa)
 - ✅ Encapsulamento (não permitir modificações externas)
+ - ✅ Property 
 - ✅ Herança
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
  - Sobrecarga: dois metodos podem ter o mesmo nome, mas com assinaturas diferentes
@@ -185,6 +186,65 @@ implementation
 
 end.
 ~~~
+
+## `Property`
+
+[ver +] (http://docwiki.embarcadero.com/RADStudio/Sydney/en/Properties_(Delphi))
+
+> - Classe `TCliente` com variaveis `public` definidas como `property` <br>
+~~~Delphi
+unit uCliente;
+
+interface 
+  use SysUtils;
+
+Type
+  TCliente = class
+  public
+      property ID       :String;
+      property Nome     :String;
+      property CPF      :String;
+end;      
+~~~
+
+> - `Ctrl` + `Shift` + `C` : Implementação automática
+
+> - Cria-se variaveis `private`, denominadas Fields `F_nome_variavel_` <br>
+> - Declara e Implementa os procedimentos de atribuição `Set` 
+> - Atribui-se `read` e `write` nas variaveis <br>
+~~~Delphi
+private
+    FID:    String;
+    FNome:  String;
+    FCEP:   String;
+    procedure SetID(const   Value: String);
+    procedure SetNome(const Value: String);
+    procedure SetCPF(const  Value: String); 
+
+public
+    property ID       :String   read FID    write SetID;
+    property Nome     :String   read FNome  write SetNome;
+    property CPF      :String   read FCPF   write SetCPF;    
+
+
+implementation
+
+  procedure TCliente.SetID(const Value: String);
+  begin
+    FID := Value;
+  end;
+
+  procedure TCliente.SetNome(const Value: String);
+  begin
+    FNome := Value;
+  end;
+
+  procedure TCliente.SetCPF(const Value: String);
+  begin
+    FCPF := Value;
+  end;
+~~~
+
 
 
 # Polimorfismo
