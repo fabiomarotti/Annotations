@@ -17,8 +17,6 @@
 
 ---
 
->  Componentes
-
 ## `TZConection` (zConexao)
 
 ### Pre-Configuração
