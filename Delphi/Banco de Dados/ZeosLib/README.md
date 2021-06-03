@@ -31,8 +31,9 @@
 - `Password`: -
 - `Port`:     (3306: MySql)    (1433: SQL Server)
 - `Protocol`: (mysql-5: MySQL) (ado : SQL Server)
-- `Database: nome_banco_dados
-  - SQL Server: `Provider=SQLOLEDB.1;Password='senha';Persist Security Info=True;User ID='SA';Initial Catalog='nome_banco_dados';Data Source='nomePC\SQLEXPRESS'; `
+- `Database`: nome_banco_dados
+  - (SQL Server): `Provider=SQLOLEDB.1;Persist Security Info=True;Initial Catalog='nome_banco_dados';Data Source='nomePC\SQLEXPRESS'; `
+    - `Password='senha';User ID='SA';`
 - `Connected`: True
  
 ## `TZTable` (ztbPessoa)
