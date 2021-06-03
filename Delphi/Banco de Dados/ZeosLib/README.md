@@ -19,7 +19,7 @@
 
 ## `TZConection` (zConexao)
 
-### Pre-Configuração
+### Pre-Configuração (SQL Server)
 - (Windows) Fonte de Dados ODBC (64bit) / DSN de Usuário / Add 
    - Nome: conexaoSQL
    - Descrição : conexao sql
