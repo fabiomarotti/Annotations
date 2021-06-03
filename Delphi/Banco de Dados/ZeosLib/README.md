@@ -51,4 +51,8 @@
   - `ZEOS` : `cli_nome LIKE '* fulano *'`
 - `Filtered` : True or False
  
- 
+## Data Source
+- `DataSet` : `TZQuery`
+
+# Hierarquia
+- TZConection / TZQuery / DataSource
