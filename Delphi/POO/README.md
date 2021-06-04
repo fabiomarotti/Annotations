@@ -24,13 +24,13 @@
 
 > Sinônimos utilizados
 
-- Generalização  : da **Sub Classe** para **Super Classe**
-- Especialização : da **Super Classe** para **Sub Classe**
-- Herança: (é um tipo de) : as propriedades são herdadas
-  - Simples: Herdar apenas uma Super Classe 
-  - Multipla: Herdar varias Super Classes
-- Agregação: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
-- Composição: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
+- **Generalização**: da **Sub Classe** para **Super Classe**
+- **Especialização**: da **Super Classe** para **Sub Classe**
+- **Herança**: (é um tipo de) : as propriedades são herdadas
+  - __Simples__: Herdar apenas uma Super Classe 
+  - __Multipla__: Herdar varias Super Classes
+- **Agregação**: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
+- **Composição**: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
 
 > Convenção
 - Toda classe tem o nome iniciado pela letra T
