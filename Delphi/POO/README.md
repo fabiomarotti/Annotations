@@ -32,10 +32,20 @@
        - `TListBox`
 
 # Classe (Abstração)
-
+## Propriedades das Classes
 - **Construtor:**         `instancia` `:=` `Classe`.`Create` 
 - **Destrutor:**          `instancia`.`Free` 
 - **Variavel de Classe:** `class var`
+
+## Manipuladores de Acesso
+- `Public` (Default) Acesso por qualquer Unit no projeto
+  - `Automated` Acesso por qualquer classe, geralmente usado em classes derivadas da classe TAutoObject
+  - `Published` Acesso por qualquer classe e seu valor pode ser visualizado no Object Inspector (acesso via RTTI) (RunTime Type Information) [ver +](https://www.devmedia.com.br/conhecendo-a-rtti/24547)
+- `Private` Acesso apenas pela propria Unit em que a classe foi definida.
+- `Protected` Acesso pelas classes herdadas, alem do private poder acessar
+- `Property`
+
+
 
 > Unidade contendo a Classe Pessoa
 ~~~Delphi
@@ -188,6 +198,10 @@ end.
 ~~~
 
 ## `Property`
+- Omitir metodo de Escrita : Read-Only
+- Omitir metodo de Leitura : Write-Only
+- Campo no lugar dos metodos : Acesso direto ao valor de um campo
+
 
 > - Classe `TCliente` com variaveis `public` definidas como `property` <br>
 ~~~Delphi
