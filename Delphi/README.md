@@ -589,7 +589,17 @@ End;
 - `NOW()` : Data e Hora atual
 - `IncDay(data , dias)` : Incrementa dias a uma data
 - `DaysBetween(data1 , data2)` : numero de dias entre duas datas
+
+> Para Strings
+- `SetLength` Redefine o comprimento da String
+- `Trim` Remove os espaços em brancos
+- `Insert` Inserir String a partir de um indice
+- `Length` número de caracteres da string
+- `LowerCase` minusculas
+- `UpperCase` maiuscula
+
 > Conversões
+- `CurrToStr` monetário para String 
 - `IntToStr(x)`   
 - `FloatToStr(x)` 
 - `FloatToStrF` : String formatada 
