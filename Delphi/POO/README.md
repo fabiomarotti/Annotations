@@ -1,4 +1,5 @@
 # Programação Orientada a Objetos (Delphi)
+> 1986 : Object Pascal
 
 - ✅ Abstração (modelar o que interessa)
   - Niveis de Abstração
@@ -7,9 +8,6 @@
     - **Nivel de Sign** : nomes, atributos e métodos
     - **Generalização** : polimorfirmo 
     - **Classes Abstratas** : apenas implementação as "sobreescritas"
-  - **Atributos**
-  - **Abstract** (não tem em Delphi)
-  - 
 
 - ✅ Encapsulamento (não permitir modificações externas)
   - **Public**
@@ -24,7 +22,7 @@
   - **Coercion Polymorphism** (Casting): Conversão de tipos de objetos ou primitivos.
   - **Parametric Polymofirsm** (Generics/Templates): otimiza os codigo
 
-- 1986 : Object Pascal
+> Sinônimos utilizados
 
 - Generalização  : da **Sub Classe** para **Super Classe**
 - Especialização : da **Super Classe** para **Sub Classe**
@@ -33,11 +31,14 @@
   - Multipla: Herdar varias Super Classes
 - Agregação: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
 - Composição: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
-- 
 
-
-## Convenção
+> Convenção
 - Toda classe tem o nome iniciado pela letra T
+
+> Atalhos
+- `Ctrl` + `Shift` + `A` : gera os imports das classes
+
+[continuar video](https://www.youtube.com/watch?v=3ugwf8FQqVo)
 
 ## Hierarquia simplificada das classes Delphi:
 - `TObject`
@@ -48,8 +49,11 @@
        - `TButton`
        - `TListBox`
 
-# Classe (Abstração)
-## Propriedades das Classes
+
+
+# Classes
+
+### Propriedades das Classes
 - **Construtor:**         `instancia` `:=` `Classe`.`Create` 
 - **Destrutor:**          `instancia`.`Free` 
 - **Variavel de Classe:** `class var`
