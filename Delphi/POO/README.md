@@ -301,19 +301,35 @@ Implementation
 
 
 # Operadores com Objetos
-## `As`
-- typecasting
+
+## `Is`
+- Verificar se um objeto é uma instância de uma classe derivada de uma classe-base.
+- Retorna um valor booleano
+~~~Delphi
+ if (form1.Components[i]  is  TEdit)
 ~~~
+
+
+## `As`
+- Tratar um objeto como uma instância de uma das suas classes-base
+- Utilizado para acessar um método ou propriedade da classe-base.
+- typecasting
+> (nome_objeto  As  nome_classe).nome_método <br>
+> (nome_objeto  As  nome_classe).nome_propriedade
+
+~~~Delphi
 with  Sender  as  TButton  do
 Begin
   Caption := '&Ok';
   OnClick := OkClick;
 End; 
 ~~~
-## `Is`
-- Checar se um Objeto pertence a uma Classe
-- Retorna um valor booleano
 
-~~~Delphi
- if (form1.Components[i]  is  TEdit)
-~~~
+## `Self`
+- Referência a instância corrente de uma classe 
+- semelhante ao `this` (em C)
+
+
+
+
+
