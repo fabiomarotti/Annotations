@@ -1,11 +1,28 @@
 # Programação Orientada a Objetos (Delphi)
 
 - ✅ Abstração (modelar o que interessa)
+  - Niveis de Abstração
+    - **Nivel de Domínio** : os nomes das classes
+    - **Nível de Análise** : nomes e atributos
+    - **Nivel de Sign** : nomes, atributos e métodos
+    - **Generalização** : polimorfirmo 
+    - **Classes Abstratas** : apenas implementação as "sobreescritas"
+  - **Atributos**
+  - **Abstract** (não tem em Delphi)
+  - 
+
 - ✅ Encapsulamento (não permitir modificações externas)
-  - ✅ Property 
+  - **Public**
+  - **Protected**
+  - **Private**
+  
 - ✅ Herança
+
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
- - Sobrecarga: dois metodos podem ter o mesmo nome, mas com assinaturas diferentes
+  - **Subtyping** (_Override_) : __Sobreescrita__, do método herdado.
+  - **Overloading** (Sobrecarga): Método com o mesmo nome, porem com assinaturas diferentes.
+  - **Coercion Polymorphism** (Casting): Conversão de tipos de objetos ou primitivos.
+  - **Parametric Polymofirsm** (Generics/Templates): otimiza os codigo
 
 - 1986 : Object Pascal
 
