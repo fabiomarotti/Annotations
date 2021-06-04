@@ -17,18 +17,18 @@
 - ✅ Herança
 
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
-  - **Subtyping** (_Override_) : __Sobreescrita__, do método herdado.
+  - **Subtyping** (_Override_) : _Sobreescrita_, do método herdado.
   - **Overloading** (Sobrecarga): Método com o mesmo nome, porem com assinaturas diferentes.
   - **Coercion Polymorphism** (Casting): Conversão de tipos de objetos ou primitivos.
   - **Parametric Polymofirsm** (Generics/Templates): otimiza os codigo
 
 > Sinônimos utilizados
 
-- **Generalização**: da **Sub Classe** para **Super Classe**
-- **Especialização**: da **Super Classe** para **Sub Classe**
+- **Generalização**: da _Sub Classe_ para **Super Classe**
+- **Especialização**: da _Super Classe_ para **Sub Classe**
 - **Herança**: (é um tipo de) : as propriedades são herdadas
-  - __Simples__: Herdar apenas uma Super Classe 
-  - __Multipla__: Herdar varias Super Classes
+  - _Simples_: Herdar apenas uma Super Classe 
+  - _Multipla_: Herdar varias Super Classes
 - **Agregação**: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
 - **Composição**: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
 
