@@ -27,14 +27,8 @@
   - State, 
   - Visitor.
 
-## Estrutural
-- Adapter;
-- Bridge;
-- Composite;
-- Decorator;
-- Façade;
-- Flyweight;
-- Proxy.
+### Singleton
+- Garante que uma classe possuirá apenas uma instância, e proverá um único ponto de acesso global a mesma.
 
 # Referência
 [site 01](https://portaldesenvolvedor.com/blog/design-patterns-em-delphi-padroes-de-projeto/)
