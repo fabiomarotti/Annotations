@@ -5,6 +5,8 @@
 
 [Exemplos (oficial)](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Code_Examples_Index)
 
+[Trechos a estudar](http://www.linhadecodigo.com.br/delphi.aspx)
+
 > Informações
 - Delphi é um Ambiente de Desenvolvimento (ferramenta/conceito)
 - RAD (Rapid Applicaiton Development)
