@@ -14,7 +14,7 @@
   - **Protected**
   - **Private**
   
-- ✅ Herança
+- ✅ Herança (Inheriting)
 
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
   - **Subtyping** (_Override_) : _Sobreescrita_, do método herdado.
@@ -53,12 +53,98 @@
 
 # Classes
 
-### Propriedades das Classes
-- **Construtor:**         `instancia` `:=` `Classe`.`Create` 
-- **Destrutor:**          `instancia`.`Free` 
-- **Variavel de Classe:** `class var`
+> Declaração de classe vazia
+~~~Delphi
+type
+  TPessoa = class;
+~~~
 
-## Manipuladores de Acesso
+> Declaração com classes auto-relacionadas (cross-references)
+~~~Delphi
+type
+  TMarido = class;
+  
+  TEsposa = class
+    marido: TMarido;
+  end;
+  
+  TMarido class
+    esposa: TEsposa;
+  end;
+~~~
+
+### Instanciação do objeto
+~~~Delphi
+var
+  umMarido: TMarido;
+  umMarido := nil;
+
+begin
+  // Criando 
+  umMarido := TMarido.Create;
+  
+  // código
+  
+  // Limpando da memoria
+  umMarido.Free;
+end.
+~~~
+
+> Construtor e Destrutor
+
+~~~Delphi
+type
+ TPessoa = class
+
+ private
+    FNome   : string;
+    FMarido : TMarido;
+
+ public
+    constructor Create (nome: string);
+    destructor  Destroy;     override;
+    
+ end;
+~~~
+
+~~~Delphi
+constructor TPerson.Create (nome: string);
+begin
+  FNome   := nome;
+  FMarido := TMarido.Create;
+end;
+
+destructor TPerson.Destroy;
+begin
+  FMarido.Free;
+  inherited;
+end;
+~~~~ 
+
+
+### Funções e Procedimento nas classes
+> Função
+~~~Delphi
+function TPessoa.SetCadastrada: Boolean; 
+begin
+  // codigo
+  Reuslt := True;
+end;
+~~~
+
+> Procedimento
+~~~Delphi
+procedure TPessoa.SetDatas(m, d, a: Integer);
+begin
+  mes := m;
+  dia := d;
+  ano := a;
+end;
+~~~
+
+
+
+### Manipuladores de Acesso
 - `Public` (Default) Acesso por qualquer Unit no projeto
   - `Automated` Acesso por qualquer classe, geralmente usado em classes derivadas da classe TAutoObject
   - `Published` Acesso por qualquer classe e seu valor pode ser visualizado no Object Inspector (acesso via RTTI) (RunTime Type Information) [ver +](https://www.devmedia.com.br/conhecendo-a-rtti/24547)
@@ -283,7 +369,34 @@ implementation
 
 
 # Polimorfismo
-- `virtual` : permissão de `override` (reescrita) nas clases derivadas
+- `virtual` : permissão de `override` (reescrita) na declaração 
+- `override` : Sobreescrita na Função/Procedimento
+- pag 240 marco cantu
+
+> Classe Pai e Classe Filho
+~~~Delphi
+type
+ TClassePai = class
+   procedure One; virtual;
+   procedure Two; // static method
+ end;
+ 
+ TClasseFilho = class (TClassePai)
+    procedure One; override;
+    procedure Two;
+ end;
+~~~
+
+> Chamando o procedimento
+~~~Delphi
+procedure TClasseFilho.One;
+begin
+ // codigo novo
+ ...
+ // Chama procedimento herdado TClassePai.One
+ inherited One;
+end;
+~~~
 
 > Exemplo
 ~~~Delphi
@@ -321,9 +434,9 @@ Implementation
 ~~~
 
 
-# Operadores com Objetos
+## Operadores com Objetos
 
-## `Is`
+### `Is`
 - Verificar se um objeto é uma instância de uma classe derivada de uma classe-base.
 - Retorna um valor booleano
 ~~~Delphi
@@ -331,7 +444,7 @@ Implementation
 ~~~
 
 
-## `As`
+### `As`
 - Tratar um objeto como uma instância de uma das suas classes-base
 - Utilizado para acessar um método ou propriedade da classe-base.
 - typecasting
@@ -346,7 +459,7 @@ Begin
 End; 
 ~~~
 
-## `Self`
+### `Self`
 - Referência a instância corrente de uma classe 
 - semelhante ao `this` (em C)
 
