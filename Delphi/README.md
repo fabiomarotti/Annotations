@@ -491,6 +491,13 @@ unit nome_unidade;
 end. // fim unidade
 ~~~
 
+# Função e Procedimentos
+~~~Delphi
+procedure Mostrar1 (      str: string);
+procedure Mostrar2 (var   str: string);
+procedure Mostrar3 (const str: string);
+~~~
+
 ## Função
 
 - são declaradas na seção `interface`
