@@ -98,7 +98,14 @@
 ## Declaração de Variáveis
 ~~~Delphi
 var 
-  Nome: string := 'Fábio Marotti';
+  Nome: string = 'Fábio Marotti'; // testar
+~~~ 
+
+~~~Delphi
+var 
+  Nome: string;
+begin
+  Nome := 'Fábio Marotti'; // variavel inicializada
 ~~~ 
 
 ~~~Delphi
@@ -112,6 +119,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
   - `Property` (ver + em POO)
 - `Published`
 - `Const`
+- `Resourcestring` parecida com **const**, porem possui um gerenciamento de memoria melhor em ambito do sistema 
 
 ## Operadores Aritméticos
 - `*` multiplicação 
@@ -618,6 +626,8 @@ End;
 - `StrToDate`
 - `DateTimeToStr`
 - `TimeToStr`
+- `Parse` converte para valor representativo
+- `TryParse` Tenta converter String para um numero
 
 
 - `RANDOM()` : Valor aleatório (usar Randomize)
@@ -634,6 +644,7 @@ End;
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
 - `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
+- `Ctrl` + `Shift` + `L` : Refatoração de uma var (testar pag 56mc)
 
 > Exibir Ferramentas
 - `F11`                   : Object Inspecto
