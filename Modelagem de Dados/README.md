@@ -59,6 +59,9 @@
 - **Composto**: (Endereço :(subdividido em atributos simples): Rua, Bairro, CEP)
 - **Multivalorado**: (Para a mesma instência, pode-se ter mais de um registro do mesmo atributo) (Telefone) (usar `*`)
 - **Determinante**: Garante que os registros não se repitam (Atributo sublinhado) (Código de Produto)
+  - Chaves: (Alternativas)
+    - Candidata: não seja usada como primária
+    - Primária: principal da tabela
 - **Identificador**(Chaves): é um tipo de Determinante
   - __Único__ (Determinante) valor é unico na entidade e não se repete (chave-primária)
   - __Não-único__ agrupar instâncias de classe em categorias (chave-estrangeira)
