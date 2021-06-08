@@ -20,9 +20,6 @@
   - listas de entidades, atributos e relacionamento, ... 
 - `DER` (Diagrama Entidade Relacionamento)
   - modo gráfico
-  - Retangulo: Entidade
-  - Losango: Relacionamento
-  - Elipse: Atributo
 - `Schema` (Esquema) definição do BD especificada durante o projeto, armazenada no **Dicionário de Dados**. 
   - Alem do MFD, aqui se defini funçoes, visões, ...
 
@@ -40,3 +37,26 @@
 
 - `MFD` (Modelo Físico de Dados) (baixo nivel)
   - Derivado do MLD, cria-se as tabelas, atributos, tipos de dados, tamanho
+
+### MER
+- `Entidade` (Retângulo)
+  - Instância de Entidade
+    - Ocorrência especifica de uma entidade
+    - cada "Produto" é uma Instância
+    - Classe de Objetos (lembrando da OO)
+  - palavra no singular
+  - caracteres permitidos (`$`,`#`,`_`)
+  - nomes das entidades e colunas devem ser unicos
+
+- `Atributos` 
+> Descrevem caracteristicas da entidade
+- **Simples**: (atômico/indivisivel) (nome, CPF)
+- **Composto**: (Endereço :(subdividido em atributos simples): Rua, Bairro, CEP)
+- **Multivalorado**: (Para a mesma instência, pode-se ter mais de um registro do mesmo atributo) (Telefone) (usar `*`)
+- **Determinante**: Garante que os registros não se repitam (Atributo sublinhado) (Código de Produto)
+- **Identificador**(Chaves): é um tipo de Determinante
+  - __Único__ (Determinante) valor é unico na entidade e não se repete (chave-primária)
+  - __Não-único__ agrupar instâncias de classe em categorias (chave-estrangeira)
+  
+- `Relaciomento` (Losângo)   
+
