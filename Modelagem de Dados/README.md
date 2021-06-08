@@ -12,6 +12,11 @@
 - `Metadados` 
   - Dados sobre os Dados
   - São mantidos em dicionários de dados (Catálogo de dados)
+- `Tuplas` conjunto de registros que represenam um modelo de uma entidade  
+- `Campos` coluna da tabela
+- `Registro` linha da tabela (instância)
+- `Relação` conjunto de todas as instâncias (cada registro representa uma instância)
+  - "Toda Relação é uma tabela, mas nem toda tabela é uma relação"
 - `BD` (Banco de Dados)
 - `DBA` (Data Base Administrator)
 - `SGBD` Sistema de Gerenciamento de Banco de Dados
@@ -59,4 +64,9 @@
   - __Não-único__ agrupar instâncias de classe em categorias (chave-estrangeira)
   
 - `Relaciomento` (Losângo)   
-
+  - Entidades pode ser conectadas entre por meio de Relacionamentos
+  - Verbo que associa as entidades.
+  - Grau do relacionamento : numero de entidades que participam do relacionamento
+    - **Unário** (Relacionamento Recursivo/Auto-relacionamento) [Pessoa se casa com Pessoa]
+    - **Binário** entre duas Entidades [Cliente - Compra - Produto]
+    - **Ternário** entre trÊs ou mais Entidades [Médico - Prescreve = Medicamento = Paciente]
