@@ -85,7 +85,7 @@
 # Cardinalidade
 - `0`,`1`,`n`
 - `(` minimo `,` máximo `)`
-- [Entidade_A] -<Relacionamento>- (Cadinalidade da Entidade_A) -[Entidade_B]
+- [Entidade_A] - < Relacionamento > - (Cadinalidade da Entidade_A) -[Entidade_B]
 
 # Referência
 - [Curso de Modelagem de Dados](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD)
