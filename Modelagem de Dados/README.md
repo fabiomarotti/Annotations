@@ -87,5 +87,19 @@
 - `(` minimo `,` máximo `)`
 - [Entidade_A] - < Relacionamento > - (Cadinalidade da Entidade_A) -[Entidade_B]
 
+# Normalização
+## 1 Forma Normal
+- Existir uma chave primaria 
+- Somente valores atômicos
+- Não possuir  tabelas dentro de tabelas
+- Não possuir atributos composto
+
+### 2 Forma Normal
+continuar 
+
+- https://www.youtube.com/watch?v=AsK2sYhaGMY&list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD&index=29
+### 3 Forma Normal
+
+
 # Referência
 - [Curso de Modelagem de Dados](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD)
