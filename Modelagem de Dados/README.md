@@ -66,6 +66,14 @@
   - __Único__ (Determinante) valor é unico na entidade e não se repete (chave-primária)
   - __Não-único__ agrupar instâncias de classe em categorias (chave-estrangeira)
   
+- **Chaves**
+  - Candidata
+    - Alternativa
+    - Primária 
+    - Estrangeira
+    - Composta (combinar colunas para formar uma chave composta)
+    - Surrogada (Substituta) (coluna extra com um número sequencial, não tem relevância para usuario)
+    
 - `Relaciomento` (Losângo)   
   - Entidades pode ser conectadas entre por meio de Relacionamentos
   - Verbo que associa as entidades.
