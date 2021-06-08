@@ -81,6 +81,11 @@
     - **Unário** (Relacionamento Recursivo/Auto-relacionamento) [Pessoa se casa com Pessoa]
     - **Binário** entre duas Entidades [Cliente - Compra - Produto]
     - **Ternário** entre trÊs ou mais Entidades [Médico - Prescreve = Medicamento = Paciente]
-   
-   # Referência
-   - [Curso de Modelagem de Dados](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD)
+  
+# Cardinalidade
+- `0`,`1`,`n`
+- `(` minimo `,` máximo `)`
+- [Entidade_A] -<Relacionamento>- (Cadinalidade da Entidade_A) -[Entidade_B]
+
+# Referência
+- [Curso de Modelagem de Dados](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD)
