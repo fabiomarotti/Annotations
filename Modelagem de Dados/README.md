@@ -75,4 +75,4 @@
     - **Ternário** entre trÊs ou mais Entidades [Médico - Prescreve = Medicamento = Paciente]
    
    # Referência
-   - (Curso de Modelagem de Dados)[https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD]
+   - [Curso de Modelagem de Dados](https://www.youtube.com/playlist?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD)
