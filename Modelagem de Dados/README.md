@@ -88,18 +88,18 @@
 - [Entidade_A] - < Relacionamento > - (Cadinalidade da Entidade_A) -[Entidade_B]
 
 # Normalização
-## 1 Forma Normal
+## 1ª Forma Normal
 - Existir uma chave primaria 
 - Somente valores atômicos
 - Não possuir  tabelas dentro de tabelas
 - Não possuir atributos composto
 
-### 2 Forma Normal
+### 2ª Forma Normal
 - Dever estar na 1ª Forma Normal
 - Todos os atributos não-chave são Funcionalmente Dependentes, não existir dependencia parcial (teram uma chave primaria)
 
-### 3 Forma Normal
-- Deve estar na 2 Forma Normal
+### 3ª Forma Normal
+- Deve estar na 2ª Forma Normal
 - Dependência Transitiva
 
 ## Forma Normal de Boyce-Codd
