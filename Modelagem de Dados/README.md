@@ -88,7 +88,7 @@
 - [Entidade_A] - < Relacionamento > - (Cadinalidade da Entidade_A) -[Entidade_B]
 
 # Normalização
-## 1ª Forma Normal
+### 1ª Forma Normal
 - Existir uma chave primaria 
 - Somente valores atômicos
 - Não possuir  tabelas dentro de tabelas
