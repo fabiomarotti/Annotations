@@ -200,6 +200,18 @@ SELECT TOP 1 * FROM nome_tabela;
 SELECT * FROM tabela_A ;
 ~~~
 
+# Comandos 2
+
+> Seleciona todos os Banco de Dados do SQLServer
+- `name` nome da coluna com os nomes dos Banco de Dados
+ 
+~~~SQL
+SELECT name FROM master.sys.databases
+~~~
+
+~~~SQL
+SELECT name FROM master.dbo.sysdatabases
+~~~
 
 
 # Refêrencias 
