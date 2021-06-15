@@ -45,17 +45,17 @@
 
 > Criar Banco de Dados
 ~~~SQL
-CREATE DATABASE nome_banco
+CREATE DATABASE db_nome_banco
 ~~~ 
 
 > Acessar para uso 
 ~~~SQL
-USE nome_banco
+USE db_nome_banco
 ~~~
 
 > Criar Banco com Detalhes e Limitações
-> - `nome_banco.mdf` Banco de Dados <br>
-> - `nome_banco.ldf` Log do Bando de Dados <br>
+> - `db_nome_banco.mdf` Banco de Dados <br>
+> - `db_nome_banco.ldf` Log do Bando de Dados <br>
 > - Criar a pasta antes de executar o comando
 
 ~~~SQL
@@ -75,7 +75,7 @@ LOG ON
 
 > Excluir Banco de Dados
 ~~~SQL
-DROP DATABASE nome_banco
+DROP DATABASE db_nome_banco
 ~~~
 
 # Comandos para Tabelas
@@ -87,7 +87,7 @@ DROP DATABASE nome_banco
 
 > CREATE
 ~~~SQL
-CREATE TABLE nome_tabela (
+CREATE TABLE tb_nome_tabela (
        campo_1  INT NOT NUL, 
        campo_2  VARCHAR(50)
        CONSTRAINT pk_campo_1 PRIMARY KEY (campo_1)
@@ -97,7 +97,7 @@ CREATE TABLE nome_tabela (
 - Constraint: Cria-se automaticamente
 - Identity: Enumera campo_1 automaticamente
 ~~~SQL
-CREATE TABLE nome_tabela (
+CREATE TABLE tb_nome_tabela (
        campo_1  INT    NOT NUL   PRIMARY KEY   IDENTITY, 
        campo_2  VARCHAR(50)
        );
@@ -105,23 +105,23 @@ CREATE TABLE nome_tabela (
 
 > ALTER
 ~~~SQL
-ALTER TABLE nome_tabela ADD campo_x VARCHAR(20) NOT NULL;
+ALTER TABLE tb_nome_tabela ADD campo_x VARCHAR(20) NOT NULL;
 ~~~
 
 ~~~SQL
-ALTER TABLE nome_tabela ALTER COLUMN campo_x VARCHAR(21);
+ALTER TABLE tb_nome_tabela ALTER COLUMN campo_x VARCHAR(21);
 ~~~
 
 ~~~SQL
-ALTER TABLE nome_tabela DROP COLUMN campo_x;
+ALTER TABLE tb_nome_tabela DROP COLUMN campo_x;
 ~~~
 
 ~~~SQL
-ALTER TABLE nome_tabela ADD CONSTRAINT pk_campo_pk PRIMARY KEY (campo_pk);
+ALTER TABLE tb_nome_tabela ADD CONSTRAINT pk_campo_pk PRIMARY KEY (campo_pk);
 ~~~
 
 ~~~SQL
-ALTER TABLE nome_tabela_com_pk 
+ALTER TABLE tb_nome_tabela_com_pk 
       ADD CONSTRAINT fk_campo_fk FOREIGN KEY (campo_fk)
       REFERENCES tabela_fk (campo_fk_tabela_fk) ON DELETE CASCADE;
 ~~~
@@ -133,7 +133,7 @@ INSERT INTO nome_tabela (campo_1, campo_2, .., campo_n) VALUES (valor_1, valor_2
 ~~~
 
 ~~~SQL
-INSERT INTO nome_tabela (campo_A1, campo_A2, .., campo_An) 
+INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An) 
        VALUES (valor_A1, valor_A2, ... , valor_An),
               (valor_B1, valor_B2, ... , valor_Bn),
               (valor_C1, valor_C2, ... , valor_Cn);
@@ -141,60 +141,70 @@ INSERT INTO nome_tabela (campo_A1, campo_A2, .., campo_An)
  
 > DELETE
 ~~~SQL
-DELETE nome_tabela WHERE campo=valor;
+DELETE tb_nome_tabela WHERE campo=valor;
 ~~~
 
 - Apaga todos os registros da tabela
 ~~~SQL
-DELETE nome_tabela;
+DELETE tb_nome_tabela;
 ~~~
 
 > UPDATE
 ~~~SQL
-UPDATE nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   campo_x=valor_x;
+UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   campo_x = valor_x;
 ~~~
 
 
 > SELECT
+- Mostrar Tabelas
 ~~~SQL
--- Mostrar tabelas do BD corrente
+-- Mostrar tabelas do Banco de Dados corrente
 SELECT * FROM Sys.Tables;
 
 -- Mostrar tabelas de um BD específico
-SELECT * FROM [nome_banco].Information_Schema.Tables;
+SELECT * FROM [db_nome_banco].Information_Schema.Tables;
 
 -- Mostrar tabelas do BD com informaçoes de Data da ciração
-SELECT * FROM sysobjects WHERE xtype='U' 
+SELECT * FROM SysObjects WHERE xtype='U' 
+~~~
+
+- Mostrar Campos das Tabelas
+~~~SQL
+-- Mostrar Campos de uma tabela
+SELECT * FROM Sys.Columns WHERE object_id = object_id('tb_nome_tabela')
+
+-- Mostrar Campos de uma tabela por Schema
+SELECT * FROM Information_Schema.Columns WHERE table_name = 'tb_nome_tabela'
 ~~~
 
 ~~~SQL
-SELECT campo_1, ... , campo  FROM nome_tabela;
+SELECT campo_1, ... , campo  FROM tb_nome_tabela;
 ~~~
 
 ~~~SQL
-SELECT * FROM nome_tabela;
+SELECT * FROM tb_nome_tabela;
 ~~~
 
-
+- Pesquisa pelos Campos das Tabelas
 ~~~SQL
-SELECT * FROM nome_tabela WHERE campo_1=valor_1;
-~~~
-
-~~~SQL
-SELECT * FROM nome_tabela WHERE campo_1=valor_1 OR campo_2=valor_2;
+SELECT * FROM tb_nome_tabela WHERE campo_1=valor_1;
 ~~~
 
 ~~~SQL
-SELECT * FROM nome_tabela WHERE campo_1=valor_1 AND campo_2=valor_2;
+SELECT * FROM tb_nome_tabela WHERE campo_1=valor_1 OR campo_2=valor_2;
 ~~~
 
 ~~~SQL
-SELECT * FROM nome_tabela WHERE campo_A IN (valor_A1, ... ,valor_An);
+SELECT * FROM tb_nome_tabela WHERE campo_1=valor_1 AND campo_2=valor_2;
+~~~
+
+~~~SQL
+SELECT * FROM tb_nome_tabela WHERE campo_A IN (valor_A1, ... ,valor_An);
 ~~~
 
 > Decrescente
 ~~~SQL
-SELECT * FROM nome_tabela ORDER BY campo_A DESC;
+SELECT * FROM tb_nome_tabela ORDER BY campo_A DESC;
 ~~~
 
 > Crescente
@@ -204,7 +214,7 @@ SELECT * FROM nome_tabela ORDER BY campo_A ASC;
 
 > Retorna apenas o primeiro registro 
 ~~~SQL
-SELECT TOP 1 * FROM nome_tabela;
+SELECT TOP 1 * FROM tb_nome_tabela;
 ~~~
 
 ~~~SQL
