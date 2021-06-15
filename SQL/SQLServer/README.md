@@ -224,6 +224,20 @@ SELECT name FROM master.sys.databases
 SELECT name FROM master.dbo.sysdatabases
 ~~~
 
+# Comandos Encadeados
+
+~~~SQL
+-- Excluir banco, caso ja exista
+use master 
+
+go 
+
+if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
+  DROP DATABASE db_nome_banco
+~~~
+
+[ver +](https://www.youtube.com/watch?v=RqlIpwpHWHA)
+
 
 # Refêrencias 
 [link 01](https://www.youtube.com/watch?v=DEh0B6PRn5k&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=1)
