@@ -157,6 +157,17 @@ UPDATE nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   c
 
 > SELECT
 ~~~SQL
+-- Mostrar tabelas do BD corrente
+SELECT * FROM Sys.Tables;
+
+-- Mostrar tabelas de um BD específico
+SELECT * FROM [nome_banco].Information_Schema.Tables;
+
+-- Mostrar tabelas do BD com informaçoes de Data da ciração
+SELECT * FROM sysobjects WHERE xtype='U' 
+~~~
+
+~~~SQL
 SELECT campo_1, ... , campo  FROM nome_tabela;
 ~~~
 
