@@ -30,5 +30,6 @@
 - `DQL` (Data Query Language)
   - SELECT
 
-
+# Referência
+- [w3schools - SQL](https://www.w3schools.com/sql/sql_view.asp)
 
