@@ -4,7 +4,7 @@
   - **Provider**: SQLOLEDB.1
   - **Connected**: True
   
-- `TADOQuery`
+- `TADOQuery` [ver+](https://www.greelane.com/pt/ci%c3%aancia-tecnologia-matem%c3%a1tica/ci%c3%aancia-da-computa%c3%a7%c3%a3o/queries-with-ado-db-7-4092570/)
 - **FieldByName**
   - **ReadOnly**: True/False
   - **ProviderFlags**: [pfInKey, pfInWhere, pfInUpdate]
