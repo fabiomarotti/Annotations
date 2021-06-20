@@ -5,3 +5,6 @@
   - **Connected**: True
   
 - `TADOQuery`
+- **FieldByName**
+  - **ReadOnly**: True/False
+  - **ProviderFlags**: [pfInKey, pfInWhere, pfInUpdate]
