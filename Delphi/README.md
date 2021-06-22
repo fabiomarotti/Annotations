@@ -421,7 +421,7 @@ Begin
   If [condição] Then
     continue;
   
-  Break;
+Break;
 End;
 ~~~
 
@@ -627,6 +627,8 @@ End;
 - `UpperCase` maiuscula
 
 > Conversões
+- `StrToIntDef(texto, -1)`
+  - x := StrToInt(texto, -1) **(caso não converta, x := -1)** 
 - `CurrToStr` monetário para String 
 - `IntToStr(x)`   
 - `FloatToStr(x)` 
