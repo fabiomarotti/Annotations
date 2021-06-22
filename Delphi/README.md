@@ -414,6 +414,17 @@ Begin
 End;
 ~~~
 
+~~~Delphi
+While True Do
+Begin
+
+  If [condição] Then
+    continue;
+  
+  Break;
+End;
+~~~
+
 ### Repeat 
 > Repeat .. Until
 ~~~Delphi
