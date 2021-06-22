@@ -95,6 +95,42 @@
 {$ENDREGION}
 ~~~
 
+## Subáreas
+- `var`
+- `uses`
+  - crt
+- `label`
+- `const`
+- `type` (Proprio tipo de dados)
+  - Scalar (semelhante ao array de mesmo tipo)
+  - Subrange, 
+  - Set, 
+  - Record (tipos variados) [ver+](https://www.youtube.com/watch?v=Qe4ERd1ECtw&list=PLIz6mntaZSG1aTBEg1g6RkBO5HZALcGy-&index=17)
+- `procedure`
+- `function`
+
+- Record  : Registros
+- File    : Arquivos
+- Set     : Conjuntos
+- Pointer : Ponteiros
+
+
+## Unit
+~~~Delphi
+Unit exemplo_unit;
+
+Interface
+  procedure EscreverTexto;
+
+Implementation
+  procedure EscreverTexto
+  Begin
+    WriteLn('Ola Mundo');
+  End;
+  
+End. // Fechamento do Implementation
+~~~
+
 ## Declaração de Variáveis
 ~~~Delphi
 var 
@@ -182,23 +218,77 @@ var
 ~~~Delphi
 var 
    // Decimal data types :
-   Dec1 : Single;   //  7  significant digits, exponent   -38 to +38
-   Dec2 : Currency; // 50+ significant digits, fixed 4 decimal places
-   Dec3 : Double;   // 15  significant digits, exponent  -308 to +308
-   Dec4 : Extended; // 19  significant digits, exponent -4932 to +4932
+   Dec1 : Single;     //  7      significant digits, exponent   -38 to +38
+   Dec2 : Currency;   // 50+     significant digits, fixed 4 decimal places
+   Dec3 : Double;     // 15      significant digits, exponent  -308 to +308
+   Dec4 : Extended;   // 19      significant digits, exponent -4932 to +4932
+   Dec5 : Real;       // 11/12   significant digits,           2,9 E-39 a 1,7 E+38
+~~~
+
+> Delimitar numero no modo Console
+~~~Delphi
+WriteLn('numero: ', x:2:2);
 ~~~
 
 ### Texto
 ~~~Delphi
 var
-   Str1 : Char;        // Holds a single character, small alphabet
+   Str1 : Char;        // Holds a single character, small alphabet (1 byte)
    Str2 : WideChar;    // Holds a single character, International alphabet
    Str3 : AnsiChar;    // Holds a single character, small alphabet
    Str4 : ShortString; // Holds a string of up to 255 Char's
-   Str5 : String;      // Holds strings of Char's of any size desired
-   Str6 : AnsiString;  // Holds strings of AnsiChar's any size desired
-   Str7 : WideString;  // Holds strings of WideChar's of any size desired
+   Str5 : String;      // Holds strings of Char's of any size desired  (max 256 bytes)
+   Str6 : String[n];   // Holds strings of Char's of any size desired  (2 a 256 bytes)
+   Str7 : AnsiString;  // Holds strings of AnsiChar's any size desired
+   Str8 : WideString;  // Holds strings of WideChar's of any size desired
 ~~~   
+
+
+### Vetores e Matrizes (Array Unidimensional e Array Multidimensional)
+
+> Vetores (Array Unidimensional)
+~~~Delphi
+var 
+  lista : Array[0 .. 3]   Of   String;
+
+lista[0] := 'Fulano';
+lista[1] := 'Beltrano';
+lista[2] := 'Ciclano';
+lista[3] := 'Mariano';
+~~~
+
+> Matrizes (Arrays Multidimensionais)
+~~~Delphi
+var
+  matriz_2x2 : Array[1..2 , 1..2]  Of  Integer
+  matriz_3x3 : Array[1..3]         Of  Array[1..3]   Of    Integer;
+
+// atribuição de valores matriz 2x2
+matriz_2x2 : = [
+                  [ 1 , 2 ],
+                  [ 3 , 4 ]
+               ];
+
+// atribuição de valores matriz 3x3
+matriz_3x3 :=  [
+                 [ 1 , 2 , 3 ] ,
+                 [ 4 , 5 , 6 ] ,
+                 [ 7 , 8 , 9 ]
+               ]; 
+~~~
+
+> Declaração do tamanho o Array pela função SetLength
+~~~Delphi
+var
+  vetor       : Array Of   Integer;
+  matriz      : Array Of   Array Of   Real;
+  matrizMulti : Array Of   Array Of   Array Of  Char;
+  
+ // Setando tamanho dos Arrays
+ SetLength(vetor       ,3          );
+ SetLength(matriz      ,3  ,3      );
+ SetLength(matrizMulti ,3  ,3  ,3  );
+~~~
 
 ### Lógico
 ~~~Delphi
@@ -293,51 +383,6 @@ const
    NO            = False;        // Boolean constant
 ~~~   
 
-### Vetores e Matrizes (Array Unidimensional e Array Multidimensional)
-
-> Vetores (Array Unidimensional)
-~~~Delphi
-var 
-  lista : Array[ 0 .. 3 ] Of String;
-
-lista[0] := 'Fulano';
-lista[1] := 'Beltrano';
-lista[2] := 'Ciclano';
-lista[3] := 'Mariano';
-~~~
-
-> Matrizes (Arrays Multidimensionais)
-~~~Delphi
-var
-  matriz_2x2 : Array[1..2,1..2] Of  Integer
-  matriz_3x3 : Array[1..3] Of       Array[1..3] Of    Integer;
-
-// atribuição de valores matriz 2x2
-matriz_2x2 : = [
-                  [ 1 , 2 ],
-                  [ 3 , 4 ]
-               ];
-
-// atribuição de valores matriz 3x3
-matriz_3x3 :=  [
-                 [ 1 , 2 , 3 ] ,
-                 [ 4 , 5 , 6 ] ,
-                 [ 7 , 8 , 9 ]
-               ]; 
-~~~
-
-> Declaração do tamanho o Array pela função SetLength
-~~~Delphi
-var
-  vetor       : Array Of   Integer;
-  matriz      : Array Of   Array Of   Real;
-  matrizMulti : Array Of   Array Of   Array Of  Char;
-  
- // Setando tamanho dos Arrays
- SetLength(vetor       ,3          );
- SetLength(matriz      ,3  ,3      );
- SetLength(matrizMulti ,3  ,3  ,3  );
-~~~
 
 ## Ponteiros :
 - `@` : acessa o Endereço de Memória de uma variavel. Exemplo: `@variavel`
@@ -389,7 +434,7 @@ IntToStr( SizeOf( x_ponteiro ) );
 ### For 
 > For .. to .. do (crescente)
 ~~~Delphi
-For   var i := 0    To   10    Do
+For   var i := 0    To      10    Do
 Begin
   ShowMessage( IntToStr(i) );
 End;
@@ -397,7 +442,7 @@ End;
 
 > For .. dowto .. do (decrescente)
 ~~~Delphi
-For   var i := 10    Downto   0    Do
+For   var i := 10    DownTo   0    Do
 Begin
   ShowMessage( IntToStr(i) );
 End;
@@ -442,27 +487,27 @@ Until (i <= 10);
 ~~~Delphi
 Case <expressão> Of   
   
-  Valor_1: <Bloco de comandos>    
-  Valor_2: <Bloco de comandos>   
-  ......
-  Valor_n: <Bloco de comandos>  
+    Valor_1: <Bloco de comandos>    
+    Valor_2: <Bloco de comandos>   
+    ......
+    Valor_n: <Bloco de comandos>  
   
-  else: <Bloco de comandos> 
-  
+Else: 
+  <Bloco de comandos> 
 End;
 ~~~
 
 
-### If Then Else
+### If .. Then .. Else
 ~~~
-if x >10 then
+if (x > 10) then
 begin
  // codigo
 end;
 ~~~
 
 ~~~
-if x >10 then
+if (x > 10) then
 begin
  // se Sim
 end
