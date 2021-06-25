@@ -251,3 +251,5 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 
 # Refêrencias 
 [link 01](https://www.youtube.com/watch?v=DEh0B6PRn5k&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=1)
+
+[link 02](https://www.youtube.com/watch?v=rX2I7OjLqWE&t=4359s)
