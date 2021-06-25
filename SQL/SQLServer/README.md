@@ -3,13 +3,14 @@
 - Super Usuario: `sa`
 - Porta Padrão : `1433`
 - Valores Float: 123.456
+- Colunas = Campos
 
 ### Downloads
 - [Download SSEI - SQL 2019 Express](https://go.microsoft.com/fwlink/?linkid=866658)
 - [Download SSMS - SQL Server Management Studio 18.9.1](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-ver15)
 
 ### Pre-Configurações
-- **Configuração da Instância** : SQLSPRESS, SQLTrabalho
+- **Configuração da Instância** : .\SQLSPRESS, \SQLTrabalho
 - **Configuração do Servidor** : SQL Server Browser : Automático e Agrupamento: Latin1_General_CI_AS
 - **Configuração do Mecanismo de Banco de Dados** : Modo Misto: usuario master : **sa** e inserir senha
 - **SQL Management Studio**:
@@ -20,7 +21,7 @@
 - `sp_helpdb nome_banco` informações sobre o Banco de Dados, Tamanho, Quem criou, localização, ...
 
 ### Informações
-> Comentários
+> Comentários:
 ~~~SQL
 -- Comentário em uma linha 
 ~~~
@@ -29,10 +30,13 @@
 /* Comentário em multiplas linhas */
 ~~~
 
-> Tipo de Dados
+> Tipo de Dados:
 - `NULL`
 - `int`
 - `varchar`
+
+> Backups:
+- `Restore Database` / `Device` / `arquivo_bkp.BAK` 
 
 # Tabelas Temporárias
 - `#` Visibilidade Local
@@ -43,17 +47,17 @@
 
 # Comandos para Banco de Dados
 
-> Criar Banco de Dados
+> Criar Banco de Dados:
 ~~~SQL
 CREATE DATABASE db_nome_banco
 ~~~ 
 
-> Acessar para uso 
+> Acessar o BD para uso:
 ~~~SQL
 USE db_nome_banco
 ~~~
 
-> Criar Banco com Detalhes e Limitações
+> Criar BD com Detalhes e Limitações:
 > - `db_nome_banco.mdf` Banco de Dados <br>
 > - `db_nome_banco.ldf` Log do Bando de Dados <br>
 > - Criar a pasta antes de executar o comando
@@ -73,19 +77,21 @@ LOG ON
     FILEGROWTH = 10 )      // Crescimento de 10%
 ~~~
 
-> Excluir Banco de Dados
+> Excluir BD:
 ~~~SQL
 DROP DATABASE db_nome_banco
 ~~~
 
+
 # Comandos para Tabelas
+
 - `IDENTITY` enumerar automaticamente
   - `IDENTITY (1,1)` começar em 1 e incrementar em 1  
 - `CONSTRAINT` criar
 - `UNIQ` registro na tabela tem que ser unico
 - `DEFAULT` inserir um valor padrão caso o usuario nao tenha inserido o dado 
 
-> CREATE
+### CREATE
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
        campo_1  INT NOT NUL, 
@@ -103,7 +109,7 @@ CREATE TABLE tb_nome_tabela (
        );
 ~~~
 
-> ALTER
+### ALTER
 ~~~SQL
 ALTER TABLE tb_nome_tabela ADD campo_x VARCHAR(20) NOT NULL;
 ~~~
@@ -127,7 +133,7 @@ ALTER TABLE tb_nome_tabela_com_pk
 ~~~
 
 
-> INSERT
+### INSERT
 ~~~SQL
 INSERT INTO nome_tabela (campo_1, campo_2, .., campo_n) VALUES (valor_1, valor_2, ..., valor_n);
 ~~~
@@ -139,7 +145,7 @@ INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An)
               (valor_C1, valor_C2, ... , valor_Cn);
 ~~~
  
-> DELETE
+### DELETE
 ~~~SQL
 DELETE tb_nome_tabela WHERE campo=valor;
 ~~~
@@ -149,19 +155,20 @@ DELETE tb_nome_tabela WHERE campo=valor;
 DELETE tb_nome_tabela;
 ~~~
 
-> UPDATE
+### UPDATE
 ~~~SQL
 UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   campo_x = valor_x;
 ~~~
 
 
-> SELECT
-- Mostrar Tabelas
+### SELECT
+> `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
+- Mostrar Colunas das Tabelas:
 ~~~SQL
--- Mostrar tabelas do Banco de Dados corrente
+-- Mostrar todas as Tabelas do Banco de Dados corrente
 SELECT * FROM Sys.Tables;
 
--- Mostrar tabelas de um BD específico
+-- Mostrar todas as Tabelas de um BD específico
 SELECT * FROM [db_nome_banco].Information_Schema.Tables;
 
 -- Mostrar tabelas do BD com informaçoes de Data da ciração
@@ -178,7 +185,7 @@ SELECT * FROM Information_Schema.Columns WHERE table_name = 'tb_nome_tabela'
 ~~~
 
 ~~~SQL
-SELECT campo_1, ... , campo  FROM tb_nome_tabela;
+SELECT campo_1, ... , campo_n  FROM tb_nome_tabela;
 ~~~
 
 ~~~SQL
