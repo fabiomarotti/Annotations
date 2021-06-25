@@ -162,7 +162,16 @@ UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE 
 
 
 ### SELECT
-> `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
+> - `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
+> - `COUNT(col_name)` : Contagem de Linhas de uma Coluna de uma Tabela (`*`: todas as coluas)
+>   - `COUNT(DISTINCT col_name)` 
+> - `TOP --` : Filtras as primeiras -- linhas   
+> - `WHERE` : filtrar por condição (operadores lógicos: = , <> , >= , AND, ..)
+> - `ORDER BY` : Ordenar a Coluna
+>   - `ASC` ou `DESC`
+> - `BETWEEN` : valores **entre** uma faixa  
+
+
 - Mostrar Colunas das Tabelas:
 ~~~SQL
 -- Mostrar todas as Tabelas do Banco de Dados corrente
