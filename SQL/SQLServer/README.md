@@ -167,9 +167,12 @@ UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE 
 >   - `COUNT(DISTINCT col_name)` 
 > - `TOP --` : Filtras as primeiras -- linhas   
 > - `WHERE` : filtrar por condição (operadores lógicos: = , <> , >= , AND, ..)
+>   - `BETWEEN` : valores **entre** uma faixa, equivale a AND
+>   - `IN(valor_1,..,valor_n)` : filtra se contem algum, equivale a OR
 > - `ORDER BY` : Ordenar a Coluna
 >   - `ASC` ou `DESC`
-> - `BETWEEN` : valores **entre** uma faixa  
+>  
+  
 
 
 - Mostrar Colunas das Tabelas:
