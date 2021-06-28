@@ -62,7 +62,7 @@ Repositório com os estudos realizados sobre o Git e GitHub
   - `git help -a` ajuda específica (tambem se encontra no c:/.../git-doc)
 
 
-## Iniciando o repositório 
+### Iniciando o repositório 
 -  Preparando a pasta do projeto para que ela comece a ser versionada pelo Git.
 -  Cria-se uma pasta oculta _.git_ onde estará contido o versionamento.
 -  Para excluir o versionamento local, basta apagar a pasta _.git_  (isso não excluirá o projeto)
@@ -572,4 +572,5 @@ git pull request
 - https://docs.github.com/en/github/searching-for-information-on-github/searching-code
 - https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Trabalhando-de-Forma-Remota
 - https://pt.slideshare.net/fernandomdr/controle-de-versao-e-colaboracao-com-git?fbclid=IwAR1FtaD0u6S70xcFMTqcjAIkbHQ0KPFRhJshAfusNm0doFawGUG5eVTr5Qs
+- https://www.youtube.com/watch?v=OuOb1_qADBQ
 
