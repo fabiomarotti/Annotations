@@ -445,18 +445,38 @@ git pull request
   - 
  
 # Sequência Básica
+
+> Inicializa a para o Git:
 - `git init`
+
+> Analisa quais arquivos foram alterados:
 - `git status`
-  - `git add -A`
-- `git commit -m ` "Mensagem do Commit"
-- `git commit -am ` "Mensagem do Coomit com Add"
+
+> Adiciona arquivos para fila do commit:
+- `git add -A`
+
+> Comitar com mensagem:
+- `git commit -m ` **"Mensagem do Commit"**
+
+> Adicionar e Comitar com mensagem:
+- `git commit -am ` **"Mensagem do Coomit com Add"**
+
+> Lista de todos os Commits:
 - `git log`
+
+> Remover/Voltar um Commit
 - `git reset`
-  - `git reset --soft`
-  - `git reset --midle`
-  - `git reset --hard`
-- `git branch` <nome_branch__criar>
-- `git checkout` <nome_branch__acessar>
+  - `git reset --soft` **hash_commit** : volta para o estado antes do commit especificado
+  - `git reset --midle` **hash_commit** : igual o soft, porem precisa fazer **git add**
+  - `git reset --hard` **hash_commit** : vai para o id do commit e para o resto
+  
+> Acessar uma Branch específica
+- `git checkout` **nome_branch__acessar**
+
+> Criar uma Branch 
+- `git branch` **nome_branch__criar**
+
+
 - `git diff`
 
 
