@@ -446,7 +446,7 @@ git pull request
  
 # Sequência Básica
 
-> Inicializa a para o Git:
+> Inicializa a pasta para o Git:
 - `git init`
 
 > Analisa quais arquivos foram alterados:
@@ -464,21 +464,22 @@ git pull request
 > Lista de todos os Commits:
 - `git log`
 
-> Remover/Voltar um Commit
+> Remover/Voltar um Commit:
 - `git reset`
   - `git reset --soft` **hash_commit** : volta para o estado antes do commit especificado
   - `git reset --midle` **hash_commit** : igual o soft, porem precisa fazer **git add**
   - `git reset --hard` **hash_commit** : vai para o id do commit e para o resto
   
-> Acessar uma Branch específica
+> Acessar uma Branch específica:
 - `git checkout` **nome_branch__acessar**
 
-> Criar uma Branch 
+> Criar uma Branch:
 - `git branch` **nome_branch__criar**
 
-
+> Mostrar as alterações especificas de cada arquivo:
 - `git diff`
 
+----
 
  git remote add origin [link_repositorio]
  git add [arquivo]
@@ -492,7 +493,7 @@ git pull request
  
  ### branchs
  ## enviar
- git branch [nome-branch]
+ git branch [nome-branch] : criar
  git checkout [nome-branch-destine] : mudar de branch
  git cheskout -b [nome-branch-nome] : criar e alternar para branch
  git checkout [HASH-commit] : Alternar para um comita especifico pela HASH
