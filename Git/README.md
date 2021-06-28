@@ -444,8 +444,22 @@ git pull request
   - git push = git fetch+merge
   - 
  
- # sequencia
- git init
+# Sequência Básica
+- git init
+- git status
+  - git add -A
+- git commit -m "Mensagem do Commit"
+- git commit -am "Mensagem do Coomit com Add"
+- git log
+- git reset
+  - git reset --soft
+  - git reset --midle
+  - git reset --hard
+- git branch <nome_branch__criar>
+- git checkout <nome_branch__acessar>
+- git diff
+
+
  git remote add origin [link_repositorio]
  git add [arquivo]
  git reset [arquivo] : remover do index
@@ -453,6 +467,8 @@ git pull request
  git checkout --[arquivo] : descartar mudanças
  git commit -m "Commit mensagem"  : Comitar
  git commit -am "Commit mensagem" : Adicionar e comitar
+ 
+ 
  
  ### branchs
  ## enviar
