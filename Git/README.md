@@ -445,19 +445,19 @@ git pull request
   - 
  
 # Sequência Básica
-- git init
-- git status
-  - git add -A
-- git commit -m "Mensagem do Commit"
-- git commit -am "Mensagem do Coomit com Add"
-- git log
-- git reset
-  - git reset --soft
-  - git reset --midle
-  - git reset --hard
-- git branch <nome_branch__criar>
-- git checkout <nome_branch__acessar>
-- git diff
+- `git init`
+- `git status`
+  - `git add -A`
+- `git commit -m ` "Mensagem do Commit"
+- `git commit -am ` "Mensagem do Coomit com Add"
+- `git log`
+- `git reset`
+  - `git reset --soft`
+  - `git reset --midle`
+  - `git reset --hard`
+- `git branch` <nome_branch__criar>
+- `git checkout` <nome_branch__acessar>
+- `git diff`
 
 
  git remote add origin [link_repositorio]
