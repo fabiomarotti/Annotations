@@ -83,10 +83,10 @@ git init --bare
 
 ### Associando projeto Local com Remoto
 ~~~JavaScript
-// cmando associa o projeto remoto ao Local
+// comando que associa o projeto remoto ao Local
 git remote add origin <URL_projeto>
 
-// atualizar
+// atualizar 
 git pull origin main
 
 // criando/alterando de branch
@@ -476,8 +476,10 @@ git pull request
 > Criar uma Branch:
 - `git branch` **nome_branch__criar**
 
-> Mostrar as alterações especificas de cada arquivo:
+> Mostrar o conteúdo das modificações no arquivo:
 - `git diff`
+- `git diff --name-only` : apenas os nomes dos arquivos modificados
+- `git diff` **nome_arquivo** : modificações de um arquivo especifico
 
 ----
 
