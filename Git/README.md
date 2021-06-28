@@ -24,23 +24,23 @@ Repositório com os estudos realizados sobre o Git e Github
 
 ## Ciclo de vida de um arquivo no Git
 
-- Não Rastreado (`Untracked`)
-- Rastreado (`Tracked`)
-  - Não modificado (`Unmodified`)
-  - Modificdo (`Modified`)
-  - Preparado (`Staged`)
-  - Consolidado (`Commit`)
-  - Enviado (`Push/Merge`)
+- Não Rastreado (**Untracked**)
+- Rastreado (**Tracked**)
+  - Não modificado (**Unmodified**)
+  - Modificado (**Modified**)
+  - Preparado (**Staged**)
+  - Consolidado (**Commit**)
+  - Enviado (**Push/Merge**)
 
 
 - 4 etapas para o envio (Modificar / Preparar / Consolidar / Enviar)
 
-| Etapas      |  Git                           | VS Code                    |
-|---          |---                             |---                         |
-| Modificar   | Untracked/Tracked file         | ___Changes___              |
-| Preparar    | Tracked              (git add) | ___Stage Changes___ (➕)  | 
-| Consolidar  | Commit            (git commit) |  (✔)                      | 
-| Enviar      | Push/ Merge   (git push/merge) | ___PUSH___                |
+| Etapas      |  Git                                      | VS Code                     |
+|---          |---                                        |---                          |
+| Modificar   | Untracked/Tracked file (**git status**)   | ___Changes___               |
+| Preparar    | Tracked                   (**git add**)   | ___Stage Changes___ (➕)   | 
+| Consolidar  | Commit                 (**git commit**)   |  (✔)                       | 
+| Enviar      | Push/ Merge        (**git push/merge**)   | ___PUSH___                 |
 <br>
 
 
