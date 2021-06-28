@@ -1,11 +1,11 @@
 # Git
-Repositório com os estudos realizados sobre o Git e Github
+Repositório com os estudos realizados sobre o Git e GitHub
 
 - `Git` software de versionamento, nele se realiza os comandos via terminal **Git BASH** para efetuar o versionamento de um projeto.
-- `Github` é uma plataforma de repositórios remoto que hospeda os codigos-fontes e arquivos de controle de versão usando **Git**. 
-- `Github Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **Github**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
-- `Github Gist` é um serviço do **Github* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
-- `Gitflow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
+- `GitHub` é uma plataforma de repositórios remoto que hospeda os codigos-fontes e arquivos de controle de versão usando **Git**. 
+- `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **Github**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
+- `GitHub Gist` é um serviço do **Github* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
+- `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
 - `GitLab` semelhante/concorrente ao **Github**, mas permite armazenar código em servidores próprios
 
 # Considerações
@@ -45,6 +45,7 @@ Repositório com os estudos realizados sobre o Git e Github
 
 
 # Comandos Git
+
 ### Configuração
 
 ### `git config` 
@@ -103,23 +104,26 @@ git push origin main
 
 # 0) Análise / Consultas
 
-### `status`
+### `git status`
 ~~~JavaScript
 // verifica se há arquivos Modificados (Untracked file)
 // verifica se há arquivos Preparados (Stage area)
 git status
 ~~~
 
-### `branch`
+### `git branch`
 ~~~JavaScript
 //  listar todas as _branchs_ do Repositorio Local
 git branch
 
 //  listar todas as _branchs_ do Repositorio Remoto
 git branch -a
+
+// cria uma branch
+git branch <Nome_da_Nova_Branch>
 ~~~
 
-### `remote`
+### `git remote`
 ~~~JavaScript  
 // exibe os repositórios remotos
 // estar dentro da para executar o comando
@@ -136,13 +140,13 @@ git remote -v
 git remote show origin
 ~~~
 
-###  `checkout` 
+###  `git checkout` 
 - visualiza as alterações realizadas nos arquivos do passado, podendo executar uma edição no proprio passado.
 - realizar o chekout apenas com a _stage changes_ vazia (unstaged), sem nada a commitar
 
 ~~~JavaSCript
 // (ver _git log_)
-git chekout <HASH_commit> 
+git chekout <HASH_do_commit> 
 ~~~
 
 ~~~JavaScript
@@ -151,7 +155,7 @@ git chekout master
 ~~~
 
 
-### `log`
+### `git log`
 ~~~JavaScript
 // verifica se há arquivos _commitados_ ( log de commites: hash, nome, email, data, mensagem do commit)
 git log    
@@ -166,7 +170,7 @@ git log --oneline
 git log --diff-filter=D --summary
 ~~~
 
-### `show`
+### `git show`
 ~~~JavaScript
 // pesquisa pelo commit especificado pela string hash e as edições efetuadas no arquivo 
 //   (3 primeiros caracteres da hash ja são o suficiente para a busca)  
@@ -175,7 +179,7 @@ git log --diff-filter=D --summary
 git show <string_HASH>
 ~~~
 
-### `diff`
+### `git diff`
 > informações sobre as alterações realizadas nos arquivos, comparando _changes_ de _stage changes_
 
 ~~~JavaScript
@@ -201,13 +205,13 @@ git diff --staged
 
 ### Repositório Local
 
-### `add`  
+### `git add`  
 ~~~JavaScript
 // adiciona o arquivo ao Stage Changes
 git add <nome_arquivo>
 ~~~
 
-### `commit`
+### `git commit`
 ~~~JavaScript
 // Commitar
 git commit -m "Criar uma mensagem que represente o conjunto de mudanças realizadas"
@@ -215,7 +219,7 @@ git commit -m "Criar uma mensagem que represente o conjunto de mudanças realiza
 
 ### Repositório Remoto
 
-### `push`
+### `git push`
 - Executar um `git pull` antes de fazer um `git push`
 
 ~~~JavaScript
@@ -235,12 +239,14 @@ git push origin --all
 ~~~JavaScript
 // criar uma branch no repositorio remoto
 git checkout -b <nome_branch>
+
+git branch <nome_branch>
 ~~~
 
 
 # 2) Recebimento
 
-### `clone`
+### `git clone`
 ~~~JavaScript
 //  usar a URL do repositório para realizar uma "copia" do projeto no repositório local
 // cria uma cópia com o mesmo nome no repositório de origem
@@ -250,7 +256,7 @@ git clone <URL_repositório>
 git clone <URL_repositório>  <nome_pasta>
 ~~~
 
-### `remote`
+### `git remote`
 ~~~
 // adicionar Localmente um repositório Remoto 
 git remote add <nome_curto_rep_remoto> <URL_repositorio>
@@ -259,7 +265,7 @@ git remote add <nome_curto_rep_remoto> <URL_repositorio>
 git pull origin master
 ~~~
 
-### `fetch`
+### `git fetch`
 ~~~JavaScript
 // Baixa as referências de um Repositório Remoto via nome_curto (sem fazer merge)
 // <nome_curto> ver: git remote -v
@@ -271,7 +277,7 @@ git fetch <nome_curto>
 git merge FETCH_HEAD
 ~~~
 
-### `pull`
+### `git pull`
 ~~~JavaScript
 // Incorpora mudança de um Repositório Remoto para o branch local 
 // pull é o modo abreviado de fetch + merge
@@ -282,7 +288,7 @@ git pull
 
 
 # 3) Edição
-### `branch` 
+### `git branch` 
 - para acesar uma branch diferente `git checkout <nome_branch>`
 
 ~~~JavaScript
@@ -299,13 +305,13 @@ git push --set-upstream origin <nome_branchnovo>
 ~~~
 
 
-### `commit`
+### `git commit`
 ~~~JavaScript
 // renomear a mensagem do ultimo commit
 git commit --amend
 ~~~
 
-### `revert` (mais seguro: cria-se um novo)
+### `git revert` (mais seguro: cria-se um novo)
 ~~~JavaScript
 // reverter o commit especificado pela hash (ver _git log_ )
 git revert <HASH_commit>
@@ -317,7 +323,7 @@ git revert <HASH_commit>
 git revert HEAD
 ~~~
 
-### `reset` (apaga mesmo e ja éra)
+### `git reset` (apaga mesmo e ja éra)
 
 - `--mixed` (padrão) retira os arquivos da _stage changes_ mas não mexe no conteúdo dos arquivos
 - `--soft` reseta apenas a HEAD para o commit especificado, deixando em modo _Changes to be commited_
@@ -332,7 +338,7 @@ git reset
 
 # Remover
 
-### `rm`
+### `git rm`
 ~~~JavaScript
 // informa  a staging area que o arquivo tem o status de Deleted
 // deleta o arquivo do working directory
@@ -344,7 +350,7 @@ git rm <nome_arquivo>
 git rm --cached <nome_arquivo>
 ~~~  
   
-### `checkout`
+### `git checkout`
 ~~~JavaScript
 // recupera o arquivo apagado pelo rm
 git checkout <HASH_commit>
@@ -393,7 +399,7 @@ git pull request
 ~~~
 
 
-
+---
 
 
 # Arquivo `.gitignore`
@@ -442,7 +448,8 @@ git pull request
   - git fetch origin
   - gir merge origin/main
   - git push = git fetch+merge
-  - 
+
+---
  
 # Sequência Básica
 
