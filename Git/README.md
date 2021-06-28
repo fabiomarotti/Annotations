@@ -47,7 +47,7 @@ Repositório com os estudos realizados sobre o Git e Github
 # Comandos Git
 ### Configuração
 
-### `config` 
+### `git config` 
 - `git config`
   - `git config --list`
   - `git config --global user.name "Fábio" `
@@ -56,7 +56,7 @@ Repositório com os estudos realizados sobre o Git e Github
   - `git config --local`
  
 
-### `help`
+### `git help`
 - `git help` ajuda geral 
   - `git help -a` ajuda específica (tambem se encontra no c:/.../git-doc)
 
@@ -67,7 +67,7 @@ Repositório com os estudos realizados sobre o Git e Github
 -  Para excluir o versionamento local, basta apagar a pasta _.git_  (isso não excluirá o projeto)
    - `rm -rf .git` comando no PROMPT para excluir a pasta (r: deleta subdiretórios, f: força, ignora arquivos não localizados)
 
-### `init`  
+### `git init`  
 ~~~JavaScript
 // comando para criar/iniciar o repositório
 git init
