@@ -7,7 +7,7 @@
 
 [Trechos a estudar](http://www.linhadecodigo.com.br/delphi.aspx)
 
-> Informações
+> Informações:
 - Delphi é um Ambiente de Desenvolvimento (ferramenta/conceito)
 - RAD (Rapid Applicaiton Development)
 - Linguagem Pascal
@@ -15,12 +15,12 @@
 - CLX (Component Library for Cross Platform) 
   - Borland Kylix 
 
-> História
+> História:
 - 1995 : Borland (Turbo Pascal) -> para Windows 3.1 (16 bits)
 - 2006 : CodeGear 
 - 2008 : Embarcadero
 
-> versões 
+> versões: 
 - Delphi 1 [1995]
 - Delphi 7 [2002]
 - Delphi 2010
@@ -33,7 +33,7 @@
 - RAD Studio 10.3 (Rio)
 - RAD Studio 10.4 (Sydney)
 
-> Arquivos importantes no Delphi
+> Arquivos importantes no Delphi:
 - Executaveis (Project Manager)
   - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
   - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
@@ -56,7 +56,7 @@
     -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
 - `Unit` arquivo: *.pas
 
-> Principais Abas para Componentes
+> Principais Abas para Componentes:
 - `Standard` : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
 - `Additional` : Complementa o Standar com exibição  de  textos,  imagens, botões
 - `Win32` : Componentes como zoom, controle deslizantes, barras de progresso, barras de status, ícones, barras de ferramenta
@@ -77,7 +77,7 @@
 
 
 ## Comentários e Regiões
-> Comentar
+> Comentar:
 ~~~Delphi
 // Comentário em uma linha
 ~~~
@@ -108,7 +108,6 @@
   - Record (tipos variados) [ver+](https://www.youtube.com/watch?v=Qe4ERd1ECtw&list=PLIz6mntaZSG1aTBEg1g6RkBO5HZALcGy-&index=17)
 - `procedure`
 - `function`
-
 - Record  : Registros
 - File    : Arquivos
 - Set     : Conjuntos
@@ -148,7 +147,7 @@ begin
 var Idade := 20; // compilador infere que é um tipo inteiro
 ~~~ 
 
-## Modificadores de Acesso
+## Modificadores de Acesso:
 - `Private`
 - `Protected`
 - `Public`
@@ -157,7 +156,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `Const`
 - `Resourcestring` parecida com **const**, porem possui um gerenciamento de memoria melhor em ambito do sistema 
 
-## Operadores Aritméticos
+## Operadores Aritméticos:
 - `*` multiplicação 
 - `/` divisão entre variaveis reais
 - `+` soma
@@ -165,7 +164,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `div` divisão entre variaveis inteiras
 - `mod` resto da divisão
 
-## Operadores Lógicos
+## Operadores Lógicos:
 - `=` , `<>` , `>=`, `<=`
 - `AND`, `OR`, `NOT`  
 - `True`, `False`
@@ -176,7 +175,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 
 ## Tipos de Dados 
 
-### Types
+### Types:
 - Define-se um **tipo** 
 
 ~~~Delphi
@@ -200,7 +199,7 @@ alfabeto[3] := 'c';
 
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
-### Numéricos
+### Numéricos:
 ~~~Delphi
 var
    // Integer data types :
@@ -230,7 +229,7 @@ var
 WriteLn('numero: ', x:2:2);
 ~~~
 
-### Texto
+### Texto:
 ~~~Delphi
 var
    Str1 : Char;        // Holds a single character, small alphabet (1 byte)
@@ -244,7 +243,7 @@ var
 ~~~   
 
 
-### Vetores e Matrizes (Array Unidimensional e Array Multidimensional)
+### Vetores e Matrizes (Array Unidimensional e Array Multidimensional):
 
 > Vetores (Array Unidimensional)
 ~~~Delphi
@@ -277,7 +276,7 @@ matriz_3x3 :=  [
                ]; 
 ~~~
 
-> Declaração do tamanho o Array pela função SetLength
+> Declaração do tamanho o Array pela função SetLength:
 ~~~Delphi
 var
   vetor       : Array Of   Integer;
@@ -290,13 +289,13 @@ var
  SetLength(matrizMulti ,3  ,3  ,3  );
 ~~~
 
-### Lógico
+### Lógico:
 ~~~Delphi
  var
    Log1 : Boolean;     // Can be 'True' or 'False'
 ~~~
 
-### Enumerados 
+### Enumerados: 
 - São uma Lista organizada de itens 
 - Sao acessados por um nome de valor e não por um número
  
@@ -392,14 +391,14 @@ const
 - Atribuição de Endereço de Memória : ` ponteiro := @variavel; `
 - Um ponteiro recém declarado que não aponta para nenhum lugar tem o valor `nil` (sem referência a um endereço de memória)
 
-> Declaração das variaveis
+> Declaração das variaveis:
 ~~~Delphi
 var 
   x_variavel  :  Integer ;
   x_ponteiro  : ^Integer ;
 ~~~
 
-> Endereço de Memória
+> Endereço de Memória:
 ~~~Delphi
 // O Endereço de Memória da x_variavel é: 
 IntToStr( Integer( @x_variavel ) ) ;
@@ -408,7 +407,7 @@ IntToStr( Integer( @x_variavel ) ) ;
 IntTosSr( Integer( x_ponteiro ) );
 ~~~
 
-> Valor
+> Valor:
 ~~~Delphi
 // O valor da varaivel x_varaivel é:
 IntToStr( Integer( x_varaivel ) );
@@ -417,7 +416,7 @@ IntToStr( Integer( x_varaivel ) );
 IntToStr( Integer( x_ponteiro^ ) );
 ~~~
 
-> Tamanho em Memória
+> Tamanho em Memória:
 ~~~
 // O tamanho da x_variavel é: 
 IntToStr( SizeOf( x_variavel) );
@@ -428,11 +427,11 @@ IntToStr( SizeOf( x_ponteiro ) );
 
 
 
-## Estruturas de Programação
-> `Break` , `Continue`, `Exit`
+## Estruturas de Programação:
+> `Break`, `Abort` , `Continue`, `Exit`
 
-### For 
-> For .. to .. do (crescente)
+### For .. (To/Downto) .. Do: 
+> For .. to .. do (crescente):
 ~~~Delphi
 For   var i := 0    To      10    Do
 Begin
@@ -440,7 +439,7 @@ Begin
 End;
 ~~~~
 
-> For .. dowto .. do (decrescente)
+> For .. dowto .. do (decrescente):
 ~~~Delphi
 For   var i := 10    DownTo   0    Do
 Begin
@@ -448,8 +447,8 @@ Begin
 End;
 ~~~~
 
-### While
-> Whie .. Do
+### While .. Do
+> Whie .. Do:
 ~~~Delphi
 var contador := 0;
   
@@ -470,8 +469,8 @@ Break;
 End;
 ~~~
 
-### Repeat 
-> Repeat .. Until
+### Repeat .. Until
+> Repeat .. Until:
 ~~~Delphi
 contador := 10;
 
@@ -483,7 +482,7 @@ End;
 Until (i <= 10);
 ~~~  
 
-### Case
+### Case .. Of .. Else 
 ~~~Delphi
 Case <expressão> Of   
   
@@ -528,7 +527,7 @@ end;
   - `var` : Declarar variaveis
   - `implementation`: Implementação de métodos ou procedimentos
 
-> Exemplo da estrutura de uma Unit
+> Exemplo da estrutura de uma Unit:
 ~~~Delphi
 unit nome_unidade; 
 
@@ -567,7 +566,7 @@ procedure Mostrar3 (const str: string);
 - são declaradas na seção `interface`
 - `Result` ou `nome_funcao` para trabalhar com o Retorno da função
 
-> Função retornando valor pelo Result 
+> Função retornando valor pelo Result: 
 ~~~Delphi
 interface 
     Function  Somar  (a,b: Integer) : Integer;
@@ -579,7 +578,7 @@ implementation
     End;
 ~~~
 
-> Chamando a Função
+> Chamando a Função:
 ~~~Delphi
 var
    resultado: Integer;
@@ -589,7 +588,7 @@ resultado := Somar(10, 20);
 
 ## Procedimento
 
-> Procedimento sem parametro
+> Procedimento (sem parametro):
 ~~~Delphi
 interface 
   // Declaração do Procedimento
@@ -603,7 +602,7 @@ implementation
   End;
 ~~~
 
-> Procedimento com parametro
+> Procedimento (com parametro):
 ~~~Delphi
 interface 
   // Declaração do Procedimento
@@ -617,7 +616,7 @@ implementation
   End;
 ~~~
 
-> Pasagem por Referencia em Funções ou Procedimentos
+> Pasagem por Referencia em Funções ou Procedimentos:
 - `var`
 - `out`
 
@@ -639,7 +638,7 @@ End;
   - `dmUnidadeMdoulo` : arquivo
   
 ## Componentes
-> Interface
+> Interface:
 - `TMainMenu` (Standard)
 - `TPanel` (Standard)
 - `TButton` (Standard) : Botão
@@ -654,7 +653,7 @@ End;
 - `TSaveDialog` gravação de arquivos
 
   
-## Funções do Delphi
+## Funções do Delphi: 
 - `INC(x)` : x := x + 1;
 - `DEC(x)` : x := x - 1;
 - `LOW(x)` : retorna o valor mais baixo
@@ -663,7 +662,7 @@ End;
 - `IncDay(data , dias)` : Incrementa dias a uma data
 - `DaysBetween(data1 , data2)` : numero de dias entre duas datas
 
-> Para Strings
+> Para Strings:
 - `SetLength` Redefine o comprimento da String
 - `Trim` Remove os espaços em brancos
 - `Insert` Inserir String a partir de um indice
@@ -671,7 +670,7 @@ End;
 - `LowerCase` minusculas
 - `UpperCase` maiuscula
 
-> Conversões
+> Conversões:
 - `StrToIntDef(texto, -1)`
   - x := StrToInt(texto, -1) **(caso não converta, x := -1)** 
 - `CurrToStr` monetário para String 
