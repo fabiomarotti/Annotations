@@ -171,7 +171,7 @@ UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE 
 >   - `IN(valor_1,..,valor_n)` : filtra se contem algum, equivale a OR
 > - `ORDER BY` : Ordenar a Coluna
 >   - `ASC` ou `DESC`
->  
+> - `INNER JOIN` `ON` 
   
 
 
@@ -238,6 +238,16 @@ SELECT TOP 1 * FROM tb_nome_tabela;
 
 ~~~SQL
 SELECT * FROM tabela_A ;
+~~~
+
+~~~SQL
+-- sem nome do campo
+SELECT  c.cidade + ' - ' + e.estado   FROM   tb_cidade AS c   INNER JOIN   tb_estado AS e   ON   c.id_estado = c.id_estado
+~~~
+
+~~~SQL
+-- com nome do campo: Cidade_Estado
+SELECT  c.cidade + ' - ' + e.estado  Cidade_Estado  FROM   tb_cidade AS c   INNER JOIN   tb_estado AS e   ON   c.id_estado = c.id_estado
 ~~~
 
 # Comandos 2
