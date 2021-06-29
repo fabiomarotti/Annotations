@@ -697,6 +697,7 @@ End;
 - `F9`  : Executar
 - `Ctrl` + `F2`   : Cancelar Execução
 - `Ctrl` + `seta` : mover componente
+- `Ctrl` + `H`: Selecionar multiplos componentes
 - `Ctrl` + `Shift` + `F9`   : Executar sem Debug
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
