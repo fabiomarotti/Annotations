@@ -22,3 +22,7 @@
 
 6. Se `./` estiver no meio terá o mesmo comportamento que a explicação 2:
 `/a/b/./c/` → `/a/b/c/`
+
+# Virtual Key-Codes
+
+[link](http://www.alexandresmcampos.adm.br/delphi/select_id.php?id=9)
