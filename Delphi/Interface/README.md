@@ -126,6 +126,19 @@ ShowMessage('Ola Mundo!' + var);
 - `PasswordChar` : Efeito de mascara 
 - `DisplayFormat` : Efeito mascara em zTable
 
+# Dialogs
+- `TOpenDialog`
+
+> Abre uma caixa de Dialogo e pegar o endereço de um arquivo
+~~~Delphi
+  if compTOpenDialog.Execute then
+    TEdit.Text := ExtractFilePath( compTOpenDialog.FileName )  
+~~~~ 
+
+> Verifica se o endereço do arquivo existe
+~~~Delphi
+ if DirectoryExists( TEdit.Text ) then
+~~~ 
 ## Componentes
 - `TDBGrid`
 - `TDBNavigator`
