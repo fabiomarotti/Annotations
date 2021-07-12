@@ -1,4 +1,5 @@
 # Arquivos 
 
-- DirectoryExists(Caminho)
-- CreateDir(Caminho);
+- DirectoryExists( Caminho )
+- CreateDir( Caminho );
+- RemoveDir(pAnsiChar( Caminho ));
