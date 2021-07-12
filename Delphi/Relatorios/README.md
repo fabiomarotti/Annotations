@@ -15,3 +15,25 @@
   - v10.2 : `Tools / Options / Envirment Options / Delphi Options / Library` 
   - v10.3 : `Tools / Options / Language / Delphi / Library`
   - `C:/pasta../Sources`
+
+
+
+# Salvar
+> Componentes add
+- `RLReport`
+- `RLPDFFilter`
+
+~~~Delphi
+var Caminho, NomePdf : String;
+  // Preview
+  RLReport .Preview( RLPreview );
+  
+  // Salvar
+  RLReport .SaveToFile( Caminho + NomePdf );
+  RLReport .Prepare;
+  
+  // PDF
+  RLPDFFilter .FilterPages( RLReport.Pages );
+~~~
+
+# Enviar
