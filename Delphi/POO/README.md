@@ -305,17 +305,34 @@ end.
 ~~~
 
 ## `Property`
-- Omitir metodo de Escrita : Read-Only
-- Omitir metodo de Leitura : Write-Only
-- Campo no lugar dos metodos : Acesso direto ao valor de um campo
+- Se omitir o metodo de Escrita `write` : **Read-Only**
+- Se omitir o metodo de Leitura `read` : **Write-Only**
 
+~~~Delphi
+Type 
+  TPessoa = class
+    private
+      FPessoa : String;
+    public
+      property Pessoa : String read GetPessoa write SetPessoa;
+      procedure TPessoa.SetPessoa(const Value: String);
+      function TPessoa.GetPessoa(const Value: String);
+  End;
+  
+procedure TPessoa.SetPessoa(const Value: String);
+Begin
+  FPessoa := Value;
+End;
+
+function T--.GetPessoa(const Value: String);
+Begin
+  Result := FPessoa;
+End;
+~~~
 
 > - Classe `TCliente` com variaveis `public` definidas como `property` <br>
 ~~~Delphi
 unit uCliente;
-
-interface 
-  use SysUtils;
 
 Type
   TCliente = class
@@ -328,9 +345,10 @@ end;
 
 > - `Ctrl` + `Shift` + `C` : Implementação automática
 
-> - Cria-se variaveis `private`, denominadas Fields `F_nome_variavel_` <br>
+> - Cria-se variaveis `private`, denominadas Fields `F_<nome_variavel>` <br>
 > - Declara e Implementa os procedimentos de atribuição `Set` 
 > - Atribui-se `read` e `write` nas variaveis <br>
+
 ~~~Delphi
 private
     FID:    String;
