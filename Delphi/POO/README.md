@@ -308,29 +308,37 @@ end.
 - Se omitir o metodo de Escrita `write` : **Read-Only**
 - Se omitir o metodo de Leitura `read` : **Write-Only**
 
+> Exemplo básico
 ~~~Delphi
-Type 
+Type
+
+  // Classe 
   TPessoa = class
-    private
-      FPessoa : String;
-    public
-      property Pessoa : String read GetPessoa write SetPessoa;
-      procedure TPessoa.SetPessoa(const Value: String);
-      function TPessoa.GetPessoa(const Value: String);
+      private
+          // Variavel a ser "Propertizada"
+          FNome : String;
+      public
+          // Declaração da Property
+          property Nome: String    read GetNome    write SetNome;
+      
+          // Declaração dos Getter e Setters
+          procedure TPessoa.SetNome(const Value: String);
+          function  TPessoa.GetNome(const Value: String);
   End;
-  
-procedure TPessoa.SetPessoa(const Value: String);
+
+// Getters e Setter
+procedure TPessoa.SetNome(const Value: String);
 Begin
-  FPessoa := Value;
+  FNome := Value;
 End;
 
-function T--.GetPessoa(const Value: String);
+function TPessoa.GetNome(const Value: String);
 Begin
-  Result := FPessoa;
+  Result := FNome;
 End;
 ~~~
-
-> - Classe `TCliente` com variaveis `public` definidas como `property` <br>
+> Exemplo, não necessariamente com Getters e Setters <br>
+> Declaração da classe `TCliente` com variaveis `public` definidas como `property` <br>
 ~~~Delphi
 unit uCliente;
 
