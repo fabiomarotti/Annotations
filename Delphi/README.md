@@ -702,6 +702,7 @@ End;
 - `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
 - `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
 - `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
+- `Ctrl` + `Shift` + `G`    : gerar ID para __interfaces__ (identifica caso aja outros executaveis)
 - `Ctrl` + `Shift` + `L` : Refatoração de uma var (testar pag 56mc)
 
 > Exibir Ferramentas
