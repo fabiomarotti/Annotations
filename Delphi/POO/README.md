@@ -28,7 +28,7 @@
 - **Especialização**: da _Super Classe_ para **Sub Classe**
 - **Herança**: (é um tipo de) : as propriedades são herdadas
   - _Simples_: Herdar apenas uma Super Classe 
-  - _Multipla_: Herdar varias Super Classes
+  - _Multipla_: Herdar varias Super Classes (Interfaces em Delphi) [ver +](https://www.devmedia.com.br/desmistificando-as-interfaces/347)
 - **Agregação**: (Dependência Fraca) : (Usam um) : Remover o TODO, não necessariamente suas PARTES seram removidas. 
 - **Composição**: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
 
