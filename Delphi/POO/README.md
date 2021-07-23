@@ -36,7 +36,8 @@
 - **Composição**: (Dependência Forte) : (Composto por) : Remover o TODO, suas PARTES tambem seram removidas. 
 
 > Convenção
-- Toda classe tem o nome iniciado pela letra T
+- Toda _classe_ tem o nome iniciado pela letra `T`
+- Toda _interface_ tem o nome inciado pela letra `I`
 
 > Atalhos
 - `Ctrl` + `Shift` + `A` : gera os imports das classes
