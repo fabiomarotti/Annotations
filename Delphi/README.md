@@ -158,7 +158,7 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 
 ## Operadores Lógicos:
 - `=` , `<>` , `>=`, `<=`, `AND`, `OR`, `NOT`, `True`, `False`
-- Obs.: `:=` atribuição
+- `:=` (atribuição)
 
 ## Tipos de Dados 
 ### Types:
@@ -415,6 +415,11 @@ IntToStr( SizeOf( x_ponteiro ) );
 
 ## Estruturas de Programação:
 > `Break`, `Abort` , `Continue`, `Exit`
+- For .. (To/Downto) .. Do
+- While .. Do
+- Repeat .. Until
+- Case .. Of .. Else
+- If .. Then .. Else
 
 ### For .. (To/Downto) .. Do: 
 > For .. to .. do (crescente):
@@ -568,8 +573,10 @@ implementation
 ~~~Delphi
 var
    resultado: Integer;
-
-resultado := Somar(10, 20);
+   
+Begin
+  resultado := Somar(10, 20);
+end;
 ~~~
 
 ## Procedimento
@@ -616,27 +623,7 @@ Begin
 End;
 ~~~
 
-## Data Module
-- Formulario centralizador de componetes não visuais
-- componentes de Banco de Dados
-- boa prática, nomear como:
-  - `dmModulo` : objeto
-  - `dmUnidadeMdoulo` : arquivo
-  
-## Componentes
-> Interface:
-- `TMainMenu` (Standard)
-- `TPanel` (Standard)
-- `TButton` (Standard) : Botão
-- `TBitBtn` : permite imagem
-- `TPageControll` (Win32) > (new Page)
-- `TDBGrid` (Data Controls)
-- `TLabeledEdit` (Additional)
-- `TSpeedButton` (Additional) : Botão
-- `TMaskEdit`
-- `TMemo` Caixa para textos longos
-- `TOpenDialog` abertura de arquivos
-- `TSaveDialog` gravação de arquivos
+
 
   
 ## Funções do Delphi: 
