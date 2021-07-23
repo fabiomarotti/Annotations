@@ -10,9 +10,12 @@
     - **Classes Abstratas** : apenas implementação as "sobreescritas"
 
 - ✅ Encapsulamento (não permitir modificações externas)
-  - **Public**
-  - **Protected**
-  - **Private**
+  - **Public** : Acesso total em Unit, Form, Classe.
+  - **Private** : Priva o acesso _fora da mesma Unit_.
+  - **Strict Private** : Priva o acesso, mesmo de descendentes _dentro da mesma Unit_.
+  - **Protected** : Acesso apenas na mesma Unit e seus descendentes.
+  - **Strict Protected** : Acesso apenas pelos descendents.
+  - **Published** : Propriedades Publicadas na palheta de “Propersties” do seu Componente.
   
 - ✅ Herança (Inheriting)
 
@@ -39,15 +42,6 @@
 - `Ctrl` + `Shift` + `A` : gera os imports das classes
 
 [continuar video](https://www.youtube.com/watch?v=3ugwf8FQqVo)
-
-## Hierarquia simplificada das classes Delphi:
-- `TObject`
-  - `TPersistent`
-   - `TComponent`
-     - `TControl`
-       - `TForm`
-       - `TButton`
-       - `TListBox`
 
 
 
