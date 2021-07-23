@@ -157,24 +157,13 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `Resourcestring` parecida com **const**, porem possui um gerenciamento de memoria melhor em ambito do sistema 
 
 ## Operadores Aritméticos:
-- `*` multiplicação 
-- `/` divisão entre variaveis reais
-- `+` soma
-- `-` subtração
-- `div` divisão entre variaveis inteiras
-- `mod` resto da divisão
+- `+`, `-`, `*`, `/` (real), `div` (inteiro), `mod` (resto da divisão)
 
 ## Operadores Lógicos:
-- `=` , `<>` , `>=`, `<=`
-- `AND`, `OR`, `NOT`  
-- `True`, `False`
-
-> Obs.: `:=` atribuição
-
-
+- `=` , `<>` , `>=`, `<=`, `AND`, `OR`, `NOT`, `True`, `False`
+- Obs.: `:=` atribuição
 
 ## Tipos de Dados 
-
 ### Types:
 - Define-se um **tipo** 
 
