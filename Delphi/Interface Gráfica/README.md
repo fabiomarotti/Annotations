@@ -1,6 +1,15 @@
 # Configurações importantes para Interface
 - Project / Options / Forms / Auto-create Forms (principal)
 
+## Hierarquia simplificada das classes Delphi:
+- `TObject`
+  - `TPersistent`
+   - `TComponent`
+     - `TControl`
+       - `TForm`
+       - `TButton`
+       - `TListBox`
+       
 ## Definições e Propriedades em Geral
 - `F1` : documentação da propriedade selecionada
 - `TAB` avança
