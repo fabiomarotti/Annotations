@@ -135,8 +135,9 @@ var
 ~~~Delphi
 var 
   Nome: string;
-begin
+Begin
   Nome := 'Fábio Marotti'; // variavel inicializada
+End;
 ~~~ 
 
 ~~~Delphi
