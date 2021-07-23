@@ -40,10 +40,64 @@
 
 > Atalhos
 - `Ctrl` + `Shift` + `A` : gera os imports das classes
+- `Ctrl` + `Shift` + `C` : gera os metodos declarado/implementado
 
 [continuar video](https://www.youtube.com/watch?v=3ugwf8FQqVo)
 
+# Sobrecarga
+- `overload` : função com mesmo nome, mas com assinaturas diferentes.
 
+~~~Delphi
+  NomeTabela( const Value: Integer) : String; overload;
+  NomeTabela                        : String; overload;
+~~~
+
+- `override` : função com mesmo nome, mesma assinatura, mas será reescrito o seu conteudo na classe filho.
+  - usa-se o `virtual` na "assinatura do método pai" para permitir a reescrita no filho.
+  - `virtual; Abstract;` : torna o metodo, apenas uma assinatura (não terá uma implementação na classe pai), forçando a ser escrito no filho (e nao reescrito).
+
+
+# Interaces
+
+> Declaração da interface
+~~~Delphi
+unit exemplo_interface_A;
+interface
+uses
+// importação de classes
+
+type
+
+  iExemploInterfaceA = interface
+  ['{77EC9951-645E-4900-B685-5EF76B53ED5E}']  // Ctrl + Shif + G : gerar ID
+    function Listar : String;
+  end;
+
+implementation
+// não havera implementação
+
+end.
+~~~
+
+> Implementação Interface
+~~~Delphi
+unit exemplo_classe_interface;
+interface
+uses
+  exemplo_interface_A;
+
+type
+  TExemploClasse = class(TInterfacedObject, iExemploInterfaceA)
+    function DizerOla : String;  virtual;
+end;
+
+implementation
+
+function TExemploClasse.DizerOla(): String;
+begin
+  Result := "Ola Mundo";
+end;
+~~~
 
 # Classes
 
