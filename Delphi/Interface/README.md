@@ -139,6 +139,14 @@ ShowMessage('Ola Mundo!' + var);
 ~~~Delphi
  if DirectoryExists( TEdit.Text ) then
 ~~~ 
+
+## Data Module
+- Formulario centralizador de componetes não visuais
+- componentes de Banco de Dados
+- boa prática, nomear como:
+  - `dmModulo` : objeto
+  - `dmUnidadeMdoulo` : arquivo
+  - 
 ## Componentes
 - `TDBGrid`
 - `TDBNavigator`
@@ -151,6 +159,20 @@ ShowMessage('Ola Mundo!' + var);
   - deixa o banco de dados lento
 - `TDBListBox`
 
+> Interface:
+- `TMainMenu` (Standard)
+- `TPanel` (Standard)
+- `TButton` (Standard) : Botão
+- `TBitBtn` : permite imagem
+- `TPageControll` (Win32) > (new Page)
+- `TDBGrid` (Data Controls)
+- `TLabeledEdit` (Additional)
+- `TSpeedButton` (Additional) : Botão
+- `TMaskEdit`
+- `TMemo` Caixa para textos longos
+- `TOpenDialog` abertura de arquivos
+- `TSaveDialog` gravação de arquivos
+- 
 ### `TDBEdit` 
 
 ### `TDBComboBox` 
