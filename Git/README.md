@@ -124,6 +124,9 @@ git branch -a
 
 // cria uma branch
 git branch <Nome_da_Nova_Branch>
+
+// cria uma branch e seta
+git checkout -b <Nome_da_Nova_Branch>
 ~~~
 
 ### `git remote`
@@ -534,12 +537,14 @@ git pull request
 
   
 # Dicionário
-
+- `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
+- `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
+- `HEAD` : é o "ramo atual"  [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
 - `Untracked` arquivos que não estão sendo rastreados 
 
 - `Repositório` é a pasta do projeto propriamente dita, esta pasta contem uma _subpasta oculta_ `.git` (ver _git init_)
 
-- `Branch` são as ramificações que o projeto terá de acordo com sua evolução (snapshots)
+- `Branch` (ramificação) é um repositório paralelo que o projeto terá de acordo com sua evolução (snapshots) 
   - `Master` ou _branch master_ é a ramificação principal que conterá o projeto final
   - `Develop` ou _branch  develop_ é o nome de um branch ao qual
   - `Release` ou _branch release_ (Lançamento)
