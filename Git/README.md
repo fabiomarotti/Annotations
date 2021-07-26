@@ -174,6 +174,9 @@ git log --oneline
 
 // busca de arquivos excluidos pelo **rm**
 git log --diff-filter=D --summary
+
+// colorido
+git log --all --decorate --oneline --graph
 ~~~
 
 ### `git show`
