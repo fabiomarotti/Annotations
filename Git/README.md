@@ -564,9 +564,15 @@ git pull request
 
 - `Change` (Mudança) área que mostra arquivos com alterações (qualquer digito digito no arquivo já sera contado como _Change_).
 - `Staged Changes` (Mudanças encenada)  área que contem todos os arquivos _change_ e que estão prontos para o seu envio ao repositório, ou prontos para o _commit_
-- `Commit` (entregar /comprometer) é um conjunto de arquivos da _Stage Change_, conterá uma menssagem para descrever sobre esse conjunto de arquivos.
+- `Commit` (entregar /comprometer) (confirmação de alterações) (fazer uma snapshot) (ter arquivos na sua staging area) é um conjunto de arquivos da _Stage Change_, conterá uma menssagem para descrever sobre esse conjunto de arquivos. 
 
-- `Pull` (Puxar) é uma atualização local, que puxa do repositorio os arquivos mais recentes
+- `Fetch` (Buscar) : Baixa os commits, arquivos e referências de um repositório remoto para seu repositório local.
+
+- `Merge` (fusão) combinar/fundir a _branch A_ com uma _branch B_
+
+- `Pull` (Puxar) é uma atualização local, que puxa do repositorio remoto os arquivos mais recentes para repositorio local. (git pull é uma combinação de comandos: git fetch e git merge).
+
+
 - `Push` (Empurrar) é o envio final de um conjunto de _commits_ para o repositório
 - `Clone` (células geneticamente idênticas)
 - `Checkout` (Conferir) Verifica os arquivos e commits a serem..
@@ -574,13 +580,13 @@ git pull request
 - `Fork` (Bifurcação /garfo) é um clone interno ao github
 - `Pull Request`(Requisição de envio) é um pedido 
 
-- `Merge` (fusão) combinar /fundir a _branch A_ com uma _branch B_
+
 
 - `Status` (posição /condição)
 
 - `forking` uma copia do projeto para ser trabalhada por outras pessoas, e futuramente redistribuir pro dono do projeto origianl.
 
-- `fetch`
+
 - `stash`
 
 ## Referências
@@ -592,4 +598,5 @@ git pull request
 - https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Trabalhando-de-Forma-Remota
 - https://pt.slideshare.net/fernandomdr/controle-de-versao-e-colaboracao-com-git?fbclid=IwAR1FtaD0u6S70xcFMTqcjAIkbHQ0KPFRhJshAfusNm0doFawGUG5eVTr5Qs
 - https://www.youtube.com/watch?v=OuOb1_qADBQ
+- https://blog.cedrotech.com/git-o-minimo-que-voce-precisa-saber-para-trabalhar-em-equipe-parte-2
 
