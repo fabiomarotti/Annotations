@@ -32,8 +32,11 @@ Repositório com os estudos realizados sobre o Git e GitHub
   - Consolidado (**Commit**)
   - Enviado (**Push/Merge**)
 
-
-- 4 etapas para o envio (Modificar / Preparar / Consolidar / Enviar)
+## Trabalhando as 4 etapas (Modificar / Preparar / Consolidar / Enviar) 
+- Modificar: ***Change***
+- Preparar:  **Stage Changes***
+- Consolidar: **Coomit**
+- Enviar: ***Push***
 
 | Etapas      |  Git                                      | VS Code                     |
 |---          |---                                        |---                          |
@@ -43,8 +46,6 @@ Repositório com os estudos realizados sobre o Git e GitHub
 | Enviar      | Push/ Merge        (**git push/merge**)   | ___PUSH___                 |
 <br>
 
-
-# Comandos Git
 
 ### Configuração
 
@@ -102,10 +103,11 @@ git push origin main
 
 ~~~
 
+<br>
+--- 
+<br>
 
-
-
-# 0) Análise / Consultas
+# Comandos do Git
 
 ### `git status`
 ~~~JavaScript
@@ -202,16 +204,6 @@ git diff <nome_arquivo>
 git diff --staged  
 ~~~
 
-
-
-# 1) Envio
-
-## Trabalhando as 4 etapas (Modificar / Preparar / Consolidar / Enviar) 
-- Modificar: ***Change***
-- Preparar:  **Stage Changes***
-- Consolidar: **Coomit**
-- Enviar: ***Push***
-
 ### Repositório Local
 
 ### `git add`  
@@ -225,6 +217,11 @@ git add <nome_arquivo>
 // Commitar
 git commit -m "Criar uma mensagem que represente o conjunto de mudanças realizadas"
 ~~~
+
+
+
+
+
 
 ### Repositório Remoto
 
@@ -253,7 +250,6 @@ git branch <nome_branch>
 ~~~
 
 
-# 2) Recebimento
 
 ### `git clone`
 ~~~JavaScript
@@ -296,7 +292,6 @@ git pull
 
 
 
-# 3) Edição
 ### `git branch` 
 - para acesar uma branch diferente `git checkout <nome_branch>`
 
@@ -366,12 +361,18 @@ git checkout <HASH_commit>
 git checkout <nome_arquivo>
 ~~~
 
+### `git stash`
+> Usado quando se quer fazer um *pull* mas existe arquivos sendo trabalhados a parte.
+- `git stash apply` : salvar
+- `git stash list` : listar
+- `git stash clear` : limpart
+
+<br> 
+----
+<br>
 
 
-
-# 4) Ramificações
-
-## Criando Branchs 
+# Criando Branchs 
 ~~~JavaScript
 // criar uma Branch
 git branch <nome_da_branch>
@@ -410,11 +411,7 @@ git pull request
 
 # 5 Em analise
 
-### `git stash`
-> Usado quando se quer fazer um *pull* mas existe arquivos sendo trabalhados a parte.
-- `git stash apply` : salvar
-- `git stash list` : listar
-- `git stash clear` : limpart
+
 
 
 ---
@@ -467,7 +464,9 @@ git pull request
   - gir merge origin/main
   - git push = git fetch+merge
 
----
+<br>
+----
+<br>
  
 # Sequência Básica
 
