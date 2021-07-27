@@ -367,6 +367,26 @@ git checkout <nome_arquivo>
 - `git stash list` : listar
 - `git stash clear` : limpart
 
+### `git remote`
+[ver+](https://www.atlassian.com/br/git/tutorials/syncing)
+
+~~~JavaScript
+// Listar as conexões remotas com outros repositorios
+git remote
+
+// Listar as conexões remotas, mas inclui a URL de cada conexão
+git remote -v
+
+// add
+git remote add <nome> <url>
+
+// remover
+git remote rm <name>
+
+// renomear
+git remote rename <old-name> <new-name>
+~~~
+
 <br> 
 ----
 <br>
@@ -554,7 +574,7 @@ git pull request
 - `Untracked` arquivos que não estão sendo rastreados 
 
 - `Repositório` é a pasta do projeto propriamente dita, esta pasta contem uma _subpasta oculta_ `.git` (ver _git init_)
-
+- `Remote` criar, ver e excluir conexões com outros repositórios.
 - `Branch` (ramificação) é um repositório paralelo que o projeto terá de acordo com sua evolução (snapshots) 
   - `Master` ou _branch master_ é a ramificação principal que conterá o projeto final
   - `Develop` ou _branch  develop_ é o nome de um branch ao qual
@@ -567,11 +587,8 @@ git pull request
 - `Commit` (entregar /comprometer) (confirmação de alterações) (fazer uma snapshot) (ter arquivos na sua staging area) é um conjunto de arquivos da _Stage Change_, conterá uma menssagem para descrever sobre esse conjunto de arquivos. 
 
 - `Fetch` (Buscar) : Baixa os commits, arquivos e referências de um repositório remoto para seu repositório local.
-
 - `Merge` (fusão) combinar/fundir a _branch A_ com uma _branch B_
-
 - `Pull` (Puxar) é uma atualização local, que puxa do repositorio remoto os arquivos mais recentes para repositorio local. (git pull é uma combinação de comandos: git fetch e git merge).
-
 
 - `Push` (Empurrar) é o envio final de um conjunto de _commits_ para o repositório
 - `Clone` (células geneticamente idênticas)
@@ -579,15 +596,10 @@ git pull request
 
 - `Fork` (Bifurcação /garfo) é um clone interno ao github
 - `Pull Request`(Requisição de envio) é um pedido 
-
-
-
 - `Status` (posição /condição)
-
 - `forking` uma copia do projeto para ser trabalhada por outras pessoas, e futuramente redistribuir pro dono do projeto origianl.
-
-
-- `stash`
+- `origin` é o _alias_ (apelido) padrão para a URL do seu repositório remoto
+- `stash` : copia temporaria
 
 ## Referências
 - https://git-scm.com/book/en/v2
