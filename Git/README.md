@@ -9,7 +9,7 @@ Repositório com os estudos realizados sobre o Git e GitHub
 - `GitLab` semelhante/concorrente ao **Github**, mas permite armazenar código em servidores próprios
 
 # Considerações
-- Repositório Local
+- Repositório Local   (Git)
 - Repositório Remoto  (Github)
 - HEAD é um ponteiro
 - [Resumo dos Comandos - Oficial](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet.pdf)
