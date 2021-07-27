@@ -408,6 +408,15 @@ git pull request
 ~~~
 
 
+# 5 Em analise
+
+### `git stash`
+> Usado quando se quer fazer um *pull* mas existe arquivos sendo trabalhados a parte.
+- `git stash apply` : salvar
+- `git stash list` : listar
+- `git stash clear` : limpart
+
+
 ---
 
 
