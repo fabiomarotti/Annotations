@@ -212,12 +212,33 @@ git add <nome_arquivo>
 git commit -m "Criar uma mensagem que represente o conjunto de mudanças realizadas"
 ~~~
 
-
-
-
-
-
 ### Repositório Remoto
+
+### `git remote`
+~~~
+// exibir Alias do Repositorio Remoto
+git remote
+
+// exibir detalhes do Repositório Remoto (nomeado por convenção como: Origin)
+git remote show <origin_alias>
+
+// exibir endereços (Fetch/Push) do Repositório Remoto
+git remote -v
+
+// adicionar Localmente um Repositório Remoto 
+// git remote add origin https://...
+git remote add <remote_alias> <URL_URI>
+
+
+~~~
+
+### `git pull`
+~~~JavaScript
+// Incorpora mudança de um Repositório Remoto para o branch local 
+// pull é o modo abreviado de fetch + merge
+
+git pull
+~~~
 
 ### `git push`
 - Executar um `git pull` antes de fazer um `git push`
@@ -255,14 +276,6 @@ git clone <URL_repositório>
 git clone <URL_repositório>  <nome_pasta>
 ~~~
 
-### `git remote`
-~~~
-// adicionar Localmente um repositório Remoto 
-git remote add <nome_curto_rep_remoto> <URL_repositorio>
-
-// atualizar
-git pull origin master
-~~~
 
 ### `git fetch`
 ~~~JavaScript
@@ -276,13 +289,7 @@ git fetch <nome_curto>
 git merge FETCH_HEAD
 ~~~
 
-### `git pull`
-~~~JavaScript
-// Incorpora mudança de um Repositório Remoto para o branch local 
-// pull é o modo abreviado de fetch + merge
 
-git pull
-~~~
 
 
 
@@ -576,15 +583,22 @@ git pull request
 
   
 # Dicionário
+- `Repositório` é a pasta do projeto propriamente dita, esta pasta contem uma _subpasta oculta_ `.git` (ver _git init_)
+- `Repositório Local`   (Git)
+- `Repositório Remoto`  (GitHub, GitLab, Bitbucket, ...)
+- `Remote` : informa o Alias (apelido) do Repositório Remoto, por convensão usa-se: _Origin_
+- `origin` é o _alias_ (apelido) para a URL do seu repositório remoto
 - `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
 - `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
 - `HEAD` : é o "ramo atual" ou Ponteiro [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
-- `Remote` : informa o Alias (apelido) do Repositório Remoto
+
 - `Untracked` arquivos que não estão sendo rastreados 
 - `Staged` (encenado/preparação) area preparatória para se prosseguir com um commit
+- `Change` (Mudança) área que mostra arquivos com alterações (qualquer digito digito no arquivo já sera contado como _Change_).
+- `Staged Changes` (Mudanças encenada)  área que contem todos os arquivos _change_ e que estão prontos para o seu envio ao repositório, ou prontos para o _commit_
 
-- `Repositório` é a pasta do projeto propriamente dita, esta pasta contem uma _subpasta oculta_ `.git` (ver _git init_)
-- `Remote` criar, ver e excluir conexões com outros repositórios.
+- `stash` : copia temporaria
+
 - `Branch` (ramificação) é um repositório paralelo que o projeto terá de acordo com sua evolução (snapshots) 
   - `Master` ou _branch master_ é a ramificação principal que conterá o projeto final
   - `Develop` ou _branch  develop_ é o nome de um branch ao qual
@@ -592,27 +606,17 @@ git pull request
   - `Feature` ou _branch feature_ (caracteristica /aspecto)   
   - `Hotfix` ou _branch hotfix_ (conserto urgente) 
 
-- `Change` (Mudança) área que mostra arquivos com alterações (qualquer digito digito no arquivo já sera contado como _Change_).
-- `Staged Changes` (Mudanças encenada)  área que contem todos os arquivos _change_ e que estão prontos para o seu envio ao repositório, ou prontos para o _commit_
 - `Commit` (entregar /comprometer) (confirmação de alterações) (fazer uma snapshot) (ter arquivos na sua staging area) é um conjunto de arquivos da _Stage Change_, conterá uma menssagem para descrever sobre esse conjunto de arquivos. 
-
 - `Fetch` (Buscar) : Baixa os commits, arquivos e referências de um repositório remoto para seu repositório local.
 - `Merge` (fusão) combinar/fundir a _branch A_ com uma _branch B_
 - `Pull` (Puxar) é uma atualização local, que puxa do repositorio remoto os arquivos mais recentes para repositorio local. (git pull é uma combinação de comandos: git fetch e git merge).
-
 - `Push` (Empurrar) é o envio final de um conjunto de _commits_ para o repositório
 - `Clone` (células geneticamente idênticas)
 - `Checkout` (Conferir) Verifica os arquivos e commits a serem..
-
 - `Fork` (Bifurcação /garfo) é um clone interno ao github
 - `Pull Request`(Requisição de envio) é um pedido 
 - `Status` (posição /condição)
 - `forking` uma copia do projeto para ser trabalhada por outras pessoas, e futuramente redistribuir pro dono do projeto origianl.
-- `origin` é o _alias_ (apelido) padrão para a URL do seu repositório remoto
-- `stash` : copia temporaria
-
-- `Repositório Local`   (Git)
-- `Repositório Remoto`  (GitHub, GitLab, Bitbucket, ...)
 
 
  
