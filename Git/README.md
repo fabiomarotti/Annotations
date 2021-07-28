@@ -124,6 +124,19 @@ git fetch  <alias_origin>  <nome_branch>
 
 * * * * 
 
+### `git cherry pick`
+> Situação problema: <br>
+> Executar um Merge ou Rebase em um código que ainda não foi finalizado, pode ocasionar problemas por trazer códigos desnecessários. <br>
+> Logo, `git cherry-pick` traz apenas um commit especifico, evitando conflitos.
+<br>
+> Cria-se uma Cópia do commit "copiado", porem com uma nova HASH para o commit "colado"
+
+~~~JavaSCript
+// copiar para branch, um commit especifico em outro branch
+git cherry-pick <HASH_commit>
+~~~
+
+
 ###  `git tag`
 > Acrescenta TAG na identificação do ultimo commit <br>
 > `git show` exibe o ultimo commit
