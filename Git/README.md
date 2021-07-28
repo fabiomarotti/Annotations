@@ -125,7 +125,7 @@ git fetch  <alias_origin>  <nome_branch>
 * * * * 
 
 ###  `git tag`
-> Acrescenta TAG na identificação do ultimo commit
+> Acrescenta TAG na identificação do ultimo commit <br>
 > `git show` exibe o ultimo commit
 
 ~~~JavaSCript
