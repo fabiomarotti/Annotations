@@ -14,13 +14,13 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 
 ## Ciclo de vida de um arquivo no Git
 
-- Não Rastreado (**Untracked**) : (arquivo novo criado e não add para commit)
-- Rastreado (**Tracked**)
-  - Não modificado (**Unmodified**)
-  - Modificado (**Modified**)
-  - Preparado (**Staged**)
-  - Consolidado (**Commit**)
-  - Enviado (**Push/Merge**)
+- Arquivo: Não Rastreado (**Untracked**) : (arquivo novo, criado e não add para a Staging)
+- Arquivo: Rastreado (**Tracked**)
+  - Arquivo: Não modificado (**Unmodified**)
+  - Arquivo: Modificado (**Modified**)
+  - Arquivo: Preparado (**Staged**)
+  - Arquivo: Consolidado (**Commit**)
+  - Arquivo: Enviado (**Push/Merge**)
 
 ## Trabalhando as 4 etapas (Modificar / Preparar / Consolidar / Enviar) 
 - Modificar: ***Change***
@@ -510,7 +510,6 @@ git pull request
 
 > Lista Commits:
 - `git log` (q: sair) (informa: Hash, Autor, Data, Mensagem) 
-- 
 
 > Remover/Voltar um Commit:
 - `git reset`
@@ -518,11 +517,16 @@ git pull request
   - `git reset --midle` **hash_commit** : igual o soft, porem precisa fazer **git add**
   - `git reset --hard` **hash_commit** : vai para o id do commit e para o resto
   
+> Sobre os Repositorios Remotos
+- `git remote`   (exibir Alias do Repositorio Remoto utilizado)
+- `git remote show <remote>`
+
 > Acessar uma Branch específica:
 - `git checkout` **nome_branch__acessar**
 
-> Criar uma Branch:
-- `git branch` **nome_branch__criar**
+> Listar/Criar uma Branch:
+- `git branch` (listar todas as Branchs)
+- `git branch <nome_branch>`(criar Branch)
 
 > Mostrar o conteúdo das modificações no arquivo:
 - `git diff`
@@ -575,6 +579,7 @@ git pull request
 - `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
 - `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
 - `HEAD` : é o "ramo atual" ou Ponteiro [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
+- `Remote` : informa o Alias (apelido) do Repositório Remoto
 - `Untracked` arquivos que não estão sendo rastreados 
 - `Staged` (encenado/preparação) area preparatória para se prosseguir com um commit
 
