@@ -1,30 +1,20 @@
-# Git
-Repositório com os estudos realizados sobre o Git e GitHub
+# Git 
+Repositório com os estudos realizados sobre o Git v2.x e GitHub
 
 - `Git` software de versionamento, nele se realiza os comandos via terminal **Git BASH** para efetuar o versionamento de um projeto.
 - `GitHub` é uma plataforma de repositórios remoto que hospeda os codigos-fontes e arquivos de controle de versão usando **Git**. 
-- `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **Github**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
-- `GitHub Gist` é um serviço do **Github* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
+- `GitLab` semelhante/concorrente ao **GitHub**, mas permite armazenar código em servidores próprios
+- `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **GitHub**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
+- `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
-- `GitLab` semelhante/concorrente ao **Github**, mas permite armazenar código em servidores próprios
 
 # Considerações
-- Repositório Local   (Git)
-- Repositório Remoto  (Github)
-- HEAD é um ponteiro
-- [Resumo dos Comandos - Oficial](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet.pdf)
 
 
-## Fluxo de trabalho geral 
-
-> (master) - > `branch/snapshots` -> (versão_projeto) -> `merge` -> (master)
-> - `Branch` : cria uma ramificação para realizar alterações no projeto.
-> - `Merge` : recebe uma ramificação para acrescentar ao projeto. 
-> <br>
 
 ## Ciclo de vida de um arquivo no Git
 
-- Não Rastreado (**Untracked**)
+- Não Rastreado (**Untracked**) : (arquivo novo criado e não add para commit)
 - Rastreado (**Tracked**)
   - Não modificado (**Unmodified**)
   - Modificado (**Modified**)
@@ -164,22 +154,26 @@ git chekout master
 
 
 ### `git log`
+> q: para sair
+
 ~~~JavaScript
-// verifica se há arquivos _commitados_ ( log de commites: hash, nome, email, data, mensagem do commit)
+// listar todos os Commits (hash, nome, data, mensagem)
 git log    
 
-// mostrar histórico de commits que envolveram o nome_arquivo
-git log <nome_arquivo>
+// listar Commits de um arquivo específico
+git log <nome_arquivo.txt>
 
-// mostrar histórico de commits de forma resumida 
+// listar Commits resumido em uma linha
 git log --oneline
 
-// busca de arquivos excluidos pelo **rm**
+// listar arquivos excluidos pelo **rm**
 git log --diff-filter=D --summary
 
-// colorido
+// listar colorido
 git log --all --decorate --oneline --graph
 ~~~
+
+[ver+](https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Vendo-o-hist%C3%B3rico-de-Commits)
 
 ### `git show`
 ~~~JavaScript
@@ -496,17 +490,27 @@ git pull request
 > Analisa quais arquivos foram alterados:
 - `git status`
 
-> Adiciona arquivos para fila do commit:
-- `git add -A`
+> Adiciona arquivos para Staging Area (preparação do commit):
+- `git add <nome_arquivo.txt>` (add arquivo especifico)
 
-> Comitar com mensagem:
-- `git commit -m ` **"Mensagem do Commit"**
+- `git add . `                       (add todos: New, Modified, Deleted)
+- `git add --all` ou `git add -A`    (add todos: New, Modified, Deleted)
+- `git add --ignore-removal .`       (add apenas: New e Modified)
+- `git add --update` ou `git add -u` (add apenas: Modified e Deleted)
 
-> Adicionar e Comitar com mensagem:
-- `git commit -am ` **"Mensagem do Coomit com Add"**
 
-> Lista de todos os Commits:
-- `git log`
+> Remove/Restaura arquivos da Staging Area (area de preparação para realizar o Commit):
+- `git restore --staged <nome_arquivo.txt>` (remove o arquivo da Staging, ou seja, deixa-o no modo Untracked)
+- `git restore <nome_arquivo.txt>` (restaura o arquivo modificado (já rastreado mas em Modified) para sua versão anterior)
+
+> Comitar :
+- `git commit` (abrirá um editor de texto para informar a mensagem do commit, salvar e fechar executará o commit)
+- `git commit -m ` **"Mensagem do Commit"** (apenas commit)
+- `git commit -am ` **"Mensagem do Commit com Add"** (add a Staging, apenas arquivos no modo Tracked)
+
+> Lista Commits:
+- `git log` (q: sair) (informa: Hash, Autor, Data, Mensagem) 
+- 
 
 > Remover/Voltar um Commit:
 - `git reset`
@@ -570,8 +574,9 @@ git pull request
 # Dicionário
 - `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
 - `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
-- `HEAD` : é o "ramo atual"  [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
+- `HEAD` : é o "ramo atual" ou Ponteiro [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
 - `Untracked` arquivos que não estão sendo rastreados 
+- `Staged` (encenado/preparação) area preparatória para se prosseguir com um commit
 
 - `Repositório` é a pasta do projeto propriamente dita, esta pasta contem uma _subpasta oculta_ `.git` (ver _git init_)
 - `Remote` criar, ver e excluir conexões com outros repositórios.
@@ -601,6 +606,11 @@ git pull request
 - `origin` é o _alias_ (apelido) padrão para a URL do seu repositório remoto
 - `stash` : copia temporaria
 
+- `Repositório Local`   (Git)
+- `Repositório Remoto`  (GitHub, GitLab, Bitbucket, ...)
+
+
+ 
 ## Referências
 - https://git-scm.com/book/en/v2
 - https://git-scm.com/
@@ -611,4 +621,4 @@ git pull request
 - https://pt.slideshare.net/fernandomdr/controle-de-versao-e-colaboracao-com-git?fbclid=IwAR1FtaD0u6S70xcFMTqcjAIkbHQ0KPFRhJshAfusNm0doFawGUG5eVTr5Qs
 - https://www.youtube.com/watch?v=OuOb1_qADBQ
 - https://blog.cedrotech.com/git-o-minimo-que-voce-precisa-saber-para-trabalhar-em-equipe-parte-2
-
+- [Resumo dos Comandos - Oficial](https://training.github.com/downloads/pt_BR/github-git-cheat-sheet.pdf)
