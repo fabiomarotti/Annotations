@@ -9,11 +9,10 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
 
 # Considerações
-
-
+- GitHub alterou o nome do branch padrão de `master` para `main`
+- dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
 
 ## Ciclo de vida de um arquivo no Git
-
 - Arquivo: Não Rastreado (**Untracked**) : (arquivo novo, criado e não add para a Staging)
 - Arquivo: Rastreado (**Tracked**)
   - Arquivo: Não modificado (**Unmodified**)
@@ -39,7 +38,8 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 
 ### Configuração
 
-### `git --version`
+### `git --version` 
+- (versão atual do git)
 
 ### `git config` 
 - `git config` : lista as opções de complemento do comando.
@@ -48,19 +48,16 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
   - `git config --global user.name "Fábio" ` : setar nome de usuário.
   - `git config --global user.email "fabio@hotmail.com" ` : setar e-mail.
   - `git config [--system, --local, --global]` : opções do arquivo de configuração: sistema, local e global.
-  
  
-
 ### `git help`
 - `git help` ajuda geral 
   - `git help -a` ajuda específica (tambem se encontra no c:/.../git-doc)
-
 
 ### Iniciando o repositório 
 -  Preparando a pasta do projeto para que ela comece a ser versionada pelo Git.
 -  Cria-se uma pasta oculta _.git_ onde estará contido o versionamento.
 -  Para excluir o versionamento local, basta apagar a pasta _.git_  (isso não excluirá o projeto)
-   - `rm -rf .git` comando no PROMPT para excluir a pasta (r: deleta subdiretórios, f: força, ignora arquivos não localizados)
+   - comando no PROMPT-DOS para excluir a pasta: `rm -rf .git` (r: deleta subdiretórios, f: força e ignora arquivos não localizados)
 
 ### `git init`  
 ~~~JavaScript
@@ -72,25 +69,23 @@ git init --bare
 ~~~
 [+ detalhes sobre --bare](https://pt.stackoverflow.com/questions/80182/qual-%C3%A9-a-diferen%C3%A7a-entre-git-init-e-git-init-bare)
 
-- OBS.: 
-- Github alterou o nome do branch padrão de `master` para `main`
-- dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
 
-### Associando projeto Local com Remoto
+### Associando projeto do Repositório Local com o Repositório Remoto **rever
 ~~~JavaScript
-// comando que associa o projeto remoto ao Local
+// associa o projeto do Repositório Remoto ao Repositório Local
+// origin: alias utilizado por convencção para o repositório remoto
 git remote add origin <URL_projeto>
 
-// atualizar 
+// puxar informações do Repositorio Remoto
+// supoem-se que main seja a branch principal
 git pull origin main
 
 // criando/alterando de branch
-// -b: crie o branch caso não exista
+// -b: cria o branch caso não exista
 git checkout -b main
 
-// enviando ao repositorio Remoto
+// enviando ao Repositório Remoto
 git push origin main
-
 ~~~
 
 <br>
@@ -101,9 +96,48 @@ git push origin main
 
 ### `git status`
 ~~~JavaScript
-// verifica se há arquivos Modificados (Untracked file)
-// verifica se há arquivos Preparados (Stage area)
+// verifica se há arquivos Modificados (Untracked File)
+// verifica se há arquivos Preparados (Staging Area)
 git status
+~~~
+
+### `git remote`
+~~~JavaScript  
+// exibe o alias dos Repositório Remoto (origin por convenção)
+git remote
+
+// exibe o alias e as URL de (fetch e push)
+git remote -v
+
+// exibi arvore de branchs 
+git remote show origin
+~~~
+
+### `git fetch`
+~~~JavaScript
+// atualiza as referências locais com relações às remotas, mas não faz o merge com o branch local
+// ou seja, baixa commits, arquivos e referências de um Repositório Remoto para seu Repositório Local 
+// para descobrir o alias, use: git remote -v
+// apenas de um branch
+git fetch <alias_origin>
+
+
+~~~
+
+* * * * 
+
+###  `git checkout` 
+- visualiza as alterações realizadas nos arquivos do passado, podendo executar uma edição no proprio passado.
+- realizar o chekout apenas com a _stage changes_ vazia (unstaged), sem nada a commitar
+
+~~~JavaSCript
+// (ver _git log_)
+git chekout <HASH_do_commit> 
+~~~
+
+~~~JavaScript
+// volta para o estado atual e mais recente
+git chekout master
 ~~~
 
 ### `git branch`
@@ -119,37 +153,6 @@ git branch <Nome_da_Nova_Branch>
 
 // cria uma branch e seta
 git checkout -b <Nome_da_Nova_Branch>
-~~~
-
-### `git remote`
-~~~JavaScript  
-// exibe os repositórios remotos
-// estar dentro da para executar o comando
-// nome padrão: Origin
-
-git remote
-
-// lista de forma especificada
-git remote -v
-~~~
-
-~~~JavaScript
-// mostrar detalhes da branch remota
-git remote show origin
-~~~
-
-###  `git checkout` 
-- visualiza as alterações realizadas nos arquivos do passado, podendo executar uma edição no proprio passado.
-- realizar o chekout apenas com a _stage changes_ vazia (unstaged), sem nada a commitar
-
-~~~JavaSCript
-// (ver _git log_)
-git chekout <HASH_do_commit> 
-~~~
-
-~~~JavaScript
-// volta para o estado atual e mais recente
-git chekout master
 ~~~
 
 
@@ -229,6 +232,8 @@ git remote -v
 // git remote add origin https://...
 git remote add <remote_alias> <URL_URI>
 
+//-- rastreia todos os branchs - Fetching
+git remote update
 
 ~~~
 
@@ -277,17 +282,7 @@ git clone <URL_repositório>  <nome_pasta>
 ~~~
 
 
-### `git fetch`
-~~~JavaScript
-// Baixa as referências de um Repositório Remoto via nome_curto (sem fazer merge)
-// <nome_curto> ver: git remote -v
 
-git fetch <nome_curto>
-
-// fetch + merge = pull
-git fetch <nome_curto>
-git merge FETCH_HEAD
-~~~
 
 
 
@@ -591,6 +586,7 @@ git pull request
 - `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
 - `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
 - `HEAD` : é o "ramo atual" ou Ponteiro [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
+- `FETCH_HEAD` é uma referência de curta duração, armazena o SHA1 do commit
 
 - `Untracked` arquivos que não estão sendo rastreados 
 - `Staged` (encenado/preparação) area preparatória para se prosseguir com um commit
