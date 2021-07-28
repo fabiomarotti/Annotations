@@ -115,13 +115,11 @@ git remote show origin
 
 ### `git fetch`
 ~~~JavaScript
-// atualiza as referências locais com relações às remotas, mas não faz o merge com o branch local
+// baixa/atualiza as referências locais com relações às remotas, mas não faz o merge/incorpora com o branch local
 // ou seja, baixa commits, arquivos e referências de um Repositório Remoto para seu Repositório Local 
 // para descobrir o alias, use: git remote -v
-// apenas de um branch
-git fetch <alias_origin>
 
-
+git fetch  <alias_origin>  <nome_branch>
 ~~~
 
 * * * * 
@@ -583,6 +581,8 @@ git pull request
 - `Repositório Remoto`  (GitHub, GitLab, Bitbucket, ...)
 - `Remote` : informa o Alias (apelido) do Repositório Remoto, por convensão usa-se: _Origin_
 - `origin` é o _alias_ (apelido) para a URL do seu repositório remoto
+- `origin/main` espelho do conteudo do repositorio remoto
+- `origin/HEAD` espelho do ponteiro HEAD
 - `Upstream` : tudo que você insere no git: criar um repositório no git, fazer um commit, fazer um push.
 - `Downstream` : tudo que você pega do git: clonar um repositório, fazer um pull.
 - `HEAD` : é o "ramo atual" ou Ponteiro [ver+](http://git-scm.com/docs/git-checkout#_detached_head)
