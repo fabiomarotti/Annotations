@@ -124,18 +124,41 @@ git fetch  <alias_origin>  <nome_branch>
 
 * * * * 
 
+###  `git tag`
+> Acrescenta TAG na identificação do ultimo commit
+> `git show` exibe o ultimo commit
+
+~~~JavaSCript
+// listar tags
+git tag
+
+// pesquisar tag especifica, * é complemento
+git tag -l "<nome_tag> *" 
+
+// criar tag, marcação leve
+git tag <nome_tag>
+
+// criar tag, abre editor de texto para add mais informaçoes
+git tag -a <nome_tag>
+
+// cria tag, não abre o editor de texto
+git tag -a <nome_tag>  -m  " <mensagem_da_tag> "
+
+// excluir tag
+git tag -d <nome_tag>
+~~~
+
 ###  `git checkout` 
 - visualiza as alterações realizadas nos arquivos do passado, podendo executar uma edição no proprio passado.
 - realizar o chekout apenas com a _stage changes_ vazia (unstaged), sem nada a commitar
 
 ~~~JavaSCript
-// (ver _git log_)
-git chekout <HASH_do_commit> 
-~~~
+// acessar uma branch
+git checkout <nome_branch>
 
-~~~JavaScript
-// volta para o estado atual e mais recente
-git chekout master
+// acessar um Commit especifico (para pesquisar HASH, use: git log)
+git checkout <HASH_do_commit> 
+
 ~~~
 
 ### `git branch`
