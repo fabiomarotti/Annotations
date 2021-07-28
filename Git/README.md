@@ -19,7 +19,7 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
   - Arquivo: Modificado (**Modified**)
   - Arquivo: Preparado (**Staged**)
   - Arquivo: Consolidado (**Commit**)
-  - Arquivo: Enviado (**Push/Merge**)
+  - Arquivo: Enviado (**Push**)
 
 ## Trabalhando as 4 etapas (Modificar / Preparar / Consolidar / Enviar) 
 - Modificar: ***Change***
