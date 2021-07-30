@@ -1,7 +1,5 @@
 
-# Delphi (10.3) 
-
-## Sintaxe e Comandos
+# Delphi (10.3) :: Sintaxe e Comandos
 
 ## Comentários e Regiões
 > Comentar:
