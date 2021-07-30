@@ -5,17 +5,30 @@
 - `F11` : Object Inspecto 
 - `F12` : Alternar entre Código-View
 
+- `Alt` + `G` : Ir para um número de linha    
+
+- `Shift` + `seta` : Altera o tamanho de componetes (altura/largura) 
+
 - `Ctrl` + `seta` : mover componente
 - `Ctrl` + `F2`   : Cancelar Execução
 - `Ctrl` + `H`    : Selecionar multiplos componentes
 - `Ctrl` + `R`    : Buscar com substituir
+- `Ctrl` + `J`    : Exibir lista de templates de "códigos", exemplo.: if, for, case,..
+- `Ctrl` + `F`    : Buscar com caixa de dialogo.
+- `Ctrl` + `E`    : Buscar sem caixa de dialogo.
+- `Ctrl` + `O + U`  : Alternar letra/frase selecionada entre maiúscula/minúsculas.
+- `Ctrl` + `K + E`  : Alternar frase para minúscula.
+- `Ctrl` + `K + F`  : Alternar frase para maiúscula.
 
 - `Ctrl` + `Shift` + `F9`   : Executar sem Debug
-- `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
+- `Ctrl` + `Shift` + `seta` : Alternar entre a Declaração e a Implementação de uma função/procedimento. (tambem move componentes na tela)
 - `Ctrl` + `Shift` + `C`    : gerar implementação ou declaração de funções/procedimentos.
 - `Ctrl` + `Shift` + `G`    : gerar ID para __interfaces__ (identifica caso aja outros executaveis)
 - `Ctrl` + `Shift` + `L`    : Refatoração de uma variavel (testar pag 56mc)
-
+- `Ctrl` + `Shift` + `I`    : Avança multiplas linhas selecionadas.
+- `Ctrl` + `Shift` + `U`    : Recua multiplas linhas selecinadas.
+- `Ctrl` + `Shift` + `0..9` : Adicionar/Remover uma BookMarker
+- `Ctrl` +           `0..9` : Exibir o BookMarker 
 - `Ctrl` + `Alt` + `F11`  : Project Manager 
 - `Ctrl` + `Alt` + `P`    : Tool Palet
 
