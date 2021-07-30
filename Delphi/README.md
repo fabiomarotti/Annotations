@@ -665,24 +665,6 @@ End;
   - ex.:  `QuotedStr('*'+campo+'*' ) `
 
 
-## Teclas de Atalho
-- `F12` : Alternar entre Código-View
-- `F9`  : Executar
-- `Ctrl` + `F2`   : Cancelar Execução
-- `Ctrl` + `seta` : mover componente
-- `Ctrl` + `H`: Selecionar multiplos componentes
-- `Ctrl` + `Shift` + `F9`   : Executar sem Debug
-- `Ctrl` + `Shift` + `seta` : alterar tamanho do componente
-- `Alt`  + `Shift` + `seta` : selecionar codigo, forma quadrada
-- `Ctrl` + `Shift` + `C`    : gerar Gets e Sets
-- `Ctrl` + `Shift` + `G`    : gerar ID para __interfaces__ (identifica caso aja outros executaveis)
-- `Ctrl` + `Shift` + `L` : Refatoração de uma var (testar pag 56mc)
-
-> Exibir Ferramentas
-- `F11`                   : Object Inspecto
-- `Ctrl` + `Alt` + `F11`  : Project Manager 
-- `Shift` + `Alt` + `F11` : Structure
-- `Ctrl` + `Alt` + `P`    : Tool Palet
 
 # Imagens
 
