@@ -50,5 +50,15 @@
 - `Cria automaticamente os formulario em: Projects / Options / Application / Forms / (auto-create forms)`
   - Tools / Options / User Interface / Form Designer / (Auto create forms & data modules)
 
+- `Alterar local de criação do Executavel da projeto`
+  - Project / Options / Building / Delphi Compiler / (Output directory)
+  - Project / Options / Building / Delphi Compiler / (Unit output directory)
+    - Padrão:  `.\$(Platform)\$(Config)`
+  - Project / Options / Building / Delphi Compiler / (Search Path) (*dcu* do projeto)
+    - modules;
+    - modules\.dcp;
+    - modules\.dcu;
+    - modules\dataset-serialize\src;
+    - modules\restrequest4delphi\src
 
 
