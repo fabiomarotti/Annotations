@@ -1,6 +1,5 @@
-# Informações sobre o Delphi
+# Informações sobre o Embarcadero Delphi
 
-# Embarcadero Delphi 
 [Site (oficial)](https://www.embarcadero.com/br/), [DocWiki Embarcadero](http://docwiki.embarcadero.com/), [Exemplos (oficial)](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Code_Examples_Index), [Trechos a estudar](http://www.linhadecodigo.com.br/delphi.aspx)
 
 > Informações:
