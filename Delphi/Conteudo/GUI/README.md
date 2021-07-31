@@ -114,16 +114,6 @@ end;
 ShowMessage('Ola Mundo!' + var);
 ~~~
 
-# Eventos
-- `onClick`
-- `onChange` 
-- `onShow` : quando abrir/exibir (formulario)
-- `onExit` validar ao sair/terminar
-- `onStateChange` (para DataSource)
-- `onKeyDown` na hora que preciona a tecla
-- `onKeyUp` na hora que solta a tecla
-
-> `KeyPreview` : true, para funcionar
 
 # Formulário Modelo
 - Inheritable Items
@@ -198,6 +188,7 @@ ShowMessage('Ola Mundo!' + var);
 - `onClose` : Ocorre quando o objeto é fechado.
 - `onActive` : Ocorre quando o programa ativa o objeto pela primeira vez, ou quando se retorna de um outro aplicativo.
 - `onShortCut` : Ocorre quando o usuário pressiona uma tecla (antes do evento OnKeyDown)
+- `onStageChange` : (para DataSource)
 ----
 - `OnExit` : Ocorre quando o objeto perde o foco
 - `OnShow` : Ocorre antes que o objeto se torne visível
