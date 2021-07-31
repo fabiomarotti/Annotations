@@ -193,8 +193,40 @@ ShowMessage('Ola Mundo!' + var);
   - dgRowSelect
   - dgAlwaysShowSelection
 
-> Eventos
-- `onTitleClik` : Ao clicar no titulo da tabela
+# Eventos dos Formulários
+- `onCreate` : Ocorre quando o objeto é criado.
+- `onClose` : Ocorre quando o objeto é fechado.
+- `onActive` : Ocorre quando o programa ativa o objeto pela primeira vez, ou quando se retorna de um outro aplicativo.
+- `onShortCut` : Ocorre quando o usuário pressiona uma tecla (antes do evento OnKeyDown)
+----
+- `OnExit` : Ocorre quando o objeto perde o foco
+- `OnShow` : Ocorre antes que o objeto se torne visível
+- `OnActivate` : Ocorre quando o programa ativa o objeto pela primeira vez, ou quando se retorna de um outro aplicativo.
+- `OnChange` : Ocorre quando muda o conteúdo de um objeto.
+- `OnClick` : Ocorre quando o usuário dá um clique no botão esquerdo do mouse.
+- `OnDblClick` : Ocorre quando é feito um duplo clique com o botão esquerdo do mouse.
+- `OnEnter` : Ocorre quando o objeto recebe o foco.
+- `OnExit` : Ocorre quando o objeto perde o foco.
+- `OnRun` : Ocorre quando uma aplicação inicia sua execução.
+- `OnDeactivate` : Ocorre quando se sai do objeto.
+- `OnDestroy` : Ocorre quando se elimina um objeto.
+- `OnDragDrop` : Ocorre quando um objeto é arrastado para outro objeto e solto.
+- `OnDragOver` : Ocorre quando um objeto é arrastado para cima de outro objeto.
+- `OnDropDown` : Ocorre quando se abre um objeto ComboBox ou ListBox.
+- `OnHide` : Ocorre quando o objeto passa a ser oculto.
+- `OnMinimize` : Ocorre quando se minimiza uma janela.
+- `OnRestore` : Ocorre quando se restaura uma janela que foi minimizada.
+- `OnPopup` : Ocorre quando se ativa um menu popup com o botão direito do mouse.
+- `OnException` : Ocorre quando ocorre um erro de execução na aplicação.
+- `OnKeyUp` : Ocorre quando o usuário solta uma tecla.
+- `OnKeyDown` : Ocorre quando o usuário pressiona uma tecla, incluindo SHIFT, ALT e INSERT.
+- `OnHelp` : Ocorre quando é solicitado a abertura de um arquivo de ajuda.
+- `OnKeyPress` : Ocorre quando o usuário pressiona uma tecla ASCII.
+- `OnResize` : Ocorre quando se muda o tamanho do objeto.
+- `OnMouseDown` : Ocorre quando o usuário clica em um botão do mouse e o cursor é posicionado sobre a área clicada.
+- `OnMouseMove` : Ocorre quando o usuário move o cursor dentro da área selecionada.
+- `OnMouseUp` : Ocorre quando o usuário solta um botão do mouse.
+- `OnTimer`:  Ocorre em intervalos periódicos de tempo.
 
 
 
