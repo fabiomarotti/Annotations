@@ -188,7 +188,7 @@ ShowMessage('Ola Mundo!' + var);
 - `onClose` : Ocorre quando o objeto é fechado.
 - `onActive` : Ocorre quando o programa ativa o objeto pela primeira vez, ou quando se retorna de um outro aplicativo.
 - `onShortCut` : Ocorre quando o usuário pressiona uma tecla (antes do evento OnKeyDown)
-- `onStageChange` : (para DataSource)
+- `onStageChange` : (para DataSource) : Ocorre quando o DataSet de um DataSource muda seus dados.
 ----
 - `OnExit` : Ocorre quando o objeto perde o foco
 - `OnShow` : Ocorre antes que o objeto se torne visível
