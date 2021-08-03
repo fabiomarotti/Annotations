@@ -4,6 +4,7 @@
 ## XML Documentation Comments
 - Exibir uma caixa de diálogo com informações sobre a Função/Procedimento.
 - `Ctrl` + `Shift` + `H` ou `parar o mouse em cima do nome da função`: para visualizar as funcionalidades de uma função.
+- Realizar a marcação sobre Declaração da função.
 - Parâmetros utilizados no XML Documentation:
   - `<sumary>` `</sumary>` : Criação do Sumário.
   - `<para>` `</para>` : Criação de parágrafos no sumário.
@@ -16,7 +17,7 @@
   - `<exception cref="nome_exception">` `<exception>` : Informar sobre a exeção criada.
   - `<permission cref="nome_permissao">` `</permission>` : Informar o nível de permissão para utilizar a função.
 
->> Exemplo:
+> Exemplo:
 ~~~Delphi
 public
     /// <summary> A função <c>Dividir</c> realiza a divisão de dois números inteiros. Está sendo utilizada em:
