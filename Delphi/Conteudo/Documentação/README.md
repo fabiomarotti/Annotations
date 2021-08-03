@@ -2,19 +2,19 @@
 
 
 ## XML Documentation Comments
-- Exibir uma caixa de dialogo com informações sobre a Função/Procedimento.
+- Exibir uma caixa de diálogo com informações sobre a Função/Procedimento.
 - `Ctrl` + `Shift` + `H` ou `parar o mouse em cima do nome da função`: para visualizar as funcionalidades de uma função.
 - Parâmetros utilizados no XML Documentation:
-  - `<sumary>` `</sumary>` : Criação do Sumário
-  - `<para>` `</para>` : Criação de paragrafos no sumario.
-  - `<c>` `</c>`: Alterar a fonte da letra para parecer com a de um código.
-  - `<code>` `</code>` : Escrever trechos de código.
-  - `<param name="varivel">` `</param>` : Descrição do parametro da função.
+  - `<sumary>` `</sumary>` : Criação do Sumário.
+  - `<para>` `</para>` : Criação de parágrafos no sumário.
+  - `<c>` `</c>`: Alterar a fonte da letra para parecer como a de um código.
+  - `<code>` `</code>` : Escrever trechos de códigos.
+  - `<param name="varivel">` `</param>` : Descrição dos parâmetros da função.
   - `<return>` `</return>` : Informa sobre o Retorno da função.
-  - `<remarks>` `</remarks>` : Colocar uma observação na função.
-  - `<see cref='nome_classe' />` : Criar um link para classe de implementação da função.
+  - `<remarks>` `</remarks>` : Exibi uma observação na função.
+  - `<see cref='nome_classe' />` : Cria um link para a/as classes que estão chamando a função.
   - `<exception cref="nome_exception">` `<exception>` : Informar sobre a exeção criada.
-  - `<permission cref="nome_permissao">` `</permission>` : Informar o nivel de permissão da função.
+  - `<permission cref="nome_permissao">` `</permission>` : Informar o nível de permissão para utilizar a função.
 
 >> Exemplo:
 ~~~Delphi
