@@ -11,3 +11,12 @@
   - `palavra.TrimEnd(arayChar)` : Retira caracteres específicos (arrayChar) do Final.
 - `String.Equals(string1 , string2)`: (Boolean) Compara se as *string1* e *string2* são iguais.
 
+# Conversões
+- `BoolToStr` : Booelan para String.
+- `IntToStr` : Integer para String.
+- `FloatToStr` : Float para String.
+- `FloatToStrF` : Float para String. (precisão)
+- `DateToStr` : Converte uma Data para String 
+- `FormatDateTime( x , dataAtual )` : Converte uma Data para uma String personalizada
+  - dataAtual := TDateTime.Now;
+
