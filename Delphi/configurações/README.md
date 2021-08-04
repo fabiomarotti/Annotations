@@ -42,7 +42,8 @@
   - Executa todo o código ate o próximo breakpoint.
 - `F8`: **Step Over** - (Passar por cima) : ir para proxima instrução.
 - `F7`: **Trace Into** - (Rastrear em) : entrar no método em execução na linha atual.
-- 
+- `Ctrl` + `F2`: **Program Reset** - Parar (não pausar) o debug.
+
 # Configurações do Delphi (10.3)
 - `ALterar tema da IDE (Dark)`
  - Tools / Options / Theme Manager / (Dark)
