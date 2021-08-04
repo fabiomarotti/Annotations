@@ -44,6 +44,8 @@
 - `F7`: **Trace Into** - (Rastrear em) : entrar no método em execução na linha atual.
 - 
 # Configurações do Delphi (10.3)
+- `ALterar tema da IDE (Dark)`
+ - Tools / Options / Theme Manager / (Dark)
 
 - `Habilitar Pacote Office`
   - Project / Options / Packages / (Microsoft Office 2000)
