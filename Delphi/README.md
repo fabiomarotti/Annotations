@@ -33,11 +33,11 @@
   - Record (tipos variados) [ver+](https://www.youtube.com/watch?v=Qe4ERd1ECtw&list=PLIz6mntaZSG1aTBEg1g6RkBO5HZALcGy-&index=17)
 - `procedure`
 - `function`
-- Record  : Registros
+- Record  : Registros,  é uma forma de criar uma estrutura que possa armazenar valores de diferentes tipos de dados
 - File    : Arquivos
 - Set     : Conjuntos
 - Pointer : Ponteiros
-
+- `with` : [exemplo](https://www.devmedia.com.br/forum/como-usar-o-comando-with/146587)
 
 ## Unit
 ~~~Delphi
