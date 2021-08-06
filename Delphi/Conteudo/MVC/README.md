@@ -21,16 +21,8 @@
 - É um repassador de informação.
 - `DTO`: (Data Transfer Object) Utiliza-se para alimentar o Controller com apenas um parâmetro.
 - Possui uma instância do *Model*
+
 ----- 
-
-## Model
-
-## View
-
-
-## Controller
-
-
 
 # Exemplo
 > Sem MVC
