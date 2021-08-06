@@ -4,10 +4,11 @@
 - `PO` : (Persistent Object) : Semelhante a VO ou TO porem sem referência a códigos de transação com banco de dados.
 - `POJO` : (Plain Old Java Object)
 - `BO` : (Business Object)
+- `DAO` : (Data Acess Object) : contem o acesso ao banco de dados. (ver Padrão Factory)
 - `DTO` : (Data Transfer Object) : Objeto simples para transferir dados entre as camadas lógicas (view-controller-model), sem lógica de negócios em seus objetos. 
   - `VO` : (Value Object)
-  - `TO` : (Transfer Object)
-- `DAO` : (Data Acess Object) : contem o acesso ao banco de dados.
+  - `TO` : (Transfer Object) : Objeto de Transporte.
+
 
 
 ## Categorias
@@ -37,6 +38,9 @@
   - Observer, 
   - State, 
   - Visitor.
+ 
+ - outros (não rotulados):
+ - Separated Interface [ver+](https://martinfowler.com/eaaCatalog/separatedInterface.html)
 
 ### Singleton
 - Garante que uma classe possuirá apenas uma instância, e proverá um único ponto de acesso global a mesma.
