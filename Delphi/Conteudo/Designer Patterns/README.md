@@ -40,7 +40,8 @@
   - Visitor.
  
  - outros (não rotulados):
- - Separated Interface [ver+](https://martinfowler.com/eaaCatalog/separatedInterface.html)
+ - Separated Interface (Código para Interface) [ver+](https://martinfowler.com/eaaCatalog/separatedInterface.html)
+ - Dependency Inversion (Inversão de Dependência: Principio SOLID)
 
 ### Singleton
 - Garante que uma classe possuirá apenas uma instância, e proverá um único ponto de acesso global a mesma.
