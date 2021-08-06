@@ -1,17 +1,32 @@
 # MVC
-- Model - View - Controller
-- `DTO`: (Data Transfer Object) alimenta o Controller com apenas um parâmetro.
-- 
+- São camadas lógicas que facilitam para o programador a troca de informações entre a interface do usuário e o banco de dados. 
+- Possibilidade de inserir mais camadas lógicas.
 
-
-
-## Model
-
-## View
+### Model: 
+- `Business Object Model` (Objeto Modelo de Negócio)
+- Gerenciar e controlar o comportamento dos dados por meio de funções, lógica, regras de negócios,..
+- Faz a conexão e operações com o Banco de Dados.
+ 
+### View 
+- Apresenta as informações de forma visual ao usuário.
+- Gerencia a exibição ou ocultamento de componentes, mensagens, botões, telas
 - atualização de textos
 - preenchimento de listas
 - exibição de mensagens 
 - controle do estado de componentes
+- Possui uma instância do *Controller*
+
+### Controller
+- Intermedia as requisições enviadas pela View com as respostas fornecidas pelo Model.
+- É um repassador de informação.
+- `DTO`: (Data Transfer Object) Utiliza-se para alimentar o Controller com apenas um parâmetro.
+- Possui uma instância do *Model*
+----- 
+
+## Model
+
+## View
+
 
 ## Controller
 
