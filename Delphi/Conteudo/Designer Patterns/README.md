@@ -1,5 +1,12 @@
 # Design Patterns (Padrões de Projeto)
 
+# Variaveis
+- Camel Case: primeira letra minuscula seguida de Iniciais maiusculas. Ex.: nomeDeVariavel
+- Pascal Case: as letras iniciais em maiusculas. E.: NomeDeVariavel
+- `Notação Hungara` [ver+](https://en.wikipedia.org/wiki/Hungarian_notation)
+
+
+
 ## Padrões
 - `PO` : (Persistent Object) : Semelhante a VO ou TO porem sem referência a códigos de transação com banco de dados.
 - `POJO` : (Plain Old Java Object)
@@ -9,7 +16,9 @@
   - `VO` : (Value Object)
   - `TO` : (Transfer Object) : Objeto de Transporte.
 
-
+- `Separated Interface` (Código para Interface) [ver+](https://martinfowler.com/eaaCatalog/separatedInterface.html)
+- `Dependency Injection` (Injeção de Dependência)
+- `Dependency Inversion` (Inversão de Dependência: Principio SOLID)
 
 ## Categorias
 - **Criacionais** 
@@ -39,9 +48,8 @@
   - State, 
   - Visitor.
  
- - outros (não rotulados):
- - Separated Interface (Código para Interface) [ver+](https://martinfowler.com/eaaCatalog/separatedInterface.html)
- - Dependency Inversion (Inversão de Dependência: Principio SOLID)
+
+
 
 ### Singleton
 - Garante que uma classe possuirá apenas uma instância, e proverá um único ponto de acesso global a mesma.
