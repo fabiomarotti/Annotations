@@ -25,7 +25,7 @@
   - **Coercion Polymorphism** (Casting): Conversão de tipos de objetos ou primitivos.
   - **Parametric Polymofirsm** (Generics/Templates): otimiza os codigo
 
-> Sinônimos utilizados
+## Sinônimos utilizados
 
 - **Generalização**: da _Sub Classe_ para **Super Classe**
 - **Especialização**: da _Super Classe_ para **Sub Classe**
@@ -45,19 +45,87 @@
 
 [continuar video](https://www.youtube.com/watch?v=3ugwf8FQqVo)
 
-# Sobrecarga
-- `overload` 
-> função com mesmo nome, mas com assinaturas diferentes.
+## Indice
+- Classe
+- Interface
+- Sobrecarga
 
+
+# Classe
+
+> Declaração de classe vazia
 ~~~Delphi
-  NomeTabela( const Value: Integer) : String; overload;
-  NomeTabela                        : String; overload;
+type
+  TPessoa = class;
 ~~~
 
-- `override` e `virtual`
-> função com mesmo nome, mesma assinatura, mas será reescrito o seu conteudo na classe filho. <br>
-> usa-se o `virtual` na "assinatura do método pai" para permitir a reescrita no filho. <br>
-> `virtual; Abstract;` : torna o metodo, apenas uma assinatura (não terá uma implementação na classe pai), forçando a ser escrito no filho (e nao reescrito).
+> Declaração com classes auto-relacionadas (cross-references)
+~~~Delphi
+type
+  TMarido = class;
+  
+  TEsposa = class
+    marido: TMarido;
+  end;
+  
+  TMarido class
+    esposa: TEsposa;
+  end;
+~~~
+
+> Construtor e Destrutor
+- Construtor Primário e Secundário.
+
+> o construtor Secundário faz uso do construtor Primário. 
+~~~Delphi
+type
+  TPessoa = class
+  public 
+      constructor Create(const Nome, Telefone: String);
+      constructor Create(const Nome: SAtring);
+      function Nome: String;
+      function Telefone: String;
+  private
+      FNome: String;
+      FTelefone: String;
+  end;
+   
+implementation
+
+constructor TPessoa.Create(const Nome: String);
+Begin
+  Create(Login, '(19) 55334499');
+End;
+
+// implementações das funções.
+~~~
+
+> Interface
+~~~Delphi
+type
+  IPessoa = interface
+      function Nome: String;
+      function Telefone: String;
+  end;
+  
+  TPessoa = class(TInterfaceObject, IUser)
+  public 
+      constructor Create(const Nome, Telefone: String);
+       class function New(const Nome, Telefone: String) : IPessoa;
+       class function New(const Nome: String) : IPessoa;
+      function Nome: String;
+      function Telefone: String;
+  private
+      FNome: String;
+      FTelefone: String;
+  end;
+  
+
+~~~
+
+
+
+
 
 
 # Interaces
@@ -102,27 +170,20 @@ begin
 end;
 ~~~
 
-# Classes
+## Sobrecarga
+- `overload` 
+> função com mesmo nome, mas com assinaturas diferentes.
 
-> Declaração de classe vazia
 ~~~Delphi
-type
-  TPessoa = class;
+  NomeTabela( const Value: Integer) : String; overload;
+  NomeTabela                        : String; overload;
 ~~~
 
-> Declaração com classes auto-relacionadas (cross-references)
-~~~Delphi
-type
-  TMarido = class;
-  
-  TEsposa = class
-    marido: TMarido;
-  end;
-  
-  TMarido class
-    esposa: TEsposa;
-  end;
-~~~
+- `override` e `virtual`
+> função com mesmo nome, mesma assinatura, mas será reescrito o seu conteudo na classe filho. <br>
+> usa-se o `virtual` na "assinatura do método pai" para permitir a reescrita no filho. <br>
+> `virtual; Abstract;` : torna o metodo, apenas uma assinatura (não terá uma implementação na classe pai), forçando a ser escrito no filho (e nao reescrito).
+
 
 ### Instanciação do objeto
 ~~~Delphi
