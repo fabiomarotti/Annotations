@@ -1,4 +1,15 @@
 # Design Patterns (Padrões de Projeto)
+
+## Padrões
+- `PO` : (Persistent Object) : Semelhante a VO ou TO porem sem referência a códigos de transação com banco de dados.
+- `POJO` : (Plain Old Java Object)
+- `BO` : (Business Object)
+- `DTO` : (Data Transfer Object) : Objeto simples para transferir dados (view-controller-model), sem lógica de negócios em seus objetos. 
+  - `VO` : (Value Object)
+  - `TO` : (Transfer Object)
+- `DAO` : (Data Acess Object)
+
+
 ## Categorias
 - **Criacionais** 
   - Abstract Factory, 
