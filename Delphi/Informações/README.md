@@ -67,5 +67,20 @@
 - `WebServices`: conexão Web services aseados em XML/SOAP
 - `Internet` e `Internet Express`: recursos para navegadores
 
-> `Two-Way-Tool` (ferramenta de duas vias)
-- Conforme  o  formulário  recebe  componentes  a  Unit  instantaneamente  é  alterada. 
+# Palavras recorrentes
+- `Two-Way-Tool` (ferramenta de duas vias)
+  - Conforme  o  formulário  recebe  componentes  a  Unit  instantaneamente  é  alterada. 
+
+## Acess Violation e seus problemas
+- `Acess Violation` : Violçao de acesso.
+- `Call Stack` : Pilha de chamadas de métodos (histórioco de chamadas) 
+  - pode ser devido a endereços de memória que não existem, ou seja, Objetos não instanciados ou ja destruidos.
+  - (View > Debug Windows > Call Stack)
+  - Leitura de Baixo para Cima.
+- `memleaks` : Vazamento de memória
+- `Assigned()` : identifica se o objeto passado por parâmetro está alocado na memória.
+- `FreeAndNil()` : Destruição de objetos no Delphi.
+- `Tratamento de Exceções`: Try..finally (usar FreeAnd Nil)
+- `Destructor` : 
+- `Out of Memory`
+[ver+](https://www.andrecelestino.com/delphi-access-violation-o-que-fazer/)
