@@ -82,6 +82,7 @@
   - (View > Debug Windows > Call Stack)
   - Leitura de Baixo para Cima.
 - `memleaks` : Vazamento de memória
+  - ReportMemoryLeaksOnShutdown := True;
 - `Assigned()` : identifica se o objeto passado por parâmetro está alocado na memória.
 - `FreeAndNil()` : Destruição de objetos no Delphi.
 - `Tratamento de Exceções`: Try..finally (usar FreeAnd Nil)
