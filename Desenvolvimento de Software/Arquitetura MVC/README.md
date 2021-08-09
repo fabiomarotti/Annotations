@@ -8,7 +8,9 @@
 
 # Informações
 - `Model`
-  - contém a lógica da aplicação, as regras e operações de negócio
+  - contém a conexão com o banco de dados, ou forma de acesso aos dados.
+  - contém a lógica da aplicação, as regras e operações de negócio.
+  - processa os dados obtidos do usuário para a forma necessaria que outras camadas logicas possam acessar.
   - representa a informação (dados), regras SQL
   - realiza os CRUD
   - opera dados para o `controller` e não recebe dados da `View`
