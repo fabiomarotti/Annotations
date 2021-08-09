@@ -6,7 +6,9 @@
 - é possivel vincular dados da View com o Model através de _data binding_. Isso ocorre na variação _Supervising Controller_, em oposição à variação _Passive View_ onde a View essencialmente só possui o desenho da UI.
 - a View pode conter código para manipular a UI (User Interface).
 - Windows Forms é um exemplo de MVP
-
+-  possibilita o _mock_ da camada View para testes unitários
+- `mocks` (mockar) : são imitações ou unidades falsas que simulam o comportamento de unidades reais. Retorna se a função é chamada corretamente, quantas vezes, se os parametros sao os corretos. 
+- `stub` : apenas se o resultado retornado é de acordo com os esperado.
 ----- 
 
 - `Model` : conjunto de classes que descreve a lógica de negócios e os dados. Define regras de negócio para os dados e como os dados podem ser alterados.
