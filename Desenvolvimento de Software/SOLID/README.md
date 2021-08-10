@@ -3,6 +3,7 @@
 
 - `1. (SRP) Single Responsibility Principle` (Princípio da responsabilidade única)
   - Toda Classe/Função tenha apenas uma responsabilidade/funcionalidade.
+  - Classe com fnGerarBoleto e fnEnviarEmail (são coisas diferentes, logo quebra o SRP)
 
 - `2. (OCP) Open-closed Principle` (Princípio Aberto-Fechado)
   - Fechado para manuntenção, ter um core de funcionalidade (fechado), não ter que ficar implementando muitas vezes na mesma classe.
