@@ -14,6 +14,8 @@
 - CLX (Component Library for Cross Platform) 
   - Borland Kylix 
 
+----
+
 > História:
 - 1995 : Borland (Turbo Pascal) -> para Windows 3.1 (16 bits)
 - 2006 : CodeGear 
@@ -32,28 +34,86 @@
 - RAD Studio 10.3 (Rio)
 - RAD Studio 10.4.2 (Sydney)[2021]
 
+---- 
+
 > Arquivos importantes no Delphi:
+
+- `Project Group`
+
+- `Project.exe`
+  - `Build Configuration (Debug)`
+    - `Debug`
+    - `Release`
+  - `Target Plataforms (Windows 32/64-bit)`
+  - `../pastas_src/...`
+  - Informações dos arquivos de um Projeto:
+    - `*.dproj` : arquivo para editar o projeto
+      - ../Projeto/Nome_Projeto.dproj 
+    - `*.dproj.local` 
+    - `*.dpr` : **Arquivo para se abrir os projetos**
+    - `*.res` : Arquivo de icones, imagens, outros
+    - `~arquivo` : arquivos de backup
+
+- `Windows VCL Application - Delphi` ou `VCL Form`
+  - `Delphi Unit` : 
+    - `*.pas` : arquivo de código
+    - `*.dfm` : informações complementares do arquivo .pas de um Formulário (Alt + F12)
+    - ../Forms/uPrincipal.pas  ->  (Objeto: TformPrincipal)
+
+- `Package - Delphi`
+  - `.bpl` (Borland Package Library) : sao *dll* específicas para sistemas desenvolvidos em Delphi, a fim de diminuir o executavel
+  - `.dcp`
+  - `.dcu`
+  - `RunTime Packages` : Fornecem as funcionalidades de um programa ao mesmo tempo que o programa esta sendo executado.
+  - `Design-Time Packages` : Estes pacotes sevem apenas para a IDE do Delphi, são os componentes ou editores de propriedade especiais para componentes que podem ser personalizados.
+
+- `Unit` arquivo: *.pas
+
+
 - Executaveis (Project Manager)
   - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
   - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
   - `*.dcu` arquivo pre-compilado, para linkar/construir o arquivo `*.exe`
-- `VCL Form Application` 
-  - `Delphi Unit` : 
-    - `*.pas` : arquivo de código
-    - `*.dfm` : informações complementares de um formulário
-      - ../Forms/uFrmPrincipal -> (Objeto: frmPrincipal)
-      - ../Forms/FrmPrincipalU
-  - `Delphi projects` : informações do Projeto
-    - `*.dproj` : Usar este arquivo para editar o projeto
-      - ../Projeto/Nome_Projeto 
-    - `*.dproj.local` 
-    - `*.dpr` : **Arquivo para se abrir os projetos**
-    - `*.res` : arquivos de icones, imagens, outros
-    - `~arquivo` : arquivos de backup
-- `VCL Form `
-  - `Delphi unit (*.pas)`
-    -  ../Forms/uFrmCadastrar -> (Objeto: frmCadsatrar)
-- `Unit` arquivo: *.pas
+
+# Arquivos de Projeto
+- `.dpr` (Delphi Project) : arquivo que, de fato, possui o código do programa
+- `.dsk` (Desktop) : Informações sobre a Area de Trabalho do Delphi
+- `.pas` (Arquivo Pascal)
+- `.res` (arquivo Recurso)
+- `.dfm` (Delphi Form File) : Arquivo Delphi de formulário
+- `.exe` (Executabel) : Produto Final
+- `.dcu` (Delphi Compiled Unit) arquivo criado para cada *.pas*, destinado a tornar o processo de compilação mais rapido, pois o compilador busca apenas o *.dcu* alterado, não compilando *.dcu* ja compilados e não alterados.
+  - C:\Users\<user>\Documents\Embarcadero\Studio\Projects\<project>\<platform>\<build configuration> 
+- `.bpl` (Borland Package Library)
+- `.dcp` (Delphi compiled Package) :  imagem binária que contém um cabeçalho de pacote e a concatenação de todos os arquivos de unidade compilados em Delphi 
+  - C:\Users\Public\Documents\Embarcadero\Studio\21.0\DCP 
+- `.dll` (Dinamic Link Library)
+
+--- 
+# `Uses`
+- SysUtils = biblioteca de utilitários do sistema (strings, data/hora, gerar arquivos).
+- WinProcs = biblioteca. Unite onde encontramos codificação para acesso a GDI, USER e KERNEL do Windows.
+- Wintypes = Biblioteca, tipos de dados e valores constantes.
+- Messages = Biblioteca de constantes com os números das mensagens do Windows e tipos de dados das Mensagens.
+
+# `Type`
+- Declaração dos tipos definidos pelo usuário
+
+# `Var`
+- Declaração das variáveis
+- a visibilidade delas será dependente das seções “interface” ou “implementation” que definirá se elas serão privadas ou não 
+- depende do Escopo de Visibilidade
+
+# `{$S+}`
+- Diretiva de compilação que ativa verificação de pilha.
+
+# `{$R*.DFM}`
+- Diretiva de compilação que indica a utilização de um arquivo de recurso. Neste caso, trastando-se de um form é necessário compilar junto o arquivo que contem as informações visuais do mesmo. Elas estão defindas no *.DFM, homonimo a unit.
+- Por exemplo, os “.dfm” de cada arquivo “.pas” onde esta definos um form.
+
+
+
+--- 
 
 > Principais Abas para Componentes:
 - `Standard` : Componentes como botões, botões de rádio, caixa de lista, caixa Box, barras de rolagem, recursos para edição de texto
