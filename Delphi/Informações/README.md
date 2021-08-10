@@ -41,16 +41,16 @@
 - `Project Group`
 
 - `Project.exe`
-  - `Build Configuration (Debug)`
-    - `Debug`
-    - `Release`
+  - `Build Configuration (Debug/Release)`
+    - `Debug` : selecionar o Debug e compilar, gera arquivo em: `/Win32/Debug`
+    - `Release` : selecinar o Release e compilar, gera arquivo em: `/Win32/Release`
   - `Target Plataforms (Windows 32/64-bit)`
   - `../pastas_src/...`
   - Informações dos arquivos de um Projeto:
     - `*.dproj` : arquivo para editar o projeto
       - ../Projeto/Nome_Projeto.dproj 
-    - `*.dproj.local` 
-    - `*.dpr` : **Arquivo para se abrir os projetos**
+    - `*.dproj.local` : arquivo nutela do projeto 
+    - `*.dpr` : **Arquivo para se abrir o projeto**
     - `*.res` : Arquivo de icones, imagens, outros
     - `~arquivo` : arquivos de backup
 
@@ -70,10 +70,6 @@
 - `Unit` arquivo: *.pas
 
 
-- Executaveis (Project Manager)
-  - `/Win32/Debug` compilar com o Debug selecionado (aquivo maior: Desenvolvimento)
-  - `/Win32/Release` compilar com o Release selecionado (arquivo menor : Final)
-  - `*.dcu` arquivo pre-compilado, para linkar/construir o arquivo `*.exe`
 
 # Arquivos de Projeto
 - `.dpr` (Delphi Project) : arquivo que, de fato, possui o código do programa
