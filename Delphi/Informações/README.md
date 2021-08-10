@@ -61,11 +61,12 @@
     - ../Forms/uPrincipal.pas  ->  (Objeto: TformPrincipal)
 
 - `Package - Delphi`
-  - `.bpl` (Borland Package Library) : sao *dll* específicas para sistemas desenvolvidos em Delphi, a fim de diminuir o executavel
-  - `.dcp`
-  - `.dcu`
   - `RunTime Packages` : Fornecem as funcionalidades de um programa ao mesmo tempo que o programa esta sendo executado.
   - `Design-Time Packages` : Estes pacotes sevem apenas para a IDE do Delphi, são os componentes ou editores de propriedade especiais para componentes que podem ser personalizados.
+  - Arquivos gerados:
+    - `.bpl`  
+    - `.dcp`
+    - `.dcu`
 
 - `Unit` arquivo: *.pas
 
