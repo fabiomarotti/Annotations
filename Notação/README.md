@@ -1,7 +1,18 @@
 # Notações 
 
-- `CamelCase` 
-- Notação Hungara
+- `camelCase` 
+  - palavras compostas 
+  - frases
+  - Iniciar com letra minúscula, alterando com a letra Maiúscula
+  - nomes de variaveis e parâmetros de funções
+ 
+ - `PascalCase`
+  - palavras compostas
+  - frases
+  - Iniciar todas as palavras com letra Maiúscula
+  - nomes de Classes e Funções
+  
+- `Notação Hungara`
 [ver +](https://en.wikipedia.org/wiki/Hungarian_notation)
 
 |prefixo  | Descrição |
@@ -22,3 +33,20 @@
 |ch	      | Char, com texto ASCII |
 |l	      | long int (32 bits) |
 |dw	      | unsigned long int (dword - 32 bits) |
+
+
+| Controle  |	Prefixo |
+|---        |---      |
+| Label	    | lbl |
+| TextBox	  | txt |
+| DataGrid	| dtg |
+| Button	  | btn |
+| Hyperlink	| hlk |
+| DropDownlist	| ddl |
+| ListBox	      | lst |
+| DataList	    | dtl |
+| CheckBox	    | chk |
+| RadioButton	| rdo |
+| Image	      | img |
+| Panel	      | pnl |
+| Table	      | tbl |
