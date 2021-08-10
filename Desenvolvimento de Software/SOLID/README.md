@@ -20,6 +20,6 @@
   - Classe depende de uma Abstração (Interface)
  
 
-[ver+](https://www.youtube.com/watch?v=AbjY8EUUQuk)
-[ver + 2](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
-[exemplo SOLID em Delphi](https://github.com/viniciussanchez/solid)
+> [ver+](https://www.youtube.com/watch?v=AbjY8EUUQuk) <br>
+> [ver + 2](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530) <br>
+> [exemplo SOLID em Delphi](https://github.com/viniciussanchez/solid) <br>
