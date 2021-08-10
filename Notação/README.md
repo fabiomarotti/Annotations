@@ -1,18 +1,27 @@
 # Notações 
 
+- `Regras de organização`
+  - Identação
+  - nomes de variaveis 
+  - comentários ( Função: .., Parâmetros: .., Retorno: .., Descrição: ..)
+  - espaçamentos e quebras de linhas
+
 - `camelCase` 
   - palavras compostas 
   - frases
   - Iniciar com letra minúscula, alterando com a letra Maiúscula
   - nomes de variaveis e parâmetros de funções
  
- - `PascalCase`
+- `PascalCase`
   - palavras compostas
   - frases
   - Iniciar todas as palavras com letra Maiúscula
   - nomes de Classes e Funções
+
+- `snake_case` 
+  - nome_produto
   
-- `Notação Hungara`
+- `Notação Hungara (Dr. Charles Simonyi)`
 [ver +](https://en.wikipedia.org/wiki/Hungarian_notation)
 
 |prefixo  | Descrição |
@@ -50,3 +59,10 @@
 | Image	      | img |
 | Panel	      | pnl |
 | Table	      | tbl |
+
+
+- Nome de Metodos: Começar com um verbo
+- Nome de Classes: Substantivos
+
+- [Uncle Bob](https://pt.wikipedia.org/wiki/Robert_Cecil_Martin)
+- [referência para CSS](https://github.com/mktvirtual/guias/tree/master/estilo/CSS)
