@@ -30,7 +30,7 @@
 - RAD Studio 10.1 (Berlim) [2016]
 - RAD Studio 10.2 (Tokyo) [2017] *
 - RAD Studio 10.3 (Rio)
-- RAD Studio 10.4 (Sydney)
+- RAD Studio 10.4.2 (Sydney)[2021]
 
 > Arquivos importantes no Delphi:
 - Executaveis (Project Manager)
