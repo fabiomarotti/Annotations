@@ -55,6 +55,8 @@
 
 
 # Classe
+- `uses` System.Classes;
+
 
 > Declaração de classe vazia
 ~~~Delphi
