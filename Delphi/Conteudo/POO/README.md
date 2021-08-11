@@ -2,20 +2,23 @@
 > 1986 : Object Pascal
 
 - ✅ Abstração (modelar o que interessa)
+  - Transformar um problema do mundo em real em um programa.
+  - Só deve ser representado aquilo que for usado.
   - Niveis de Abstração
-    - **Nivel de Domínio** : os nomes das classes
-    - **Nível de Análise** : nomes e atributos
-    - **Nivel de Sign** : nomes, atributos e métodos
-    - **Generalização** : polimorfirmo 
-    - **Classes Abstratas** : apenas implementação as "sobreescritas"
+    - **Nivel de Domínio** : Ter nomes nas classes.
+    - **Nível de Análise** : Ter classes e atributos.
+    - **Nivel de Design** : Ter classes, atributos e métodos.
+    - **Generalização** : polimorfirmo: Veiculo: ->Carro ->Moto ->Bike
+    - **Classes Abstratas** : apenas assinaturas, para depois ter as "sobreescritas"
 
 - ✅ Encapsulamento (não permitir modificações externas)
-  - **Public** : Acesso total em Unit, Form, Classe.
-  - **Private** : Priva o acesso _fora da mesma Unit_.
+  - **Public** : Acesso total em Unit, Form, Classe, por instanciação ou por herança.
+  - **Protected** : Acesso apenas no mesmo pacote/Unit e/ou em seus descendentes (herança).
+  - **Private** : Acesso somente pela classe na mesma Unit, privando o acesso _fora da mesma Unit_.
+  - **Published** : (Criação de Componentes) Propriedades Publicadas na palheta de “Properties” do seu Componente. 
   - **Strict Private** : Priva o acesso, mesmo de descendentes _dentro da mesma Unit_.
-  - **Protected** : Acesso apenas na mesma Unit e seus descendentes.
   - **Strict Protected** : Acesso apenas pelos descendents.
-  - **Published** : Propriedades Publicadas na palheta de “Propersties” do seu Componente.
+
   
 - ✅ Herança (Inheriting)
 
@@ -98,6 +101,23 @@ Begin
 End;
 
 // implementações das funções.
+~~~
+
+> Getters e Setters exemplo 1
+~~~Delphi
+type
+
+  TPesosa = class
+  private
+    FNome: String;
+    function OlaNome: String;
+  public
+    property Nome: String read FNome write FNome;
+  protected
+    function NomeValido: Bolean;
+  end;
+
+end.
 ~~~
 
 > Interface
