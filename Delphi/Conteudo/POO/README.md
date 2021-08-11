@@ -120,6 +120,29 @@ type
 end.
 ~~~
 
+
+> Getters e Setters exemplo 2
+~~~Delphi
+type
+
+  TPesosa = class
+  private
+    FNome: String;
+    procedure SetNome(const Value: string);
+  public
+    property Nome: String read FNome write SetNome;
+  end;
+
+implementation
+
+procedure TPessoa.SetNome(const Value: string);
+begin
+  FNome := Value;
+end;
+
+end.
+~~~
+
 > Interface
 ~~~Delphi
 type
