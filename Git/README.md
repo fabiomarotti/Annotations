@@ -8,6 +8,9 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
 
+# IDE
+- https://www.gitkraken.com/
+
 # Considerações
 - GitHub alterou o nome do branch padrão de `master` para `main`
 - dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
