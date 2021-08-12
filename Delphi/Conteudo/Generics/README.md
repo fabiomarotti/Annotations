@@ -1,4 +1,5 @@
 # Generics
+- `System.Generics.Collections.TList` [saiba+](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Generics_Collections_TList_(Delphi))
 
 ~~~Delphi
 type
