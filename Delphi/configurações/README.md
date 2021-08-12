@@ -22,11 +22,13 @@
 
 - `Ctrl` + `Shift` + `F9`   : Executar sem Debug
 - `Ctrl` + `Shift` + `seta` : Alternar entre a Declaração e a Implementação de uma função/procedimento. (tambem move componentes na tela)
+- `Ctrl` + `Shift` + `A`    : Importar no campo __uses__ bibliotecas referente a palavra sobre o curso do teclado.
 - `Ctrl` + `Shift` + `C`    : gerar implementação ou declaração de funções/procedimentos.
 - `Ctrl` + `Shift` + `G`    : gerar ID para __interfaces__ (identifica caso aja outros executaveis)
-- `Ctrl` + `Shift` + `L`    : Refatoração de uma variavel (testar pag 56mc)
 - `Ctrl` + `Shift` + `I`    : Avança multiplas linhas selecionadas.
+- `Ctrl` + `Shift` + `L`    : Refatoração de uma variavel (testar pag 56mc)
 - `Ctrl` + `Shift` + `U`    : Recua multiplas linhas selecinadas.
+- `Ctrl` + `Shift` + `V`    : Declara no campo __var__ a palavra posicionada posteriorente ao cursor do teclado.
 - `Ctrl` + `Shift` + `0..9` : Adicionar/Remover uma BookMarker
 - `Ctrl` +           `0..9` : Exibir o BookMarker 
 - `Ctrl` + `Alt` + `F11`  : Project Manager 
