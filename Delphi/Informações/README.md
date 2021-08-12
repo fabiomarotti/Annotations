@@ -17,6 +17,7 @@
   -  TObject 
   -  TPersistent 
   -  TComponent 
+- RTTI (RunTime Type Information)  
 ----
 
 > História:
