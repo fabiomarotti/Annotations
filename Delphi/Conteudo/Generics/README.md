@@ -1,6 +1,15 @@
 # Generics
-- `System.Generics.Collections.TList` [saiba+](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Generics_Collections_TList_(Delphi))
-
+- `System.Generics.Collections` [saiba+](http://docwiki.embarcadero.com/CodeExamples/Sydney/en/Generics_Collections_TList_(Delphi))
+  - `.TList<T>`
+  - `.TDictionary<TKey,TValue>`
+  - `.TStack<T>`
+  - `.IComparable<T>`
+  - `.IEnumerator<T>`
+  - `.TObjectList<T>`
+  - `.TObjectDictionary<TKey,TValue>`
+  - `.TObjectStack<T>`
+  
+  - 
 ~~~Delphi
 type
   TExemploGenerico< T > = class
