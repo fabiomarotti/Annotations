@@ -23,7 +23,7 @@
 - O Projeto Package possui duas pastas:
   - `Contains` : possui arquivos *unit.pas*
   - `Requires` : possui arquivos *rtl.dcp*
-  - oculta direotrio de outras pastas 
+  - oculta o diretrio de outras pastas ao projeto 
 - Para um TipoClasse aparecer no Object Inspector, precisa ser: TPersistent, TComponent, ..
   - TPersistent: prove funcionalidade para persistit no `dfm` 
   - TComponent herda de TPersistent
