@@ -16,10 +16,11 @@
 
 ### Informações
 - `*.dproj` : arquivo do Projeto do Pacote
-- `*.dpk` : arquivo fonte do projeto pacote
-- `*.bpl` : 
-- `*.dcp`  : ../Requires/trl.dcp
-- Possui duas pastas:
+- `*.dpk` : arquivo fonte do Projeto do Pacote
+- `*.bpl` (Borland Package Library) : é uma biblioteca específica para sistemas desenvolvidos em Delphi. (tipo DLL: Dinamic Link Library) 
+- `*.dcp` (Delphi Compiled Package)  : é uma imagem binária que contém um cabeçalho de pacote e a concatenação de todos os arquivos de unidade compilados em Delphi em seu pacote.
+  - Local padrão: `C:\Users\Public\Documents\Embarcadero\Studio\21.0\DCP`
+- O Projeto Package possui duas pastas:
   - `Contains` : possui arquivos *unit.pas*
   - `Requires` : possui arquivos *rtl.dcp*
   - oculta direotrio de outras pastas 
