@@ -13,7 +13,10 @@
 - VCL (Visual Component Library)
 - CLX (Component Library for Cross Platform) 
   - Borland Kylix 
-
+- Delphi RTL (Run-Time Library) : unidades básicas que dão suporte a VCL e FireMonkey [ver+](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Using_the_RTL_(Run-Time_Library)), como:
+  -  TObject 
+  -  TPersistent 
+  -  TComponent 
 ----
 
 > História:
