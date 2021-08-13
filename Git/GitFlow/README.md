@@ -10,7 +10,23 @@
   - `Hotfix` ou _branch hotfix_ (conserto urgente) é a ramificação para atualizações realizadas na master.
 
 <img src="https://github.com/fabiomarotti/Annotations/blob/main/Git/GitFlow/img/img_gitflow.png"  width="1024" height="" />
+
 <center> Figura 1: GitFlow </center>
+
+# Example text {style=text-align:center}
+
+<div align="center">
+  my text here.
+</div>
+
+[Click here](http://exmaple.com){: .btn .btn-primary }
+
+Lead information paragraph
+{: .lead }
+
+-> This is center aligned <-
+
+
 
 # Trunk Based Development
 
