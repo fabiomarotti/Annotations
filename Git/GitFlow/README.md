@@ -34,5 +34,5 @@
     - `Tag` é o versionamento do projeto final.  
   
 <img src="https://github.com/fabiomarotti/Annotations/blob/main/Git/GitFlow/img/img_trunk_pick.png"  width="1024" height="" />
-<div align="center"> *Figura* 2: Trunk Based Development </div>
+<div align="center"> Figura 2: Trunk Based Development </div>
 <br />
