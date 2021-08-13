@@ -57,7 +57,7 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
   - nome dos arquivos/diretórios a serem ignorados são separados por linhas
   - [criar arquivo .gitignore](https://www.toptal.com/developers/gitignore) 
 
-> `git status` rastreia por arquivos na `Stage Changes` para serem commitados, por isso o arquivo `.gitignore` tem o seu papel de alterar o `git status` criando exceções para que se evite o commit de arquivos indevidos (ou muitos grandes).
+> `git status` rastreia por arquivos na `Stage Changes` para serem commitados, por isso o arquivo `.gitignore` tem o seu papel de alterar o _git status_, criando exceções para que se evite o commit de arquivos indevidos (ou muitos grandes).
 
 
 ### `git --version` 
