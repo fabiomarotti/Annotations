@@ -7,6 +7,28 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **GitHub**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
 - `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
+  - Centralized Workflow: commit local direto na master remote
+  - Feature Branch Workflow : criar Branch para cada alteração e fazer Merge na master
+  - GitFlow Workflow: 
+  - Forking Workflow
+
+- Issues: Tarefas numeradas a serem realizadas
+
+pull request:
+merge request
+
+deploy : compila e
+merge: finaliza
+
+- calc
+  - trunk
+  - branches
+    - my-calc-branch 
+
+##  --
+Branch_Nome_numero
+issue : #numero
+
 
 # IDE
 - https://www.gitkraken.com/
@@ -496,10 +518,14 @@ git pull request
 - `Branch`:
   -  `Master` : Conterá a **versão** principal do repositório
   -  `Develop` : 
-  -  `Release`
+  -  `Release`: para realziar testes e validação
   -  `Feature`
   -  `Hotfix`
- 
+
+### GitFlow e Trunk Based Development
+- Main
+- Develop
+- Feature Branch
  
  ### Exemplos para os nomes:
 - de `features`:
