@@ -19,7 +19,9 @@
 > A *Realease Branch* recebe uma copia da branch *Develop* para que possam serem feitas os testes e validações.
 > A validações são retornada com `Pull Request`, tanto para *Develop* como para *Master*. 
 > Na *Master* são ralizadas *Tags* que marcam os `Pull Request` vindo da *Realease*. 
-> Para _bugs_ encontrados na *Main*, cria-se uma branch *Hotfix*, derivada da *Master* (com tag) ao qual seram realizadas as correções e em seguida seram enviadas para *Develop* e *Master*. <br />
+> Para _bugs_ encontrados na *Main*, cria-se uma branch *Hotfix*, derivada da *Master* (com tag) ao qual seram realizadas as correções e em seguida seram enviadas para *Develop* e *Master*. 
+<br />
+<br />
 
 
 # Trunk Based Development
@@ -32,5 +34,5 @@
     - `Tag` é o versionamento do projeto final.  
   
 <img src="https://github.com/fabiomarotti/Annotations/blob/main/Git/GitFlow/img/img_trunk_pick.png"  width="1024" height="" />
-<div align="center"> Figura 2: Trunk Based Development </div>
+<div align="center"> *Figura* 2: Trunk Based Development </div>
 <br />
