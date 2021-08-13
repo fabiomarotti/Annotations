@@ -48,17 +48,17 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - GitHub alterou o nome do branch padrão de `master` para `main`
 - dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
 - Arquivo `.gitignore`
+  - `#` comentários
+  - `*` nenhum a muitos caracteres 
+  - `?` um único caractere
+  - `!` negação da ignoração (permissão) 
+  - `nome_diretorio/` ignora o diretório e seus aquivos  
+  - `**/nome_diretorio` ignora o **todos** os diretório e seus aquivos  
+  - nome dos arquivos/diretórios a serem ignorados são separados por linhas
+  - [criar arquivo .gitignore](https://www.toptal.com/developers/gitignore) 
 
 > `git status` rastreia por arquivos na `Stage Changes` para serem commitados, por isso o arquivo `.gitignore` tem o seu papel de alterar o `git status` criando exceções para que se evite o commit de arquivos indevidos (ou muitos grandes).
 
-- `#` comentários
-- `*` nenhum a muitos caracteres 
-- `?` um único caractere
-- `!` negação da ignoração (permissão) 
-- `nome_diretorio/` ignora o diretório e seus aquivos  
-- `**/nome_diretorio` ignora o **todos** os diretório e seus aquivos  
-- nome dos arquivos/diretórios a serem ignorados são separados por linhas
-- [criar arquivo .gitignore](https://www.toptal.com/developers/gitignore) 
 
 ### `git --version` 
 - (versão atual do git)
