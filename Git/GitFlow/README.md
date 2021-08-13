@@ -13,6 +13,15 @@
 <div align="center"> Figura 1: GitFlow </div>
 <br />
 
+> O trabalho é realizado na *Main* e *Develop* <br />
+> Cada funcionalidade é realizada na *Feature Branch*, tal que, essas funcionalidades são baseadas na branch *Develop*. <br />
+> O `Pull Request` é realizado com a passagem da *Feature Branch* para *Develop*. <br />
+> A *Realease Branch* recebe uma copia da branch *Develop* para que possam serem feitas os testes e validações.<br />
+> A validações são retornada com `Pull Request`, tanto para *Develop* como para *Master*. <br />
+> Na *Master* são ralizadas *Tags* que marcam os `Pull Request` vindo da *Realease*. <br />
+> Para _bugs_ encontrados na *Main*, cria-se uma branch *Hotfix*, derivada da *Master* (com tag) ao qual seram realizadas as correções e em seguida seram enviadas para *Develop* e *Master*. <br />
+
+
 # Trunk Based Development
 
 - `Branch` (ramificação) é um repositório paralelo ao qual o projeto terá de acordo com sua evolução (snapshots) 
