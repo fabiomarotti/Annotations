@@ -117,9 +117,10 @@ git checkout -b main
 // enviando ao Repositório Remoto
 git push origin main
 ~~~
-
 <br>
----- 
+
+----- 
+
 <br>
 
 # Comandos do Git
