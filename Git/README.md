@@ -11,14 +11,14 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
   - *Feature Branch Workflow* : criar Branch para cada alteração e fazer Merge na master
   - *GitFlow Workflow* : 
   - *Forking Workflow* :
-  
 - Issues: Tarefas numeradas a serem realizadas
+
 # IDEs para Git
 - [GitKraken](https://www.gitkraken.com/)
 - [TortoiseGit](https://tortoisegit.org/download/)
 - [GitHub Desktop](https://desktop.github.com/)
 
-# Considerações
+##Considerações ao GitHub
 - GitHub alterou o nome do branch padrão de `master` para `main`
 - dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
 
