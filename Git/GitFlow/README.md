@@ -13,8 +13,7 @@
 <div align="center"> Figura 1: GitFlow </div>
 <br />
 
-> O trabalho é realizado na *Main* e *Develop* <br />
-> Cada funcionalidade é realizada na *Feature Branch*, tal que, essas funcionalidades são baseadas na branch *Develop*. <br />
+> O trabalho é fundamentalmente realizado nas branchs *Main* e *Develop*. Cada funcionalidade é realizada na *Feature Branch*, tal que, essas funcionalidades são baseadas na branch *Develop*. <br />
 > O `Pull Request` é realizado com a passagem da *Feature Branch* para *Develop*. <br />
 > A *Realease Branch* recebe uma copia da branch *Develop* para que possam serem feitas os testes e validações.<br />
 > A validações são retornada com `Pull Request`, tanto para *Develop* como para *Master*. <br />
