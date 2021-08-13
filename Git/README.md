@@ -4,9 +4,9 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `Git` software de versionamento, nele se realiza os comandos via terminal **Git BASH** para efetuar o versionamento de um projeto.
 - `GitHub` é uma plataforma de repositórios remoto que hospeda os codigos-fontes e arquivos de controle de versão usando **Git**. 
   - `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **GitHub**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
-  - `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
+  - `GitHub Gist` é um serviço do **GitHub** destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitLab` semelhante/concorrente ao **GitHub**, mas permite armazenar código em servidores próprios
-- `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
+- `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ de um repositório.
   - *Centralized Workflow*: commit local direto na master remote
   - *Feature Branch Workflow* : criar Branch para cada alteração e fazer Merge na master
   - *GitFlow Workflow* : 
@@ -18,9 +18,7 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - [TortoiseGit](https://tortoisegit.org/download/)
 - [GitHub Desktop](https://desktop.github.com/)
 
-##Considerações ao GitHub
-- GitHub alterou o nome do branch padrão de `master` para `main`
-- dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
+
 
 ## Ciclo de vida de um arquivo no Git
 - Arquivo: Não Rastreado (**Untracked**) : (arquivo novo, criado e não add para a Staging)
@@ -46,7 +44,21 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 <br>
 
 
-### Configuração
+## Configuração
+- GitHub alterou o nome do branch padrão de `master` para `main`
+- dependendo da versão do `Git` instalada, o `git init` gerará uma branch `master` ao inves de `main`
+- Arquivo `.gitignore`
+
+> `git status` rastreia por arquivos na `Stage Changes` para serem commitados, por isso o arquivo `.gitignore` tem o seu papel de alterar o `git status` criando exceções para que se evite o commit de arquivos indevidos (ou muitos grandes).
+
+- `#` comentários
+- `*` nenhum a muitos caracteres 
+- `?` um único caractere
+- `!` negação da ignoração (permissão) 
+- `nome_diretorio/` ignora o diretório e seus aquivos  
+- `**/nome_diretorio` ignora o **todos** os diretório e seus aquivos  
+- nome dos arquivos/diretórios a serem ignorados são separados por linhas
+- [criar arquivo .gitignore](https://www.toptal.com/developers/gitignore) 
 
 ### `git --version` 
 - (versão atual do git)
@@ -62,6 +74,14 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 ### `git help`
 - `git help` ajuda geral 
   - `git help -a` ajuda específica (tambem se encontra no c:/.../git-doc)
+
+  
+### Comandos para se criar um arquivo gitignore global
+- `git add .gitignore` criar arquivo
+- `git commit -m "Arquivo gitignore criado!"`
+- `git config --global core.excludesFile ~/.gitignore` criar arquivo global (ignorado por qualquer qualquer repositorio) 
+- `git rm -r --cached` substituir arquivo ja existente
+
 
 ### Iniciando o repositório 
 -  Preparando a pasta do projeto para que ela comece a ser versionada pelo Git.
@@ -469,31 +489,10 @@ git pull request
 ~~~
 
 
-# 5 Em analise
-
-
-
-
 ---
 
 
-# Arquivo `.gitignore`
-> `git status` rastreia por arquivos na `Stage Changes` para serem commitados, por isso o arquivo `.gitignore` tem o seu papel de alterar o `git status` criando exceções para que se evite o commit de arquivos indevidos (ou muitos grandes).
 
-- `#` comentários
-- `*` nenhum a muitos caracteres 
-- `?` um único caractere
-- `!` negação da ignoração (permissão) 
-- `nome_diretorio/` ignora o diretório e seus aquivos  
-- `**/nome_diretorio` ignora o **todos** os diretório e seus aquivos  
-- nome dos arquivos/diretórios a serem ignorados são separados por linhas
-- [criar arquivo .gitignore](https://www.toptal.com/developers/gitignore) 
-  
-### Comandos para se criar um arquivo gitignore global
-- `git add .gitignore` criar arquivo
-- `git commit -m "Arquivo gitignore criado!"`
-- `git config --global core.excludesFile ~/.gitignore` criar arquivo global (ignorado por qualquer qualquer repositorio) 
-- `git rm -r --cached` substituir arquivo ja existente
   
 
 # Gitflow
@@ -518,17 +517,7 @@ git pull request
   - feature/new-contact-page
   
   
-  
-  # -- a  ver
-  
-  - alias graph='git log --all --decorate --oneline --graph'
-  - grap
-  - git checkout origin/master
-  - git fetch origin
-  - gir merge origin/main
-  - git push = git fetch+merge
 
-<br>
 ----
 <br>
  
