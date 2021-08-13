@@ -3,9 +3,9 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 
 - `Git` software de versionamento, nele se realiza os comandos via terminal **Git BASH** para efetuar o versionamento de um projeto.
 - `GitHub` é uma plataforma de repositórios remoto que hospeda os codigos-fontes e arquivos de controle de versão usando **Git**. 
+  - `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **GitHub**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
+  - `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitLab` semelhante/concorrente ao **GitHub**, mas permite armazenar código em servidores próprios
-- `GitHub Pages` hospedagem de uma página em HTML, CSS e JavaScript no proprio **GitHub**. [+ detalhes](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
-- `GitHub Gist` é um serviço do **GitHub* destinado para armazenar arquivos, partes de códigos ou ate mesmo códigos inteiros. [+ detalhes](https://docs.github.com/pt/github/writing-on-github/creating-gists)
 - `GitFlow` é um modelo de workflow para estruturar de forma eficiente as _branchs_ um repositório.
   - *Centralized Workflow*: commit local direto na master remote
   - *Feature Branch Workflow* : criar Branch para cada alteração e fazer Merge na master
