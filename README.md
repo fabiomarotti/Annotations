@@ -34,6 +34,7 @@ Repositório com as minhas anotações durante o estudo
 
 -----
 
+- Familiaridade
 - Conhecimento
 - Experiência
 - Vivência
