@@ -10,4 +10,14 @@
   - `Msg`: onde passamos a constante que define a mensagem;   
   - `wParam` e `lParam` que são os parâmetros que a mensagem utiliza.
 
+- Para adicionar uma mensagem à fila do thread associado a outra janela, você precisa usar a PostMessagefunção API do Windows.
+~~~Delphi
+PostMessage(WindowHandle, Msg, WParam, LParam);
+~~~
 
+> pula para o proximo controle da aplicação
+~~~Delphi
+// No evento OnKeyDown do Form
+
+if (Key = Vk_return) then Perform(Wm_NExtDlgCtl,0,0);
+~~~
