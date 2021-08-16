@@ -31,3 +31,9 @@ Repositório com as minhas anotações durante o estudo
 - 8  – Mongo (or MySQL.)
 - 9  –  back-end xp @ your 1st job.
 - 10 – You're a Full Stack dev.
+
+-----
+
+- Conhecimento
+- Experiência
+- Vivência
