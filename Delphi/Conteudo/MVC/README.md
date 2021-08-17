@@ -72,3 +72,4 @@ end;
 ~~~
 
 [link 1](https://www.devmedia.com.br/artigo-clube-delphi-102-aplicacoes-win32-com-mvc/11760)
+[link 2](https://www.youtube.com/playlist?list=PLscQ8amWtsz6BYVdWKJb8A2bBC9OtfhP9)
