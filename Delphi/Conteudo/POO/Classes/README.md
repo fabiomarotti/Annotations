@@ -3,13 +3,13 @@
 - `uses` System.Classes;
 
 
-> Declaração de classe vazia
+#### Declaração de uma classe vazia
 ~~~Delphi
 type
   TPessoa = class;
 ~~~
 
-> Declaração com classes auto-relacionadas (cross-references)
+#### Declaração com classes auto-relacionadas (cross-references)
 ~~~Delphi
 type
   TMarido = class;
@@ -23,7 +23,7 @@ type
   end;
 ~~~
 
-> Construtor e Destrutor
+#### Construtor e Destrutor
 - Construtor Primário e Secundário.
 
 > o construtor Secundário faz uso do construtor Primário. 
@@ -50,7 +50,7 @@ End;
 // implementações das funções.
 ~~~
 
-> Getters e Setters exemplo 1
+#### Property (Getters e Setters) : exemplo 1
 ~~~Delphi
 type
 
@@ -68,7 +68,7 @@ end.
 ~~~
 
 
-> Getters e Setters exemplo 2
+#### Property (Getters e Setters) : exemplo 2
 ~~~Delphi
 type
 
