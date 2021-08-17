@@ -40,6 +40,10 @@
 
 ---- 
 
+- reInstalar Help
+> Tools / Manager Platforms / Additional Options
+
+---- 
 > Arquivos importantes no Delphi:
 
 - `Project Group`
