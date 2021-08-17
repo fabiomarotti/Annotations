@@ -12,12 +12,14 @@ type
 #### Declaração com classes auto-relacionadas (cross-references)
 ~~~Delphi
 type
+  // Classe apenas declarada
   TMarido = class;
   
   TEsposa = class
     marido: TMarido;
   end;
   
+  // Classe Implementada
   TMarido class
     esposa: TEsposa;
   end;
