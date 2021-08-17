@@ -68,22 +68,33 @@
 ## Modificadores dos métodos
 
 - `overload` 
-
 > função com mesmo nome, mas com assinaturas diferentes.
 ~~~Delphi
-  NomeTabela( const Value: Integer) : String; overload;
-  NomeTabela                        : String; overload;
+  function NomeFuncao( const Value: Integer) : String; overload;
+  function NomeFuncao                        : String; overload;
 ~~~
 
 - `override` e `virtual`
-
 > Função com o mesmo nome e a mesma assinatura, mas será _reescrita_ a implementação do seu conteudo na classe filho. <br>
 > Usa-se o modificador `virtual` na "assinatura do método pai" para permitir a reescrita no método filho. <br>
 > Logo, `Virtual; Abstract;` : torna o método apenas uma assinatura (não terá uma implementação na classe pai), forçando a ser _escrito_ sua implementação no método filho (e nao reescrito).
+~~~Delphi
+  function NomeFuncao( const Value: Integer) : String;    Virtual;
+  // implementação A
+~~~
+
+~~~Delphi
+  function NomeFuncao( const Value: Integer) : String;    Override;
+  // implementação B
+~~~  
 
 - `class function`
-
 > O modificar _class function_ faz referência a classe (não a referência do objeto instânciado), que por outro lado tem-se a _function_ que faz referência a função do Objeto instanciado.
+~~~Delphi
+  class function NomeFuncao( const Value: Integer) : String;
+~~~
+
+
 
 ### Instanciação do objeto
 ~~~Delphi
