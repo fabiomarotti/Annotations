@@ -70,3 +70,5 @@ public
   );
 end;
 ~~~
+
+[link 1](https://www.devmedia.com.br/artigo-clube-delphi-102-aplicacoes-win32-com-mvc/11760)
