@@ -67,6 +67,9 @@
 
 ## Modificadores dos métodos
 
+- `abstract`
+> Indica que a função não sera implementa na classe em que foi criada, mas sera implementada na Classe ao qual recebera a herança.
+
 - `overload` 
 > função com mesmo nome, mas com assinaturas diferentes.
 ~~~Delphi
@@ -93,6 +96,9 @@
 ~~~Delphi
   class function NomeFuncao( const Value: Integer) : String;
 ~~~
+
+- `Inherited`
+- > Indica que a função esta sendo herdanda (trazendo uma cópia) de uma classe pai.
 
 
 
