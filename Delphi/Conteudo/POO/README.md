@@ -20,7 +20,8 @@
   - **Strict Protected** : Acesso apenas pelos descendents.
 
   
-- ✅ Herança (Inheriting)
+- ✅ Herança 
+  - `Inheriting`
 
 - ✅ Polimorfismo (uma ação pode ser exercida de varias formas)
   - **Subtyping** (_Override_) : _Sobreescrita_, do método herdado.
