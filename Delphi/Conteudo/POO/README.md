@@ -54,6 +54,8 @@
 - Atributos iniciados com a letra `F` (Field: Campo)
 - Interfaces inciadas com a letra `I` (Interface) 
 - Property com prefixos de `set` e `get`, ou `FnomeCampo` em caso de acesso direto.
+- Construtores nomeados como `Create`
+- Destrutores nomeados como `Destroy`
 
 
 ## Indice
