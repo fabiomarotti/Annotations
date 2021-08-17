@@ -10,6 +10,15 @@
   - `Msg`: onde passamos a constante que define a mensagem;   
   - `wParam` e `lParam` que são os parâmetros que a mensagem utiliza.
 
+~~~Delphi
+function SendMessage(
+                        hWnd: HWND     ; 
+                        Msg: UINT      ; 
+                        wParam: WPARAM ; 
+                        lParam: LPARAM  )   : LRESULT;  stdcall;
+~~~                      
+
+
 - Para adicionar uma mensagem à fila do thread associado a outra janela, você precisa usar a PostMessagefunção API do Windows.
 ~~~Delphi
 PostMessage(WindowHandle, Msg, WParam, LParam);
@@ -21,3 +30,22 @@ PostMessage(WindowHandle, Msg, WParam, LParam);
 
 if (Key = Vk_return) then Perform(Wm_NExtDlgCtl,0,0);
 ~~~
+
+------ 
+
+#### Passar o foco usando Enter
+> O método SendMessage envia uma mensagem *WM_NEXTDLGCTL* ao handle do próprio formulário para que o mesmo passe o foco do componente ativo para o próximo da janela.
+
+- Formulário VLC:
+  - Habilitar `KeyPreview`: True.
+- Adicionar código ao `OnKeyPress`:
+
+~~~Delphi
+//---
+// Enter #13
+if Key = #13 then 
+begin
+  Key := #0;
+  SendMessage(handle, WM_NEXTDLGCTL, 0, 0);
+end;
+~~~~ 
