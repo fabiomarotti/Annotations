@@ -49,125 +49,19 @@
 
 [continuar video](https://www.youtube.com/watch?v=3ugwf8FQqVo)
 
+## Boas Práticas
+- Classes iniciadas com a letra `T` (Type : Tipo)
+- Atributos iniciados com a letra `F` (Field: Campo)
+- Interfaces inciadas com a letra `I` (Interface) 
+- Property com prefixos de `set` e `get`, ou `FnomeCampo` em caso de acesso direto.
+
+
 ## Indice
 - Classe
 - Interface
 - Sobrecarga
 
 
-# Classe
-- `uses` System.Classes;
-
-
-> Declaração de classe vazia
-~~~Delphi
-type
-  TPessoa = class;
-~~~
-
-> Declaração com classes auto-relacionadas (cross-references)
-~~~Delphi
-type
-  TMarido = class;
-  
-  TEsposa = class
-    marido: TMarido;
-  end;
-  
-  TMarido class
-    esposa: TEsposa;
-  end;
-~~~
-
-> Construtor e Destrutor
-- Construtor Primário e Secundário.
-
-> o construtor Secundário faz uso do construtor Primário. 
-~~~Delphi
-type
-  TPessoa = class
-  public 
-      constructor Create(const Nome, Telefone: String);
-      constructor Create(const Nome: SAtring);
-      function Nome: String;
-      function Telefone: String;
-  private
-      FNome: String;
-      FTelefone: String;
-  end;
-   
-implementation
-
-constructor TPessoa.Create(const Nome: String);
-Begin
-  Create(Login, '(19) 55334499');
-End;
-
-// implementações das funções.
-~~~
-
-> Getters e Setters exemplo 1
-~~~Delphi
-type
-
-  TPesosa = class
-  private
-    FNome: String;
-    function OlaNome: String;
-  public
-    property Nome: String read FNome write FNome;
-  protected
-    function NomeValido: Bolean;
-  end;
-
-end.
-~~~
-
-
-> Getters e Setters exemplo 2
-~~~Delphi
-type
-
-  TPesosa = class
-  private
-    FNome: String;
-    procedure SetNome(const Value: string);
-  public
-    property Nome: String read FNome write SetNome;
-  end;
-
-implementation
-
-procedure TPessoa.SetNome(const Value: string);
-begin
-  FNome := Value;
-end;
-
-end.
-~~~
-
-> Interface
-~~~Delphi
-type
-  IPessoa = interface
-      function Nome: String;
-      function Telefone: String;
-  end;
-  
-  TPessoa = class(TInterfaceObject, IUser)
-  public 
-      constructor Create(const Nome, Telefone: String);
-       class function New(const Nome, Telefone: String) : IPessoa;
-       class function New(const Nome: String) : IPessoa;
-      function Nome: String;
-      function Telefone: String;
-  private
-      FNome: String;
-      FTelefone: String;
-  end;
-  
-
-~~~
 
 
 
