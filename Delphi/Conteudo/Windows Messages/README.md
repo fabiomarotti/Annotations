@@ -37,9 +37,9 @@ if (Key = Vk_return) then Perform(Wm_NExtDlgCtl,0,0);
 > O método SendMessage envia uma mensagem *WM_NEXTDLGCTL* ao handle do próprio formulário para que o mesmo passe o foco do componente ativo para o próximo da janela.
 
 - Formulário VLC:
-  - Habilitar `KeyPreview`: True.
-- Adicionar código ao `OnKeyPress`:
-
+  - Propriedade: `KeyPreview`: True.
+  - Evento: `OnKeyPress` : (Codigo abaixo)
+  
 ~~~Delphi
 //---
 // Enter #13
