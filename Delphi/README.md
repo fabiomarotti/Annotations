@@ -39,6 +39,29 @@
 - Pointer : Ponteiros
 - `with` : [exemplo](https://www.devmedia.com.br/forum/como-usar-o-comando-with/146587)
 
+
+## Hereditariedade TObject
+- TObject
+  - TPersistent
+    - TComponent
+      - TControl
+        - TWinControl
+          - TCustomControl
+            - TCustomPanel
+
+## Controle de Componentes
+
+- `Owner` (Proprietário)
+  - Quando inserimos um componente no formulário em tempo de design, ou seja, quando um componente é arrastado para o formulário, o Delphi cria uma instância do mesmo, passando o formulário como parâmetro no construtor do componente, indicando que ele é o owner do component.
+  - se torna o Pai, responsavel pelos componentes Filhos (liberação de memória).
+  - Chamar o Desctructor do Owner aciona o desctructor dos filhos.
+
+
+- `Parent` (Pai)
+  - estabelece também uma relação de conteúdo e container
+- `Self`
+
+
 ## Unit
 ~~~Delphi
 Unit exemplo_unit;
