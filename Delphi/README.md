@@ -44,6 +44,9 @@
 - TObject
   - TPersistent
     - TComponent
+    - TCollection
+      - TOwnedCollection
+    - TCollectionItem
       - TControl
         - TWinControl
           - TCustomControl
@@ -59,7 +62,9 @@
 
 - `Parent` (Pai)
   - estabelece também uma relação de conteúdo e container
+
 - `Self`
+  - Self.Parent ?
 
 
 ## Unit
