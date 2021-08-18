@@ -55,10 +55,19 @@
 ## Controle de Componentes
 
 - `Owner` (Proprietário)
-  - Quando inserimos um componente no formulário em tempo de design, ou seja, quando um componente é arrastado para o formulário, o Delphi cria uma instância do mesmo, passando o formulário como parâmetro no construtor do componente, indicando que ele é o owner do component.
-  - se torna o Pai, responsavel pelos componentes Filhos (liberação de memória).
-  - Chamar o Desctructor do Owner aciona o desctructor dos filhos.
+> Quando inserimos um componente no formulário em tempo de design, ou seja, quando um componente é arrastado para o formulário, o Delphi cria uma instância do mesmo, passando o formulário como parâmetro no construtor do componente, indicando que ele é o owner do component. <br>
+> se torna o Pai, responsavel pelos componentes Filhos (liberação de memória). <br>
+> Chamar o Desctructor do Owner aciona o desctructor dos filhos.
 
+~~~Delphi
+constructor Tcomponent.Create(AOwner: TComponent);
+begin
+  FComponentStyle := [csInheritable];
+  if AOwner <> nil then
+    AOwner.InsertComponent(Self);
+end;
+~~~
+> se AOwner for <> nil, então é executado o método InsertComponent do AOwner, passando o próprio objeto que está sendo criado como parâmetro. Este método por sua vez, se encarregará de adicionar o componente criado na lista de componentes dos quais o Owner é o responsável. Pronto, assim está estabelecida a relação “Pai“ e “Filho” dos componentes.
 
 - `Parent` (Pai)
   - estabelece também uma relação de conteúdo e container
