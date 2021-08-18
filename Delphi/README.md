@@ -67,6 +67,8 @@ begin
     AOwner.InsertComponent(Self);
 end;
 ~~~
+[ver exemplo](https://www.devmedia.com.br/delphi-parent-e-owner-o-que-sao/13887)
+
 > se AOwner for <> nil, então é executado o método InsertComponent do AOwner, passando o próprio objeto que está sendo criado como parâmetro. Este método por sua vez, se encarregará de adicionar o componente criado na lista de componentes dos quais o Owner é o responsável. Pronto, assim está estabelecida a relação “Pai“ e “Filho” dos componentes.
 
 - `Parent` (Pai)
