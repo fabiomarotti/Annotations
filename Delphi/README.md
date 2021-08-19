@@ -41,17 +41,19 @@
 
 
 ## Hereditariedade TObject
-- TObject
-  - TPersistent
-    - TComponent
+- `TObject`
+  - `TPersistent`
+    - `TComponent`
       - TControl
         - TWinControl
+          - TCustomControl
+            - TCustomPanel
           - TScrolllingWinControl
             - TCustomForm
               - TForm
-    - TCollection
+    - `TCollection`
       - TOwnedCollection
-    - TCollectionItem
+    - `TCollectionItem`
       - TControl
         - TWinControl
           - TCustomControl
