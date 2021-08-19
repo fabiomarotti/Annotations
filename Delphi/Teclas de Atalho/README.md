@@ -23,7 +23,7 @@
 - `Ctrl` + `Shift` + `F9`   : Executar sem Debug
 - `Ctrl` + `Shift` + `seta` : Alternar entre a Declaração e a Implementação de uma função/procedimento. (tambem move componentes na tela)
 - `Ctrl` + `Shift` + `A`    : Importar no campo __uses__ bibliotecas referente a palavra sobre o curso do teclado.
-- `Ctrl` + `Shift` + `C`    : gerar implementação ou declaração de funções/procedimentos.
+- `Ctrl` + `Shift` + `C`    : (Class Completion) gerar implementação ou declaração de funções/procedimentos/property.
 - `Ctrl` + `Shift` + `G`    : gerar ID para __interfaces__ (identifica caso aja outros executaveis)
 - `Ctrl` + `Shift` + `I`    : Avança multiplas linhas selecionadas.
 - `Ctrl` + `Shift` + `L`    : Refatoração de uma variavel (testar pag 56mc)
@@ -37,9 +37,11 @@
 - `Alt` + `Shift` + `seta` : selecionar codigo, forma quadrada
 - `Alt` + `Shift` + `F11`  : Structure
 
- 
-# Debugando 
+# BookMarks
+- `Ctrl` + `Shift` + `0..9` : Cria/Remove uma marcação.
+- `Ctrl` + `0..9` : Navega pelas macações.
 
+# Debug
 - `F9`: **Run** - Executar em Modo de Debug.
   - Executa todo o código ate o próximo breakpoint.
 - `F8`: **Step Over** - (Passar por cima) : ir para proxima instrução.
