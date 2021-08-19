@@ -44,6 +44,11 @@
 - TObject
   - TPersistent
     - TComponent
+      - TControl
+        - TWinControl
+          - TScrolllingWinControl
+            - TCustomForm
+              - TForm
     - TCollection
       - TOwnedCollection
     - TCollectionItem
