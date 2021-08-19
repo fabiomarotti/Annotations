@@ -17,10 +17,11 @@
 
 ### Informações sobre Packages
 - `*.dproj` (Delphi Project) : arquivo fonte (Nutela) do Projeto do Pacote
-- `*.dpk` (Delphi Package) : arquivo fonte (Raiz) do Projeto do Pacote
-- `*.bpl` (Borland Package Library) : é uma biblioteca específica para sistemas desenvolvidos em Delphi. (tipo DLL: Dinamic Link Library) 
-- `*.dcp` (Delphi Compiled Package)  : é uma imagem binária que contém um cabeçalho de pacote e a concatenação de todos os arquivos de unidade compilados em Delphi em seu pacote.
-  - Local padrão: `C:\Users\Public\Documents\Embarcadero\Studio\21.0\DCP`
+- `*.dpk` (Delphi Package) : arquivo fonte (Raiz) do Projeto do Pacote [ver+](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Delphi_Package_Source_File_(*.dpk))
+- `*.bpl` (Borland Package Library) : é uma biblioteca específica para sistemas desenvolvidos em Delphi. (tipo DLL: Dinamic Link Library) [ver+](http://docwiki.embarcadero.com/RADStudio/Sydney/en/API_(*.bpl,_*.dylib,_*.so))
+- `*.dcu` (Delphi Compiled Unit) : são arquivos compilados de cada unit em um projeto. [ver+](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Delphi_Compiled_Unit_File_(*.dcu))
+- `*.dcp` (Delphi Compiled Package)  : é um arquivo de pacote compilado, que consiste em ser uma imagem binária que contém um cabeçalho de pacote e a concatenação de todos os arquivos de unidade compilados em Delphi em seu pacote. [ver+](http://docwiki.embarcadero.com/RADStudio/Sydney/en/Delphi_Compiled_Package_File_(*.dcp))
+  - Local padrão da DCP: `C:\Users\Public\Documents\Embarcadero\Studio\21.0\DCP`
 - O Projeto Package possui duas pastas:
   - `Contains` : possui arquivos *unit.pas*
   - `Requires` : possui arquivos *rtl.dcp*
