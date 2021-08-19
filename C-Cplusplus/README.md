@@ -11,6 +11,13 @@
 int : idade;
 ~~~
 
+# Bibliotecas
+- `#include <stdio.h>` : para printf
+- `#include <stclib.h>` : malloc, sizof
+- `#include <cctype>` : para Uppcase
+
+
+
 # Caracteres representados por seqüências de escape
 - `\n` : nova linha 
 - `\t` : tabulação
