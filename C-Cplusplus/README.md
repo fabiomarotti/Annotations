@@ -11,3 +11,14 @@
 int : idade;
 ~~~
 
+# Caracteres representados por seqüências de escape
+- `\n` : nova linha 
+- `\t` : tabulação
+- `\b` : retrocesso 
+- `\r` : retorno de carro
+- `\f` : alimentação de formulário 
+- `\\` : contrabarra
+- `\’` : apóstrofo 
+- `\"` : aspas
+- `\0` : o caráter NULL
+- `\xxx` : qualquer padrão de bits xxx em octal
