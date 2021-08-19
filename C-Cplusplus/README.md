@@ -6,15 +6,21 @@
 - [Code Blocks](https://www.codeblocks.org/)
 
 # Declaraçaõ de Variaveis
-> [Tipo] : [Nome]
+> [Tipo_Variavel] : [Nome_Variavel]
 ~~~C
-int : idade;
+int       : inteiro;
+unsigned  : inteiroSemSinal;
+char      : caracter;
+long      : inteiro;
+float     : decimal;
+double    : decimal; 
 ~~~
 
 # Bibliotecas
 - `#include <stdio.h>` : para printf
 - `#include <stclib.h>` : malloc, sizof
 - `#include <cctype>` : para Uppcase
+- `#include <cmath>` : para constante pi, cos, sin, tan, acos, asin
 
 
 
