@@ -46,9 +46,9 @@
     - `TComponent`
       - TControl
         - TWinControl
-          - TCustomControl
+          - `TCustomControl`
             - TCustomPanel
-          - TScrolllingWinControl
+          - `TScrolllingWinControl`
             - TCustomForm
               - TForm
     - `TCollection`
