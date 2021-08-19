@@ -55,11 +55,6 @@ public
 [ver+ 01](http://docwiki.embarcadero.com/RADStudio/XE3/en/XML_Documentation_Comments)
 [ver+ 02](https://www.youtube.com/watch?v=bQ5dSiLfwZI)
 
-
-# BookMarks
-- `Ctrl` + `Shift` + `0..9` : Cria/Remove uma marcação.
-- `Ctrl` + `0..9` : Navega pelas macações.
-
 ## Region
 ~~~Delphi
 { $REGION 'Descrição da funcionalidade de um Botão: ACIONAR' }
@@ -71,5 +66,4 @@ public
 { $ENDREGION }
 ~~~
 
-## Class Completion
-- `Ctrl` + `Shift` + `C` : Auto-completa funções ou Property
+
