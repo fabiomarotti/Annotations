@@ -17,10 +17,13 @@ double    : decimal;
 ~~~
 
 # Bibliotecas
-- `#include <stdio.h>` : para printf
+- `#include <stdio.h>`  : para printf
 - `#include <stclib.h>` : malloc, sizof
-- `#include <cctype>` : para Uppcase
-- `#include <cmath>` : para constante pi, cos, sin, tan, acos, asin
+- `#include <cctype>`   : para Uppcase
+- `#include <string>`   : para manipular Strings
+- `#include <vector>`   : ??
+- `#include <deque>`    : ??
+- `#include <cmath>`    : para constante pi, cos, sin, tan, acos, asin
 
 
 
