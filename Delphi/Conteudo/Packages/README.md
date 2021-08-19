@@ -4,7 +4,7 @@
 - Pacotes são exibidos em `Project / Options /  Packages / (Design packages) / (Caminho do .bpl)`
 - Configurar o tempo de execução/design:
   - Setar um projeto do tipo __Package__
-  - `Project / Options / Description / Usage Options / (Designtime and runtime) e (Rebuild as needed)`
+  - `Project / Options / Description / (Usage Options) / (Designtime and runtime) e (Rebuild as needed)`
   - Project / Options / Delphi Compiler / ...
     - DCP output directory: __dcu__
     - Package output directory: __dcu__
