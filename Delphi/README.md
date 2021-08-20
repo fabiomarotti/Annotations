@@ -61,6 +61,11 @@
 
 ## Controle de Componentes
 
+-[Self](https://extremeprogramming.wordpress.com/2011/01/25/guia-iniciante-parte-1-self-o-que-e-delphi/)
+-[Owner](https://extremeprogramming.wordpress.com/2011/01/28/guia-iniciante-parte-2-owner-o-que-e-delphi/)
+-[Sender](https://extremeprogramming.wordpress.com/2011/02/03/guia-iniciante-parte-3-sender-o-que-e-delphi/)
+-[Parent](https://extremeprogramming.wordpress.com/2011/02/08/a-propriedade-parent-delphi/)
+
 #### `Self` (Eu mesmo, o próprio, dono do que chama)
 ~~~Delphi
 type
@@ -136,11 +141,16 @@ end;
 
 > se AOwner for <> nil, então é executado o método InsertComponent do AOwner, passando o próprio objeto que está sendo criado como parâmetro. Este método por sua vez, se encarregará de adicionar o componente criado na lista de componentes dos quais o Owner é o responsável. Pronto, assim está estabelecida a relação “Pai“ e “Filho” dos componentes.
 
-- `Parent` (Pai)
+#### `Parent` (Pai)
   - estabelece também uma relação de conteúdo e container
 
 - `Self`
   - Self.Parent ?
+
+
+#### `Sender` (Remetente)
+- Sender é o Objeto que chamou aquela função.
+
 
 
 ## Unit
