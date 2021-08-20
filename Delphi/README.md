@@ -61,7 +61,7 @@
 
 ## Controle de Componentes
 
-- `Self` (Eu mesmo, o próprio, dono do que chama)
+#### `Self` (Eu mesmo, o próprio, dono do que chama)
 ~~~Delphi
 type
   TPessoa = class
@@ -94,7 +94,7 @@ end;
  FormPrincipal := TFormPrincipal.Create(FormPrincipal);
 ~~~
 
-- `Owner` (Proprietário)
+#### `Owner` (Proprietário)
 - Heranças de TComponent possuem a propriedade *Owner*
 - Owner é uma propriedade que indica quem é o dono de um Componente
 - `nomeObjeto.Owner.Name` : retorna o nome do componente que é dono deste criado em nomeObjeto.
@@ -102,6 +102,23 @@ end;
 Exemplo: (TButton dentro de um TPanel): o Owner de TButton é o TPanel
 - (Tempo de Projeto) Clikando em um Componente X e apertando ESC, descobre-se o Owner do Componente X (e assim sucessivamente)
 - o parâmetro passado no *Create()* informará o Owner do componente a ser criado.
+
+> Exemplo de quem é o Owner
+~~~Delphi
+procedure TFormPrincipal.btnWhaIsOwnerClick(Sender: TObject);
+var
+  b1, b2, b3 : TButton;
+begin
+  b1 := TButton.Create(Self);
+  b2 := TButton.Create(b1);
+  b3 := TButton.Create(Application);
+
+  Edit1.Text := b1.Owner.ToString;  // TFormPrincipal
+  Edit2.Text := b2.Owner.ToString;  // TButton
+  Edit3.Text := b3.Owner.ToString;  // TApplication
+end;
+~~~
+
 
 > Quando inserimos um componente no formulário em tempo de design, ou seja, quando um componente é arrastado para o formulário, o Delphi cria uma instância do mesmo, passando o formulário como parâmetro no construtor do componente, indicando que ele é o owner do component. <br>
 > se torna o Pai, responsavel pelos componentes Filhos (liberação de memória). <br>
