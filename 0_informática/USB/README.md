@@ -1,5 +1,13 @@
 # USB (Universal Serial Bus)
 
+# Resumo
+
+| Especificação	| Velocidade	| Ano	  | Nome antigo	  | Nome pós USB 3.2  | 
+|---            |---          |---    |---            |---               |    
+| USB 3.0	      | 5 Gbps	    | 2009	| USB 3.1 Gen 1	| USB 3.2 Gen 1    | 
+| USB 3.1	      | 10 Gbps	    | 2017	| USB 3.1 Gen 2	| USB 3.2 Gen 2    | 
+| USB 3.2	      | 20 Gbps	    | 2019	| -         	  | USB 3.2 Gen 2x2  | 
+
 ### Lançamentos
 - USB 1.0 (1996)
 - USB 1.1 (1998) : de 1,5 Mbps até 12 Mbps
