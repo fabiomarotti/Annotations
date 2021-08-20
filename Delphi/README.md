@@ -66,7 +66,7 @@
 -[Sender](https://extremeprogramming.wordpress.com/2011/02/03/guia-iniciante-parte-3-sender-o-que-e-delphi/)
 -[Parent](https://extremeprogramming.wordpress.com/2011/02/08/a-propriedade-parent-delphi/)
 
-#### `Self` (Eu mesmo, o próprio, dono do que chama)
+### `Self` (Eu mesmo, o próprio, dono do que chama)
 ~~~Delphi
 type
   TPessoa = class
@@ -99,7 +99,7 @@ end;
  FormPrincipal := TFormPrincipal.Create(FormPrincipal);
 ~~~
 
-#### `Owner` (Proprietário)
+### `Owner` (Proprietário)
 - Heranças de TComponent possuem a propriedade *Owner*
 - Owner é uma propriedade que indica quem é o dono de um Componente
 - `nomeObjeto.Owner.Name` : retorna o nome do componente que é dono deste criado em nomeObjeto.
@@ -141,14 +141,14 @@ end;
 
 > se AOwner for <> nil, então é executado o método InsertComponent do AOwner, passando o próprio objeto que está sendo criado como parâmetro. Este método por sua vez, se encarregará de adicionar o componente criado na lista de componentes dos quais o Owner é o responsável. Pronto, assim está estabelecida a relação “Pai“ e “Filho” dos componentes.
 
-#### `Parent` (Pai)
+### `Parent` (Pai)
   - estabelece também uma relação de conteúdo e container
 
 - `Self`
   - Self.Parent ?
 
 
-#### `Sender` (Remetente)
+### `Sender` (Remetente)
 - Sender é o Objeto que chamou aquela função.
 
 
