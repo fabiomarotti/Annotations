@@ -5,6 +5,9 @@
 
 ## Comandos
 
+- `msg * oi`
+- `shutdown -r -t 15 -c "Mensagem teste"`
+
 - `Echo` :  exibe comandos ou resultados na tela
 - `Echo off` : desliga as mensagens nativas do prompt
 - `Echo on` : mostra informações e mensagens nativas do prompt, habilita a exibição das instruções no prompt do Windows
