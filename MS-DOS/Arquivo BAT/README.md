@@ -29,7 +29,7 @@
 - `SET x` : Exibe todas as variáveis iniciadas com a letra _x
 - `SET /A` (Arithmetic) : (nome_variavel)=(expressão aritmetica)
 - `SET /P` (Prompt)     : (nome_variavel)=(cadeia do prompt)
-- Aceso a variável:  `%nome_variavel%` 
+- Aceso a variável:  `%`nome_variavel`%` 
 
 | Operador              | Descrição                |
 |---                    |---                       |
