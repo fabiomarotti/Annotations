@@ -1,10 +1,9 @@
 # Arquivos .BAT (Batch) : Arquivos de Lote
-- é um código Script executado pelo utilitário do Windows built-in, chamado  (CLI) Windows Command-Line Interpreter
-- Escreve e executar comandos DOS
+- Um arquivo.bat é um código Script executado pelo utilitário do Windows built-in, chamado Windows Command-Line Interpreter (CLI).
+- Escrever e executar comandos DOS.
 - Execução sequencial por meio do *cmd.exe*
 - *.exe* faz com que o Windows coloca o código executável em Memória , em seguida, executa o programa
 - Em contrapartida, os arquivo *.exe* são códigos binários armazenados no formato Portable Executable (PE), que inclui vários cabeçalhos e seções
-
 - Salvar como: `"Arquivo.bat"`
 - Encoding : ANSI
 
@@ -28,8 +27,8 @@
 #### Variáveis
 - `SET`  : Exibe todas as variáveis de ambiente
 - `SET p` : Exibe todas as variáveis iniciadas com a letra _p_
-- `SET /A` : empressao
-- `SET /P` : varaivel=cadeia do prompt
+- `SET /A` (Arithmetic) : (nome_variavel)=(expressão aritmetica)
+- `SET /P` (Prompt)     : (nome_variavel)=(cadeia do prompt)
 
 
 | Operador              | Descrição                |
