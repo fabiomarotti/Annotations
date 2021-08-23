@@ -15,32 +15,34 @@
 - `/* comentario */` : comentário em varias linhas (não precisa usar OFF)
 - `::` : comentário em uma linha (são ignorados todo o caminho) (não precisa usar OFF) (usar *&* caso prosida de um comando)
 
-- `msg * oi` : Menssage Box (Titulo: Usuário, Data e hora)
-- `shutdown -r -t 15 -c "Mensagem teste"`
+- `MSG * oi` : Menssage Box (Titulo: Usuário, Data e hora)
+- `SHUTDOWN -r -t 15 -c "Mensagem teste"`
 
 #### Saida na tela
-- `Echo` :  exibe comandos ou resultados na tela
-- `Echo off` : desliga as mensagens nativas do prompt
-- `Echo on` : mostra informações e mensagens nativas do prompt, habilita a exibição das instruções no prompt do Windows
-- `Echo.` : é utilizado para pular uma linha
-- `@Echo` : Faz com que o prompt fique oculto durante toda execução
+- `ECHO` :  exibe comandos ou resultados na tela
+- `ECHO OFF` : desliga as mensagens nativas do prompt
+- `ECHO ON` : mostra informações e mensagens nativas do prompt, habilita a exibição das instruções no prompt do Windows
+- `ECHO.` : é utilizado para pular uma linha
+- `@ECHO` : Faz com que o prompt fique oculto durante toda execução
 
 #### Variáveis
-- `Set`  : Exibe todas as variáveis de ambiente
-- `Set p` : Exibe todas as variáveis iniciadas com a letra _p_
+- `SET`  : Exibe todas as variáveis de ambiente
+- `SET p` : Exibe todas as variáveis iniciadas com a letra _p_
+- `SET /A` : empressao
+- `SET /P` : varaivel=cadeia do prompt
 
-| Operador       | Descrição                |
-|---             |---                       |
-|   `(` `)`      | agrupamento              |
-|    `!` `~` `-` | operadores unários       |
-|    `*` `/` `%` | operadores aritméticos   |
-|    `+` `-`     | operadores aritméticos   |
-|    `<<` `>>`   | alternância lógica       |
-|    `&`         | bit a bit E              |
-|    `^`         | bit a bit exclusivo OU   |
-|     pipe /     | bit a bit OU             |
+
+| Operador              | Descrição                |
+|---                    |---                       |
+|   `(` `)`             | agrupamento              |
+|    `!` `~` `-`        | operadores unários       |
+|   `+` `-` `*` `/` `%` | operadores aritméticos   |
+|    `<<` `>>`          | alternância lógica       |
+|    `&`                | bit a bit E              |
+|    `^`                | bit a bit exclusivo OU   |
+|     pipe /             | bit a bit OU            |
 | `=`  `*=` `/=` `%=` `+=` `-=`  `&`= `^=` `|=` `<<=` `>>=`   | atribuição |
-| `,`          | separador de expressões   |
+|  `,`                  | separador de expressões   |
 
 - 
 - Cria variveis e atribui valores, sua referencia é por meio de `%` nome_variavel `%` 
