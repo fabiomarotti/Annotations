@@ -60,10 +60,10 @@ rem Inicializa o Notepad do Windows
 ~~~
 
 > Exemplo MOVE
-~~~MSDOS
+~~~
 @echo off
 move c:\temp\teste.bat c:\temp\teste\
 rem Movimenta o arquivo c:\temp\teste.bat para c:\temp\teste
 ~~~ 
 
-[link](https://www.youtube.com/watch?v=srP7Y3OGjtU&t=98s)
+- [link](https://www.youtube.com/watch?v=srP7Y3OGjtU&t=98s)
