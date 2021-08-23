@@ -29,7 +29,7 @@
 - `SET x` : Exibe todas as variáveis iniciadas com a letra _x
 - `SET /A` (Arithmetic) : (nome_variavel)=(expressão aritmetica)
 - `SET /P` (Prompt)     : (nome_variavel)=(cadeia do prompt)
-
+- Aceso a variável:  `%nome_variavel%` 
 
 | Operador              | Descrição                |
 |---                    |---                       |
@@ -43,8 +43,6 @@
 | `=`  `*=` `/=` `%=` `+=` `-=`  `&`= `^=` `|=` `<<=` `>>=`   | atribuição |
 |  `,`                  | separador de expressões   |
 
-- 
-- Cria variveis e atribui valores, sua referencia é por meio de `%` nome_variavel `%` 
 - `REM` : Adiciona comentário no script, o texto inserido após a instrução REM não é exibido na tela.
 - `CLS` : (Clear Screen) : Limpar tela
 
