@@ -26,7 +26,7 @@
 
 #### Variáveis
 - `SET`  : Exibe todas as variáveis de ambiente
-- `SET` x : Exibe todas as variáveis iniciadas com a letra _x
+- `SET x` : Exibe todas as variáveis iniciadas com a letra _x
 - `SET /A` (Arithmetic) : (nome_variavel)=(expressão aritmetica)
 - `SET /P` (Prompt)     : (nome_variavel)=(cadeia do prompt)
 
