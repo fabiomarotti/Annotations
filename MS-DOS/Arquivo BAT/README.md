@@ -1,6 +1,6 @@
 # .BAT (Batch: Lote)
 
-- Salvar como: " Arquivo`.bat` "
+- Salvar como: `"Arquivo.bat"`
 - Encoding : ANSI
 
 ## Comandos
