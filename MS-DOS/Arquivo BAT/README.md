@@ -156,8 +156,8 @@ rem Movimenta o arquivo c:\temp\teste.bat para c:\temp\teste
 ~~~ 
 
 ## Conversor de BAT para EXE
-[link 1: Bat-to-Exe Converter](https://bat-to-exe-converter-x64.en.softonic.com/)
-[link 2: iExpress](https://www.youtube.com/watch?v=uIiAaxurLk8)
+- [link 1: Bat-to-Exe Converter](https://bat-to-exe-converter-x64.en.softonic.com/)
+- [link 2: iExpress](https://www.youtube.com/watch?v=uIiAaxurLk8)
 
 ## Variaveis do sistema
 - %username% - nome da conta do usuário logado
