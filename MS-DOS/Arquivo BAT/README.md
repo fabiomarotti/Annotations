@@ -43,23 +43,25 @@
 | `=`  `*=` `/=` `%=` `+=` `-=`  `&`= `^=` `|=` `<<=` `>>=`   | atribuição |
 |  `,`                  | separador de expressões   |
 
-- `REM` : Adiciona comentário no script, o texto inserido após a instrução REM não é exibido na tela.
-- `CLS` : (Clear Screen) : Limpar tela
-
+#### Estruturas Condicionais e Repetição
 - `IF` e `ELSE` : Estrutura condicional
-- `FOR` : Loops
-- `GOTO`  :direcionar a execução do script para diferentes pontos do código.
+- `FOR` : Estrutura de repetição
+- `GOTO` : direcionar a execução do script para diferentes pontos do código.
   - `:` utilizada como pondo destino do goto
 
-- `PAUSE` : "Pressione qualquer tecla para continuar"
-- `PAUSE > NUL` : Não exibe  mensagem na tela
 
+#### Execução de Programas
 - `START` : Inicializar um certo programa ja instalado no computador
   - `/min`
   - `/max`
 - `MOVE` : Move (recorta) um arquivo de um diretório para outro.
 - `DEL`  : Excluir um ou mais arquivos de uma determianda parta
 
+- `PAUSE > NUL` : Não exibe  mensagem na tela
+
+
+
+# Exemplos
 > Arquivo .bat para ativar modo admnistrador do windows
 ~~~
 @echo off
@@ -152,6 +154,10 @@ rem Inicializa o Notepad do Windows
 move c:\temp\teste.bat c:\temp\teste\
 rem Movimenta o arquivo c:\temp\teste.bat para c:\temp\teste
 ~~~ 
+
+## Conversor de BAT para EXE
+[link 1: Bat-to-Exe Converter](https://bat-to-exe-converter-x64.en.softonic.com/)
+[link 2: iExpress](https://www.youtube.com/watch?v=uIiAaxurLk8)
 
 ## Variaveis do sistema
 - %username% - nome da conta do usuário logado
