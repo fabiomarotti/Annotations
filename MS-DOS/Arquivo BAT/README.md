@@ -138,4 +138,5 @@ rem Movimenta o arquivo c:\temp\teste.bat para c:\temp\teste
 
 - [link 1](https://www.youtube.com/watch?v=srP7Y3OGjtU&t=98s)
 - [link 2](http://hardware.rbtech.info/programando-arquivos-bat/)
+- [pdf MS-DOS Batch File](https://pdf4pro.com/view/batch-file-programming-4d5959.html)
 - [referencia completa](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
