@@ -40,7 +40,7 @@ O valor da variavel numero e 2.
 ~~~
 
 > Exemplo goto
-~~~MSDOS
+~~~
 @echo off
 set /p numero=Digite o numero 1 ou outro valor:
 if %numero% == 1 (goto :opcao1) else (goto :opcao2)
@@ -53,7 +53,7 @@ echo Voce digitou %numero%
 ~~~
 
 > Exemplo REM
-~~~~MSDOS
+~~~
 @echo off
 start notepad.exe
 rem Inicializa o Notepad do Windows
