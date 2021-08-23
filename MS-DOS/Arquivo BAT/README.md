@@ -38,7 +38,7 @@
 |    `<<` `>>`   | alternância lógica       |
 |    `&`         | bit a bit E              |
 |    `^`         | bit a bit exclusivo OU   |
-|     `|`       | bit a bit OU             |
+|     `||`       | bit a bit OU             |
 | `=`  `*=` `/=` `%=` `+=` `-=`  `&`= `^=` `|=` `<<=` `>>=`   | atribuição |
 | `,`          | separador de expressões   |
 
