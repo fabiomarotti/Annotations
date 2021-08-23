@@ -1,20 +1,49 @@
-# .BAT (Batch: Lote)
+# Arquivos .BAT (Batch) : Arquivos de Lote
+- é um código Script executado pelo utilitário do Windows built-in, chamado  (CLI) Windows Command-Line Interpreter
+- Escreve e executar comandos DOS
+- Execução sequencial por meio do *cmd.exe*
+- *.exe* faz com que o Windows coloca o código executável em Memória , em seguida, executa o programa
+- Em contrapartida, os arquivo *.exe* são códigos binários armazenados no formato Portable Executable (PE), que inclui vários cabeçalhos e seções
 
 - Salvar como: `"Arquivo.bat"`
 - Encoding : ANSI
 
-## Comandos
+# Comandos
 
-- `msg * oi`
+#### Comentários
+- `REM` : comentário em uma linha ( comando é lido e depois ingnorado) (usar OFF)
+- `/* comentario */` : comentário em varias linhas (não precisa usar OFF)
+- `::` : comentário em uma linha (são ignorados todo o caminho) (não precisa usar OFF) (usar *&* caso prosida de um comando)
+
+- `msg * oi` : Menssage Box (Titulo: Usuário, Data e hora)
 - `shutdown -r -t 15 -c "Mensagem teste"`
 
+#### Saida na tela
 - `Echo` :  exibe comandos ou resultados na tela
 - `Echo off` : desliga as mensagens nativas do prompt
 - `Echo on` : mostra informações e mensagens nativas do prompt, habilita a exibição das instruções no prompt do Windows
 - `Echo.` : é utilizado para pular uma linha
 - `@Echo` : Faz com que o prompt fique oculto durante toda execução
 
-- `Set`  : Cria variveis e atribui valores, sua referencia é por meio de `%` nome_variavel `%` 
+#### Variáveis
+- `Set`  : Exibe todas as variáveis de ambiente
+- `Set p` : Exibe todas as variáveis iniciadas com a letra _p_
+
+| Operador       | Descrição                |
+|---             |---                       |
+|   `(` `)`      | agrupamento              |
+|    `!` `~` `-` | operadores unários       |
+|    `*` `/` `%` | operadores aritméticos   |
+|    `+` `-`     | operadores aritméticos   |
+|    `<<` `>>`   | alternância lógica       |
+|    `&`         | bit a bit E              |
+|    `^`         | bit a bit exclusivo OU   |
+|    `|`         | bit a bit OU             |
+| `=`  `*=` `/=` `%=` `+=` `-=`  `&`= `^=` `|=` `<<=` `>>=`   | atribuição |
+| `,`          | separador de expressões   |
+
+- 
+- Cria variveis e atribui valores, sua referencia é por meio de `%` nome_variavel `%` 
 - `REM` : Adiciona comentário no script, o texto inserido após a instrução REM não é exibido na tela.
 - `CLS` : (Clear Screen) : Limpar tela
 
@@ -27,6 +56,8 @@
 - `PAUSE > NUL` : Não exibe  mensagem na tela
 
 - `START` : Inicializar um certo programa ja instalado no computador
+  - `/min`
+  - `/max`
 - `MOVE` : Move (recorta) um arquivo de um diretório para outro.
 - `DEL`  : Excluir um ou mais arquivos de uma determianda parta
 
