@@ -35,6 +35,7 @@ Principais Extensões de arquivos
   - cd %USERPROFILE%
 - `CLS` (Clears Screen)
 - `COLOR` : Altera cor do fundo e letra.
+
 | Valor | Cor Fundo   | Valor |  Cor Letra    |    
 |---    |---          | ---   |---            | 
 | 0	    | Black       | a	    | Light green   | 
