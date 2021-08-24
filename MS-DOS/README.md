@@ -7,7 +7,7 @@ Principais Extensões de arquivos
 - `.txt` - Arquivos de texto (normalmente texto puro, legível pelo editor oficial do DOS, EDIT).
 
 
-#### Os principais comandos do DOS são:
+#### Os principais comandos do MS-DOS são:
 
 - `dir` - Exibe a lista de arquivos (com informações como tamanho, data, hora).
 - `md` - Cria uma nova pasta.
@@ -28,15 +28,33 @@ Principais Extensões de arquivos
 
 ---- 
 
-- `Overview`
 - `ASSOC`
 - `BREAK`
 - `CALL`
-- `CD`
-- `CHDIR`
-- `CLS`
-- `COLOR`
-- `COPY`
+- `CD` ou `CHDIR` (Change Directory)
+  - cd %USERPROFILE%
+- `CLS` (Clears Screen)
+- `COLOR` : Altera cor do fundo e letra.
+| Valor | Cor Fundo   | Valor |  Cor Letra    |    
+|---    |---          | ---   |---            | 
+| 0	    | Black       | a	    | Light green   | 
+| 1	    | Blue        | b	    | Light aqua    | 
+| 2	    | Green       | c	    | Light red     | 
+| 3	    | Aqua        | d	    | Light purple  | 
+| 4	    | Red         | e	    | Light yellow  | 
+| 5	    | Purple      | f	    | Bright white  | 
+| 6	    | Yellow      |       |               | 
+| 7	    | White       |       |               | 
+| 8	    | Gray        |       |               | 
+| 9	    | Light blue  |       |               | 
+
+
+
+
+
+
+
+- `COPY` : 
 - `DEL`
 - `DIR`
 - `DATE`
@@ -147,3 +165,5 @@ Após o comando acima se você possui uma impressora na porta LPT1 a mesma dever
 - `PROMPT $p$g`
 - `TITLE %comspec%`
 - `COLOR`
+
+[referencia wiki](https://en.wikibooks.org/wiki/Windows_Batch_Scripting)
