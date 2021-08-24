@@ -92,20 +92,20 @@ Principais Extensões de arquivos
   - `@ECHO OFF` : Evitar todos os comandos de um arquivo de Lote sejam exibidos.
 
 - `IF` e `ELSE` (Se.. Senão)
-- `exist` : arquivo existe
-- `==` : palavras são iguais
-- `equ` (equals) : expressões iguais
-- `neq` (not equal) : expressões diferentes
-- `lss` (less than) : Menor que
-- `leq` (less than or equal) : Menor ou igual que
-- `gtr` (greater than) : Maior que
-- `geq` (greater than or equal) : Maior ou igual que
-- `defined` : variavel definida
-  -  %errorlevel% 
-  -  %cmdcmdline% 
-  -  %cmdextversion%
-- `errorlevel` : número
-- `cmdextversion` : número
+  - `exist` : arquivo existe
+  - `==` : palavras são iguais
+  - `equ` (equals) : expressões iguais
+  - `neq` (not equal) : expressões diferentes
+  - `lss` (less than) : Menor que
+  - `leq` (less than or equal) : Menor ou igual que
+  - `gtr` (greater than) : Maior que
+  - `geq` (greater than or equal) : Maior ou igual que
+  - `defined` : variavel definida
+    -  %errorlevel% 
+    -  %cmdcmdline% 
+    -  %cmdextversion%
+  - `errorlevel` : número
+  - `cmdextversion` : número
 
 > Exemplo
 ~~~
