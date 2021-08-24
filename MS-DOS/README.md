@@ -92,6 +92,30 @@ Principais Extensões de arquivos
   - `@ECHO OFF` : Evitar todos os comandos de um arquivo de Lote sejam exibidos.
 
 - `IF` e `ELSE` (Se.. Senão)
+- `exist` : arquivo existe
+- `==` : palavras são iguais
+- `equ` (equals) : expressões iguais
+- `neq` (not equal) : expressões diferentes
+- `lss` (less than) : Menor que
+- `leq` (less than or equal) : Menor ou igual que
+- `gtr` (greater than) : Maior que
+- `geq` (greater than or equal) : Maior ou igual que
+- `defined` : variavel definida
+  -  %errorlevel% 
+  -  %cmdcmdline% 
+  -  %cmdextversion%
+- `errorlevel` : número
+- `cmdextversion` : número
+
+> Exemplo
+~~~
+IF NOT EXIST %targetpath% (
+  ECHO Caminho não encontrado.
+  EXIST /b
+)
+~~~
+
+> Exemplo
 ~~~
 IF EXIST file.txt (
     ECHO  Arquivo existe.
@@ -152,21 +176,68 @@ FOR /f "tokens=1-3" %a  IN ("First Second Third,item")  DO    @ECHO %c-%b-%a
 
 
 - `FTYPE`
-- `GOTO`
+- `GOTO` : (Vai para um rótulo)
+  - `:rotulo` 
 
-- `MD`
-- `MKDIR`
-- `MKLINK`
-- `MOVE`
+> Exemplo de GOTO e rotulos
+~~~
+GOTO :rotulo_1
+ECHO Ola Mundo!
+REM #Ola Mundo nunca sera exibido.
+
+:rotulo_1
+ECHO Ola Planeta!
+GOTO :eof
+
+ECHO Ola Universo!
+REM Ola Universo nunca sera exibido.
+REM Eof é um rotulo virtual padrão para ir direto ao fim do arquivo.
+~~~
+
+- `MD` ou `MKDIR` (Make Directory) : Construir Diretório
+  - `MD dir1`
+  - `MD dir1 dir2`
+  - `MD "Meu Diretório"`
+
+- `MKLINK` ?
+
+- `MOVE` : Move Arquivos ou Diretórios, ou tambe pode renomea-los
+  - `MOVE X:file1.txt` : Move para o diretório atual
+  - `MOVE file1.txt file2.txt`  : Renomea arquivos
+  - `MOVE Dir1 Dir2`  : (Caso Dir2 não existe) Renomeia diretórios 
+  - `MOVE file1.txt Dir1`  : (Caso Dir1 e Dir2 ja existam) Move para o Diretório
+  
 - `PATH`
+
 - `PAUSE`
+  - `Ctrl`+`C` : Parar uma arquivo de lote.
+
 - `POPD`
-- `PROMPT`
+
+- `PROMPT` : Alterar exibição do prompt ou `PROMPT $p$g`
+  - `PROMPT Fabio$G` : Fabio>
+
 - `PUSHD`
-- `RD`
-- `REN`
-- `RENAME`
-- `REM`
+
+- `RD` (Remove Directory)
+
+
+- `REN` ou `RENAME` : Renomear Arquivos ou Diretórios
+
+
+- `REM` (Remarks) : Cria *Observações* no arquivo de lote
+> Exemplo
+~~~
+@ECHO OFF
+REM   Um comentário, comando que não sera executado
+ECHO  Bom Dia     REM Apesar de ser uma comentário, ele será exibido
+ECHO  Boa Noite & REM Será comentado por causa do operador &
+:: Está sentença tambem será um comentário.
+
+PAUSE
+~~~
+
+
 - `RMDIR`
 - `SET`
 
