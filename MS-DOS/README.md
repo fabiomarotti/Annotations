@@ -52,29 +52,29 @@ Principais Extensões de arquivos
 - `COPY` : (origem) (destino)
 - `DEL` (Delete)
 - `DIR` (List Directory)
-  - `dir /a`:
-    - *dir /ad* : Diretórios
-    - *dir /ah* : Arquivos Ocultos
-    - *dir /as* : Arquivos do Sistema
-    - *dir /al* : Pontos de nova análise
-    - *dir /ar* : Arquivos somente de Leitura
-    - *dir /aa* : Arquivos prontos para arquivamento
-    - *dir /ai* : Arquivos sem conteudo indexado
-  - *dir /b* : Lista apenas os Nomes
-  - *dir /c*
-  - *dir /d* : Lista por Colunas
-  - *dir /l*
-  - *dir /n*
-  - `dir /o`:
-    - *dir /on* : por nome (alfabética)
-    - *dir /oe* : por extensão (alfabética)
-    - *dir /og* : por grupo
-    - *dir /os* : por tamanho
-    - *dir /od* : por data/hora
-  - dir /p : Lista arquivos com PAUSE
-  - dir /q : Lista arquivos com seu Proprietário (PC\User)
-  - dir /r : 
-  - dir /s : Lista arquivos e seus SubDiretórios
+  - `DIR /a`:
+    - *DIR /ad* : Diretórios
+    - *DIR /ah* : Arquivos Ocultos
+    - *DIR /as* : Arquivos do Sistema
+    - *DIR /al* : Pontos de nova análise
+    - *DIR /ar* : Arquivos somente de Leitura
+    - *DIR /aa* : Arquivos prontos para arquivamento
+    - *DIR /ai* : Arquivos sem conteudo indexado
+  - *DIR /b* : Lista apenas os Nomes
+  - *DIR /c*
+  - *DIR /d* : Lista por Colunas
+  - *DIR /l*
+  - *DIR /n*
+  - `DIR /o`:
+    - *DIR /on* : por nome (alfabética)
+    - *DIR /oe* : por extensão (alfabética)
+    - *DIR /og* : por grupo
+    - *DIR /os* : por tamanho
+    - *DIR /od* : por data/hora
+  - DIR /p : Lista arquivos com PAUSE
+  - DIR /q : Lista arquivos com seu Proprietário (PC\User)
+  - DIR /r : 
+  - DIR /s : Lista arquivos e seus SubDiretórios
 - `DATE`
 - `ECHO`
 - `ELSE`
