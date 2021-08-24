@@ -60,17 +60,18 @@ Principais Extensões de arquivos
     - `DIR /ar` : Arquivos somente de Leitura
     - `DIR /aa` : Arquivos prontos para arquivamento
     - `DIR /ai` : Arquivos sem conteudo indexado
-  - `DIR /b` : Lista apenas os Nomes
-  - `DIR /c`
-  - `DIR /d` : Lista por Colunas
-  - `DIR /l`
-  - `DIR /n`
-  - `DIR /o`:
+  - `DIR /o`: (Ordenado)
     - `DIR /on` : por nome (alfabética)
     - `DIR /oe` : por extensão (alfabética)
     - `DIR /og` : por grupo
     - `DIR /os` : por tamanho
     - `DIR /od` : por data/hora
+  - `DIR /b` : Lista apenas os Nomes
+  - `DIR /c`
+  - `DIR /d` : Lista por Colunas
+  - `DIR /l`
+  - `DIR /n`
+
   - DIR /p : Lista arquivos com PAUSE
   - DIR /q : Lista arquivos com seu Proprietário (PC\User)
   - DIR /r : 
