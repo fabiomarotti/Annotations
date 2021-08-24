@@ -31,9 +31,12 @@ Principais Extensões de arquivos
 - `ASSOC`
 - `BREAK`
 - `CALL`
+
 - `CD` ou `CHDIR` (Change Directory)
   - cd %USERPROFILE%
+
 - `CLS` (Clears Screen)
+
 - `COLOR` : Altera cor do fundo e letra.
 
 | Valor | Cor Fundo   | Valor |  Cor Letra    |    
@@ -50,7 +53,9 @@ Principais Extensões de arquivos
 | 9	    | Light blue  |       |               | 
 
 - `COPY` : (origem) (destino)
+
 - `DEL` (Delete)
+
 - `DIR` (List Directory)
   - `DIR /a`:
     - `DIR /ad` : Diretórios
@@ -71,21 +76,84 @@ Principais Extensões de arquivos
   - `DIR /d` : Lista por Colunas
   - `DIR /l`
   - `DIR /n`
+  - `DIR /p` : Lista arquivos com PAUSE
+  - `DIR /q` : Lista arquivos com seu Proprietário (PC\User)
+  - `DIR /r` : 
+  - `DIR /s` : Lista arquivos e seus SubDiretórios
 
-  - DIR /p : Lista arquivos com PAUSE
-  - DIR /q : Lista arquivos com seu Proprietário (PC\User)
-  - DIR /r : 
-  - DIR /s : Lista arquivos e seus SubDiretórios
-- `DATE`
-- `ECHO`
-- `ELSE`
+- `DATE` Exibir e Alterar data [apenas Enter não antera a data]
+  - `DATE /t` Exibir data
+  - `echo %DATE%"` Exibe data
+
+- `ECHO` Exibe se a configuração do ECHO está ativado ou desativado.
+  - `ECHO ON` (Ativado) exibe o formato : `PROMPT $p$g`
+  - `ECHO OFF` (Desativado) : não exibe nenum formato de Prompt
+  - `ECHO.` Linha vazia
+  - `@ECHO OFF` : Evitar todos os comandos de um arquivo de Lote sejam exibidos.
+
+- `IF` e `ELSE` (Se.. Senão)
+~~~
+IF EXIST file.txt (
+    ECHO  Arquivo existe.
+) ELSE (
+    ECHO  Arquivo não existe.
+)
+~~~
+
 - `ENDLOCAL`
+- `SETLOCAL`
 - `ERASE`
-- `EXIT`
+
+- `EXIT` : Saí do cmd.exe
+  - `EXIT /b` : Saí do arquivo de lote ao inves do cmd.exe 
+
 - `FOR`
+  - `%i` : para prompt
+  - `%%i` : para arquivos de lote
+> Percorre o conjunto (1,2,3) e exibe seus elementos (apenas números)
+~~~
+FOR  %i  IN  (1,2,3)   DO   @ECHO %i  
+~~~
+
+> Exibe todos arquivos no formato _*.txt_
+~~~
+FOR  %i  IN  (*.txt)   DO   @ECHO %i
+~~~
+
+> Exibe todos arquivos _*.exe_ do diretorio
+~~~
+FOR   %i  IN ("C:\Windows\system32\*.exe")    DO    @ECHO %i
+~~~
+
+> Exibe arquivo e seu caminho
+~~~
+FOR /r %i   IN (*.txt)   DO    @ECHO  %i
+~~~
+
+> Exibe números de 1 a 10
+~~~
+FOR /l %i   IN (1,1,10)   DO   @ECHO  %i
+~~~
+
+> Exibe o conteúdo de um arquivo
+~~~
+FOR /f "tokens=*" %i  IN (file.txt)   DO    @ECHO %i
+~~~
+
+> pensar
+~~~
+FOR /f "tokens=1-3* delims=:" %a  IN ("First:Second::Third:Fourth:Fifth")   DO    @ECHO   %c-%b-%a: %d
+~~~ 
+
+> pensar 2
+~~~
+FOR /f "tokens=1-3" %a  IN ("First Second Third,item")  DO    @ECHO %c-%b-%a
+~~~
+
+
 - `FTYPE`
 - `GOTO`
-- `IF`
+
 - `MD`
 - `MKDIR`
 - `MKLINK`
@@ -101,7 +169,7 @@ Principais Extensões de arquivos
 - `REM`
 - `RMDIR`
 - `SET`
-- `SETLOCAL`
+
 - `SHIFT`
 - `START`
 - `TIME`
