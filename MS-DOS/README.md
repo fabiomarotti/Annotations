@@ -53,24 +53,24 @@ Principais Extensões de arquivos
 - `DEL` (Delete)
 - `DIR` (List Directory)
   - `DIR /a`:
-    - *DIR /ad* : Diretórios
-    - *DIR /ah* : Arquivos Ocultos
-    - *DIR /as* : Arquivos do Sistema
-    - *DIR /al* : Pontos de nova análise
-    - *DIR /ar* : Arquivos somente de Leitura
-    - *DIR /aa* : Arquivos prontos para arquivamento
-    - *DIR /ai* : Arquivos sem conteudo indexado
-  - *DIR /b* : Lista apenas os Nomes
-  - *DIR /c*
-  - *DIR /d* : Lista por Colunas
-  - *DIR /l*
-  - *DIR /n*
+    - `DIR /ad` : Diretórios
+    - `DIR /ah` : Arquivos Ocultos
+    - `DIR /as` : Arquivos do Sistema
+    - `DIR /al` : Pontos de nova análise
+    - `DIR /ar` : Arquivos somente de Leitura
+    - `DIR /aa` : Arquivos prontos para arquivamento
+    - `DIR /ai` : Arquivos sem conteudo indexado
+  - `DIR /b` : Lista apenas os Nomes
+  - `DIR /c`
+  - `DIR /d` : Lista por Colunas
+  - `DIR /l`
+  - `DIR /n`
   - `DIR /o`:
-    - *DIR /on* : por nome (alfabética)
-    - *DIR /oe* : por extensão (alfabética)
-    - *DIR /og* : por grupo
-    - *DIR /os* : por tamanho
-    - *DIR /od* : por data/hora
+    - `DIR /on` : por nome (alfabética)
+    - `DIR /oe` : por extensão (alfabética)
+    - `DIR /og` : por grupo
+    - `DIR /os` : por tamanho
+    - `DIR /od` : por data/hora
   - DIR /p : Lista arquivos com PAUSE
   - DIR /q : Lista arquivos com seu Proprietário (PC\User)
   - DIR /r : 
