@@ -49,15 +49,32 @@ Principais Extensões de arquivos
 | 8	    | Gray        |       |               | 
 | 9	    | Light blue  |       |               | 
 
-
-
-
-
-
-
-- `COPY` : 
-- `DEL`
-- `DIR`
+- `COPY` : (origem) (destino)
+- `DEL` (Delete)
+- `DIR` (List Directory)
+  - `dir /a`:
+    - *dir /ad* : Diretórios
+    - *dir /ah* : Arquivos Ocultos
+    - *dir /as* : Arquivos do Sistema
+    - *dir /al* : Pontos de nova análise
+    - *dir /ar* : Arquivos somente de Leitura
+    - *dir /aa* : Arquivos prontos para arquivamento
+    - *dir /ai* : Arquivos sem conteudo indexado
+  - *dir /b* : Lista apenas os Nomes
+  - *dir /c*
+  - *dir /d* : Lista por Colunas
+  - *dir /l*
+  - *dir /n*
+  - `dir /o`:
+    - *dir /on* : por nome (alfabética)
+    - *dir /oe* : por extensão (alfabética)
+    - *dir /og* : por grupo
+    - *dir /os* : por tamanho
+    - *dir /od* : por data/hora
+  - dir /p : Lista arquivos com PAUSE
+  - dir /q : Lista arquivos com seu Proprietário (PC\User)
+  - dir /r : 
+  - dir /s : Lista arquivos e seus SubDiretórios
 - `DATE`
 - `ECHO`
 - `ELSE`
