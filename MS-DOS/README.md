@@ -126,6 +126,26 @@ IF EXIST file.txt (
 
 - `ENDLOCAL`
 - `SETLOCAL`
+
+> Exemplo
+~~~
+@ECHO OFF
+SET LOCAL EnableDelayedExpansion
+
+SET variavel=primeiro
+SET variavel=segundo    &   ECHO  %variavel%  !variavel!
+~~~
+
+> Exemplo 2
+~~~
+@ECHO OFF
+SETLOCAL EnableDelayedExpansion
+
+SET valor=0
+FOR /l %%G    IN (1,1,5)  DO   (echo [!valor!]  &  SET /a valor+=1)
+ECHO Total = %valor%
+~~~
+
 - `ERASE`
 
 - `EXIT` : Saí do cmd.exe
@@ -237,9 +257,17 @@ ECHO  Boa Noite & REM Será comentado por causa do operador &
 PAUSE
 ~~~
 
+- `RD` ou `RMDIR` (Remove Directory)
+  - `RD Dir1` : Remove Dir1
+  - `RD Dir1 Dir2` : Remove Dir1 e Dir2
+  - `RD "Meu Diretório"` : Remove: Meu Diretório
+  - `RD /s Dir1` : Remove Dir1 e seus SubDiretórios
+    - `RD /s /q Dir1` : Pergunta antes de Remover Dir1 e seus SubDiretórios
 
-- `RMDIR`
-- `SET`
+- `SET` : Exibe, Define ou Remove variáveis de ambiente do _cmd.exe_
+  - `SET /p   <variable> = [<promptString>]` : Exibe mensagem prefixada ao receber o valor da variavel 
+  - `SET /a   <variable> = <expression>`     : Expressão aritmética
+  - `SET f` : Lista todas as variaveis que iniciam com a letra _f_
 
 - `SHIFT`
 - `START`
