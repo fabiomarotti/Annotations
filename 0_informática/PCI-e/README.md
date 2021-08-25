@@ -10,7 +10,7 @@
 
 [link](https://www.infowester.com/pci-express.php)
 
-# ----
+
 
 
 ### PCIe 1.0: 8 GB/s.
@@ -74,6 +74,12 @@
   - PCIe 6.0 x4: 32 GB/s
   - PCIe 6.0 x8: 64 GB/s
   - PCIe 6.0 x16: 128 GB/s
+# Especificações para os Slots
+
+img
+
+<img src="https://github.com/fabiomarotti/Annotations/blob/main/0_inform%C3%A1tica/PCI-e/img/img_pci_001.jpg" width="640" height="480" />
+
 
 # Resumo
 
