@@ -1,6 +1,8 @@
 # PCI-e (Peripheral Component Interconnect eXpress)
-- PCI Surgiu por volta de 1990
-- PCI-e Surgiu por volta de 2001
+- PCI-SIG (Criadora das Especificações) [site](https://pcisig.com/)
+- PCI Surgiu por volta de 1993
+- PCI-e Surgiu por volta de 2003
+- PCI-E, PCIe ou PQC
 - Padrão PCI trabalhava com taxas de transferência de dados de até 132 MB/s
 - AGP (Accelerated Graphics Port)
   - AGP x1: de   266 MB/s 
