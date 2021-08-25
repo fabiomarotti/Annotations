@@ -1,10 +1,10 @@
 # Self - Owner - Sender - Parent
 
 # Self (si memso)
-- Referece ao "dono" da chamada/declaração/implementação.
-- _self_ pode ser omitido
+- Referece ao "dono" da declaração / implementação / chamada.
+- O _self_ pode ser omitido.
 
-> Exmeplo: Criando uma instância de um Form
+> Exemplo: Criando uma instância de um Form
 ~~~delphi
  FormPrincipal := TFormPrincipal.Create(Self);
 ~~~ 
@@ -59,13 +59,14 @@ end;
 [link sobre Owner](https://extremeprogramming.wordpress.com/2011/01/28/guia-iniciante-parte-2-owner-o-que-e-delphi/)
 
 
-# Sender
+# Sender (Remetente)
+- Sender é o parâmetro de algumas funções, e ele é do Tipo TObject
+- Sender é o Objeto que chamou aquela função
 
 [link sobre Sender](https://extremeprogramming.wordpress.com/2011/02/03/guia-iniciante-parte-3-sender-o-que-e-delphi/)
 
-# Parent
+# Parent (Pai)
 - Parent faz referência ao componente que contém ele
 - Parent é usado para trocar-se de Owner
 - Alterar um Parent faz com que se altere o seu Owner
-- 
 [link sobre Parent](https://extremeprogramming.wordpress.com/2011/02/08/a-propriedade-parent-delphi/)
