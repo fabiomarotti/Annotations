@@ -14,7 +14,8 @@
 
 
 # PCIe 1.0
-- PCIe 1.x trabalha com até 2,5 GT/s. (gigatransfers por segundo) (transferências de dados por segundo)
+- `PCIe 1.x`
+-  trabalha com até 2,5 GT/s. (gigatransfers por segundo) (transferências de dados por segundo)
   - PCIe x1 : 
     - 1 via (250 MB/s)
     - 25 mm de comprimento
