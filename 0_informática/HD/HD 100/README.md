@@ -8,21 +8,21 @@
 [Download- Data LifeGuard Diagnostic Western Digital](https://support.wdc.com/downloads.aspx?p=3)
 
 #### Analise via Check Disk: (reiniciar)
-`chkdsk /f /r`
+- `chkdsk /f /r`
 
 ## Verificação no Sistema:
 #### Verifica se os programas do windows estão ok:
-`sfc /scannow`
+- `sfc /scannow`
 
 #### Caso o erro nao foi solucionado pelo sfc:
-DISM /Online /Cleanup-Image /RestoreHealth
+- DISM /Online /Cleanup-Image /RestoreHealth
 
 #### Pesquisar: Sistema / Notificações e Ações / ...
-	- [desativar] : (obter dicas e sugestoes..) 
-	- [desativar] : (mostrar experiecnia d ebaos vindas do windows)
+- [desativar] : (obter dicas e sugestoes..) 
+- [desativar] : (mostrar experiecnia d ebaos vindas do windows)
 
-#### Paginação
- - Pesquisar: Sitema /Conf. Avançadas do sistema /Avançado /Configurações /Avançado /Alterar /..
+#### Paginação:
+- Pesquisar: Sitema /Conf. Avançadas do sistema /Avançado /Configurações /Avançado /Alterar /..
   - Sem arquivo de paginação
   - [Desativar] Gerenciar automaticamente ...
 
@@ -36,31 +36,30 @@ DISM /Online /Cleanup-Image /RestoreHealth
 
 
 #### Atualizar o Dispositivos Intel:
-btn_d (win) /Gerenciador de dispositivos /Dispositivos do sistema
-- [atualizar driver] todos os item com nome Intel 
-- Consultar download de atulização de driver da intel
-
+- btn_d (win) /Gerenciador de dispositivos /Dispositivos do sistema :
+  - [atualizar driver] todos os item com nome Intel 
+  - Consultar download de atulização de driver da intel
 
 
 #### Alterar Regedit do Controlador IDE ATA/ATAP:
-  - btn_d (win) /Gerenciador de dispositivos /Controladores IDE ATA/ATAPI
-    - *Driver* : detalhes do driver= ....\storachi.sys [ok]
-    - *Detalhes* : Propriedades: Caminho da instancia do dispositivo: [anotar valor para procurar no Regedit]
+- btn_d (win) /Gerenciador de dispositivos /Controladores IDE ATA/ATAPI
+  - *Driver* : detalhes do driver= ....\storachi.sys [ok]
+  - *Detalhes* : Propriedades: Caminho da instancia do dispositivo: [anotar valor para procurar no Regedit]
     - `regedit` : 
-      - HKEY_LOCAL_MACHINE /SYSTEM /CurrentControlSet /Enum /PCI /(número anotado) /Device Parameters /Interrupt Managment /MessageSignaledInterruptProperties /..
-      - MSISupported: Dados do valor: 0 (zero)
-      - Reiniciar
+    - HKEY_LOCAL_MACHINE /SYSTEM /CurrentControlSet /Enum /PCI /(número anotado) /Device Parameters /Interrupt Managment /MessageSignaledInterruptProperties /..
+    - MSISupported: Dados do valor: 0 (zero)
+    - Reiniciar
       
 #### Desinstalar a atualização KB3201845:
   - [cmd] : `wusa /unistall /kb:3201845`
 
 #### Agendador de Tarefas:
-  - Biblioteca do Agendador /Microsoft /Windows : [Desativar tudo dentro]
-    - /Defrag 
-    - /Application Experience
-    - /Autochk
-    - /Customer Experience Improvement
-    - /DiskDiagnostic
+- Biblioteca do Agendador /Microsoft /Windows : [Desativar tudo dentro]
+  - /Defrag 
+  - /Application Experience
+  - /Autochk
+  - /Customer Experience Improvement
+  - /DiskDiagnostic
 
 #### Abrir PowerShell:
 - `disable-MMAgent -mc`
@@ -74,4 +73,4 @@ btn_d (win) /Gerenciador de dispositivos /Dispositivos do sistema
 - [Desativar Atividade na Web](https://myactivity.google.com/activitycontrols)
 
 # Referência
-[link](https://www.youtube.com/watch?v=qWESrvP_uU8)
+- [link](https://www.youtube.com/watch?v=qWESrvP_uU8)
