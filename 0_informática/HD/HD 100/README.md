@@ -55,18 +55,18 @@
 
 #### Agendador de Tarefas:
 - Biblioteca do Agendador /Microsoft /Windows : [Desativar tudo dentro]
-  - /Defrag 
-  - /Application Experience
-  - /Autochk
-  - /Customer Experience Improvement
-  - /DiskDiagnostic
+  - `/Defrag`
+  - `/Application Experience`
+  - `/Autochk`
+  - `/Customer Experience Improvement`
+  - `/DiskDiagnostic`
 
 #### Abrir PowerShell:
 - `disable-MMAgent -mc`
 
 #### Registro 2:
 - HKEY_LOCAL_MACHINE /SYSTEM  /ControlSet001 /Services /Ndu 
-  - Start: Dados do valor: 4
+  - `Start` : Dados do valor: 4
 
 
 #### Google Chrome
