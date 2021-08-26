@@ -2,10 +2,10 @@
 
 ## Verificação no HD:
 #### Verifica se possui problema critico:
-`wmic diskdrive get caption,status`
+- `wmic diskdrive get caption,status`
 
 #### Analise mais detalhada sobre o HD:
-[Download- Data LifeGuard Diagnostic Western Digital](https://support.wdc.com/downloads.aspx?p=3)
+- [Download: Data LifeGuard Diagnostic Western Digital](https://support.wdc.com/downloads.aspx?p=3)
 
 #### Analise via Check Disk: (reiniciar)
 - `chkdsk /f /r`
