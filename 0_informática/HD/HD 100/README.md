@@ -1,7 +1,6 @@
 # HD 100%
 
-## Verificação do HD
-
+## Verificação no HD:
 #### Verifica se possui problema critico:
 `wmic diskdrive get caption,status`
 
@@ -11,6 +10,7 @@
 #### Analise via Check Disk: (reiniciar)
 `chkdsk /f /r`
 
+## Verificação no Sistema:
 #### Verifica se os programas do windows estão ok:
 `sfc /scannow`
 
