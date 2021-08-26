@@ -11,8 +11,16 @@
 - `chkdsk /f /r`
 
 ## Verificação no Sistema:
-#### Verifica se os programas do windows estão ok:
-- `sfc /scannow`
+#### CMD:
+> Verifica se os programas do windows estão ok:
+  - `sfc /scannow`
+  
+> Alo desempenho
+- `powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61`
+
+
+#### Executar (win+R):
+- `wsreset`
 
 #### Caso o erro nao foi solucionado pelo sfc:
 - DISM /Online /Cleanup-Image /RestoreHealth
@@ -33,6 +41,8 @@
 - [Desativar] `Superfetch`
   - [Apagar] : C:\Windows \prefetch /(apagar tudo qui)
 - [Desativar] `Experiencia do Usuario Conectado e telemetria` 
+- [Desativar] `Serviço de transferência inteligente de tela de fundo`
+- [Desativar] `Windows Update`
 
 
 #### Atualizar o Dispositivos Intel:
