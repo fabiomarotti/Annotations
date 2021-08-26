@@ -1,7 +1,7 @@
 # HD 100%
 
 ## Verificação no HD:
-#### Verifica se possui problema critico:
+#### Verifica se o HD possui algum problema critico:
 - `wmic diskdrive get caption,status`
 
 #### Analise mais detalhada sobre o HD:
