@@ -23,16 +23,16 @@
 
 #### Paginação:
 - Pesquisar: Sitema /Conf. Avançadas do sistema /Avançado /Configurações /Avançado /Alterar /..
-  - Sem arquivo de paginação
-  - [Desativar] Gerenciar automaticamente ...
+  - `Sem arquivo de paginação`
+  - [Desativar] `Gerenciar automaticamente ...`
 
 #### Serviços: *services.msc*
-- [Desativar] Windows Search 
+- [Desativar] `Windows Search`
   - [Apagar] : _C:\ProgramData\Microsoft\Search\Data\Applications\Windows\ windows.edb_
   - Windows.edb
-- [Desativar] Superfetch
+- [Desativar] `Superfetch`
   - [Apagar] : C:\Windows \prefetch /(apagar tudo qui)
-- [Desativar] Experiencia do Usuario Conectado e telemetria 
+- [Desativar] `Experiencia do Usuario Conectado e telemetria` 
 
 
 #### Atualizar o Dispositivos Intel:
@@ -43,8 +43,8 @@
 
 #### Alterar Regedit do Controlador IDE ATA/ATAP:
 - btn_d (win) /Gerenciador de dispositivos /Controladores IDE ATA/ATAPI
-  - *Driver* : detalhes do driver= ....\storachi.sys [ok]
-  - *Detalhes* : Propriedades: Caminho da instancia do dispositivo: [anotar valor para procurar no Regedit]
+  - *Driver* : detalhes do driver= ....\ `storachi.sys` [ok]
+  - *Detalhes* : Propriedades: Caminho da instancia do dispositivo: `anotar valor para procurar no Regedit`
     - `regedit` : 
     - HKEY_LOCAL_MACHINE /SYSTEM /CurrentControlSet /Enum /PCI /(número anotado) /Device Parameters /Interrupt Managment /MessageSignaledInterruptProperties /..
     - MSISupported: Dados do valor: 0 (zero)
