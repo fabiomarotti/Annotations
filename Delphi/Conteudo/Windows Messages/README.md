@@ -4,7 +4,7 @@
 - `PostMessage` : Envia uma mensagem para a janela e não aguarda o retorno para continuar a execução. (Assíncrono)
 
 
-[link 1](http://theclub.com.br/Restrito/Revistas/201007/wind1007.aspx)
+
 
 
 
@@ -67,3 +67,7 @@ end;
   Perform( WM_NEXTDLGCTL ,  0 ,   0 );
 end;
 ~~~~ 
+
+# Referências
+[link 1](http://theclub.com.br/Restrito/Revistas/201007/wind1007.aspx)
+[link 2](https://www.devmedia.com.br/windows-messages/1243)
