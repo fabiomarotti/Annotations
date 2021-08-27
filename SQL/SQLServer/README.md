@@ -323,6 +323,6 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 
 # +
 ~~~SQL
-// realiza conta
+-- realiza conta
 SELECT 123456/1024
 ~~~
