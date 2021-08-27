@@ -119,19 +119,22 @@ CREATE TABLE tb_nome_tabela (
 
 > Exemplo: Relação PK e FK
 ~~~SQL
-CREATE TABLE tb_estado (
+CREATE TABLE tb_estados (
    id_estado   INT           PRIMARY KEY, 
    uf_estado   VARCHAR(2)
    dsc_estado  VARCHAR(255)
-   );
+);
 ~~~
 
 ~~~SQL
-CREATE TABLE tb_cidade (
+CREATE TABLE tb_cidades (
        id_cidade   INT  PRIMARY KEY, 
        dsc_cidade  VARCHAR(255),
        id_estado   INT  FOREIGN KEY   REFERENCES tb_estado(id_estado)      
-       );
+-- id_estado INT       
+-- FOREIGN KEY(id_estado) REFERENCES tb_estado(id_estado)       
+);
+
 ~~~       
 
 > Exemplo: 
