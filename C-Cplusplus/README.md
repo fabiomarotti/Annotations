@@ -1,9 +1,14 @@
 # C / C++
 
-## Compiladores
+## IDE - Compiladores
 - [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
 - [Falcon C++](https://sourceforge.net/projects/falconcpp/)
 - [Code Blocks](https://www.codeblocks.org/)
+- [MSYS2](https://www.msys2.org/)
+- [eclipse](https://www.eclipse.org/downloads/)
+
+# Variaveis de Ambiente (MSYS2)
+- [ver](https://www.youtube.com/watch?v=HF95fQaQUDU)
 
 # Declaraçaõ de Variaveis
 > [Tipo_Variavel] : [Nome_Variavel]
