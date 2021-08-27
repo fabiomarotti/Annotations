@@ -85,11 +85,16 @@ DROP DATABASE db_nome_banco
 
 # Comandos para Tabelas
 
-- `IDENTITY` enumerar automaticamente
-  - `IDENTITY (1,1)` começar em 1 e incrementar em 1  
-- `CONSTRAINT` criar
-- `UNIQ` registro na tabela tem que ser unico
-- `DEFAULT` inserir um valor padrão caso o usuario nao tenha inserido o dado 
+- `AUTOINCREMENT` : gerar valor automatico e incremental
+- `REFERENCES`
+- `IDENTITY` : enumerar automaticamente
+  - `IDENTITY (1,1)` : começar em 1 e incrementar em 1  
+- `CONSTRAINT` : criar regras/restrições para uma coluna de uma tabela
+  - `PRIMARY KEY` : chave primária
+  - `FOREIGN KEY` : chave secundária
+- `UNIQ` : o registro na tabela tem que ser unico
+- `NOT NULL`
+- `DEFAULT` : insere um valor _padrão_ caso o usuario nao tenha inserido o dado 
 
 ### CREATE
 ~~~SQL
