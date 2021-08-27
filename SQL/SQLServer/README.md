@@ -322,7 +322,7 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 - [sql ++](https://www.youtube.com/watch?v=MdYX5wojC-s&list=PLegVz0fLdvBqFGheCpqCau21kR2U5zBeh)
 
 # +
-~~~
+~~~SQL
 // realiza conta
 SELECT 123456/1024
 ~~~
