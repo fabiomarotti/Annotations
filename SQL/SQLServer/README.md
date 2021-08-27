@@ -93,18 +93,42 @@ DROP DATABASE db_nome_banco
 
 
 # Comandos para Tabelas
-
 - `AUTOINCREMENT` : gerar valor automatico e incremental
 - `REFERENCES`
 - `IDENTITY` : enumerar automaticamente
-  - `IDENTITY (1,1)` : começar em 1 e incrementar em 1  
+  - Exemplo: `IDENTITY (1,1)` : começar em 1 e ter o incremento +1 .
+
+## CONSTRAINT
+> Constraint possuem nomes, exemplo: pk_cidades <br>
+
 - `CONSTRAINT` : criar regras/restrições para uma coluna de uma tabela
   - `PRIMARY KEY` : chave primária : (ID) : (UNIQUE + NOT NULL)
+    - `pk_tb_nome_tabela` 
   - `FOREIGN KEY` : chave secundária : identifica/referência a um campo (linha) em outra tabela.
-- `UNIQUE` : Todos os valores em uma coluna sejam diferentes.
+    - `fk_tb_nome_tabela`
 - `NOT NULL` : Não permite nulos.
-- `CHECK` : Força uma condição específica em uma coluna. (>,<,=,MAX,...) 
-- `DEFAULT` : insere um _valor padrão_ para o caso do usuario nao ter inserido um dado 
+- `UNIQUE` : Todos os valores em uma coluna sejam diferentes.
+- `CHECK` : Garante que os valores de uma coluna satisfaçam uma condição  ( >, <, =, MAX, ...) 
+- `DEFAULT` : insere um _valor padrão_ para o caso o usuario nao tenha inserido algum.
+- `CREATE INDEX` : Criar e Recuperar rapidamente os dados no BD
+
+# Manipulando Constraint
+
+~~~SQL
+-- Busca todos os campos de CONSTRAINT
+SELECT * FROM information_schema.referential_constraints
+    WHERE constraint_schema = 'db_nome_banco_dados'
+~~~
+
+~~~SQL
+-- Busca o nome da tabela por meio do nome_constraint
+SELECT COLUMN_NAME,TABLE_NAME FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
+  WHERE CONSTRAINT_name = 'nome_constraint'
+~~~
+
+~~~SQL
+ALTER TABLE tb_nome_tabela DROP CONSTRAINT [FK_cod_criado_constraint]
+~~~
 
 ### CREATE
 > Exemplo:
@@ -150,28 +174,59 @@ CREATE TABLE tb_nome_tabela (
 
 
 ### ALTER
+- ALTER
+  - ADD
+    - ADD CONSTRAINT
+  - ALTER
+  - DROP
+  - 
 ~~~SQL
-ALTER TABLE tb_nome_tabela ADD campo_x VARCHAR(20) NOT NULL;
+-- Adiciona um campo a tabela.
+ALTER TABLE tb_nome_tabela 
+      ADD campo_x VARCHAR(20) NOT NULL;
 ~~~
 
 ~~~SQL
-ALTER TABLE tb_nome_tabela ALTER COLUMN campo_x VARCHAR(21);
+-- Altera um campo (coluna ja existente) na tabela.
+ALTER TABLE tb_nome_tabela 
+      ALTER COLUMN campo_x VARCHAR(21);
 ~~~
 
 ~~~SQL
-ALTER TABLE tb_nome_tabela DROP COLUMN campo_x;
+-- Apaga um campo (coluna) na tabela.
+ALTER TABLE tb_nome_tabela 
+      DROP COLUMN campo_x;
 ~~~
 
 ~~~SQL
-ALTER TABLE tb_nome_tabela ADD CONSTRAINT pk_campo_pk PRIMARY KEY (campo_pk);
+-- Adiciona Primary Key.
+ALTER TABLE tb_nome_tabela 
+      ADD CONSTRAINT pk_campo_pk PRIMARY KEY (campo_pk);
 ~~~
 
 ~~~SQL
+-- Adiciona Foreign Key
 ALTER TABLE tb_nome_tabela_com_pk 
       ADD CONSTRAINT fk_campo_fk FOREIGN KEY (campo_fk)
       REFERENCES tabela_fk (campo_fk_tabela_fk) ON DELETE CASCADE;
 ~~~
 
+#### Utilitários ALTER
+> Alterando campo da tabela para Primary Key
+~~~SQL
+-- Define a Primary Key sem CONSTRAINT
+ALTER TABLE tb_nomeA	ADD PRIMARY KEY (id_campo_tb_nomeA);
+
+-- Pesquisa o nome da Primary Key (Chave: Constraint)
+SELECT name  
+    FROM sys.key_constraints  
+    WHERE type = 'PK';  
+~~~
+
+> Alterando campo da tabela para Foreign Key
+~~~SQL
+ALTER TABLE tb_nomeA	ADD PRIMARY KEY (id_campo_tb_nomeA);
+~~~
 
 ### INSERT
 ~~~SQL
@@ -326,6 +381,10 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 
 # +
 ~~~SQL
--- realiza conta
-SELECT 123456/1024
+-- realiza operação aritmética
+SELECT 2+2
+
+-- Contar linhas da tabela
+SELECT COUNT(*) FROM tb_nome;
+
 ~~~
