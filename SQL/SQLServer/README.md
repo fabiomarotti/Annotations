@@ -16,9 +16,15 @@
 - **SQL Management Studio**:
   - Nome do servidor: nomePC\Instancia
   - Autenticação do SQL Server: sa e senha
+- **Numero nas linhas**: Tools /Options /Text Editor  /Transact-SQL /(line numbers)
+- **Seleção de uma area** : `Alt` + `Shift`
+- **Memória do Ctrl V** : `Ctrl`+`Shift`+`V` (lista de Ctrl+C sequenciados)
+- **Qual o tamanho do BD** : `sp_helpdb nome_base`
+- **Qual a maior tabela do BD** : `sp_spaceused nome_tabela`
+  - ` SELECT 'sp_spaceused '+''''+SCHEMA_NAME(schema_id)+'.'+name+'''' from sys.tables `
 
 ### Comandos uteis
-- `sp_helpdb nome_banco` informações sobre o Banco de Dados, Tamanho, Quem criou, localização, ...
+- `sp_helpdb` nome_banco  : informações sobre o Banco de Dados, Tamanho, Quem criou, localização, ...
 
 ### Informações
 > Comentários:
@@ -303,10 +309,16 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
   DROP DATABASE db_nome_banco
 ~~~
 
-[ver +](https://www.youtube.com/watch?v=RqlIpwpHWHA)
+
 
 
 # Refêrencias 
-[link 01](https://www.youtube.com/watch?v=DEh0B6PRn5k&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=1)
+- [link 01](https://www.youtube.com/watch?v=DEh0B6PRn5k&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=1)
+- [link 02](https://www.youtube.com/watch?v=rX2I7OjLqWE&t=4359s)
+- [ver +](https://www.youtube.com/watch?v=RqlIpwpHWHA)
 
-[link 02](https://www.youtube.com/watch?v=rX2I7OjLqWE&t=4359s)
+# +
+~~~
+// realiza conta
+SELECT 123456/1024
+~~~
