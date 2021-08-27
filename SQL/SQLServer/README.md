@@ -90,29 +90,52 @@ DROP DATABASE db_nome_banco
 - `IDENTITY` : enumerar automaticamente
   - `IDENTITY (1,1)` : começar em 1 e incrementar em 1  
 - `CONSTRAINT` : criar regras/restrições para uma coluna de uma tabela
-  - `PRIMARY KEY` : chave primária
-  - `FOREIGN KEY` : chave secundária
-- `UNIQ` : o registro na tabela tem que ser unico
-- `NOT NULL`
-- `DEFAULT` : insere um valor _padrão_ caso o usuario nao tenha inserido o dado 
+  - `PRIMARY KEY` : chave primária : (ID) : (UNIQUE + NOT NULL)
+  - `FOREIGN KEY` : chave secundária : identifica/referência a um campo (linha) em outra tabela.
+- `UNIQUE` : Todos os valores em uma coluna sejam diferentes.
+- `NOT NULL` : Não permite nulos.
+- `CHECK` : Força uma condição específica em uma coluna. (>,<,=,MAX,...) 
+- `DEFAULT` : insere um _valor padrão_ para o caso do usuario nao ter inserido um dado 
 
 ### CREATE
+> Exemplo:
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
-       campo_1  INT NOT NUL, 
-       campo_2  VARCHAR(50)
-       CONSTRAINT pk_campo_1 PRIMARY KEY (campo_1)
-       );
+  campo_1   INT           PRIMARY KEY,
+  campo_2   VARCHAR(255)  NOT NULL,
+  campo_3   INT           DEFAULT 0,
+  campo_4   DATETIME      NOT NULL
+);
 ~~~
 
-- Constraint: Cria-se automaticamente
-- Identity: Enumera campo_1 automaticamente
+> Exemplo: Relação PK e FK
+~~~SQL
+CREATE TABLE tb_estado (
+   id_estado   INT           PRIMARY KEY, 
+   uf_estado   VARCHAR(2)
+   dsc_estado  VARCHAR(255)
+   );
+~~~
+
+~~~SQL
+CREATE TABLE tb_cidade (
+       id_cidade   INT  PRIMARY KEY, 
+       dsc_cidade  VARCHAR(255),
+       id_estado   INT  FOREIGN KEY   REFERENCES tb_estado(id_estado)      
+       );
+~~~       
+
+> Exemplo: 
+  - Constraint: Cria-se automaticamente
+  - Identity: Enumera campo_1 automaticamente
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
        campo_1  INT    NOT NUL   PRIMARY KEY   IDENTITY, 
        campo_2  VARCHAR(50)
        );
 ~~~
+
+
 
 ### ALTER
 ~~~SQL
