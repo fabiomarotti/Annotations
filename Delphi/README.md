@@ -25,9 +25,8 @@
   - Em uma unit: declarar variaveis.
   - Em um parâmetro de uma função: passagem por referência.
 - `uses` : importação de arquivos
-  - crt
 - `label`
-- `const`
+- `const` : declarar constantes
 - `type` : Tipo Genérico (criar um proprio tipo de dados)
   - `class` 
   - `interface`
@@ -35,7 +34,8 @@
   - Subrange, 
   - Set, 
   - Record (tipos variados) [ver+](https://www.youtube.com/watch?v=Qe4ERd1ECtw&list=PLIz6mntaZSG1aTBEg1g6RkBO5HZALcGy-&index=17)
-  - Ponteiros de Métodos
+  - Ponteiros de Métodos : of object [ver+](https://www.devmedia.com.br/forum/type-procedure-o-que-e-isso/405155)
+  - Ponteiros Inteligentes [ver+](https://thuliobittencourt.com/blog/generics-ponteiros-inteligentes/)
 - `procedure`
 - `function`
 - Record  : Registros,  é uma forma de criar uma estrutura que possa armazenar valores de diferentes tipos de dados
