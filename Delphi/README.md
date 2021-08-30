@@ -22,15 +22,20 @@
 
 ## Subáreas
 - `var`
-- `uses`
+  - Em uma unit: declarar variaveis.
+  - Em um parâmetro de uma função: passagem por referência.
+- `uses` : importação de arquivos
   - crt
 - `label`
 - `const`
-- `type` (Proprio tipo de dados)
+- `type` : Tipo Genérico (criar um proprio tipo de dados)
+  - `class` 
+  - `interface`
   - Scalar (semelhante ao array de mesmo tipo)
   - Subrange, 
   - Set, 
   - Record (tipos variados) [ver+](https://www.youtube.com/watch?v=Qe4ERd1ECtw&list=PLIz6mntaZSG1aTBEg1g6RkBO5HZALcGy-&index=17)
+  - Ponteiros de Métodos
 - `procedure`
 - `function`
 - Record  : Registros,  é uma forma de criar uma estrutura que possa armazenar valores de diferentes tipos de dados
