@@ -27,6 +27,13 @@
     
 
 # Componentes
+- `ShowMessage('Olar')`
+- `InputBox`
+  - InputBox('Titulo da Caixa', 'Mensagem', 'valor pre-definido no imput do edit');
+- `InputQuery`
+  - Retorna -1 : True, caso clique em Ok ou 0 : False, caso clique em Cancelar.
+- `MessageDlg` é usada para abrir uma caixa de mensagem e obter a resposta do usuário
+
 - `TMainMenu`
   - `&nome` gera atalho do teclado  
 
