@@ -39,6 +39,9 @@
 - `SETID`       - Alterar o tipo de partição.
 - `SHRINK`      - Reduzir o tamanho do volume selecionado.
 - `UNIQUEID`    - Exibe ou define o identificador da GPT (Tabela de Partição GUID) ou a assinatura do MBR (Registro Mestre de Inicialização) de um disco.
+ - `UNIQUEID DISK` : Exibir assinatura do disco MBR com foco
+ - `UNIQUEID DISK ID=5fxxxx` : Definir assinatura do disco MBR ou GPT com foco para 5fxxxxx
+
 
 ### + usados
 - `LIST`
