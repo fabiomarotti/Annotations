@@ -39,23 +39,23 @@
 - `SETID`       - Alterar o tipo de partição.
 - `SHRINK`      - Reduzir o tamanho do volume selecionado.
 - `UNIQUEID`    - Exibe ou define o identificador da GPT (Tabela de Partição GUID) ou a assinatura do MBR (Registro Mestre de Inicialização) de um disco.
- - `UNIQUEID DISK` : Exibir assinatura do disco MBR com foco
- - `UNIQUEID DISK ID=5fxxxx` : Definir assinatura do disco MBR ou GPT com foco para 5fxxxxx
+  - `UNIQUEID DISK` : Exibir assinatura do disco MBR com foco
+  - `UNIQUEID DISK ID=5fxxxx` : Definir assinatura do disco MBR ou GPT com foco para 5fxxxxx
 
 
 ### + usados
 - `LIST`
- - `LIST DISK` : Listar Discos
- - `LIST PARTITION` : Listar Partição
+  - `LIST DISK` : Listar Discos
+  - `LIST PARTITION` : Listar Partição
 
 - `SELECT`
- - `SELECT DISK x` : Selecionar Disco
- - `SELECT PARTITION x` : Selecionar Partição
+  - `SELECT DISK x` : Selecionar Disco
+  - `SELECT PARTITION x` : Selecionar Partição
 
 - `DELETE PARTITON OVERRIDE`: Excluir Partição
 - `ACTIVE` : Ativar partição selecionada
 - `ASSIGN` : Atribuir letra de unidade ou ponto de montagem ao volume selecionado.
-- 
+
 
 ### Passos para Formatar
 - `CLEAN`
