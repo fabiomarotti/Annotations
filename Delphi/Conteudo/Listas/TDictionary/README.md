@@ -2,13 +2,13 @@
 - Busca no sentido: Chave -> Valor
 
 ## Métodos
-- `Lista :  TDictionary<String, TPessoa>` : Declaração do tipo (Chave: String, Valor: Integer).
-- `Lista := TDictionary<String, TPessoa>.Create;` : Criar do tipo (Chave: String, Valor: Integer).
-- `Lista.Add('Fabio', Pessoa)` : Adicionar (Chave: palavra, Valor: 100).
-- `ista.AddOrSetValue(Pessoa.CPF, Pessoa);` : Adicionar, verifica se ja existe, se sim, o Substitui (Valor).
-- `Lista.Remove('Fabio');` : Remover pela Chave: 'Palavra'.
-- `Lista.TryGetValue('Fabio', Pessoa)` : (TPessoa) : Buscar pela (Chave: Palavra), retornando o Valor na variavel previamente instânciada (Pessoa: TPessoar).
-- `Lista.ContainsKey('Fabio')` : (Booelan) : Busca pela (Chave: Palavra) e não retorna o Valor.
+- `Lista :  TDictionary<String, TPessoa>` : Declaração do tipo (Chave: String, Valor: TPessoa).
+- `Lista := TDictionary<String, TPessoa>.Create;` : Criar do tipo (Chave: String, Valor: TPessoa).
+- `Lista.Add('Fabio', Pessoa)` : Adicionar (Chave: palavra, Valor: Pessoa).
+- `ista.AddOrSetValue(Pessoa.CPF, Pessoa);` : Adicionar, verifica se ja existe, se sim, o Substitui (Valor: Pessoa).
+- `Lista.Remove('Fabio');` : Remover pela Chave: 'Fabio'.
+- `Lista.TryGetValue('Fabio', Pessoa)` : (TPessoa) : Buscar pela (Chave: fabio), retornando o Valor na variavel previamente instânciada (Pessoa: TPessoa).
+- `Lista.ContainsKey('Fabio')` : (Booelan) : Busca pela (Chave: Fabio) e não retorna o Valor.
 - `Lista.ContainsValue(Pessoa)` : (Boolean) : Busca pelo (Valor: Pessoa). Pessoa ja deve estar com as insformações instanciadas.
 
 ## Exemplo
