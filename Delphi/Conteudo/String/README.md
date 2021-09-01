@@ -1,6 +1,6 @@
 # String
 
-- `System.Classes.TStrings` [saiba+](http://docwiki.embarcadero.com/Libraries/Sydney/en/System.Classes.TStrings)
+- `System.Classes.TStrings` (Classe Base) [saiba+](http://docwiki.embarcadero.com/Libraries/Sydney/en/System.Classes.TStrings)
 - `System.Classes.TStringList` [Saiba+](http://docwiki.embarcadero.com/Libraries/Sydney/en/System.Classes.TStringList)
 
 --- 
