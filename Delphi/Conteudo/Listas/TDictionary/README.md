@@ -2,8 +2,8 @@
 - Busca no sentido: Chave -> Valor
 
 ## Métodos
-> ´Lista :  TDictionary<String, TPessoa >;´ : Declaração do tipo (Chave: String, Valor: Integer).
-- `Lista := TDictionary<String, TPessoa >.Create;` : Criar do tipo (Chave: String, Valor: Integer).
+- ´Lista :  TDictionary<String, TPessoa>´ : Declaração do tipo (Chave: String, Valor: Integer).
+- `Lista := TDictionary<String, TPessoa>.Create;` : Criar do tipo (Chave: String, Valor: Integer).
 - `Lista.Add('Fabio', Pessoa)` : Adicionar (Chave: palavra, Valor: 100).
 - `ista.AddOrSetValue(Pessoa.CPF, Pessoa);` : Adicionar, verifica se ja existe, se sim, o Substitui (Valor).
 - `Lista.Remove('Fabio');` : Remover pela Chave: 'Palavra'.
