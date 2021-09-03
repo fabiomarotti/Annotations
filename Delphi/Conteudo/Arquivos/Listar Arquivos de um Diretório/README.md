@@ -33,3 +33,5 @@ begin
   end;
 end;
 ~~~~ 
+
+[ver+](https://www.devmedia.com.br/listando-arquivos-de-um-diretorio/1112)
