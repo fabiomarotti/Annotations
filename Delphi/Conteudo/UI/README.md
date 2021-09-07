@@ -66,7 +66,112 @@
   - Glyph : Inserir Icone no botão
   - `Layout` relação Texto e Imagem no botão
 
+   
+
+
+# Caixa de Mensagem
+~~~Delphi
+ShowMessage('Ola Mundo!' + var);
+~~~
+
+
+# Data Controls
+- Componentes que interagem automaticamente com o Banco de Dados.
+- `DataSouce` -> [DataSet] (liga o componente com a tabela)
+- `DataField` (um campo apenas da tabela)
+- `PasswordChar` : Efeito de mascara 
+- `DisplayFormat` : Efeito mascara em zTable
+
+
+## Data Module
+- Formulario centralizador de componetes não visuais
+- componentes de Banco de Dados
+- boa prática, nomear como:
+  - `dmModulo` : objeto
+  - `dmUnidadeMdoulo` : arquivo
+ 
+ --------
+  
+# Lista de Componentes
+- `TDBGrid`
+- `TDBNavigator`
+- `TDBText` (Label) 
+- `TDBEdit` 
+- `TDBMemo`
+- `TDBImage` 
+  - não trabalho com *.jpg
+  - trabalha apenas com *.bmp
+  - deixa o banco de dados lento
+- `TDBListBox`
+
+> Interface:
+- `TMainMenu` (Standard)
+- `TPanel` (Standard)
+- `TButton` (Standard) : Botão
+- `TBitBtn` : permite imagem
+- `TPageControll` (Win32) > (new Page)
+- `TDBGrid` (Data Controls)
+- `TLabeledEdit` (Additional)
+- `TSpeedButton` (Additional) : Botão
+- `TMaskEdit`
+- `TMemo` Caixa para textos longos
+- `TOpenDialog` abertura de arquivos
+- `TSaveDialog` gravação de arquivos
+
+### `TLabel` 
+- WordWrap: Multiplas linhas
+
+### `TDBEdit` 
+
+### `TSpeedButton`
+- SpeedButton não recebem foco
+
+### `TDBComboBox` 
+- `Items` : Define os campos validos do ComboBox
+
+### `TDBGrid`
+- `Options`:
+  - dgIndicator
+  - dgRowSelect
+  - dgAlwaysShowSelection
+  
+### `TForm` 
+- `Icon`: *.ico
+- `FormStyle`:
+  - fsNormal (formulários independentes) 
+  - fsMDIForm (formulario Pai)
+  - fsMDIChild (formulario Filho)  
+- `Position`: poScreenCenter, poMainFormCenter,.. (onde o form vai aparecer)
+- `WindowsState`: wsNormal, Minimizado e Maximizado
+- Inheritable Items : Formulario modelo
+
+#### Ação para um Form
+> Procedimento em (TFormPrincipal) para chamar um formulario do (TFormCadastro)
+~~~Delphi
+procedure TFormPrincipal.Gravar1Click(Sender: TObject);
+var cadastro : TFormCadastro;
+begin
+    cadastro := TFormCadastro.Create(self);
+    cadastro.ShowModal;
+end;
+~~~
+
+
+### `TOpenDialog`
+> Abre uma caixa de Dialogo e pegar o endereço de um arquivo
+~~~Delphi
+  if compTOpenDialog.Execute then
+    TEdit.Text := ExtractFilePath( compTOpenDialog.FileName )  
+~~~~ 
+
+> Verifica se o endereço do arquivo existe
+~~~Delphi
+ if DirectoryExists( TEdit.Text ) then
+~~~ 
+
+
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
+> Boa prática: salvar apenas dados (numeros e letras), sem a máscara. <br>
 > [regra] **;** [salvar/não os caracteres] **;** [caracter a se exibir]
 - **;** (ponto e virgula)
     - Separa os três campos da máscara. 
@@ -93,104 +198,8 @@
 - **caracter a se exibir** (quando estiver vazio/branco)
     - caracter a se exibir no campo em branco
 
-> Boa prática: salvar apenas dados (numeros e letras), sem a máscara.   
 
-# Form
-- `Icon`: *.ico
-- `FormStyle`:
-  - fsNormal (formulários independentes) 
-  - fsMDIForm (formulario Pai)
-  - fsMDIChild (formulario Filho)  
-- `Position`: poScreenCenter, poMainFormCenter,.. (onde o form vai aparecer)
-- `WindowsState`: wsNormal, Minimizado e Maximizado
-
-
-
-# Ação para um Form
-
-> Procedimento em (TFormPrincipal) para chamar um formulario do (TFormCadastro)
-~~~Delphi
-procedure TFormPrincipal.Gravar1Click(Sender: TObject);
-var cadastro : TFormCadastro;
-begin
-    cadastro := TFormCadastro.Create(self);
-    cadastro.ShowModal;
-end;
-~~~
-
-# Caixa de Mensagem
-~~~Delphi
-ShowMessage('Ola Mundo!' + var);
-~~~
-
-
-# Formulário Modelo
-- Inheritable Items
-
-# Data Controls
-- Componentes que interagem automaticamente com o Banco de Dados.
-- `DataSouce` -> [DataSet] (liga o componente com a tabela)
-- `DataField` (um campo apenas da tabela)
-- `PasswordChar` : Efeito de mascara 
-- `DisplayFormat` : Efeito mascara em zTable
-
-# Dialogs
-- `TOpenDialog`
-
-> Abre uma caixa de Dialogo e pegar o endereço de um arquivo
-~~~Delphi
-  if compTOpenDialog.Execute then
-    TEdit.Text := ExtractFilePath( compTOpenDialog.FileName )  
-~~~~ 
-
-> Verifica se o endereço do arquivo existe
-~~~Delphi
- if DirectoryExists( TEdit.Text ) then
-~~~ 
-
-## Data Module
-- Formulario centralizador de componetes não visuais
-- componentes de Banco de Dados
-- boa prática, nomear como:
-  - `dmModulo` : objeto
-  - `dmUnidadeMdoulo` : arquivo
-  - 
-## Componentes
-- `TDBGrid`
-- `TDBNavigator`
-- `TDBText` (Label) 
-- `TDBEdit` 
-- `TDBMemo`
-- `TDBImage` 
-  - não trabalho com *.jpg
-  - trabalha apenas com *.bmp
-  - deixa o banco de dados lento
-- `TDBListBox`
-
-> Interface:
-- `TMainMenu` (Standard)
-- `TPanel` (Standard)
-- `TButton` (Standard) : Botão
-- `TBitBtn` : permite imagem
-- `TPageControll` (Win32) > (new Page)
-- `TDBGrid` (Data Controls)
-- `TLabeledEdit` (Additional)
-- `TSpeedButton` (Additional) : Botão
-- `TMaskEdit`
-- `TMemo` Caixa para textos longos
-- `TOpenDialog` abertura de arquivos
-- `TSaveDialog` gravação de arquivos
-- 
-### `TDBEdit` 
-
-### `TDBComboBox` 
-- `Items` : Define os campos validos do ComboBox
-
-### `TDBGrid`
-- `Options`:
-  - dgIndicator
-  - dgRowSelect
-  - dgAlwaysShowSelection
+-----
 
 # Eventos dos Formulários
 - `onCreate` : Ocorre quando o objeto é criado.
@@ -228,7 +237,3 @@ ShowMessage('Ola Mundo!' + var);
 - `OnMouseUp` : Ocorre quando o usuário solta um botão do mouse.
 - `OnTimer`:  Ocorre em intervalos periódicos de tempo.
 
-
-
-## considerações
-- SpeedButton não recebem foco
