@@ -1,9 +1,9 @@
 # UI (Uses Interface) (Interface de Usuário)
 
-# Configurações importantes para Interface
+#### Configurações importantes para Interface
 - Project / Options / Forms / Auto-create Forms (principal)
 
-## Hierarquia simplificada das classes Delphi:
+#### Hierarquia simplificada das classes Delphi:
 - `TObject`
   - `TPersistent`
    - `TComponent`
