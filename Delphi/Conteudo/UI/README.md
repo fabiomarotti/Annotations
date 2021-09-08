@@ -115,8 +115,7 @@ ShowMessage('Ola Mundo!' + var);
 - `TSpeedButton` (Additional) : Botão
 - `TMaskEdit`
 - `TMemo` Caixa para textos longos
-- `TOpenDialog` abertura de arquivos
-- `TSaveDialog` gravação de arquivos
+
 
 ### `TLabel` 
 - WordWrap: Multiplas linhas
@@ -158,17 +157,38 @@ end;
 
 
 ### `TOpenDialog`
-> Abre uma caixa de Dialogo e pegar o endereço de um arquivo
+- Filter: Definir extensões
+- Title: Titulo da Caixa de Dialogo
+
+> Abre uma caixa de Dialogo e pegar o endereço de um arquivo existente
 ~~~Delphi
   if compTOpenDialog.Execute then
     TEdit.Text := ExtractFilePath( compTOpenDialog.FileName )  
 ~~~~ 
+
+> Carregando arquivo em um Memo pelo OpenDialog
+~~~Delphi
+ MemoAntigo.Lines.LoadFromFile(OP.FileName);
+~~~
 
 > Verifica se o endereço do arquivo existe
 ~~~Delphi
  if DirectoryExists( TEdit.Text ) then
 ~~~ 
 
+### `TSaveDialog` 
+- DefaultExt: Definir extenção padrão caso nao for informada.
+- Filter: Definir extensões
+- Title: Titulo da Caixa de Dialogo
+
+> Abre uma caixa de dialogo para pegar o caminho de destino do arquivo.
+~~~Delphi
+if SaveDialog.Execute() then
+begin
+  sCaminho := SaveDialog.FileName;
+  memo.Lines.SaveToFile(sCaminho);
+end;  
+~~~
 
 ### `TMaskEdit` [ver +](http://delphiparainiciantes.com.br/como-utilizar-mascaras-maskedit-no-delphi/)
 > Boa prática: salvar apenas dados (numeros e letras), sem a máscara. <br>
