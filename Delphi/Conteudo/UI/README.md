@@ -123,6 +123,7 @@ ShowMessage('Ola Mundo!' + var);
 ### `TDBEdit` 
 
 ### `TSpeedButton`
+- Glyph: Selecionar imagem do botão
 - SpeedButton não recebem foco
 
 ### `TDBComboBox` 
