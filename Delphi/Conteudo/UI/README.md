@@ -173,6 +173,7 @@ end;
 ### `TOpenDialog`
 - Filter: Definir extensões
 - Title: Titulo da Caixa de Dialogo
+- Options/ AllowMultiSelect : Selecionar varios arquivos
 
 > Abre uma caixa de Dialogo e pegar o endereço de um arquivo existente
 ~~~Delphi
