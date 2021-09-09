@@ -1,5 +1,7 @@
 # Estrutura de Dados
 
+### `TObjectStack`
+> da unit Contnrs que implementa uma pilha de TOBjects (objetos).
 - `Push(TObject):TObject`: Insere
 - `Pop:TObject;` : Remove
 - `Count: Integer` : Retorna a quantidade de objetos
