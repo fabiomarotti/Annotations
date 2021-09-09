@@ -219,6 +219,9 @@ end;
 - **caracter a se exibir** (quando estiver vazio/branco)
     - caracter a se exibir no campo em branco
 
+### `TUpDown`
+- Associate: associar o inc/dec ao campo informado.
+
 
 -----
 
