@@ -121,6 +121,9 @@ ShowMessage('Ola Mundo!' + var);
 - WordWrap: Multiplas linhas
 
 ### `TDBEdit` 
+### `TLabeledEdit` 
+- EditLabel : Caption : (caption da Label)
+
 
 ### `TSpeedButton`
 - Glyph: Selecionar imagem do botão
