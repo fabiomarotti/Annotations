@@ -148,6 +148,16 @@ ShowMessage('Ola Mundo!' + var);
 - `WindowsState`: wsNormal, Minimizado e Maximizado
 - Inheritable Items : Formulario modelo
 
+#### Abrir formulário centralizado
+~~~Delphi
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  // (Tela dividido por 2) - (Form dividido por 2)
+  Form1.Left := (Screen.Width  div 2) - (Form1.Width  div 2);
+  Form1.Top  := (Screen.Height div 2) - (Form1.Height div 2);
+end;
+~~~
+
 #### Ação para um Form
 > Procedimento em (TFormPrincipal) para chamar um formulario do (TFormCadastro)
 ~~~Delphi
