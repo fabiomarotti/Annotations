@@ -16,7 +16,7 @@
   - `palavra.TrimEnd(arayChar)` : Retira caracteres específicos (arrayChar) do Final.
 - `String.Equals(string1 , string2)`: (Boolean) Compara se as *string1* e *string2* são iguais.
 
-# Conversões
+## Conversões
 - `BoolToStr` : Booelan para String.
 - `IntToStr` : Integer para String.
 - `FloatToStr` : Float para String.
@@ -24,4 +24,22 @@
 - `DateToStr` : Converte uma Data para String 
 - `FormatDateTime( x , dataAtual )` : Converte uma Data para uma String personalizada
   - dataAtual := TDateTime.Now;
+[ver+](https://stackoverflow.com/questions/6452400/difference-between-comparestr-and-for-strings-in-delphi)
 
+
+## Comparações
+- Equals
+- EndWith
+- StartWith
+- CompareStr
+- AnsiCompareText
+- Compare()
+- NOME_TABELA.FieldByName('NOME_FIELD').AsString = '02'
+- NOME_TABELA.FieldByName('NOME_FIELD').AsInteger = 02
+- NOME_TABELA.FieldByName('NOME_FIELD').AsBoolean = True
+- if ((conexao.FieldValues['complex'] = '02') and (conexao.FieldValues['financ'] = '04')) then
+-StrUtils
+[ver+ compare prog](https://showdelphi.com.br/comparacao-de-strings-com-o-delphi/)
+
+## Informações
+- Length(str1)
