@@ -91,7 +91,7 @@ ALTER TABLE tb_nome_tabela DROP CONSTRAINT [FK_cod_criado_constraint]
 # `CREATE`
 > Estrutura do comando CREATE:
 - `CREATE`
-  - TABLE
+  - `TABLE`
   
 > Exemplo:
 ~~~SQL
@@ -205,6 +205,7 @@ INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An)
 > Estrutura do comando DELETE:
 - `DELETE`
   - `WHERE`
+  
 ~~~SQL
 DELETE tb_nome_tabela WHERE campo=valor;
 ~~~
@@ -226,10 +227,10 @@ UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE 
 
 # `SELECT`
 > Estrutura do comando SELECT:
-- SELECT
-  - FROM
-  - WHERE
-  - INNER  JOIN
+- `SELECT`
+  - `FROM`
+  - `WHERE`
+  - `INNER  JOIN`
   
 > - `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
 > - `COUNT(col_name)` : Contagem de Linhas de uma Coluna de uma Tabela (`*`: todas as coluas)
