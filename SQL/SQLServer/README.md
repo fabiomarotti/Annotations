@@ -235,7 +235,7 @@ UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE 
 > - `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
 > - `COUNT(col_name)` : Contagem de Linhas de uma Coluna de uma Tabela (`*`: todas as coluas)
 >   - `COUNT(DISTINCT col_name)` 
-> - `TOP --` : Filtras as primeiras -- linhas   
+> - `TOP x` : Filtras as primeiras x linhas   
 > - `WHERE` : filtrar por condição (operadores lógicos: = , <> , >= , AND, ..)
 >   - `BETWEEN` : valores **entre** uma faixa, equivale a AND
 >   - `IN(valor_1,..,valor_n)` : filtra se contem algum, equivale a OR
