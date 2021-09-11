@@ -78,7 +78,7 @@ LOG ON
 - `DEFAULT` : insere um _valor padrão_ para o caso o usuario nao tenha inserido algum.
 - `CREATE INDEX` : Criar e Recuperar rapidamente os dados no BD
 
-## Manipulando Constraint
+### Manipulando Constraint
 
 ~~~SQL
 -- Busca todos os campos de CONSTRAINT
