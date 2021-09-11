@@ -96,7 +96,7 @@ SELECT COLUMN_NAME,TABLE_NAME FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
 ALTER TABLE tb_nome_tabela DROP CONSTRAINT [FK_cod_criado_constraint]
 ~~~
 
-### `CREATE`
+# `CREATE`
 > Exemplo:
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
@@ -139,7 +139,7 @@ CREATE TABLE tb_nome_tabela (
 
 
 
-### `ALTER`
+# `ALTER`
 - ALTER
   - ADD
     - ADD CONSTRAINT
@@ -194,7 +194,7 @@ SELECT name
 ALTER TABLE tb_nomeA	ADD PRIMARY KEY (id_campo_tb_nomeA);
 ~~~
 
-### `INSERT`
+# `INSERT`
 ~~~SQL
 INSERT INTO nome_tabela (campo_1, campo_2, .., campo_n) VALUES (valor_1, valor_2, ..., valor_n);
 ~~~
@@ -206,7 +206,7 @@ INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An)
               (valor_C1, valor_C2, ... , valor_Cn);
 ~~~
  
-### DELETE
+# `DELETE`
 ~~~SQL
 DELETE tb_nome_tabela WHERE campo=valor;
 ~~~
@@ -216,13 +216,13 @@ DELETE tb_nome_tabela WHERE campo=valor;
 DELETE tb_nome_tabela;
 ~~~
 
-### `UPDATE`
+# `UPDATE`
 ~~~SQL
 UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   campo_x = valor_x;
 ~~~
 
 
-### `SELECT`
+# `SELECT`
 > - `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
 > - `COUNT(col_name)` : Contagem de Linhas de uma Coluna de uma Tabela (`*`: todas as coluas)
 >   - `COUNT(DISTINCT col_name)` 
