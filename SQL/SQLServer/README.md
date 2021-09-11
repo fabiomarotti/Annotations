@@ -17,7 +17,7 @@
 [continuar](https://www.youtube.com/watch?v=_gEeh3lPhl0&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=3)
 
 
-# Comandos para Banco de Dados
+# Comandos para o Banco de Dados
 ~~~SQL
 -- Criar o Banco de Dados
 CREATE DATABASE db_nome_banco
@@ -58,13 +58,13 @@ LOG ON
 
 
 
-## Comandos para Tabelas
+# Referências para os comandos de tabela
 - `AUTOINCREMENT` : gerar valor automatico e incremental
 - `REFERENCES`
 - `IDENTITY` : enumerar automaticamente
   - Exemplo: `IDENTITY (1,1)` : começar em 1 e ter o incremento +1 .
 
-# CONSTRAINT
+### CONSTRAINT
 > Constraint possuem nomes, exemplo: pk_cidades <br>
 
 - `CONSTRAINT` : criar regras/restrições para uma coluna de uma tabela
@@ -78,7 +78,7 @@ LOG ON
 - `DEFAULT` : insere um _valor padrão_ para o caso o usuario nao tenha inserido algum.
 - `CREATE INDEX` : Criar e Recuperar rapidamente os dados no BD
 
-### Manipulando Constraint
+#### Manipulando Constraint
 
 ~~~SQL
 -- Busca todos os campos de CONSTRAINT
@@ -96,7 +96,8 @@ SELECT COLUMN_NAME,TABLE_NAME FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
 ALTER TABLE tb_nome_tabela DROP CONSTRAINT [FK_cod_criado_constraint]
 ~~~
 
-# `CREATE`
+# Comandos para Tabelas
+### `CREATE`
 > Exemplo:
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
