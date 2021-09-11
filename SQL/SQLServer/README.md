@@ -1,11 +1,8 @@
 # SQL Server
-
 ### Comandos
-
 ~~~SQL
 -- Comentário em uma linha 
 ~~~
-
 ~~~SQL
 /* Comentário em multiplas linhas */
 ~~~
@@ -13,23 +10,17 @@
 # Tabelas Temporárias
 - `#` Visibilidade Local
 - `##` Visbilidade Global
-
 [continuar](https://www.youtube.com/watch?v=_gEeh3lPhl0&list=PLsI_Jctnji3XawyHvU2WUBzBvUKAcs9Mg&index=3)
-
 
 # Comandos para o Banco de Dados
 ~~~SQL
 -- Criar o Banco de Dados
 CREATE DATABASE db_nome_banco
 ~~~ 
-
 ~~~SQL
 -- Acessar o Banco de Dados para o uso
 USE db_nome_banco
 ~~~
-
-
-
 ~~~SQL
 -- Excluir Banco de Dados
 DROP DATABASE db_nome_banco
@@ -39,7 +30,6 @@ DROP DATABASE db_nome_banco
 > - `db_nome_banco.mdf` Banco de Dados <br>
 > - `db_nome_banco.ldf` Log do Bando de Dados <br>
 > - Criar a pasta antes de executar o comando
-
 ~~~SQL
 CREATE DATABASE nome_banco
   ON ( NAME       = nome_banco, 
@@ -54,9 +44,6 @@ LOG ON
     MAXSIZE    = 50,       // Tamanho final MB
     FILEGROWTH = 10 )      // Crescimento de 10%
 ~~~
-
-
-
 
 # Referências para os comandos de tabela
 - `AUTOINCREMENT` : gerar valor automatico e incremental
@@ -79,25 +66,33 @@ LOG ON
 - `CREATE INDEX` : Criar e Recuperar rapidamente os dados no BD
 
 #### Manipulando Constraint
-
 ~~~SQL
 -- Busca todos os campos de CONSTRAINT
 SELECT * FROM information_schema.referential_constraints
     WHERE constraint_schema = 'db_nome_banco_dados'
 ~~~
-
 ~~~SQL
 -- Busca o nome da tabela por meio do nome_constraint
 SELECT COLUMN_NAME,TABLE_NAME FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
   WHERE CONSTRAINT_name = 'nome_constraint'
 ~~~
-
 ~~~SQL
 ALTER TABLE tb_nome_tabela DROP CONSTRAINT [FK_cod_criado_constraint]
 ~~~
 
 # Comandos para Tabelas
-### `CREATE`
+- `CREATE`
+- `ALTER`
+- `INSERT`
+- `DELETE`
+- `UPDATE`
+- `SELECT`
+
+# `CREATE`
+> Estrutura do comando CREATE:
+- `CREATE`
+  - TABLE
+  
 > Exemplo:
 ~~~SQL
 CREATE TABLE tb_nome_tabela (
@@ -138,39 +133,34 @@ CREATE TABLE tb_nome_tabela (
        );
 ~~~
 
-
-
 # `ALTER`
-- ALTER
-  - ADD
-    - ADD CONSTRAINT
-  - ALTER
-  - DROP
-  - 
+> Estrutura do comando ALTER:
+- `ALTER`
+  - `ADD`
+    - `ADD CONSTRAINT`
+  - `ALTER`
+  - `DROP`
+   
 ~~~SQL
 -- Adiciona um campo a tabela.
 ALTER TABLE tb_nome_tabela 
       ADD campo_x VARCHAR(20) NOT NULL;
 ~~~
-
 ~~~SQL
 -- Altera um campo (coluna ja existente) na tabela.
 ALTER TABLE tb_nome_tabela 
       ALTER COLUMN campo_x VARCHAR(21);
 ~~~
-
 ~~~SQL
 -- Apaga um campo (coluna) na tabela.
 ALTER TABLE tb_nome_tabela 
       DROP COLUMN campo_x;
 ~~~
-
 ~~~SQL
 -- Adiciona Primary Key.
 ALTER TABLE tb_nome_tabela 
       ADD CONSTRAINT pk_campo_pk PRIMARY KEY (campo_pk);
 ~~~
-
 ~~~SQL
 -- Adiciona Foreign Key
 ALTER TABLE tb_nome_tabela_com_pk 
@@ -196,10 +186,14 @@ ALTER TABLE tb_nomeA	ADD PRIMARY KEY (id_campo_tb_nomeA);
 ~~~
 
 # `INSERT`
+> Estrutura do comando INSERT:
+- `INSERT`
+  - `INTO`
+  - `VALUES`
+  
 ~~~SQL
 INSERT INTO nome_tabela (campo_1, campo_2, .., campo_n) VALUES (valor_1, valor_2, ..., valor_n);
 ~~~
-
 ~~~SQL
 INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An) 
        VALUES (valor_A1, valor_A2, ... , valor_An),
@@ -208,22 +202,35 @@ INSERT INTO tb_nome_tabela (campo_A1, campo_A2, .., campo_An)
 ~~~
  
 # `DELETE`
+> Estrutura do comando DELETE:
+- `DELETE`
+  - `WHERE`
 ~~~SQL
 DELETE tb_nome_tabela WHERE campo=valor;
 ~~~
-
-- Apaga todos os registros da tabela
 ~~~SQL
+-- Apaga todos os registros da tabela
 DELETE tb_nome_tabela;
 ~~~
 
 # `UPDATE`
+> Estrutura do comando UPDATE:
+- `UPDATE`
+  - `SET`
+  - `WHERE`
+  
 ~~~SQL
 UPDATE tb_nome_tabela SET   campo_1 = valor_1 , ... , campo_n = valor_n   WHERE   campo_x = valor_x;
 ~~~
 
 
 # `SELECT`
+> Estrutura do comando SELECT:
+- SELECT
+  - FROM
+  - WHERE
+  - INNER  JOIN
+  
 > - `DISTINCT` : filtra, não retornando os dados duplicados (linhas repetidas) da Coluna de uma Tabela.
 > - `COUNT(col_name)` : Contagem de Linhas de uma Coluna de uma Tabela (`*`: todas as coluas)
 >   - `COUNT(DISTINCT col_name)` 
@@ -312,8 +319,10 @@ SELECT  c.cidade + ' - ' + e.estado   FROM   tb_cidade AS c   INNER JOIN   tb_es
 SELECT  c.cidade + ' - ' + e.estado  Cidade_Estado  FROM   tb_cidade AS c   INNER JOIN   tb_estado AS e   ON   c.id_estado = c.id_estado
 ~~~
 
-# Comandos 2
+---- 
+----
 
+# Comandos 2
 > Seleciona todos os Banco de Dados do SQLServer
 - `name` nome da coluna com os nomes dos Banco de Dados
  
@@ -325,8 +334,8 @@ SELECT name FROM master.sys.databases
 SELECT name FROM master.dbo.sysdatabases
 ~~~
 
-# Comandos Encadeados
 
+# Comandos Encadeados
 ~~~SQL
 -- Excluir banco, caso ja exista
 use master 
@@ -338,6 +347,14 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 ~~~
 
 
+# Operações via comandos
+~~~SQL
+-- realiza operação aritmética
+SELECT 2+2
+
+-- Contar linhas da tabela
+SELECT COUNT(*) FROM tb_nome;
+~~~
 
 
 # Refêrencias 
@@ -346,12 +363,4 @@ if exists (SELECT 1 FROM sys.databases WHERE name = 'db_nome_banco')
 - [ver +](https://www.youtube.com/watch?v=RqlIpwpHWHA)
 - [sql ++](https://www.youtube.com/watch?v=MdYX5wojC-s&list=PLegVz0fLdvBqFGheCpqCau21kR2U5zBeh)
 
-# +
-~~~SQL
--- realiza operação aritmética
-SELECT 2+2
 
--- Contar linhas da tabela
-SELECT COUNT(*) FROM tb_nome;
-
-~~~
