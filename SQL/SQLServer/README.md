@@ -58,13 +58,13 @@ LOG ON
 
 
 
-# Comandos para Tabelas
+## Comandos para Tabelas
 - `AUTOINCREMENT` : gerar valor automatico e incremental
 - `REFERENCES`
 - `IDENTITY` : enumerar automaticamente
   - Exemplo: `IDENTITY (1,1)` : começar em 1 e ter o incremento +1 .
 
-## CONSTRAINT
+# CONSTRAINT
 > Constraint possuem nomes, exemplo: pk_cidades <br>
 
 - `CONSTRAINT` : criar regras/restrições para uma coluna de uma tabela
@@ -78,7 +78,7 @@ LOG ON
 - `DEFAULT` : insere um _valor padrão_ para o caso o usuario nao tenha inserido algum.
 - `CREATE INDEX` : Criar e Recuperar rapidamente os dados no BD
 
-# Manipulando Constraint
+## Manipulando Constraint
 
 ~~~SQL
 -- Busca todos os campos de CONSTRAINT
