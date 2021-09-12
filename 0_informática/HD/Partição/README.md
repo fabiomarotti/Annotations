@@ -6,9 +6,11 @@
 
 ### `GPT` (UEFI)
 - Utilizado para Windows 10
-- Permite criar mais de 4 partições
-- Para HD de 2T ou mais
-- Partição GPT para UEFI
+- Suporta HD de 2T ou mais
+- Suporta partiçoes de 2T ou mais
+- Suporta mais que 4 partições (sem distinção entre primária/estendida/lógica)
+- Menor risco de conflito/códigos duplicados (GUIDs)
+
 - `Shift` + `F10` : Abre o Prompt
   - `DISKPART`
   - `LIST DISK`
