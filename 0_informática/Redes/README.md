@@ -1,5 +1,8 @@
 # Redes
 
+### Exibir Computadores na Rede (Windows 10)
+- Recursos do Windows / Suporte para compart... SMB 1.0/CFIS
+
 ### Compartilhar Pasta
 
 ### Compartilhar Unidade
