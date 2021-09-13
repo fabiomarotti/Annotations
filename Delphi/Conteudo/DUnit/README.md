@@ -12,8 +12,8 @@
 # Test Project
 
 # Test Case
-- Lista todas as funções de um projeto
-- Selecionar funções com lógica atribuidas
+- Lista de todas as funções de um projeto
+- Selecionar as funções com lógica atribuidas
 
 
 [ver+](https://www.youtube.com/watch?v=JOpMlhtJ9AM)
