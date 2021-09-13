@@ -45,5 +45,7 @@ double    : decimal;
 - `\xxx` : qualquer padrão de bits xxx em octal
 
 [Continuar apostila](file:///C:/Users/Fabio/Downloads/Estrutura%20de%20dados%20-%20Unicamp%20Prof%20Ivan.pdf)
+[recursão](https://www.youtube.com/watch?v=5SHGxN7_Snc)
+
 
 
