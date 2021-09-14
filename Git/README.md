@@ -66,9 +66,11 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 ### `git config` 
 - `git config` : lista as opções de complemento do comando.
   - `git config --list` : lista todas as variáveis definidas no arquivo de configuração, junto com seus valores.
-  - `git config --global -e` : abrir arquivo de configuração em um aeditor de notas.
+  - `git config --global -e` : abrir arquivo de configuração em um editor de notas.
   - `git config --global user.name "Fábio" ` : setar nome de usuário.
+    - `git config user.name` : exibir usuário
   - `git config --global user.email "fabio@hotmail.com" ` : setar e-mail.
+    - `git config user.email` : exibir e-mail
   - `git config [--system, --local, --global]` : opções do arquivo de configuração: sistema, local e global.
  
 ### `git help`
