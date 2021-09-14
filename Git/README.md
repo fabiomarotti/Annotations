@@ -86,7 +86,7 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - Adicionando sua chave SSH ao ssh-agent: 
   - Iniciando ssh-agent em segundo plano: `eval "$(ssh-agent -s)"`
   - Adicionando: `ssh-add ~/.ssh/id_rsa`
-   - _Se você criou sua chave com um nome diferente, substitua id_rsa no comando com o nome de sua chave privada_
+    - *_Se você criou sua chave com um nome diferente, substitua id_rsa no comando com o nome de sua chave privada_
   
 ### Comandos para se criar um arquivo gitignore global
 - `git add .gitignore` criar arquivo
