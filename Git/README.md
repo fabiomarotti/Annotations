@@ -82,7 +82,11 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 ### `SSH`
 - `ls -al ~/.ssh` : Verificar se existe chave SSH
 - ` ssh-keygen -t ed25519 -C "your_email@example.com"` : Gerar uma nova chave SSH [ver+](https://docs.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- 
+- [usuários distintos no mesmo computador](https://cursos.alura.com.br/forum/topico-utilizar-usuarios-distintos-no-mesmo-computador-local-para-colaborar-no-git-26002)
+- Adicionando sua chave SSH ao ssh-agent: 
+  - Iniciando ssh-agent em segundo plano: `eval "$(ssh-agent -s)"`
+  - Adicionando: `ssh-add ~/.ssh/id_rsa`
+   - _Se você criou sua chave com um nome diferente, substitua id_rsa no comando com o nome de sua chave privada_
   
 ### Comandos para se criar um arquivo gitignore global
 - `git add .gitignore` criar arquivo
