@@ -67,6 +67,8 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `git config` : lista as opções de complemento do comando.
   - `git config --list` : lista todas as variáveis definidas no arquivo de configuração, junto com seus valores.
   - `git config --global -e` : abrir arquivo de configuração em um editor de notas.
+  - `git config --global core.editor "C:\caminhoEditor"`
+    - `git config core.editor` : exibir local editor padrão
   - `git config --global user.name "Fábio" ` : setar nome de usuário.
     - `git config user.name` : exibir usuário
   - `git config --global user.email "fabio@hotmail.com" ` : setar e-mail.
@@ -77,6 +79,10 @@ Repositório com os estudos realizados sobre o Git v2.x e GitHub
 - `git help` ajuda geral 
   - `git help -a` ajuda específica (tambem se encontra no c:/.../git-doc)
 
+### `SSH`
+- `ls -al ~/.ssh` : Verificar se existe chave SSH
+- ` ssh-keygen -t ed25519 -C "your_email@example.com"` : Gerar uma nova chave SSH [ver+](https://docs.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- 
   
 ### Comandos para se criar um arquivo gitignore global
 - `git add .gitignore` criar arquivo
