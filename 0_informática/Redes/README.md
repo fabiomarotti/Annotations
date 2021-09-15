@@ -1,7 +1,7 @@
 # Redes
 
 ### Exibir Computadores na Rede (Windows 10)
-- Recursos do Windows / Suporte para compart... SMB 1.0/CFIS
+- Ativar ou Desativar Recursos do Windows / Suporte para compart... SMB 1.0/CFIS
 
 ### Compartilhar Pasta
 
