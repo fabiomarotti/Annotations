@@ -55,6 +55,11 @@ public
 [ver+ 01](http://docwiki.embarcadero.com/RADStudio/XE3/en/XML_Documentation_Comments)
 [ver+ 02](https://www.youtube.com/watch?v=bQ5dSiLfwZI)
 
+## PasDoc
+- [download](https://sourceforge.net/projects/pasdoc/)
+- 
+
+
 ## Region
 ~~~Delphi
 { $REGION 'Descrição da funcionalidade de um Botão: ACIONAR' }
