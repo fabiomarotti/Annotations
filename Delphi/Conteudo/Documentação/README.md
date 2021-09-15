@@ -1,7 +1,8 @@
 # Documentação e Navegabilidade em Delphi
 
 
-## XML Documentation Comments
+## Help Insight - XML Documentation Comments
+- [Help Insight Embarcadero](https://docwiki.embarcadero.com/RADStudio/Sydney/en/Help_Insight)
 - Exibir uma caixa de diálogo com informações sobre a Função/Procedimento.
 - `Ctrl` + `Shift` + `H` ou `parar o mouse em cima do nome da função`: para visualizar as funcionalidades de uma função.
 - Realizar a marcação sobre Declaração da função.
@@ -52,12 +53,17 @@ public
     ///  </remarks>
     function Dividir(x, y: Integer): Real;
 ~~~
+> Referências:
 [ver+ 01](http://docwiki.embarcadero.com/RADStudio/XE3/en/XML_Documentation_Comments)
 [ver+ 02](https://www.youtube.com/watch?v=bQ5dSiLfwZI)
 
+
+
 ## PasDoc
+> Referências:
 - [download](https://sourceforge.net/projects/pasdoc/)
 - [GitHub PasDoc](https://github.com/pasdoc/pasdoc)
+- [PasDoc io](https://pasdoc.github.io/)
 
 
 ## Region
