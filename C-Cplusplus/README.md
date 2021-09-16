@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 int main(){
-    printf("Ola");
+    printf("Ola Mundo!");
     return 0;
 }
 ~~~
