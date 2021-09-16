@@ -89,7 +89,7 @@ function DoSomething(const Name: string; const Value: string): boolean;
 ~~~
 
 - `@abstract`
-Delphi~~~
+~~~Delphi
 type
   { @abstract(This class does some very useful thing.)
     With the help of this class you can ...
@@ -164,7 +164,7 @@ var
   MyVariable: Integer;
 ~~~
 
-- ´@image
+- ´@image`
 ~~~Delphi
 { Diagram below shows how this procedure works:
   @image(diagram.png) }
