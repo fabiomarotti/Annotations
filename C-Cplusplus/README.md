@@ -4,6 +4,7 @@
 - [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)
 - [Falcon C++](https://sourceforge.net/projects/falconcpp/)
 - [Code Blocks](https://www.codeblocks.org/)
+  - Settings / Compiler / C:\Program Files\CodeBlocks\MinGW 
 - [MSYS2](https://www.msys2.org/)
 - [eclipse](https://www.eclipse.org/downloads/)
 
