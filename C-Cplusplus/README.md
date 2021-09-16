@@ -8,6 +8,18 @@
 - [MSYS2](https://www.msys2.org/)
 - [eclipse](https://www.eclipse.org/downloads/)
 
+# Hello World
+~~~C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    printf("Ola");
+    return 0;
+}
+~~~
+
+
 # Variaveis de Ambiente (MSYS2)
 - [ver](https://www.youtube.com/watch?v=HF95fQaQUDU)
 
