@@ -40,5 +40,7 @@ http://mathurl.com/
 
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
+- ver esse:
+- https://qastack.com.br/programming/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog
 # Referências
 [video](https://www.youtube.com/watch?v=gjw7AaOs9P8)
