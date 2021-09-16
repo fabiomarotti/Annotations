@@ -164,7 +164,7 @@ var
   MyVariable: Integer;
 ~~~
 
-- ´@image`
+- `@image`
 ~~~Delphi
 { Diagram below shows how this procedure works:
   @image(diagram.png) }
