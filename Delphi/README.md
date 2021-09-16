@@ -210,8 +210,8 @@ var Idade := 20; // compilador infere que é um tipo inteiro
 - `=` , `<>` , `>=`, `<=`, `AND`, `OR`, `NOT`, `True`, `False`
 - `:=` (atribuição)
 
-## Tipos de Dados 
-### Types:
+# Tipos de Dados 
+#### Types:
 - Define-se um **tipo** 
 
 ~~~Delphi
@@ -235,7 +235,7 @@ alfabeto[3] := 'c';
 
 [2 ver +](http://www.delphibasics.co.uk/Article.asp?Name=DataTypes)
 
-### Numéricos:
+#### Numéricos:
 ~~~Delphi
 var
    // Integer data types :
@@ -265,7 +265,7 @@ var
 WriteLn('numero: ', x:2:2);
 ~~~
 
-### Texto:
+#### Texto:
 ~~~Delphi
 var
    Str1 : Char;        // Holds a single character, small alphabet (1 byte)
@@ -279,7 +279,7 @@ var
 ~~~   
 
 
-### Vetores e Matrizes (Array Unidimensional e Array Multidimensional):
+#### Vetores e Matrizes (Array Unidimensional e Array Multidimensional):
 
 > Vetores (Array Unidimensional)
 ~~~Delphi
@@ -325,7 +325,7 @@ var
  SetLength(matrizMulti ,3  ,3  ,3  );
 ~~~
 
-### Lógico:
+#### Lógico:
 ~~~Delphi
  var
    Log1 : Boolean;     // Can be 'True' or 'False'
@@ -344,7 +344,7 @@ type
    dia := Segunda;
 ~~~   
 
-### Conjuntos e Sub Conjutnos
+#### Conjuntos e Sub Conjutnos
 - Os elementos não se repetem
 - Operações:
   - `+` retorna a **união** de dois conjuntos
@@ -409,7 +409,7 @@ var
   End;
  ~~~
  
-### Constantes
+#### Constantes
 ~~~Delphi
 const
    PI : Single   = 3.14;         // Decimal tipo Single constant
@@ -418,8 +418,25 @@ const
    NO            = False;        // Boolean constant
 ~~~   
 
+#### Registros
+~~~Delphi
+type TFuncionario = record
+    Matr  : string[8];
+    Nome  : string[30];
+    Ender : record
+        Rua    : string[40];
+        Num    : string[6]
+        Bairro : string[20]
+        CEP    : string[8]
+    end;
+    Cargo     : string[20];
+    NumDepend : integer;
+    Salario   : real
+    DataAdm   : string[8];
+end;
+~~~
 
-## Ponteiros :
+#### Ponteiros :
 - `@` : acessa o Endereço de Memória de uma variavel. Exemplo: `@variavel`
 - `^` : Declarar uma variável do tipo ponteiro e/ou Acessar o Valor de um ponteiro.
   - (Define) ` ponteiro : ^interger `
