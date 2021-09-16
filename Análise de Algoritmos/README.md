@@ -34,5 +34,10 @@ and the kinetic energy.
 [f3]: http://chart.apis.google.com/chart?cht=tx&chl=E=mc^2
 [f4]: http://chart.apis.google.com/chart?cht=tx&chl=m_0c^2
 
+http://mathurl.com/
+
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+
+
 # Referências
 [video](https://www.youtube.com/watch?v=gjw7AaOs9P8)
