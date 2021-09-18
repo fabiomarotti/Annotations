@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 int main(){
-    printf("Ola Mundo!");
+    printf("Ola Mundo! \n");
     return 0;
 }
 ~~~
@@ -26,13 +26,34 @@ int main(){
 # Declaraçaõ de Variaveis
 > [Tipo_Variavel] : [Nome_Variavel]
 ~~~C
-int       : inteiro;
-unsigned  : inteiroSemSinal;
-char      : caracter;
-long      : inteiro;
-float     : decimal;
-double    : decimal; 
+int       : inteiro;       // i% ou %d
+short     : inteiro;       // i% ou %d
+long      : inteiro;       // i% ou %d
+double    : decimal;       // %f
+float     : decimal;       // %f
+char      : caracter;      // %c
+string    : string;        // %s
+
+  // %p       (endereço de memória)
+  // %e ou %E (notação cientifica)
+  // %%       (imprimi %)
+
+void      : vazio;
+signed    : + e -
+unsigned  : +     // %u (modulo do numero)
 ~~~
+
+# Operadores
+- `+` , `-` , `*` , `/` , `%` (módulo)
+- `==`, `!=`, `&&`, `||`, `>=`, `<=`, `>`, `<`
+~~~C
+x += 1;  // x = x + 1;
+x -= 1;  // x = x - 1;
+x *= 1;  // x = x * 1;
+x /= 1;  // x = x / 1;
+x %= 1;  // x = x % 1;
+~~~
+
 
 # Bibliotecas
 - `#include <stdio.h>`  : para printf
@@ -42,8 +63,6 @@ double    : decimal;
 - `#include <vector>`   : ??
 - `#include <deque>`    : ??
 - `#include <cmath>`    : para constante pi, cos, sin, tan, acos, asin
-
-
 
 # Caracteres representados por seqüências de escape
 - `\n` : nova linha 
@@ -57,6 +76,35 @@ double    : decimal;
 - `\0` : o caráter NULL
 - `\xxx` : qualquer padrão de bits xxx em octal
 
+# Entrada e Saída
+~~~C
+scanf(""
+scanf("%var1%var2", &v1 
+~~~
+
+~~~C
+printf("Ola %s", nome);
+~~~
+
+# Estrutura Condicionais
+~~~C
+if (x > 0){
+}
+
+if(x>0){
+}else{
+}
+~~~
+
+~~~C
+while(i<5){
+i = i+1;
+~~~
+
+# Funções
+- `sizeof(x)` : tamanho em bytes de memoria de uma variavel x
+
+# Referências
 [Continuar apostila](file:///C:/Users/Fabio/Downloads/Estrutura%20de%20dados%20-%20Unicamp%20Prof%20Ivan.pdf)
 [recursão](https://www.youtube.com/watch?v=5SHGxN7_Snc)
 
