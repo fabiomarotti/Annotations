@@ -10,6 +10,12 @@
 
 # conf
 - -std=c99 (versão de 1999)
+- Setar codificação do texto
+  - #include <locale.h>
+  - setlocale(LC_ALL,NULL)
+  - setlocale(LC_ALL,"")
+  - setlocale(LC_ALL, "Portuguese");
+  - [ver+](http://linguagemc.com.br/localizacao-de-programas-com-locale-h/)
 
 # Hello World
 ~~~C
@@ -31,15 +37,16 @@ int main(void){
 
 # Funções e Procedimentos
 ~~~C
+/* Função */
 int Somar(int a, int b){
   return a+b;
 }
-
 // resultado = Somar(1+2);
 ~~~
 
 ~~~C
-Somar(a,b){
+/* Procedimento */
+void Somar(a,b){
   // código
 }
 ~~~
@@ -49,32 +56,43 @@ Somar(a,b){
 # Variaveis de Ambiente (MSYS2)
 - [ver](https://www.youtube.com/watch?v=HF95fQaQUDU)
 
+# Entrada e Saída
+~~~C
+scanf("%d", &idade);
+scanf("%var1%var2", &v1 
+~~~
+
+~~~C
+printf("Ola %s", nome);
+~~~
+
 # Declaraçaõ de Variaveis
 > [Tipo_Variavel] : [Nome_Variavel]
 ~~~C
-int       : inteiro;       // i% ou %d
-short     : inteiro;       // i% ou %d
-long      : inteiro;       // i% ou %d
-double    : decimal;       // %f
-float     : decimal;       // %f
-char      : caracter;      // %c
-string    : string;        // %s
+// %p       (endereço de memória)
+// %e ou %E (notação cientifica)
+// %%       (imprimi %)
 
-  // %p       (endereço de memória)
-  // %e ou %E (notação cientifica)
-  // %%       (imprimi %)
+int       : inteiro;        // i% ou %d
+short     : inteiro;        // i% ou %d
+long      : inteiro;        // i% ou %d
+double    : decimal;        // %lf
+float     : decimal;        // %f
+char      : caracter;       // %c (único caracter)
+string    : string;         // %s (série de caracteres)
+unsigned  :decimal positivo // %u (decimal sem sinal)
 
 void      : vazio;
 signed    : + e -
-unsigned  : +     // %u (modulo do numero)
+
 
 const int pi = 3.14;
 #define   pi  3.14 
 ~~~
 
 # Operadores
-- `+` , `-` , `*` , `/` , `%` (módulo)
-- `==`, `!=`, `&&`, `||`, `>=`, `<=`, `>`, `<`
+- `+` , `-` , `*` , `/` , `%` (módulo) , `&` (address-of)
+- `!`, `==`, `!=`, `&&`, `||`, `>=`, `<=`, `>`, `<`
 
 #### Grau de precedencia
 - Associação da esquerda para direita  
@@ -122,15 +140,7 @@ i++;  //pos-incremento: incrementa depois de executar
 - `\0` : o caráter NULL
 - `\xxx` : qualquer padrão de bits xxx em octal
 
-# Entrada e Saída
-~~~C
-scanf(""
-scanf("%var1%var2", &v1 
-~~~
 
-~~~C
-printf("Ola %s", nome);
-~~~
 
 # Estrutura Condicionais
 ~~~C
@@ -196,11 +206,13 @@ for (int i=1, j=1 ; i<5 ; i++, j++){
 - `sizeof(x)`     : tamanho em bytes de memoria de uma variavel x
 - `getchar()`     : ler caracter;
 - `system("cls")` : comandos de PROMPT
+- `sqrt()` : (SQuare RooT) : raiz quadrada
 
 # Depuração
 - (Code Blocks) : Debug / Step Into
 
 # Referências
+[islene](https://www.ic.unicamp.br/~islene/mc102/)
 [video](https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar/playlists)
 [Continuar apostila](file:///C:/Users/Fabio/Downloads/Estrutura%20de%20dados%20-%20Unicamp%20Prof%20Ivan.pdf)
 [recursão](https://www.youtube.com/watch?v=5SHGxN7_Snc)
