@@ -22,6 +22,29 @@ int main(){
 }
 ~~~
 
+~~~C
+int main(void){
+    printf("Ola Mundo! \n");
+	return 0;
+}
+~~~
+
+# Funções e Procedimentos
+~~~C
+int Somar(int a, int b){
+  return a+b;
+}
+
+// resultado = Somar(1+2);
+~~~
+
+~~~C
+Somar(a,b){
+  // código
+}
+~~~
+
+
 
 # Variaveis de Ambiente (MSYS2)
 - [ver](https://www.youtube.com/watch?v=HF95fQaQUDU)
@@ -176,7 +199,9 @@ for (int i=1, j=1 ; i<5 ; i++, j++){
 
 # Depuração
 - (Code Blocks) : Debug / Step Into
+
 # Referências
+[video](https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar/playlists)
 [Continuar apostila](file:///C:/Users/Fabio/Downloads/Estrutura%20de%20dados%20-%20Unicamp%20Prof%20Ivan.pdf)
 [recursão](https://www.youtube.com/watch?v=5SHGxN7_Snc)
 
