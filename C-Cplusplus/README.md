@@ -8,6 +8,9 @@
 - [MSYS2](https://www.msys2.org/)
 - [eclipse](https://www.eclipse.org/downloads/)
 
+# conf
+- -std=c99 (versão de 1999)
+
 # Hello World
 ~~~C
 #include <stdio.h>
@@ -46,12 +49,28 @@ unsigned  : +     // %u (modulo do numero)
 # Operadores
 - `+` , `-` , `*` , `/` , `%` (módulo)
 - `==`, `!=`, `&&`, `||`, `>=`, `<=`, `>`, `<`
+
+#### Grau de precedencia
+- Associação da esquerda para direita  
+  - 1. ()
+  - 2. *, / , %
+  - 3. +, - 
+  - 4. <, <=, >, >=
+  - 5. ==, !=
+- Associação da direita pra esquerda
+  - --, ++
+  - = , += , -+ , *= , /= , %=  
+
+
 ~~~C
 x += 1;  // x = x + 1;
 x -= 1;  // x = x - 1;
 x *= 1;  // x = x * 1;
 x /= 1;  // x = x / 1;
 x %= 1;  // x = x % 1;
+//-------------------
+++i;  //pre-incremento: incrementa antes de executar
+i++;  //pos-incremento: incrementa depois de executar
 ~~~
 
 
@@ -59,6 +78,7 @@ x %= 1;  // x = x % 1;
 - `#include <stdio.h>`  : para printf
 - `#include <stclib.h>` : malloc, sizof
 - `#include <cctype>`   : para Uppcase
+- `#include <ctype>`    : para depuração 
 - `#include <string>`   : para manipular Strings
 - `#include <vector>`   : ??
 - `#include <deque>`    : ??
@@ -89,21 +109,68 @@ printf("Ola %s", nome);
 # Estrutura Condicionais
 ~~~C
 if (x > 0){
+  // codigo
 }
 
 if(x>0){
+  // codigo
 }else{
+  // codigo
 }
 ~~~
 
 ~~~C
 while(i<5){
-i = i+1;
+  i = i+1;
+  // codigo
+}
+~~~
+
+~~~C
+do{
+ cont += 1;
+ // codigo
+}while(cont < 5);
+~~~
+
+~~~C
+switch( cond ){
+  case("A") :
+      // codigo
+      break;
+  case("B"):
+      // codigo
+      break;
+  default:
+  // executar
+}
+
+~~~C
+// FOR e suas partes
+for( parte3 ; parte2 ; parte1 ){
+    parte1 -> atualização (declaração e iniciação de variavel: executador apenas uma vez)
+    parte2 -> condição
+    parte3 -> inicialização (sofre alterações)
+}
+
+// FOR omitido a inicialização
+for(  ; parte2 ; parte1 ){
+    parte1 -> atualização (declaração e iniciação de variavel: executador apenas uma vez)
+    parte2 -> condição
+ }
+
+for (int i=1, j=1 ; i<5 ; i++, j++){
+// codigo
+}
 ~~~
 
 # Funções
-- `sizeof(x)` : tamanho em bytes de memoria de uma variavel x
+- `sizeof(x)`     : tamanho em bytes de memoria de uma variavel x
+- `getchar()`     : ler caracter;
+- `system("cls")` : comandos de PROMPT
 
+# Depuração
+- (Code Blocks) : Debug / Step Into
 # Referências
 [Continuar apostila](file:///C:/Users/Fabio/Downloads/Estrutura%20de%20dados%20-%20Unicamp%20Prof%20Ivan.pdf)
 [recursão](https://www.youtube.com/watch?v=5SHGxN7_Snc)
