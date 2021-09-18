@@ -44,6 +44,9 @@ string    : string;        // %s
 void      : vazio;
 signed    : + e -
 unsigned  : +     // %u (modulo do numero)
+
+const int pi = 3.14;
+#define   pi  3.14 
 ~~~
 
 # Operadores
@@ -108,6 +111,8 @@ printf("Ola %s", nome);
 
 # Estrutura Condicionais
 ~~~C
+// variavel = condição ? valor1 : valor2 ;
+
 if (x > 0){
   // codigo
 }
