@@ -124,7 +124,9 @@ ShowMessage('Ola Mundo!' + var);
 ### `TLabeledEdit` 
 - EditLabel : Caption : (caption da Label)
 
-
+### `TButton`
+- #13: pular linha
+### `TBitBtn`
 ### `TSpeedButton`
 - Glyph: Selecionar imagem do botão
 - SpeedButton não recebem foco
